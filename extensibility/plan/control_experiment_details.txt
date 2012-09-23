@@ -1,0 +1,27 @@
+Is a file-base repository structure easily extensible?
+
+ -> quasi-experiment???
+
+independent variable(s)
+-> file-based storage
+-> hierarchical file structure
+-> 
+-> 
+
+dependent variable(s)
+-> extensibility
+-> usability
+-> 
+
+
+Control Validity
+-> 
+
+
+Overfull\hbox too wide
+
+Underfull \hbox
+
+
+Experimental Design
+  -> http://csdl.ics.hawaii.edu/techreports/05-06/05-06.html

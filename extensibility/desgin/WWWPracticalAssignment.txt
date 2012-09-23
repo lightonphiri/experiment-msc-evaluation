@@ -1,0 +1,55 @@
+Instructions
+
+WWW: Web 2.0 File-based Tools and Services
+
+Introduction
+
+Web applications have are generally designed and implemented using tierd architectures, using a database-centric approach for the design of the data tier. However, the use of a database-centric design is arguably not always necessary. Incidentally, the digital libraries laboratory has been conducting research focused on simplifying the design of repository software architectures, and a number of experimental tools and services have been designed and implemented using the simplyCT framework --a framework for simple online or offline digital archives with preservation, standardisation and extensibility being major focii.
+
+Some experimental simplyCT-based tools and services that have been implementated are as follows:
+
+Bonolo
+resources: 
+http://goo.gl/AbvBp
+
+CALJAX
+resources: 
+http://goo.gl/rtwQ8
+
+The Digital Bleek and Lloyd
+resources: 
+http://goo.gl/4xkbO
+
+
+Task
+
+Develop a simplyCT-based, tierd Web application/service that makes use of a file-based store as the storage tier.
+
+Your task is to use one of the data sources below to create a new service. Examples of services include: data visualisation services, full-text search services, Web service APIs (using REST, RSS), etc.
+
+
+Web Services/APIs/Data Sources
+
+Digital Bleek& Lloyd collection: 
+Link to sample bl notebook
+
+CS Document Archive: 
+http://pubs.cs.uct.ac.za/perl/oai2
+
+Facebook Profile data: 
+https://www.facebook.com/help/?page=116481065103985
+
+
+Your submission will be marked at a demo scheduled soon after the due date, according to the following criteria:
+
+ -> Service operates correctly (x%)
+ -> Logical organisation, design& implementation of file store (x%)
+    -> Metadata
+    -> Relationships between items
+ -> Portability of service (x%)
+ -> Usefulness of service (x%)
+ -> Originality (x%)
+ -> Short report describing service (x%)
+ -> Demonstration and interview session for individual groups (x%)
+ 
+ 

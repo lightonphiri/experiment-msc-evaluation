@@ -1,0 +1,90 @@
+
+1. Welcome Screen
+-> 
+
+2.
+
+
+
+
+
+
+Rapid technological advances and more specifically Web technologies have given rise to different Digital Library System architectural designs. The varying designs can largely be attributed to the different design goals and problems the solutions were aimed at addressing. However, most of the existing systems are arguably complex, effectively making them difficult to extend, reuse and maintain. This survey forms part of a study aimed at investigating an alternative approach to designing digital library tools and services.
+
+
+
+
+Bleek and Lloyd Dataset Questionnaire 
+
+
+.NET (C#, VB.NET, J#)
+HTML 5
+Java
+JavaScript (A)
+PHP
+Python
+Ruby
+XSLT
+
+
+MySQL
+Mongo DB
+SQL*Lite
+
+
+In general:
+All metadata files are in XML.
+Every file or directory may have as associated metadata file with a .metadata extension.
+In the Bleek and Lloyd collection:
+The books subcollection is the primary data source.
+The stories subcollection is a view of the data and contains links to the images in the books subcollection.
+
+
+concepts
+
+
+http://lphiri.cs.uct.ac.za:8080/repo/xmlui/open-search/simple-search?query=murray
+
+
+
+
+
+
+
+Dear Respondent,
+
+Thank you for taking the time to participate in our questionnaire.
+We want to find out how learners in developing countries access the services of learning management systems (LMSs), and what services of the LMS they are more interested in.
+
+The Information and views that you give us will contribute to our insight into the best  way to deploy LMSs to better support learners in developing countries and to develope more effective strategies of providing the services of the LMSs.
+
+
+
+This survey forms an integral component of my Master of Science research topic where I am investigating the impact of simplifying the design of digital library tools and services.
+ 
+The main objective of the survey is to scientifically determine the effect of design decisions for simple tools and services.
+
+
+The Information and views that you give us will contribute to our insight into the best  way to deploy LMSs to better support learners in developing countries and to develope more effective strategies of providing the services of the LMSs.
+
+
+
+Thank you very much for taking the time to be part of this study.
+This survey forms an integral part of a study aimed at investigating the impact of simplifying the design of digital library services.
+
+
+
+This study has received approval from the Ethics in Research Committee of the Science Faculty at the University of Cape Town. Participation is anonymous.
+
+
+This survey will take approximately 15 minutes to complete. If you do wish to participate in this survey, please be advised that it will be anonymous and confidential.
+
+
+
+
+
+
+
+
+
+

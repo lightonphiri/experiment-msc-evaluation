@@ -1,0 +1,40 @@
+Thank you very much for taking the time off your busy schedules to be part of this interview. The set of questions I will ask you will be relatively simple and open ended. I will mainly ask for opinions gained from actual experience working with the bleek and lloyd collection dataset that was used in your WWW practical assignment.
+
+Data Model
+
+Hierarchical Structure
+
+1. Did the choice of your implementation language negatively impact your development using the data mode?
+Yes: How?
+No: Do you feel you could have easily done this using another languge?
+
+2. Did the data format influence the type of service you chose?
+Yes: Why?
+No: Why not?
+
+3. Did the data format negatively impact the implementation of your service?
+Yes: Why?
+No: Why not?
+
+4. In comparison to database-centric applications, what would you say the effects
+
+
+5. In your opinion, do you think that a file-based approach can cause problems
+  (a) trying to scale applications?
+  (b) 
+  (c) 
+
+
+6. What benefits, except for preservation, do you think this approach provides?
+
+
+7. What disadvantages do you think a file-based data tier introduces?
+
+
+5. In conclusion, do you believe that the file-based storage approach for digital objects, taking everything into perspective, is beneficial?
+
+
+6. Is there anything that I have not asked that you feel is important and needs to be addressed?
+
+
+Thank you so very much for your time.

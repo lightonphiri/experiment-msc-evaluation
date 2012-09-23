@@ -1,0 +1,64 @@
+Researching Information Systems and Computing.
+Research Design: qualitative, quantitative, and mixed methods and approaches (second edition).
+
+Experiment study goal: 
+1. Assess the extensibility of file-based store, 
+2. Assess flexibility of file-base store --variety of services that can be built and how easy it is to achieve that
+3. 
+
+  -> xxx
+  -> 
+ -> Opinion Based Research
+  -> Case Studies
+  -> 
+ -> Observational Study
+  -> Ethnography
+  -> 
+  -> 
+  -> Survey [x]
+      -> Cross-Sectional Surveys ????
+	  -> 
+	  -> 
+      -> Longitudinal Survey????
+	-> Questionnaires ***
+	-> Interviews ***
+	  -> Followup questions
+	  -> 
+	  -> 
+	-> 
+  -> Observations *** [might not be feasible]
+
+
+
+[x] A hybrid of Interviews& Questionnaires
+[x] 
+ 
+
+Choosing methodology
+ -> Which method to choose
+    -> Aims of study
+    -> Feasibility of collecting information
+    -> Reliability of information
+    -> Ethics
+    -> Cost of experiment design
+    -> 
+    -> 
+ -> Variables
+    -> Research question
+    -> Ethics
+    -> Budget& Time
+    -> 
+    -> 
+    -> 
+    -> 
+ -> Statistics required
+ -> 
+ -> 
+ -> 
+ -> 
+ 
+ 
+ Study Objectives
+ -> 
+ -> 
+ -> 

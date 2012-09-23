@@ -1,0 +1,102 @@
+Performance Evaluation Plan
+
+Objective
+  -> http://en.wikipedia.org/wiki/Software_performance_testing#Setting_performance_goals
+  -> evaluate if performance is *comparable*
+  -> determine threshold when scaling (e.g. collection size threshold)
+
+Approach
+  -> establish operations performed on production system(s) (e.g. pubs.cs.uct.ac.za)
+  -> reply experiment *** [lookup this information]
+  -> check log of actions performed on production system(s)
+
+Methodology
+
+  -> Characterise Collections
+    -> collection size
+    -> *bushiness* of collection
+  -> 
+  -> Time measurement
+  -> 
+
+Measures to Consider
+
+*** server response time
+*** 
+
+
+
+  -> Time to run task
+    -> execution time, response time, latency
+    -> 
+  -> Task per day, hour, week, sec
+  -> 
+  -> 
+  -> 
+  
+  
+  
+Metrics
+  -> Ingestion [by Monday ***]
+    -> 
+  -> 
+  -> Access items [by Monday ***]
+    -> time taken to access every item in collection
+      -> include measurements for sub-directories
+      -> averages for items& sub-directories
+    -> depth-firth vs bread-first access
+    -> 
+    -> | Level | Acess Time | Read Time | Write Time | File Type (DIR|FILE)
+    -> 
+  -> 
+  -> Exporting items
+    -> time taken
+    -> range export (e.g. between dates)
+    -> OAI-PMH???
+  -> 
+  -> DL protocol integration
+  -> RSS
+    -> recent items
+    -> consider using *nix utilities (check for recent date)
+  -> 
+  -> Search& browse
+    -> measuring speed
+    -> 
+  -> 
+  -> Scalability within system
+    -> large metadata (e.g. bleek& lloyd vs archaeology) 
+  -> 
+  
+Additional Issues
+  -> Performance measurements
+    -> liaise with Gina
+  -> 
+  -> Can we prove perservation???
+    -> think about wirting this in thesis
+    -> implement common way in which preservation is undertaken using simplyct
+    -> speak to Gina about this ***
+  -> Mathematical Proof ???
+    -> complexity by analysis
+  -> 
+  -> 
+  -> 
+  
+  
+  
+  
+  
+  
+*** September 3, 2012 ***
+
+  -> Performance tests in past dissertations
+    -> Christopher Packer
+    -> Mayumbo Nyirenda
+  -> Testing Strategies
+    -> component testing
+      -> access+index+querying relationship
+      -> 
+  -> Dataset
+    -> union catalogue
+  -> 
+  -> 
+  

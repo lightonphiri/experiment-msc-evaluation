@@ -1,0 +1,24 @@
+
+Advantages of using files NOT database
+  -> http://fixunix.com/setup/18365-most-efficient-directory-structure.html
+
+
+Depth-first search vs Breadth-first search
+  -> http://en.wikipedia.org/wiki/File%3aAnimated_BFS.gif
+  -> http://stackoverflow.com/questions/3332947/when-is-it-it-practical-to-use-dfs-vs-bfs [when to use DFS& BFS]
+  -> https://github.com/tinkerpop/gremlin/wiki/Depth-First-vs.-Breadth-First [Nice illustration here --something to include in thesis] ***s
+  -> 
+-> directory walker
+  -> http://code.activestate.com/recipes/161542-directory-walker-generator/ [depth-first& breadth-first implementation]
+-> 
+-> Mathematical Computation/Illustration
+  -> http://cs.stackexchange.com/questions/298/graph-searching-breadth-first-vs-depth-first
+-> 
+-> 
+
+
+
+
+Test& Performance Analysis
+-> PuntStore: a Non-Relational Database Based Architecture of Data Management in Digital Library [ICADL review]
+  -> 
