@@ -1,0 +1,73 @@
+# Points to note
+# 1. URL encoding
+# 2.
+#
+
+import datetime # for timing spooling process
+import re # regular expressions for quick hack
+import urllib # for urlencode function
+import urllib2
+
+from xml.dom.minidom import parseString
+
+# function for return dom response after parsting oai-pmh URL
+def oaipmh_response(URL):
+  file = urllib2.urlopen(URL)
+  # quick hack --ran out of time
+  # https://maxharp3r.wordpress.com/2008/05/15/pythons-minidom-xml-and-illegal-unicode-characters/
+  RE_XML_ILLEGAL = u'([\u0000-\u0008\u000b-\u000c\u000e-\u001f\ufffe-\uffff])' + \
+                 u'|' + \
+                 u'([%s-%s][^%s-%s])|([^%s-%s][%s-%s])|([%s-%s]$)|(^[%s-%s])' % \
+                  (unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff),
+                   unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff),
+                   unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff))
+  data = file.read()
+  # using quick hack
+  data = re.sub(RE_XML_ILLEGAL, "?", data)
+  file.close()
+  dom = parseString(data)
+  return dom
+
+# function for getting value of resumptionToken after parsting oai-pmh URL
+def oaipmh_resumptionToken(URL):
+  file = urllib2.urlopen(URL)
+  data = file.read()
+  file.close()
+  dom = parseString(data)
+  print "START: "+str(datetime.datetime.now())
+  return dom.getElementsByTagName('resumptionToken')[0].firstChild.nodeValue
+#
+# function for writing to output files
+def write_xml_file(inputData, outputFile):
+  inputData = inputData.encode('ascii', 'ignore')
+  oaipmhResponse = open(outputFile, mode="w")
+  oaipmhResponse.write(inputData)
+  oaipmhResponse.close()
+  print "END: "+str(datetime.datetime.now())
+
+baseURL = 'http://union.ndltd.org/OAI-PMH/'
+# re-introduced to account for start point NOT initial GetRecords verb
+# see OAI-PMH specification ***
+resumptionToken = urllib.urlencode({'resumptionToken':'LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1748000'})
+getRecordsURL = str(baseURL+'?verb=ListRecords&'+resumptionToken)
+
+# get resumptionToken after problematic ListRecords set
+# see OAI-PMH specification ***
+resumptionToken = oaipmh_resumptionToken(getRecordsURL) # get initial resumptionToken
+print "Resumption Token: "+resumptionToken
+outputFile = 'page-1748' # define initial file to use for writing response
+write_xml_file(oaipmh_response(getRecordsURL).toxml(), outputFile)
+
+# loop parse phase
+# step forward to take into account start point from problematic record
+pageCounter = 1749
+while resumptionToken != "":
+  print "URL ECONDED TOKEN: "+resumptionToken
+  resumptionToken = urllib.urlencode({'resumptionToken':resumptionToken}) # create resumptionToken URL parameter
+  print "Resumption Token: "+resumptionToken
+  getRecordsURLLoop = str(baseURL+'?verb=ListRecords&'+resumptionToken)
+  oaipmhXML = oaipmh_response(getRecordsURLLoop).toxml()
+  outputFile = 'page-'+str(pageCounter) # create file name to use for writing response
+  write_xml_file(oaipmhXML, outputFile) # write response to output file
+  resumptionToken = oaipmh_resumptionToken(getRecordsURLLoop)
+  pageCounter += 1 # increament page counter
