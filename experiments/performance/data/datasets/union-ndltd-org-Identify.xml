@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+ <responseDate>2012-09-23T10:19:23Z</responseDate>
+ <request verb="Identify">http://union.ndltd.org:8080/union.OAI-PMH/</request>
+ <Identify>
+   <repositoryName>NDLTD Union Archive of ETD Metadata</repositoryName>
+   <baseURL>http://union.ndltd.org:8080/union.OAI-PMH/</baseURL>
+   <protocolVersion>2.0</protocolVersion>
+   <adminEmail>hussein@cs.uct.ac.za</adminEmail>
+   <earliestDatestamp>2011-09-07T02:15:34Z</earliestDatestamp>
+   <deletedRecord>persistent</deletedRecord>
+   <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+   <description>
+    <eprints
+        xmlns="http://www.openarchives.org/OAI/1.1/eprints"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/1.1/eprints
+        http://www.openarchives.org/OAI/1.1/eprints.xsd">
+       <content>
+         <URL>http://union.ndltd.org/</URL>
+          <text>NDLTD Union Archive of ETD Metadata</text>
+        </content>
+       <metadataPolicy/>
+       <dataPolicy/>
+    </eprints>
+   </description>
+ </Identify></OAI-PMH>

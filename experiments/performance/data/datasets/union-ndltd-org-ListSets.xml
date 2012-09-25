@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+ <responseDate>2012-09-24T12:27:59Z</responseDate>
+ <request verb="ListSets">
+	http://union.ndltd.org:8080/union.OAI-PMH/</request>
+<ListSets>
+<set>
+<setSpec>UPSALLA</setSpec>
+<setName>DiVA Archive at Upsalla University</setName>
+</set>
+<set>
+<setSpec>OCLC</setSpec>
+<setName>OCLC</setName>
+</set>
+<set>
+<setSpec>IBICT</setSpec>
+<setName>IBICT Brazilian ETDs</setName>
+</set>
+<set>
+<setSpec>VTETD</setSpec>
+<setName>Virgina Tech. Theses and Dissertation</setName>
+</set>
+<set>
+<setSpec>SEDICI</setSpec>
+<setName>Universidad Nacional de La Plata, Sedici</setName>
+</set>
+<set>
+<setSpec>LACETR</setSpec>
+<setName>Library and Archives Canada ETDs Repository / Centre d'archives des thèses électroniques de Bibliothèque et Archives Canada</setName>
+</set>
+<set>
+<setSpec>HKU</setSpec>
+<setName>Hong Kong University Theses</setName>
+</set>
+<set>
+<setSpec>UV</setSpec>
+<setName>Theses and Dissertations Online (Catalunya)</setName>
+</set>
+<set>
+<setSpec>KSU</setSpec>
+<setName>K-State Research Exchange</setName>
+</set>
+<set>
+<setSpec>UBOLOGNA</setSpec>
+<setName>University of Bologna, Italy</setName>
+</set>
+<set>
+<setSpec>UNESP</setSpec>
+<setName>Sao Paulo State University, Sao Paulo - Brazil.</setName>
+</set>
+<set>
+<setSpec>MUENCHEN</setSpec>
+<setName>Digitale Hochschulschriften der LMU</setName>
+</set>
+<set>
+<setSpec>NCSU</setSpec>
+<setName>North Carolina State University</setName>
+</set>
+<set>
+<setSpec>UMASS</setSpec>
+<setName>University of Massachusetts, Amherst</setName>
+</set>
+<set>
+<setSpec>UMIAMI</setSpec>
+<setName>University of Miami</setName>
+</set>
+<set>
+<setSpec>CCSD</setSpec>
+<setName>CCSD theses-EN-ligne, France</setName>
+</set>
+<set>
+<setSpec>CHENGCHI</setSpec>
+<setName>National Chengchi University Libraries</setName>
+</set>
+<set>
+<setSpec>CALTECH</setSpec>
+<setName>California Institute of Technology</setName>
+</set>
+<set>
+<setSpec>LABT_ETD</setSpec>
+<setName>Lithuanian ETD submission system</setName>
+</set>
+<set>
+<setSpec>PITT</setSpec>
+<setName>University of Pittsburgh</setName>
+</set>
+<set>
+<setSpec>TEXASAandM</setSpec>
+<setName>Texas A and M University</setName>
+</set>
+<set>
+<setSpec>MIT</setSpec>
+<setName>M.I.T. Theses and Dissertation</setName>
+</set>
+<set>
+<setSpec>OhioLink</setSpec>
+<setName>Ohiolink ETDs</setName>
+</set>
+<set>
+<setSpec>MONTSTATE</setSpec>
+<setName>Montana State University</setName>
+</set>
+<set>
+<setSpec>NSYSU</setSpec>
+<setName>NSYSU Electronic Thesis and Dissertation Archive</setName>
+</set>
+<set>
+<setSpec>TCU</setSpec>
+<setName>Texas Christian University</setName>
+</set>
+<set>
+<setSpec>BRADFORD</setSpec>
+<setName>Bradford Scholars</setName>
+</set>
+<set>
+<setSpec>METU</setSpec>
+<setName>Middle East Technical Univ.</setName>
+</set>
+<set>
+<setSpec>HUMBOLT</setSpec>
+<setName>Humboldt University of Berlin, GERMANY, Document Server</setName>
+</set>
+<set>
+<setSpec>UCHILE</setSpec>
+<setName>Chile Cybertesis</setName>
+</set>
+<set>
+<setSpec>BGMYU</setSpec>
+<setName>Brigham Young University Theses</setName>
+</set>
+<set>
+<setSpec>YALE_med</setSpec>
+<setName>Yale Medical student MD Thesis</setName>
+</set>
+<set>
+<setSpec>LAVAL</setSpec>
+<setName>Université Laval</setName>
+</set>
+<set>
+<setSpec>AUCKLAND</setSpec>
+<setName>University of Auckland</setName>
+</set>
+<set>
+<setSpec>PHYSNET</setSpec>
+<setName>Physnet, Physics Document Server, Germany</setName>
+</set>
+<set>
+<setSpec>USASK</setSpec>
+<setName>University of Saskatchewan Library </setName>
+</set>
+<set>
+<setSpec>UHAWAII</setSpec>
+<setName>University of Hawaii at Manoa Libraries</setName>
+</set>
+<set>
+<setSpec>UCL</setSpec>
+<setName>UCL</setName>
+</set>
+<set>
+<setSpec>IISc</setSpec>
+<setName>India Institute of Science</setName>
+</set>
+<set>
+<setSpec>VANDERBILT</setSpec>
+<setName>Vanderbilt University Theses</setName>
+</set>
+<set>
+<setSpec>WATERLOO</setSpec>
+<setName>University of Waterloo Electronic Theses Repository</setName>
+</set>
+<set>
+<setSpec>Vidyanidhi</setSpec>
+<setName>Vidyanidhi Digital Lib. (India)</setName>
+</set>
+<set>
+<setSpec>UTAHS</setSpec>
+<setName>Utah State University</setName>
+</set>
+<set>
+<setSpec>MSSTATE</setSpec>
+<setName>Mississippi State University</setName>
+</set>
+<set>
+<setSpec>Potsdam</setSpec>
+<setName>Potsdam University</setName>
+</set>
+<set>
+<setSpec>PROQUEST</setSpec>
+<setName>ProQuest.com</setName>
+</set>
+<set>
+<setSpec>BOSTON</setSpec>
+<setName>Boston College</setName>
+</set>
+<set>
+<setSpec>MAINE</setSpec>
+<setName>University of Maine</setName>
+</set>
+<set>
+<setSpec>UPSALLA1</setSpec>
+<setName>DiVA Archive at Upsalla University</setName>
+</set>
+<set>
+<setSpec>IUPUI</setSpec>
+<setName>Indiana University-Purdue University Indianapolis</setName>
+</set>
+<set>
+<setSpec>LATVIA</setSpec>
+<setName>University of Latvia</setName>
+</set>
+<set>
+<setSpec>LSU</setSpec>
+<setName>Louisiana State University</setName>
+</set>
+<set>
+<setSpec>NAGOYA</setSpec>
+<setName>Nagoya University</setName>
+</set>
+<set>
+<setSpec>RICE</setSpec>
+<setName>Rice University</setName>
+</set>
+<set>
+<setSpec>VIENNA</setSpec>
+<setName>Wirtschaftsuniversität Wien</setName>
+</set>
+<set>
+<setSpec>UCF</setSpec>
+<setName>University of Central Florida</setName>
+</set>
+<set>
+<setSpec>NWUBOLOKA</setSpec>
+<setName>North-West University, South Africa</setName>
+</set>
+<set>
+<setSpec>MANITOBA</setSpec>
+<setName>University of Manitoba Canada</setName>
+</set>
+<set>
+<setSpec>MONTANA</setSpec>
+<setName>University of Montana Missoula</setName>
+</set>
+<set>
+<setSpec>DRESDEN</setSpec>
+<setName>Hochschulschriftenserver (HSSS) der SLUB Dresden</setName>
+</set>
+<set>
+<setSpec>TDX_UAB</setSpec>
+<setName>Universitat Autònoma de Barcelona</setName>
+</set>
+<set>
+<setSpec>TDX_UB</setSpec>
+<setName>Universitat de Barcelona</setName>
+</set>
+<set>
+<setSpec>TDX_UIC</setSpec>
+<setName>Universitat Internacional de Catalunya</setName>
+</set>
+<set>
+<setSpec>TDX_UJI</setSpec>
+<setName>Universitat Jaume I</setName>
+</set>
+<set>
+<setSpec>TDX_UM</setSpec>
+<setName>Universidad de Murcia</setName>
+</set>
+<set>
+<setSpec>TDX_UPC</setSpec>
+<setName>Universitat Politècnica de Catalunya</setName>
+</set>
+<set>
+<setSpec>TDX_UPF</setSpec>
+<setName>Universitat Pompeu Fabra</setName>
+</set>
+<set>
+<setSpec>TDX_URL</setSpec>
+<setName>Universitat Ramon Llull</setName>
+</set>
+<set>
+<setSpec>TDX_UV</setSpec>
+<setName>Universitat de València</setName>
+</set>
+<set>
+<setSpec>TORONTO</setSpec>
+<setName>University of Toronto</setName>
+</set>
+<set>
+<setSpec>CLAREMONT</setSpec>
+<setName>Claremont Colleges</setName>
+</set>
+<set>
+<setSpec>IUP_Thesis</setSpec>
+<setName>Indiana University of Pennsylvania Thesis</setName>
+</set>
+<set>
+<setSpec>DITED</setSpec>
+<setName>National Library of Portugal DiTeD ETD Repository</setName>
+</set>
+<set>
+<setSpec>CRANFIELD1</setSpec>
+<setName>CRANFIELD1</setName>
+</set>
+<set>
+<setSpec>CALPOLY</setSpec>
+<setName>California Polytechnic State University</setName>
+</set>
+<set>
+<setSpec>Quebec</setSpec>
+<setName>Université du Québec à Chicoutimi</setName>
+</set>
+<set>
+<setSpec>GEORGIA</setSpec>
+<setName>Georgia State University</setName>
+</set>
+<set>
+<setSpec>URV</setSpec>
+<setName>Universitat de Rovira i Virgili</setName>
+</set>
+<set>
+<setSpec>NEU</setSpec>
+<setName>Northeastern University, Snell Library</setName>
+</set>
+<set>
+<setSpec>WKU</setSpec>
+<setName>Western Kentucky University Theses</setName>
+</set>
+<set>
+<setSpec>MACAU</setSpec>
+<setName>University of Macau</setName>
+</set>
+<set>
+<setSpec>PERUUPC</setSpec>
+<setName>Universidad Peruana de Ciencias Aplicadas (UPC)</setName>
+</set>
+<set>
+<setSpec>PERUUNI</setSpec>
+<setName>Universidad Nacional de Ingenierí(UNI)</setName>
+</set>
+<set>
+<setSpec>UNWC</setSpec>
+<setName>Univ. of Western Cape</setName>
+</set>
+<set>
+<setSpec>PERUURP</setSpec>
+<setName>Universidad Ricardo Palma (URP)</setName>
+</set>
+<set>
+<setSpec>UTENN_</setSpec>
+<setName>University of Tennessee Libraries</setName>
+</set>
+<set>
+<setSpec>DocTA</setSpec>
+<setName>Universita Cattolica del Sacro Cuore. DocTA</setName>
+</set>
+<set>
+<setSpec>USF</setSpec>
+<setName>University of South Flordia</setName>
+</set>
+<set>
+<setSpec>ORGSU</setSpec>
+<setName>Oregon State University</setName>
+</set>
+<set>
+<setSpec>UniZar</setSpec>
+<setName>UniZar</setName>
+</set>
+<set>
+<setSpec>NWUBOLOKA1</setSpec>
+<setName>North-West University</setName>
+</set>
+<set>
+<setSpec>OREGON</setSpec>
+<setName>Oregon Health and Science Univ. Library</setName>
+</set>
+<set>
+<setSpec>Rhodes</setSpec>
+<setName>Rhodes University SA</setName>
+</set>
+<set>
+<setSpec>OPEN_AIR</setSpec>
+<setName>Robert Gordon University, Aberdeen, Scotland</setName>
+</set>
+<set>
+<setSpec>UNC_CH</setSpec>
+<setName>University of North Carolina-Chapel Hill</setName>
+</set>
+<set>
+<setSpec>UBC</setSpec>
+<setName>University of British Columbia</setName>
+</set>
+<set>
+<setSpec>UTENN</setSpec>
+<setName>University of Tennessee Libraries</setName>
+</set>
+<set>
+<setSpec>VTINDIV</setSpec>
+<setName>Virginia Tech Individual ETDs</setName>
+</set>
+<set>
+<setSpec>DUKE</setSpec>
+<setName>Duke University</setName>
+</set>
+<set>
+<setSpec>UMissouriStLouis</setSpec>
+<setName>University of Missiouri at St. Louis ETD Archive</setName>
+</set>
+<set>
+<setSpec>UDLA_Thesis</setSpec>
+<setName>Universidad de las Americas, Puebla: Digital Theses</setName>
+</set>
+<set>
+<setSpec>ADTP</setSpec>
+<setName>Australiasian Digital Theses Program</setName>
+</set>
+<set>
+<setSpec>DUETT</setSpec>
+<setName>Dissertations and other Documents of the Gerhard-Mercator-University Duisburg</setName>
+</set>
+<set>
+<setSpec>DUQUESNE</setSpec>
+<setName>Duquesne University</setName>
+</set>
+<set>
+<setSpec>CRANFIELD</setSpec>
+<setName>CRANFIELD</setName>
+</set>
+<set>
+<setSpec>BICfB</setSpec>
+<setName>Bibliothèque interuniversitaire de la Communauté française de Belgique</setName>
+</set>
+<set>
+<setSpec>GATECH</setSpec>
+<setName>Georgia Tech Electronic Thesis and Dissertation Archive</setName>
+</set>
+<set>
+<setSpec>ETSU</setSpec>
+<setName>East Tennessee State University</setName>
+</set>
+<set>
+<setSpec>Cybertesis</setSpec>
+<setName>Universidad Nacional Mayor de San Marcos - SISBIB PERU</setName>
+</set>
+<set>
+<setSpec>BOLVUMSA</setSpec>
+<setName>Universidad Mayor de San André(UMSA)</setName>
+</set>
+<set>
+<setSpec>HOKKAIDO</setSpec>
+<setName>Hokkaido University Japan</setName>
+</set>
+<set>
+<setSpec>GWUD</setSpec>
+<setName>George Washington University Theses</setName>
+</set>
+<set>
+<setSpec>UTEXAS</setSpec>
+<setName>University of Texas</setName>
+</set>
+<set>
+<setSpec>SBTS</setSpec>
+<setName>Southern Baptist Theological Seminary</setName>
+</set>
+<set>
+<setSpec>TULANE</setSpec>
+<setName>Tulane University</setName>
+</set>
+<set>
+<setSpec>TDX_UAO</setSpec>
+<setName>Universitat Abat Oliba</setName>
+</set>
+<set>
+<setSpec>TDX_UC</setSpec>
+<setName>Universidad de Cantabria</setName>
+</set>
+<set>
+<setSpec>TDX_UDG</setSpec>
+<setName>Universitat de Girona</setName>
+</set>
+<set>
+<setSpec>TDX_UDL</setSpec>
+<setName>Universitat de Lleida</setName>
+</set>
+<set>
+<setSpec>TDX_UIB</setSpec>
+<setName>Universitat de les Illes Balears</setName>
+</set>
+<set>
+<setSpec>TDX_UOC</setSpec>
+<setName>Universitat Oberta de Catalunya</setName>
+</set>
+<set>
+<setSpec>TDX_UOV</setSpec>
+<setName>Universidad de Oviedo</setName>
+</set>
+<set>
+<setSpec>TDX_URV</setSpec>
+<setName>Universitat Rovira i Virgili</setName>
+</set>
+<set>
+<setSpec>TDX_UVIC</setSpec>
+<setName>Universitat de Vic</setName>
+</set>
+<set>
+<setSpec>UDLA-Thesis</setSpec>
+<setName>UDLA-Thesis</setName>
+</set>
+<set>
+<setSpec>PUCP</setSpec>
+<setName>Pontificia Universidad Católica del Perú</setName>
+</set>
+<set>
+<setSpec>WICHITA</setSpec>
+<setName>Wichita State University</setName>
+</set>
+<set>
+<setSpec>TEMPLE</setSpec>
+<setName>Temple University</setName>
+</set>
+<set>
+<setSpec>BSU</setSpec>
+<setName>Ball State University</setName>
+</set>
+<set>
+<setSpec>TW</setSpec>
+<setName>National Digital Library of Theses and Dissertations in Taiwan</setName>
+</set>
+<set>
+<setSpec>usmp.edu.pe</setSpec>
+<setName>Universidad de San Martin de Porres</setName>
+</set>
+<set>
+<setSpec>usat.edu.pe</setSpec>
+<setName>Universidad Catolica Santo Toribio de Mogrovejo</setName>
+</set>
+</ListSets>
+</OAI-PMH>
