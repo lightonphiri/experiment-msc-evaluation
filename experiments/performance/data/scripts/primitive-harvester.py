@@ -31,9 +31,18 @@ def oaipmh_response(URL):
 # function for getting value of resumptionToken after parsting oai-pmh URL
 def oaipmh_resumptionToken(URL):
   file = urllib2.urlopen(URL)
+  # quick hack --ran out of time
+  # https://maxharp3r.wordpress.com/2008/05/15/pythons-minidom-xml-and-illegal-unicode-characters/
+  RE_XML_ILLEGAL = u'([\u0000-\u0008\u000b-\u000c\u000e-\u001f\ufffe-\uffff])' + \
+                 u'|' + \
+                 u'([%s-%s][^%s-%s])|([^%s-%s][%s-%s])|([%s-%s]$)|(^[%s-%s])' % \
+                  (unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff),
+                   unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff),
+                   unichr(0xd800),unichr(0xdbff),unichr(0xdc00),unichr(0xdfff))
   data = file.read()
+  # using quick hack
+  data = re.sub(RE_XML_ILLEGAL, "?", data)
   file.close()
-  
   dom = parseString(data)
   print "START: "+str(datetime.datetime.now())
   return dom.getElementsByTagName('resumptionToken')[0].firstChild.nodeValue
