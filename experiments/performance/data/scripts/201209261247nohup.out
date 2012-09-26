@@ -1,0 +1,27 @@
+START: 2012-09-26 11:16:45.320826
+Resumption Token: LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1881000
+END: 2012-09-26 11:17:04.678139
+URL ECONDED TOKEN: LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1881000
+Resumption Token: resumptionToken=LR%212011-09-07T02%3A15%3A34Z%212037-01-01T00%3A00%3A00Z%21oai_dc%211881000
+END: 2012-09-26 11:17:22.906641
+START: 2012-09-26 11:17:40.951725
+URL ECONDED TOKEN: LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1882000
+Resumption Token: resumptionToken=LR%212011-09-07T02%3A15%3A34Z%212037-01-01T00%3A00%3A00Z%21oai_dc%211882000
+Traceback (most recent call last):
+  File "primitive-harvester-restart.py", line 79, in <module>
+    oaipmhXML = oaipmh_response(getRecordsURLLoop).toxml()
+  File "primitive-harvester-restart.py", line 15, in oaipmh_response
+    file = urllib2.urlopen(URL)
+  File "/usr/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 406, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 519, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 444, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 378, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 527, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+urllib2.HTTPError: HTTP Error 500: Internal Server Error

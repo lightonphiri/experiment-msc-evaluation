@@ -56,28 +56,28 @@ def write_xml_file(inputData, outputFile):
   print "END: "+str(datetime.datetime.now())
 
 baseURL = 'http://union.ndltd.org/OAI-PMH/'
+# re-introduced to account for start point NOT initial GetRecords verb
+# see OAI-PMH specification ***
+resumptionToken = urllib.urlencode({'resumptionToken':'LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1880000'})
+getRecordsURL = str(baseURL+'?verb=ListRecords&'+resumptionToken)
 
 # get resumptionToken after problematic ListRecords set
 # see OAI-PMH specification ***
-resumptionToken = 'LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!1882000' # get initial resumptionToken
+resumptionToken = oaipmh_resumptionToken(getRecordsURL) # get initial resumptionToken
+print "Resumption Token: "+resumptionToken
+outputFile = 'page-1880' # define initial file to use for writing response
+write_xml_file(oaipmh_response(getRecordsURL).toxml(), outputFile)
 
 # loop parse phase
 # step forward to take into account start point from problematic record
-pageCounter = 1882
+pageCounter = 1881
 while resumptionToken != "":
   print "URL ECONDED TOKEN: "+resumptionToken
   resumptionToken = urllib.urlencode({'resumptionToken':resumptionToken}) # create resumptionToken URL parameter
   print "Resumption Token: "+resumptionToken
   getRecordsURLLoop = str(baseURL+'?verb=ListRecords&'+resumptionToken)
-  try:
-    oaipmhXML = oaipmh_response(getRecordsURLLoop).toxml()
-    outputFile = 'page-'+str(pageCounter) # create file name to use for writing response
-    write_xml_file(oaipmhXML, outputFile) # write response to output file
-    resumptionToken = oaipmh_resumptionToken(getRecordsURLLoop)
-    pageCounter += 1 # increament page counter
-  except Exception as exc:
-    logfile = open('page-'+str(pageCounter), 'w')
-    logfile.write(str(exc))
-    logfile.close()
-    resumptionToken = 'LR!2011-09-07T02:15:34Z!2037-01-01T00:00:00Z!oai_dc!'+str(int(getRecordsURLLoop[getRecordsURLLoop.rindex('%21')+3: len(getRecordsURLLoop)])+1000)
-    pageCounter += 1
+  oaipmhXML = oaipmh_response(getRecordsURLLoop).toxml()
+  outputFile = 'page-'+str(pageCounter) # create file name to use for writing response
+  write_xml_file(oaipmhXML, outputFile) # write response to output file
+  resumptionToken = oaipmh_resumptionToken(getRecordsURLLoop)
+  pageCounter += 1 # increament page counter
