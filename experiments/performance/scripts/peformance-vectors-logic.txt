@@ -1,0 +1,27 @@
+RSS Feed Generator
+
+1. 
+  -> From root node
+    -> Scan directory hierarchy to get top 5 recently added records in natural order [1]
+      -> Define a list to hold 5 recently added items
+      -> Start adding items to list ensuring that item to be added is not already in defined list (idea here is to add unique items to list)
+    -> 
+    -> For each of the 5 items in list
+      -> Use PyRSS2Gen module to write essential metadata associated to item
+    -> 
+
+
+
+    
+    
+2.
+
+
+
+
+
+
+http://www.daniweb.com/software-development/python/code/216688/file-list-by-date-python *****
+[1] http://stackoverflow.com/q/168409/664424
+[2] http://stackoverflow.com/q/4709968/664424
+[3] http://stackoverflow.com/q/237079/664424
