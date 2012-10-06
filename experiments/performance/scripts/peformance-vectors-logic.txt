@@ -1,8 +1,16 @@
 RSS Feed Generator
 
-1. 
+
+1. Pull filenames for top 5 recently added items
+
+  -> Using Python's implementation of the heapq algorithm [1,2]
+  -> 
+  -> 
+  -> 
+  -> 
+
   -> From root node
-    -> Scan directory hierarchy to get top 5 recently added records in natural order [1]
+    -> Scan directory hierarchy to get top 5 recently added records in natural order [3,4,5]
       -> Define a list to hold 5 recently added items
       -> Start adding items to list ensuring that item to be added is not already in defined list (idea here is to add unique items to list)
     -> 
@@ -22,6 +30,8 @@ RSS Feed Generator
 
 
 http://www.daniweb.com/software-development/python/code/216688/file-list-by-date-python *****
-[1] http://stackoverflow.com/q/168409/664424
-[2] http://stackoverflow.com/q/4709968/664424
-[3] http://stackoverflow.com/q/237079/664424
+[1] http://stackoverflow.com/q/12759350/664424
+[2] http://docs.python.org/library/heapq.html
+[3] http://stackoverflow.com/q/168409/664424
+[4] http://stackoverflow.com/q/4709968/664424
+[5] http://stackoverflow.com/q/237079/664424
