@@ -21705,4 +21705,49 @@ Handling IndexError:  list index out of range
 [<PyRSS2Gen.RSSItem instance at 0xe91292c>, <PyRSS2Gen.RSSItem instance at 0xeb3384c>, <PyRSS2Gen.RSSItem instance at 0xeb3388c>, <PyRSS2Gen.RSSItem instance at 0xeb1528c>, <PyRSS2Gen.RSSItem instance at 0xe9be74c>]
 END: FEED GENERATOR[WRITING]:  1349623053.76
 Identifier is:  oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344
-Processing record:  oai:union.ndltd.
+Processing record:  oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344
+End Processing ...
+END: PREPROCESSING[PARSING]:  1349623053.76
+START: PREPROCESSING[WRITING]:  1349623053.76
+END: PREPROCESSING[WRITING]:  1349623053.76
+START: FEED GENERATOR[HEAPQ]:  1349623053.76
+START: FEED GENERATOR[WRITING]:  1349623053.78
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/SEDICI/oai-union.ndltd.org-SEDICI--oai-sedici.unlp.edu.ar-10915--1344.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.78
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/NSYSU/oai-union.ndltd.org-NSYSU--oai-NSYSU-etd-0911112-144430.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.79
+Handling IndexError:  list index out of range
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/HKU/oai-union.ndltd.org-HKU--oai-hkuto-B4818214X.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.79
+Handling IndexError:  list index out of range
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/HKU/oai-union.ndltd.org-HKU--oai-hkuto-B48181638.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.79
+Handling IndexError:  list index out of range
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/HKU/oai-union.ndltd.org-HKU--oai-hkuto-B48174130.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.79
+Handling IndexError:  list index out of range
+[<PyRSS2Gen.RSSItem instance at 0xe9a464c>, <PyRSS2Gen.RSSItem instance at 0xe761bcc>, <PyRSS2Gen.RSSItem instance at 0xeb33c4c>, <PyRSS2Gen.RSSItem instance at 0xe6701cc>, <PyRSS2Gen.RSSItem instance at 0xe7c8ecc>]
+END: FEED GENERATOR[WRITING]:  1349623053.79
+Identifier is:  oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292
+Processing record:  oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292
+End Processing ...
+END: PREPROCESSING[PARSING]:  1349623053.79
+START: PREPROCESSING[WRITING]:  1349623053.8
+END: PREPROCESSING[WRITING]:  1349623053.8
+START: FEED GENERATOR[HEAPQ]:  1349623053.8
+START: FEED GENERATOR[WRITING]:  1349623053.82
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/SEDICI/oai-union.ndltd.org-SEDICI--oai-sedici.unlp.edu.ar-10915--21292.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.82
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/SEDICI/oai-union.ndltd.org-SEDICI--oai-sedici.unlp.edu.ar-10915--1344.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.82
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/NSYSU/oai-union.ndltd.org-NSYSU--oai-NSYSU-etd-0911112-144430.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.82
+Handling IndexError:  list index out of range
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/HKU/oai-union.ndltd.org-HKU--oai-hkuto-B4818214X.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.83
+Handling IndexError:  list index out of range
+appending...  /home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive/HKU/oai-union.ndltd.org-HKU--oai-hkuto-B48181638.metadata
+START: FEED GENERATOR[ITEM OBJECT CREATOR]:  1349623053.99
+Handling IndexError:  list index out of range
+[<PyRSS2Gen.RSSItem instance at 0xe6da5cc>, <PyRSS2Gen.RSSItem instance at 0xe92810c>, <PyRSS2Gen.RSSItem instance at 0xde9c38c>, <PyRSS2Gen.RSSItem instance at 0xeb8a0ec>, <PyRSS2Gen.RSSItem instance at 0xeb8ab4c>]
+END: FEED GENERATOR[WRITING]:  1349623053.99

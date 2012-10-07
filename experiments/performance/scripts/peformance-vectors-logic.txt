@@ -25,6 +25,11 @@ RSS Feed Generator
 2.
 
 
+import sys
+saveout = sys.stdout
+outfile = open('output.txt', 'w')
+sys.stdout = outfile
+
 
 
 
