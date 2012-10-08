@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<xmlfile xmlns="http://simba.cs.uct.ac.za/projects/xmlfile"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://simba.cs.uct.ac.za/projects/xmlfile
+                         http://simba.cs.uct.ac.za/projects/xmlfile.xsd"
+>
+
+   <repositoryName>test2 OAI Archive</repositoryName>
+   <adminEmail>hussein@cs.uct.ac.za</adminEmail>
+   <archiveId>test2.uct.ac.za</archiveId>
+   <recordlimit>1</recordlimit>
+   <datadir>data</datadir>
+   <longids>yes</longids>
+   <filematch>[^\.]+\.txt$</filematch>
+   <multiset>no</multiset>
+   <originalids>no</originalids>
+   <listsize>no</listsize>
+   <metadata>
+      <prefix>oai_dc</prefix>
+      <namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</namespace>
+      <schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</schema>
+      <transform>/usr/bin/xsltproc dc.xsl - |</transform>
+   </metadata>
+</xmlfile>

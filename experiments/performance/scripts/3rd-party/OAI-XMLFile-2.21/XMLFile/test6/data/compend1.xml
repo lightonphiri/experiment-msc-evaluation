@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<vra>
+
+   <record type="work">
+      <type>print</type>
+      <title>This is how it happened</title>
+      <title type="variant">As Sucedi</title>
+      <measurements type="dimensions">24.5 x 35 cm</measurements>
+      <material type="medium">ink</material>
+      <material type="support">paper</material>
+      <technique>etching</technique>
+      <technique>drypoint</technique>
+      <creator role="printmaker" type="personal name">Francisco Jose de Goya y Lucientes</creator>
+      <date type="creation">ca. 1810-1814</date>
+      <location type="current repository">Ann Arbor (MI,USA), University of Michigan Museum of Art</location>
+      <location type="creation site">Madrid (ESP)</location>
+      <idnumber type="current accession">1977/2.15</idnumber>
+      <styleperiod>Romanticism</styleperiod>
+      <culture>Spanish</culture>
+      <subject>war</subject>
+      <relation type="part of">Part of Disasters of war</relation>
+      <description>This is how it happened is No. 47 (33) from the series "The Disasters of War", 4th edition, plates for the series ca. 1810-14, 1820, 4th edition was published 1906.</description>
+      <rights>Weber family trust</rights>
+   </record>
+
+</vra>

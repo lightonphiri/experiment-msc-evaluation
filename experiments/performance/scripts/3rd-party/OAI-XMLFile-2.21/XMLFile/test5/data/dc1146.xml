@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<oaidc:dc xmlns="http://purl.org/dc/elements/1.1/" 
+          xmlns:oaidc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ 
+                              http://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+>
+   <title>OAI website</title>
+   <identifier>http://www.openarchives.org</identifier>
+</oaidc:dc>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+ <vra>
+
+   <record type="work">
+      <title>test1</title>
+      <date>someday</date>
+   </record>
+   
+   <record type="image">
+      <creator role="scanner">someguy</creator>
+      <date>someday+1</date>
+   </record>
+
+   <record type="image">
+      <creator role="thumbnailer">anotherguy</creator>
+      <date>someday+2</date>
+   </record>
+
+ </vra> 
+  
+

@@ -1,0 +1,29 @@
+v2.21 [august 2005]
+- added option not to strip filename extensions
+- removed "system" commands in configure
+- removed all relative directory addressing in favour of FindBins
+
+
+v2.2 [february 2005]
+- support for paths in identifiers
+- support for retaining original identifiers
+- faster engine to process requests
+- support for large file sets
+- optional multiple-set membership
+- optional list size calculation
+- support for set descriptions
+- fixed OAI compliance problems
+
+
+v2.1 [december 2002]
+- fixed junk set names error
+- support for set name mappings
+
+
+v2.0 [july 2002]
+- support for OAI-PMH2
+- better and more general configuration
+
+
+v1.0 [october 2001]
+- first release

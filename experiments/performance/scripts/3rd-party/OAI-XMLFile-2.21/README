@@ -1,0 +1,157 @@
+# +---------------------------------------------------------------------+
+#    XMLFile OAI-PMH data provider
+#    v2.21
+#    August 2005
+# +----------------------------------+----------------------------------+
+# |  Hussein Suleman                 |  Department of Computer Science  |
+# |   <hussein@cs.uct.ac.za>         |  University of Cape Town         |
+# |   http://www.husseinsspace.com   |  Cape Town, South Africa         |
+# +----------------------------------+----------------------------------+
+
+
+Description
+-----------
+
+This is a data provider module that operates over a set of XML files 
+that contain the metadata. It is meant to require a minimal of effort 
+while retaining all the flexibility of the OAI protocol.
+
+Features:
+- OAI v2.0 protocol support
+
+- no installation or compilation - Perl scripts need only be copied
+- code layout for separate components or libraries of components
+- one installation can easily be used for multiple archives
+- supports almost all general features of the protocol by default
+- clean separation between engine, configuration and data 
+  (class/instance model)
+- hierarchical sets mapped from directory structure
+- multiple metadata formats generated on the fly
+- harvesting by date based on the file modification dates
+- does not couple tightly with the web server and requires no special
+  features
+- designed for easy migration to accelerators such as FastCGI
+
+- source files may be in multiple formats
+- full namespace support for xml data (to enable
+  multi-format source data)
+- seconds granularity for harvesting
+- uses standard VTOAI perl module
+- symlinked files with same name correspond to records in multiple sets
+- resumptionToken support
+- identification description container support
+- support for sets of filenames expressed in regular expressions
+- arbitrary data file location
+- six sample data sets are provided
+- mappings from setnames to setspecs
+
+- *NEW* more scalable response generation engine
+- *NEW* optional multiple set membership
+- *NEW* original identifiers may be used instead of generated ones
+- *NEW* optional list size calculation
+- *NEW* set description mappings
+- *NEWER* optional stripping of filename extensions
+
+Requirements
+------------
+
+- Perl
+- Web server with ability to run CGI scripts
+
+
+Installation Instructions
+-------------------------
+
+1. Copy all files with default directory structure into a directory
+   from which CGI scripts may be run
+
+2. Use the Repository Explorer (http://purl.org/net/oai_explorer)
+   to test the sample interface accessible at 
+   'OAI-XMLFile/XMLFile/test1/oai.pl'. You will need to prefix this 
+   with the full URL prefix to the script. 
+
+3. Create new data providers by changing to the 'OAI-XMLFile/XMLFile'
+   directory and running './configure.pl' with the parameter being
+   the name of the archive. For example,
+     ./configure.pl etdlibrary
+     
+4. Create translation scripts and stylesheets as necessary to transform
+   your metadata into the formats you need. Some of the sample archives
+   use "/usr/bin/xsltproc" to do this translation - make sure you have it
+   and its location is correct if you want to use this.
+   
+5. Create ('identity.xml', 'identity2.xml', ...) files to contain 
+   optional descriptions for the Identify service request.
+   
+6. Create setname values either using a mapping file in
+   the configuration directory or using "_name_" files in each
+   set directory (see test6 for examples of both)
+
+7. Test the OAI-PMH2 interface
+   - use the Repository Explorer at http://purl.org/net/oai_explorer
+     and point it to the 'oai.pl' script in the archive directory
+             
+8. Create additional archives as necessary             
+
+
+What are the samples ?
+----------------------
+
+test1 : plain vanilla data provider with data in some kind of XML and XSLT
+ used to transform into DC and VRA-Core
+test2 : test1, with additional identity containers
+test3 : plain dc as native format - no XSLT
+test4 : multi-format source and multiple metadata format archive
+test5 : lots and lots of files, with list size calc
+test6 : setspec -> name and description mappings, multisets
+test7 : original identifiers
+
+
+Upgrading ?
+-----------
+
+To upgrade from a previous version, i recommend that you install these 
+scripts in a new directory and point to your data source. Here are a 
+few things to keep in mind:
+
+- all configuration is done through the ./configure.pl script
+- your XSLT (if you used that) must now produce fully-qualified XML records
+  with namespaces and schema information (see test1 for how this is done)
+- additional identity containers must now be individual files that you
+  store in the archive/instance directory (e.g., OAI-XMLFile/XMLFIle/test1/)
+
+
+Module Layout
+-------------
+
+lib/Pure:
+ - utility modules (in pure-perl)
+
+lib/OAI:
+ - OAI2DP = generic data provider
+ 
+lib/XMLFile:
+ - XMLFileDP = data provider for XMLFile components
+ 
+XMLFile:
+ - instances of data providers (test1, test2, etc.)
+
+
+Links/Acknowledgements
+----------------------
+
+This software is part of the larger project to build componentised
+Digital Libraries based on the work of the Open Archives Initiative.
+(http://www.openarchives.org)
+
+An older version of this software was produced in part for the 
+AmericanSouth.org project (http://americansouth.org).
+
+The current version is maintained as part of the Flexible Digital
+Libraries project
+(http://aim.cs.uct.ac.za/tiki-index.php?page=Flexible Digital Libraries)
+
+This is a research project, and we are always interested in 
+feedback - questions, comments, and suggestions for improvement.
+Please contact hussein@cs.uct.ac.za as appropriate.
+

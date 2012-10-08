@@ -1,0 +1,29 @@
+<dc>
+<DC.Title>a title</DC.Title>
+
+<DC.Creator.PersonalName>personal, name</DC.Creator.PersonalName>
+
+<DC.Creator.Address>email@address</DC.Creator.Address>
+
+<DC.Subject>digital libraries</DC.Subject>
+
+<DC.Subject>networking</DC.Subject>
+
+<DC.Description>some random description of stuff</DC.Description>
+
+<DC.Publisher>VTDLRL</DC.Publisher>
+
+<DC.Publisher.Address>http://www.dlib.vt.edu</DC.Publisher.Address>
+
+<DC.Type>text/html</DC.Type>
+
+<DC.Identifier.URI>http://www.somearchive.com/someid</DC.Identifier.URI>
+
+<DC.Source>aaa</DC.Source>
+
+<DC.Language.ISO639-1>en</DC.Language.ISO639-1>
+
+<DC.Date.ISO8601>2001-10-10</DC.Date.ISO8601>
+
+<DC.Rights>public domain</DC.Rights>
+</dc>

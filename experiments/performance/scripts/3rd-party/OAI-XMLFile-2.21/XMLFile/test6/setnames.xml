@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<setnames>
+   <set>
+      <spec>set2:set22</spec>
+      <name>A setname from the mapping file</name>
+   </set>
+   <set>
+      <spec>set3</spec>
+      <name>Another setname from the mapping file</name>
+   </set>
+</setnames>

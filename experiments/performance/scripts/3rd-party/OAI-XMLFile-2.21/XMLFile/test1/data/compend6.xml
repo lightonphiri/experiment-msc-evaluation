@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+<vra>
+
+   <record type="work">
+      <type>architecture</type>
+      <type>museums</type>
+      <title>J. Paul Getty Museum</title>
+      <title type="variant">Getty Museum</title>
+      <creator role="architect">Meier, Richard</creator>
+      <creator role="landscape architect">Olin, Laurie</creator>
+      <date type="creation">1994-1997</date>
+      <location type="creation site">Los Angeles, CA, US</location>
+      <culture>American</culture>
+      <subject>art museums</subject>
+      <subject>research centers</subject>
+      <relation type="part of">Getty Center, Los Angeles, CA,US</relation>
+   </record>
+
+   <record type="image">
+      <type>slide</type>
+      <title>entry level plan</title>
+      <creator role="photographer" type="personal name">John Cook</creator>
+      <date type="creation">1998</date>
+      <location type="current repository">Cambridge, MA, US, Harvard Design School, Loeb Library, Visual Resources Department</location>
+      <idnumber type="current accession">121401</idnumber>
+      <subject>entrances</subject>
+      <subject>floor plans</subject>
+      <source>Architeture, Dec.,1997, p.92</source>
+      <rights>publisher</rights>
+   </record>
+
+</vra>
+

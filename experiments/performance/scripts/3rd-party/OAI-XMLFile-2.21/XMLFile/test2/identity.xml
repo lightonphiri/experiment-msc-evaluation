@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<oai-identifier
+   xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier
+                       http://www.openarchives.org/OAI/2.0/oai-identifier.xsd"
+>
+   <scheme>oai</scheme>
+   <repositoryIdentifier>test2.cs.uct.ac.za</repositoryIdentifier>
+   <delimiter>:</delimiter>
+   <sampleIdentifier>oai:test2.cs.uct.ac.za:aaa/0001</sampleIdentifier>
+
+</oai-identifier>

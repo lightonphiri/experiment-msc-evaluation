@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<eprints xmlns="http://www.openarchives.org/OAI/1.1/eprints"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.openarchives.org/OAI/1.1/eprints 
+                       http://www.openarchives.org/OAI/1.1/eprints.xsd"
+>
+   <content>
+      <text>just some random data</text>
+   </content>
+   <metadataPolicy>
+      <text>do take all the metadata you want</text>
+   </metadataPolicy>
+   <dataPolicy>
+      <text>seriously, this is just random data - take all you want</text>
+   </dataPolicy>
+
+</eprints>

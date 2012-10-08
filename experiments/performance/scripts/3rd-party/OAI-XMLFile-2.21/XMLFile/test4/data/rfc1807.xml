@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rfc1807 xmlns="http://info.internet.isi.edu:80/in-notes/rfc/files/rfc1807.txt" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://info.internet.isi.edu:80/in-notes/rfc/files/rfc1807.txt 
+                             http://www.openarchives.org/OAI/1.1/rfc1807.xsd" 
+>
+   <bib-version>1</bib-version>
+   <id>rfc1807</id>
+   <entry>1997-04-21</entry>
+   <title>VT-DLRL website</title>
+   <other_access>url:http://www.dlib.vt.edu</other_access>
+
+</rfc1807>
