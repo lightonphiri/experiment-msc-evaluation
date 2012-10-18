@@ -1,0 +1,97 @@
+
+Step 1: Check if index file exists
+  
+  If index file exists
+    if new object dataStamp > minimum dateStamp in index
+      write new object to repository
+      pop out object with minimum dateStamp from index
+      push new object
+      sort index chronologically [optional]
+    else
+      write new object to repository
+  else
+    write new object to repository
+
+value|key
+/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422397.metadata|Wed, 07 Sep 2011 02:15:34
+/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422394.metadata|Wed, 07 Sep 2011 02:15:33
+/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422379.metadata|Wed, 07 Sep 2011 02:14:34
+/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422363.metadata|Wed, 07 Sep 2011 02:13:34
+/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--61342230.metadata|Wed, 07 Sep 2011 02:13:34
+
+
+pubDate = datetime.strptime(feed_pubDate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')
+
+# 
+import os
+import oaipmh2simplyct
+import xml
+from datetime import datetime
+from xml.dom.minidom import parse, parseString
+
+def rssindex(xmlrecord):
+  # parse xml file
+  #xmlrecord = parse(xmlrecorddoc)
+  # identifier for file name
+  identifier = xmlrecord.getElementsByTagName('identifier')[0].firstChild.data
+  identifier = identifier.replace("/", "--") # replace '/' with two hyphens
+  identifier = identifier.replace(":", "-") # replace ':' with single hyphen
+  identifier = identifier + '.metadata'
+  # setSpec for level-1 container name
+  container = xmlrecord.getElementsByTagName('setSpec')[0].firstChild.data
+  # dateStamp for rss publication date
+  rssdate = xmlrecord.getElementsByTagName('datestamp')[0].firstChild.data
+  rssdate = datetime.strptime(rssdate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S') # format date string to convert to approapriate format
+  # pre-processing input stream before writing
+  try:
+    xmldocument = parseString(xmlrecord.toxml().encode('utf-8'))
+  except xml.parsers.expat.ExpatError as details:
+    pass
+  # write new object to repository the simplyct conventional way
+  #simplyctwriter(xmldocument.toxml(), container, identifier)
+  if os.path.exists("./index/RSS2-index.dat"):
+    rssindexitems = {}
+    with open('./index/RSS2-index.dat') as indexfile:
+      # check if file has content
+      if os.path.getsize('./index/RSS2-index.dat') > 0:
+        for indexitem in indexfile:
+          (key, value) = indexitem.split("|")
+	  rssindexitems[key] = datetime.strptime(value[:25], '%Y-%m-%d %H:%M:%S\n') # strip first 25 characters to avoice error --ValueError: unconverted data remains
+          print "Checking index size...", len(rssindexitems)
+	  print "Checking index contents...", rssindexitems
+      else:
+        rssindexitems[os.path.abspath(os.path.join(container, identifier))] = rssdate
+    if len(rssindexitems) < 5:
+      print "index before: ", rssindexitems
+      # add new object to dictionary if index items are less than limit
+      print "Index too small --Adding object to index...", os.path.abspath(os.path.join(container, identifier))
+      rssindexitems[str(os.path.abspath(os.path.join(container, identifier)))] = rssdate # get absolute path of file
+      print "index after: ", rssindexitems
+    else:
+      # deleted last item with minimum date in index
+      del rssindexitems[[key for key, value in rssindexitems.items() if value==min(rssindexitems.values())][-1]]
+      rssindexitems[os.path.abspath(os.path.join(container, identifier))] = rssdate # slot in item
+    # format and overwrite index file with new entries
+    print "last for statement..."
+    print "index to write: ", rssindexitems
+    indexwriter = open("./index/RSS2-index.dat", mode="w")
+    for key, value in sorted(rssindexitems.iteritems(), key=lambda(k, v): (v, k)):
+      print "writing feed..."
+      print "%s:%s" % (key, value)
+      #indexwriter = open("./index/RSS2-index.dat", mode="w")
+      indexwriter.write("%s|%s" % (key, value))
+      indexwriter.write('\n') # new line for next record
+      #indexwriter.close()
+    print "index writen: ", rssindexitems
+    indexwriter.close()
+
+def writerecord(xmlrecord, xmlrecorddir, xmlrecordfile):
+  
+
+
+
+
+*** usebenza nzima --u work very hard
+
+for i in a:
+  

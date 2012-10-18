@@ -6,35 +6,51 @@ from xml.dom.minidom import parse, parseString
 import fileRSS2generator
 
 def oaipmh2simplyctparser(inputfile):
-  print "START: PREPROCESSING[PARSING]: ", time.time()
+  #print "START: PREPROCESSING[PARSING]: ", time.time()
   oaipmhdom = parse(inputfile) # parse xml file
   for record in oaipmhdom.getElementsByTagName('record'):
     # get dc:identifier for filename
     #identifier = str((record.getElementsByTagName('dc:identifier')[0].firstChild.data)[(record.getElementsByTagName('dc:identifier')[0].firstChild.data).index('://')+3:])
     identifier = record.getElementsByTagName('identifier')[0].firstChild.data
-    print "Identifier is: ", identifier
+    #print "Identifier is: ", identifier
     identifier = identifier.replace("/", "--") # replace "/" with single hyphen
     identifier = identifier.replace(":", "-") # replace : with single hyphen
+    identifier = identifier + '.metadata'
     # get setSpec for base container name
     container = record.getElementsByTagName('setSpec')[0].firstChild.data
+    container = '../RSS2feeds2/' + container
     # xml chunking
     try:
-      print "Processing record: ", record.getElementsByTagName('identifier')[0].firstChild.data
+      #print "Processing record: ", record.getElementsByTagName('identifier')[0].firstChild.data
       xmldocument = parseString(record.toxml())
-      print "End Processing ..."
+      simplyctwriter(xmldocument.toxml(), container, identifier)
+      #print "End Processing ..."
     except xml.parsers.expat.ExpatError as details:
-      print "Error Handling: ", details
+      pass
+      #print "Error Handling: ", details
     # call function for writing xmldocument
-    container = '../data/archive/' + container
-    identifier = identifier + '.metadata'
-    print "END: PREPROCESSING[PARSING]: ", time.time()
-    simplyctwriter(xmldocument.toxml(), container, identifier)
+    #container = '../RSS2feeds2/' + container
+    #identifier = identifier + '.metadata'
+    #print "END: PREPROCESSING[PARSING]: ", time.time()
+    #simplyctwriter(xmldocument.toxml(), container, identifier)
     # start calling functions in fileRSS2generator module
-    archivedir = '/home/phiri/Projects/masters/msc-evaluation/experiments/performance/data/archive'
-    fileRSS2generator.writeRSS2file(fileRSS2generator.recentfiles(archivedir))
+    archivedir = '/home/lphiri/datasets/ndltd/RSS2feeds2'
+    # update index file
+    fileRSS2generator.rssindex(record)
+    # read index file to get a list of filies for rss feed generator function
+    rss2indexlist = []
+    with open('/home/lphiri/datasets/ndltd/scripts/index/RSS2-index.dat') as indexentries:
+      for indexentry in indexentries:
+	(key, values) = indexentry.split('|')
+        rss2indexlist.append(key)
+    # generate rss feed
+    print rss2indexlist
+    fileRSS2generator.writeRSS2file(rss2indexlist)
+    # feed writeRSS2file function with output from rssindex function -- taking note that input is text file with pipe seperated entries
+    #fileRSS2generator.writeRSS2file(fileRSS2generator.recentfiles(archivedir))
     
 def simplyctwriter(xmldata, directory, filename):
-  print "START: PREPROCESSING[WRITING]: ", time.time()
+  #print "START: PREPROCESSING[WRITING]: ", time.time()
   # handle potentially malformed xml content
   xmldata = str(xmldata).encode('ascii', 'ignore')
   # construct path to write output to
@@ -43,4 +59,4 @@ def simplyctwriter(xmldata, directory, filename):
   xmlwriter = open(os.path.join(directory, filename), mode='w')
   xmlwriter.write(xmldata)
   xmlwriter.close()
-  print "END: PREPROCESSING[WRITING]: ", time.time()
+  #print "END: PREPROCESSING[WRITING]: ", time.time()
