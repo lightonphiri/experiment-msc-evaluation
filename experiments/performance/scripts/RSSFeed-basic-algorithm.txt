@@ -12,12 +12,12 @@ Step 1: Check if index file exists
   else
     write new object to repository
 
-value|key
-/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422397.metadata|Wed, 07 Sep 2011 02:15:34
-/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422394.metadata|Wed, 07 Sep 2011 02:15:33
-/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422379.metadata|Wed, 07 Sep 2011 02:14:34
-/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--613422363.metadata|Wed, 07 Sep 2011 02:13:34
-/home/lphiri/datasets/ndltd/chunked/OCLC/oai-union.ndltd.org-OCLC--oai-xtcat.oclc.org-OCLCNo--61342230.metadata|Wed, 07 Sep 2011 02:13:34
+key|value
+/home/lphiri/datasets/ndltd/RSS2feeds2/DRESDEN/oai-union.ndltd.org-DRESDEN--oai-qucosa.de-bsz-14-qucosa-83783.metadata|2012-09-14 03:04:24
+/home/lphiri/datasets/ndltd/RSS2feeds2/DITED/oai-union.ndltd.org-DITED--urn-dited-bn-4.metadata|2012-09-21 03:04:05
+/home/lphiri/datasets/ndltd/RSS2feeds2/DITED/oai-union.ndltd.org-DITED--urn-dited-bn-6.metadata|2012-09-21 03:04:05
+/home/lphiri/datasets/ndltd/RSS2feeds2/DITED/oai-union.ndltd.org-DITED--urn-dited-bn-7.metadata|2012-09-21 03:04:05
+/home/lphiri/datasets/ndltd/RSS2feeds2/DRESDEN/oai-union.ndltd.org-DRESDEN--oai-qucosa.de-bsz-14-qucosa-69227.metadata|2012-09-21 03:04:11
 
 
 pubDate = datetime.strptime(feed_pubDate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')

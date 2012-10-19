@@ -1,11 +1,20 @@
-# A module that creates a simplyct archive using an oaipmh response output as input
+"""This module provides functions for facilitating the creation of a
+simplyct-based archive. Specifically, it is meant to parse OAI-PMH
+dublin core encoded responses.
+
+"""
+import fileRSS2generator
 import os
-#import time
 import xml
 from xml.dom.minidom import parse, parseString
-import fileRSS2generator
 
 def oaipmh2simplyctparser(inputfile):
+    """Parser for OAI-PMH 1k batch records.
+
+    keyword arguments:
+    inputfile --batch file containing 1k OAI-PMH records
+
+    """
     #print "START: PREPROCESSING[PARSING]: ", time.time()
     oaipmhdom = parse(inputfile) # parse xml file
     for record in oaipmhdom.getElementsByTagName('record'):
@@ -50,6 +59,14 @@ def oaipmh2simplyctparser(inputfile):
         #fileRSS2generator.writeRSS2file(fileRSS2generator.recentfiles(archivedir))
 
 def simplyctwriter(xmldata, directory, filename):
+    """Writes stripped dublin cored encoded record to disk
+
+    keyword arguments:
+    xmldata --chunked XML encoded record
+    directory --container object where file is written to
+    filename --filename used to write record to
+
+    """
     #print "START: PREPROCESSING[WRITING]: ", time.time()
     # handle potentially malformed xml content
     xmldata = str(xmldata).encode('ascii', 'ignore')

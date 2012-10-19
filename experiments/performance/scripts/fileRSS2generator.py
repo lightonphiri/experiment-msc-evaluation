@@ -1,5 +1,7 @@
-# A module for ...
-import datetime
+"""This module provides functions for facilitating a prototype
+implementation of a file-based RSS feed generator.
+
+"""
 import heapq
 import os
 import PyRSS2Gen
@@ -10,6 +12,12 @@ from xml.dom.minidom import parse, parseString
 
 # function to generate files in archive with corresponding ctimes
 def molecollector(archive):
+    """Generator function for traversing directory hierarchy.
+
+    keyword arguments:
+    archive --the absolute root directory path for the archive
+
+    """
     for root, dirs, files in os.walk(archive):
         for filename in files:
             if filename.endswith('.metadata'):
@@ -19,8 +27,13 @@ def molecollector(archive):
                 except os.error as details:
                     print "Handling error: ", details
 
-# a function for writing objects to rssindex file
 def rssindex(xmlrecord):
+    """Writes index entries to disk.
+
+    keyword arguments:
+    xmlrecord --candidate, index entry, XML encoded record
+
+    """
     # parse xml file
     #xmlrecord = parse(xmlrecorddoc)
     # identifier for file name
@@ -79,20 +92,31 @@ def rssindex(xmlrecord):
         print "index written: ", rssindexitems
         indexwriter.close()
 
-# function for getting a list of top 10 most recently created files based on their ctimes
-# please see http://docs.python.org/library/heapq.html
 def recentfiles(archive):
-    print "START: FEED GENERATOR[HEAPQ]: ", time.time()
-    return heapq.nlargest(5, molecollector(archive))
-    print "END: FEED GENERATOR[HEAPQ]: ", time.time()
+    """Python's implementation of the Heap Queue Algorithm.
+    Returns a list of largest files to feed RSS2 generator.
 
-# function to read xml document and pull out relevant information for feeds
-# title -> dc:title
-# description -> dc:description
-# link -> file path
-# pubDate -> creation date from recentfiles() function
-# guid -> unique archive path
+    Please see http://docs.python.org/library/heapq.html
+
+    keyword arguments:
+    archive --the absolute root directory path for the archive
+
+    """
+    return heapq.nlargest(5, molecollector(archive))
+
 def RSS2format(inputfile):
+    """Parses an XML metadata record and returns a PyRSS2Gen.RSSItem object.
+
+    keyword arguments:
+    inputfile --XML encoded metadata file
+
+    title -> dc:title
+    description -> dc:description
+    link -> file path
+    pubDate -> creation date dataStamp element
+    guid -> unique archive path
+
+    """
     print "START: FEED GENERATOR[ITEM OBJECT CREATOR]: ", time.time()
     xmldocument = parse(inputfile)
     feed_title = ""
@@ -122,16 +146,21 @@ def RSS2format(inputfile):
         guid = feed_guid,
         pubDate = datetime.strptime(feed_pubDate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')
         )
-    print "END: FEED GENERATOR[ITEM OBJECT CREATOR]: ", time.time()
 
-# function to write list results from recentfiles function
-# takes heapq output as input
 def __writeRSS2file(inputitems):
-    print "START: FEED GENERATOR[WRITING]: ", time.time()
-    feed_items = [] # define empty list
+    """Writes actual feeds to a file on disk.
+
+    Makes use of a 3rd party module --PyRSS2Gen.
+    This version makes use of heapq output
+
+    keyword arguments:
+    inputitems --list containing absolute file paths to feeds
+
+    """
+    feed_items = []
     for item in inputitems:
         print "appending... ", item[1]
-        feed_items.append(RSS2format(item[1])) # append items
+        feed_items.append(RSS2format(item[1]))
     rss = PyRSS2Gen.RSS2(
             title = "A File-based RSS Feed Generator",
             link = "lphiri.cs.uct.ac.za/simplyct",
@@ -143,13 +172,20 @@ def __writeRSS2file(inputitems):
     rss.write_xml(open("new-simplyctrss2.xml", "w"))
     print "END: FEED GENERATOR[WRITING]: ", time.time()
 
-# function to write list results from recentfiles function
 def writeRSS2file(inputitems):
+    """Writes actual feeds to a file on disk.
+
+    Makes use of a 3rd party module --PyRSS2Gen.
+
+    keyword arguments:
+    inputitems --list containing absolute file paths to feeds
+
+    """
     print "START: FEED GENERATOR[WRITING]: ", time.time()
-    feed_items = [] # define empty list
+    feed_items = []
     for item in inputitems:
         print "appending... ", item
-        feed_items.append(RSS2format(item)) # append items
+        feed_items.append(RSS2format(item))
     rss = PyRSS2Gen.RSS2(
             title = "A File-based RSS Feed Generator",
             link = "lphiri.cs.uct.ac.za/simplyct",
