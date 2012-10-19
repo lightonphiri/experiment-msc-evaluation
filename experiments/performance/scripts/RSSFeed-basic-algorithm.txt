@@ -20,6 +20,22 @@ key|value
 /home/lphiri/datasets/ndltd/RSS2feeds2/DRESDEN/oai-union.ndltd.org-DRESDEN--oai-qucosa.de-bsz-14-qucosa-69227.metadata|2012-09-21 03:04:11
 
 
+
+
+# redirect stdout to a disk file
+import oaipmh2simplyct
+import sys
+saveout = sys.stdout
+outfile = open('yaba.txt', 'w')
+sys.stdout = outfile
+
+oaipmh2simplyct.oaipmh2simplyctparser('page-1984')
+
+outfile.flush()
+outfile.close()
+sys.stdout = saveout
+
+
 pubDate = datetime.strptime(feed_pubDate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')
 
 # 

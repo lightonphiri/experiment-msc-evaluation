@@ -8,9 +8,9 @@ import PyRSS2Gen
 import time
 import xml
 from datetime import datetime
+from pprint import pprint	
 from xml.dom.minidom import parse, parseString
 
-# function to generate files in archive with corresponding ctimes
 def molecollector(archive):
     """Generator function for traversing directory hierarchy.
 
@@ -22,15 +22,34 @@ def molecollector(archive):
         for filename in files:
             if filename.endswith('.metadata'):
                 pathname = os.path.abspath(os.path.join(root, filename))
+                # strip off actual datestamps NOT OS ctimes --ctimes messed up
+                # in *nix
+                pubdate = oaipmhstripper(pathname, 'datestamp')
+                # normalise date to appropriate format
+                pubdate = datetime.strptime(pubdate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')
                 try:
-                    yield os.stat(pathname).st_ctime, pathname
+                    #yield os.stat(pathname).st_ctime, pathname
+                    yield pathname, pubdate
                 except os.error as details:
                     print "Handling error: ", details
 
-def rssindex(xmlrecord):
+def oaipmhstripper(xmlfile, dcelement):
+    """Extracts specified dublin core element value.
+
+    keyword arguments:
+    xmlfile --xml encoded metadata file
+    dcelement --specific dublin core element required
+
+    """
+    xmldocument = parse(xmlfile)
+    # get first occurance of 'repeatable' dc element
+    return xmldocument.getElementsByTagName(dcelement)[0].firstChild.data
+
+def rssindex(archive, xmlrecord):
     """Writes index entries to disk.
 
     keyword arguments:
+    archive --the absolute root directory path for the archive
     xmlrecord --candidate, index entry, XML encoded record
 
     """
@@ -57,6 +76,7 @@ def rssindex(xmlrecord):
     rss2indexer = os.path.abspath('./index/RSS2-index.dat')
     print "Index file location: ", rss2indexer
     if os.path.exists(rss2indexer):
+        print "Index exists... no need for heapq"
         rssindexitems = {}
         with open(rss2indexer) as indexfile:
             # check if file has content
@@ -76,6 +96,7 @@ def rssindex(xmlrecord):
             print "index after: ", rssindexitems
         else:
             # deleted last item with minimum date in index
+	    print "removing first oldest item..."
             del rssindexitems[[key for key, value in rssindexitems.items() if value==min(rssindexitems.values())][-1]]
             rssindexitems[os.path.abspath(os.path.join(container, identifier))] = rssdate # slot in item
         # format and overwrite index file with new entries
@@ -90,6 +111,18 @@ def rssindex(xmlrecord):
             indexwriter.write('\n') # new line for next record
             #indexwriter.close()
         print "index written: ", rssindexitems
+        indexwriter.close()
+    # if index file does not exist, run heapq implementation
+    else:
+        print "Index file missing... Executing heapq..."
+        # define list to hold initial index entries
+        initialindex = []
+        # new index file to write to
+        indexwriter = open("./index/RSS2-index.dat", mode="w")
+        # loop through list of tuples from recentfiles function
+        for entries in recentfiles(archive):
+            indexwriter.write("%s|%s" % (entries[0], str(entries[1]))) # convert date to string
+            indexwriter.write('\n')
         indexwriter.close()
 
 def recentfiles(archive):
@@ -133,8 +166,10 @@ def RSS2format(inputfile):
     try:
         feed_description = xmldocument.getElementsByTagName('dc:description')[0].firstChild.data[:100]
     except IndexError as details:
-        print "Handling IndexError: ", details
+        print "Handling IndexError: "
         feed_description = "Handling IndexError"
+    except AttributeError as details:
+	feed_description = "Handling AttributeError"
     feed_link = xmldocument.getElementsByTagName('identifier')[0].firstChild.data # get header identifier for link value
     feed_pubDate = xmldocument.getElementsByTagName('datestamp')[0].firstChild.data # get header datestamp for pubDate value
     feed_guid = xmldocument.getElementsByTagName('identifier')[0].firstChild.data # get header identifier for guid value\
@@ -193,6 +228,9 @@ def writeRSS2file(inputitems):
             lastBuildDate = datetime.utcnow(),
             items = feed_items
             )
-    print feed_items
+    print "DEBUGGING feed_items... -> ", feed_items
+    for l in feed_items:
+        pprint (vars(l))
+    print "DEBUGGING rss object... -> ", rss
     rss.write_xml(open("new-simplyctrss2.xml", "w"))
     print "END: FEED GENERATOR[WRITING]: ", time.time()
