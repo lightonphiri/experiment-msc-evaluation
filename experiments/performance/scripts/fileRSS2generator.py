@@ -2,13 +2,19 @@
 implementation of a file-based RSS feed generator.
 
 """
+
+__name__ = "fileRSS2generator"
+__version__ = "1.0.0"
+__author__ = "Lighton Phiri"
+__email__ = "lighton.phiri@gmail.com"
+
 import heapq
 import os
 import PyRSS2Gen
 import time
 import xml
 from datetime import datetime
-from pprint import pprint	
+from pprint import pprint
 from xml.dom.minidom import parse, parseString
 
 def molecollector(archive):
@@ -96,7 +102,7 @@ def rssindex(archive, xmlrecord):
             print "index after: ", rssindexitems
         else:
             # deleted last item with minimum date in index
-	    print "removing first oldest item..."
+            print "removing first oldest item..."
             del rssindexitems[[key for key, value in rssindexitems.items() if value==min(rssindexitems.values())][-1]]
             rssindexitems[os.path.abspath(os.path.join(container, identifier))] = rssdate # slot in item
         # format and overwrite index file with new entries

@@ -3,6 +3,12 @@ simplyct-based archive. Specifically, it is meant to parse OAI-PMH
 dublin core encoded responses.
 
 """
+
+__name__ = "oaipmh2simplyct"
+__version__ = "1.0.0"
+__author__ = "Lighton Phiri"
+__email__ = "lighton.phiri@gmail.com"
+
 import fileRSS2generator
 import os
 import time
