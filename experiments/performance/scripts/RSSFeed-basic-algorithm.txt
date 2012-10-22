@@ -21,15 +21,56 @@ key|value
 
 
 
+*** Metrics***
+
+    Metrics
+      -> Execution Time
+	-> Initial trip [bad trip]
+	-> Followup trip (s) [good trip]
+      -> Response Time
+	-> Trip + Write + Read
+	  -> Trip : Execution Time
+	  -> Write : Index file
+	  -> 
+	  -> Read/Parse : Index file
+	  -> Write : RSS feed file
+	  -> 
+	-> Memory Usage
+	  -> trip
+	  -> rss generation
+	-> 
+      -> 
+
+
+    RSS Feed reader
+      -> Initial trip [if no index file exists]
+      -> Followup tip
+	-> Read : Index file
+	  -> read
+	  -> parse
+	-> Generate : RSS feed objects
+	  -> new objects
+	  -> 
+	-> Write : RSS feed file [if AND ONLY if index ctime is earlier than feed file ctime]
+	  -> 
+	-> Read : RSS feed file
+	  -> 
+      -> 
+
+    No index entries
+    Existing index entries
+
+
+
 
 # redirect stdout to a disk file
 import oaipmh2simplyct
 import sys
 saveout = sys.stdout
-outfile = open('yaba.txt', 'w')
+outfile = open('yaba-20121022.txt', 'w')
 sys.stdout = outfile
 
-oaipmh2simplyct.oaipmh2simplyctparser('page-1984')
+oaipmh2simplyct.oaipmh2simplyctparser('../oaipmh-responses/page-0')
 
 outfile.flush()
 outfile.close()

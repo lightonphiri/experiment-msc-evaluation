@@ -1,4 +1,5 @@
 *~
 *backup
 page-*
-*metadata
+*.metadata
+*.pyc
