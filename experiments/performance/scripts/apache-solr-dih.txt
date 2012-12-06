@@ -1,0 +1,15 @@
+Indexing Structured Data with Apache Solr Using DIH
+
+  -> Configuration
+    -> DIH is registered in solrconfig.xml file
+    -> DIH configuration file has details for data source , how data is fetched and what data to fetch and how to process it to generate Solr documents that are posted to the index.
+    -> 
+    -> Datasource: FileReaderDataSource --
+    -> 
+    -> 
+  -> 
+
+
+http://www.uct.ac.za/images/uct.ac.za/contact/campusmaps/big/uctuppercampus.jpg
+
+http://doodle.com/264y36ku64hzn82n
