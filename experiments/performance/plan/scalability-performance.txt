@@ -1,3 +1,6 @@
+Scalability, in terms of the increasing amount of information, is a major concern for digital library systems; as a result, the design of tools and services need to take into account the effect of scale in relation to the overall performance of the system.
+
+
 The major significant architectural change that is proposed in this research is involves changing the way metadata records are stored in the repository sub-layer. More specifically, the proposed solution advocates using the filesystem for the storage of metadata records, as opposed to the conventional use of a database management system. This design decision is motivated by two key factors --simplicity and manageability. However, conventional wisdom points to the fact that system performance would evidently be affected for large collections.
 
 The purpose of these experiments was to evaluate system performance and scalability of collections as the workload --in terms of collection size-- was increased. To test the proposed design, a series of experiments were designed, with each experiment specifically focusing on determining the break-even point at which performance and scalability drastically degrades.
@@ -31,7 +34,7 @@ Network Hardware
 -> All experiments were conducted locally to prevent any potential network latency effects that could be introduced if experiments were conducted on a network.
 
 
-Experiment
+Experiments
 
 -> Indexing
   -> Single machine architecture [3]
@@ -40,12 +43,104 @@ Experiment
 
 
 
+Log Analysis [pubs.cs.uct.ac.za] [4,5]
+
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET / HTTP/1.1" 200 1460 "-" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET /favicon.ico HTTP/1.1" 404 294 "-" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET /icons/blank.gif HTTP/1.1" 404 298 "http://techrep.cs.uct.ac.za:1081/" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET /icons/back.gif HTTP/1.1" 404 297 "http://techrep.cs.uct.ac.za:1081/" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET /icons/text.gif HTTP/1.1" 404 297 "http://techrep.cs.uct.ac.za:1081/" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:31:56 +0200] "GET /icons/folder.gif HTTP/1.1" 404 299 "http://techrep.cs.uct.ac.za:1081/" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+137.158.96.41 - - [25/Apr/2003:15:32:00 +0200] "GET /archives/ HTTP/1.1" 200 799 "http://techrep.cs.uct.ac.za:1081/" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.2) Gecko/20030208 Netscape/7.02"
+
+
+IP - - [date] "request line" statuscode objectsize "use agent"
+
+
+
+1. Information Retrieval
+  
+  -> Indexing
+    -> Experiment: Indexing performance relative to collection size
+      -> Purpose: To identify indexing performance bottle-necks relative to collection size
+      -> Metrics
+	-> Throughput in terms of text indexed/unit time
+      -> 
+      -> Procedure:
+      -> 
+  -> Search and Browsing
+    -> Without Indexes [Bonolo]
+      -> Experiment: Browsing performance without the use of indexes
+      -> Purpose: To identify effect of non-indexed collection size on performance
+      -> Metrics
+	-> Query response time
+	-> 
+      -> 
+      -> Procedure:
+    -> 
+    -> With Indexes [Apache Solr]
+      -> Experiment: Search& Browse performance with indexes
+      -> Purpose: To identify effect of indexed collection size on performance
+      -> Metrics
+	-> Query response time
+	-> 
+      -> Procedure
+	-> [Apache Bench] http://derivante.com/2009/05/05/solr-performance-benchmarks-single-vs-multi-core-index-shards/
+    -> 
+  -> 
+  -> 
+
+2. Ingestion
+  
+  -> Data import [Bonolo]
+    -> Experiment: Import performance relative to collection size
+    -> Purpose: 
+    -> Metrics
+      -> Response time
+      -> Throughput in terms of records written/unit time
+    -> Procedure
+      -> 
+      -> 
+      -> 
+      -> 
+      -> 
+    -> 
+    -> 
+
+
+3. Metadata Parsing *****
+  
+  -> xml parsing is know to be resource intensive [cpu, ram, et al.]
+
+4. Feature Performance
+  
+  -> RSS feed
+  -> OAI-PMH data provider
+  -> Sword server implementation ***
+
+5. Comparision with other solutions
+  
+  -> 
+
+
 Bibliography
 [1] http://nativexmldatabase.com/2010/08/22/xml-versus-relational-database-performance/
 [2] http://arxiv.org/pdf/cs/0701168.pdf
 [3] http://www.openandsearch.com/wp-content/uploads/2011/10/SolrScaling.pptx.pdf
+[4] http://authors.library.caltech.edu/25908/1/Report-2004-NOV.pdf
+[5] http://wiki.eprints.org/w/Download_Metrics
 
 
+
+
+
+
+
+137.158.59.18 41.185.137.151 - xxxxx [29/Jan/2010:01:13:18 +0200] "GET /perl/users/record HTTP/1.1" 200 5531 "http://pubs.cs.uct.ac.za/perl/users/home" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7 (.NET CLR 3.5.30729)"
+
+
+
+running eprints server software (EPrints 2.2.1 (pepper)
 
 
 
