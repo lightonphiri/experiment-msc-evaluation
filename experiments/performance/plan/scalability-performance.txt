@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
 Scalability, in terms of the increasing amount of information, is a major concern for digital library systems; as a result, the design of tools and services need to take into account the effect of scale in relation to the overall performance of the system.
 
 
 The major significant architectural change that is proposed in this research is involves changing the way metadata records are stored in the repository sub-layer. More specifically, the proposed solution advocates using the filesystem for the storage of metadata records, as opposed to the conventional use of a database management system. This design decision is motivated by two key factors --simplicity and manageability. However, conventional wisdom points to the fact that system performance would evidently be affected for large collections.
+=======
+The major significant architectural change that is proposed in this research involves changing the way metadata records are stored in the repository sub-layer. More specifically, the proposed solution advocates using the filesystem for the storage of metadata records, as opposed to the conventional use of a database management system. This design decision is motivated by two key factors --simplicity and manageability. However, conventional wisdom and folklore all point to the fact that system performance would evidently be affected for large collections.
+>>>>>>> Stashed changes
 
 The purpose of these experiments was to evaluate system performance and scalability of collections as the workload --in terms of collection size-- was increased. To test the proposed design, a series of experiments were designed, with each experiment specifically focusing on determining the break-even point at which performance and scalability drastically degrades.
 

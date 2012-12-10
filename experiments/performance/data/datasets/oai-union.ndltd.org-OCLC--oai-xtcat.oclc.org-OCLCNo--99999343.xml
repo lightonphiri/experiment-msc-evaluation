@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<record>
+  <header>
+    <identifier>oai:union.ndltd.org:OCLC/oai:xtcat.oclc.org:OCLCNo/99999343</identifier>
+    <datestamp>2011-09-07T02:15:34Z</datestamp>
+    <setSpec>OCLC</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>The thermophilic fermentation of cellulosic materials</dc:title>
+      <dc:creator>Fontaine, Francis Ephraim,</dc:creator>
+      <dc:description>Thesis (M.S.)--University of Wisconsin--Madison, 1939.</dc:description>
+      <dc:description>Typescript. Title from title screen (viewed Mar. 29, 2007). Includes bibliographical references (leaves [22-24]). Online version of the print original.</dc:description>
+      <dc:date>1939.</dc:date>
+      <dc:identifier>http://digital.library.wisc.edu/1793/7188</dc:identifier>
+      <dc:language>eng</dc:language>
+    </oai_dc:dc>
+  </metadata>
+  <about>
+    <provenance xmlns="http://www.openarchives.org/OAI/2.0/provenance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance http://www.openarchives.org/OAI/2.0/provenance.xsd">
+      <originDescription altered="false" harvestDate="2011-07-19T21:59:46Z">
+        <baseURL>http://alcme.oclc.org/ndltd/servlet/OAIHandler</baseURL>
+        <identifier>oai:xtcat.oclc.org:OCLCNo/99999343</identifier>
+        <datestamp>2010-10-12</datestamp>
+        <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+        <originDescription altered="false" harvestDate="2004-04-27T14:18:38Z">
+          <baseURL>http://alcme.oclc.org/xtcat/servlet/OAIHandler</baseURL>
+          <identifier>oai:xtcat.oclc.org:OCLCNo/99999343</identifier>
+          <datestamp>2008-06-01T00:00:01Z</datestamp>
+          <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+        </originDescription>
+      </originDescription>
+    </provenance>
+  </about>
+</record>
