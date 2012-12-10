@@ -1,0 +1,162 @@
+
+g_range <- range(0, dataset$Index)
+
+plot(dataset$Corpus, type="o", col="blue", ylim=g_range, axes=FALSE, ann=FALSE)
+axis(1, at=1:15, lab=dataset$Workload)
+axis(2, las=1)
+box()
+lines(dataset$Index, type="o", pch=22, lty=2, col="red")
+title(xlab="Workload")
+title(ylab="Size (MB)")
+png("perf.png")
+
+dataset <- read.table('perf.dat', header=TRUE, sep=',')
+g_range <- range(0, dataset$Corpus)
+plot(dataset$Corpus, type="o", col="blue", ylim=g_range, axes=FALSE, ann=FALSE)
+axis(1, at=1:15, lab=dataset$Workload)
+axis(2, las=1)
+lines(dataset$Index, type="o", pch=22, lty=2, col="red")
+axis(2, las=1, at=1000*0:g_range[2])
+#box()
+title(xlab="Workload (# of Docs)")
+title(ylab="Size (MB)")
+legend(1, g_range[2], c("Corpus Size","Index Size"), cex=0.8, 
+col=c("blue","red"), pch=21:22, lty=1:2);
+
+dev.off()
+
+
+
+curl http://localhost:8983/solr/w1/dataimport?command=full-import
+
+curl http://localhost:8983/solr/w1/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8'
+curl http://localhost:8983/solr/w1/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
+
+
+curl http://localhost:8983/solr/w15/dataimport?command=full-import
+curl http://localhost:8983/solr/w15/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8'
+curl http://localhost:8983/solr/w15/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
+
+
+-> [1] Index (full-import)
+  -> [2] Check Time
+  -> [3] Deleted entire index
+  -> [4] Commit transaction
+  -> [5] If number of loops > 10 break
+  -> [6] GOTO [1]
+  
+  
+  Indexing since NaNh NaNm NaNs
+  
+  
+  for file in `seq 4 1 15`; do mv w$file/conf/w1-data-config.xml w$file/conf/w$file-data-config.xml; done
+  
+  
+  
+  w4/conf/solrconfig.xml
+  w5/conf/w5-data-config.xml
+  
+  
+  
+
+  for x in `seq 5 1 15`; do sed -i 's/w1/w$x/g w$x/conf/solrconfig.xml'; sed -i 's/w1/w$x/g w$x/conf/w$x-data-config.xml'; done
+  
+  
+  
+sed -i s/w1/w5/g w5/conf/solrconfig.xml
+sed -i s/w1/w5/g w5/conf/w5-data-config.xml
+sed -i s/w1/w6/g w6/conf/solrconfig.xml
+sed -i s/w1/w6/g w6/conf/w6-data-config.xml
+sed -i s/w1/w7/g w7/conf/solrconfig.xml
+sed -i  s/w1/w7/g w7/conf/w7-data-config.xml
+sed -i s/w1/w8/g w8/conf/solrconfig.xml
+sed -i s/w1/w8/g w8/conf/w8-data-config.xml
+sed -i s/w1/w9/g w9/conf/solrconfig.xml
+sed -i s/w1/w9/g w9/conf/w9-data-config.xml
+sed -i s/w1/w10/g w10/conf/solrconfig.xml
+sed -i s/w1/w10/g w10/conf/w10-data-config.xml
+sed -i s/w1/w11/g w11/conf/solrconfig.xml
+sed -i s/w1/w11/g w11/conf/w11-data-config.xml
+sed -i s/w1/w12/g w12/conf/solrconfig.xml
+sed -i s/w1/w12/g w12/conf/w12-data-config.xml
+sed -i s/w1/w13/g w13/conf/solrconfig.xml
+sed -i s/w1/w13/g w13/conf/w13-data-config.xml
+sed -i s/w1/w14/g w14/conf/solrconfig.xml
+sed -i s/w1/w14/g w14/conf/w14-data-config.xml
+sed -i s/w1/w15/g w15/conf/solrconfig.xml
+sed -i s/w1/w15/g w15/conf/w15-data-config.xml
+
+
+
+for x in `seq 5 1 15`; do `sed -i 's/w1/w'$x'/g w'$x'/conf/solrconfig.xml'`; `sed -i 's/w1/w'$x'/g w'$x'/conf/w'$x'-data-config.xml'`; done
+sed: couldn't open file 5/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 5/conf/w5-data-config.xml: No such file or directory
+sed: couldn't open file 6/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 6/conf/w6-data-config.xml: No such file or directory
+sed: couldn't open file 7/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 7/conf/w7-data-config.xml: No such file or directory
+sed: couldn't open file 8/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 8/conf/w8-data-config.xml: No such file or directory
+sed: couldn't open file 9/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 9/conf/w9-data-config.xml: No such file or directory
+sed: couldn't open file 10/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 10/conf/w10-data-config.xml: No such file or directory
+sed: couldn't open file 11/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 11/conf/w11-data-config.xml: No such file or directory
+sed: couldn't open file 12/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 12/conf/w12-data-config.xml: No such file or directory
+sed: couldn't open file 13/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 13/conf/w13-data-config.xml: No such file or directory
+sed: couldn't open file 14/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 14/conf/w14-data-config.xml: No such file or directory
+sed: couldn't open file 15/conf/solrconfig.xml: No such file or directory
+sed: couldn't open file 15/conf/w15-data-config.xml: No such file or directory
+
+
+
+
+
+
+
+
+
+
+
+
+10 Dec 2012 2:05:44 PM org.apache.solr.common.SolrException log
+SEVERE: Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:273)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:382)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:448)
+	at org.apache.solr.handler.dataimport.DataImporter$1.run(DataImporter.java:429)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:413)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:326)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:234)
+	... 3 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:542)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:411)
+	... 5 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2894)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:117)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:407)
+	at java.lang.StringBuilder.append(StringBuilder.java:136)
+	at java.io.UnixFileSystem.resolve(UnixFileSystem.java:108)
+	at java.io.File.<init>(File.java:329)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.addDetails(FileListEntityProcessor.java:245)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.access$200(FileListEntityProcessor.java:56)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor$1.accept(FileListEntityProcessor.java:236)
+	at java.io.File.list(File.java:1027)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.getFolderFiles(FileListEntityProcessor.java:226)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.access$000(FileListEntityProcessor.java:56)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor$1.accept(FileListEntityProcessor.java:230)
+	at java.io.File.list(File.java:1027)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.getFolderFiles(FileListEntityProcessor.java:226)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.nextRow(FileListEntityProcessor.java:216)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:243)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:472)
+	... 6 more
+
+10 Dec 2012 2:05:44 PM org.apache.solr.update.DirectUpdateHandler2 rollback
