@@ -126,6 +126,16 @@ IP - - [date] "request line" statuscode objectsize "use agent"
   
   -> 
 
+  
+  
+  
+  
+cat httpd-access.log.28sep2012 | grep -E '/2010:|/2011:|/2012:' | cat -n | awk '{if($5!="-") print}' | grep -i edit | more
+  
+  
+  
+  
+  
 
 Bibliography
 [1] http://nativexmldatabase.com/2010/08/22/xml-versus-relational-database-performance/
