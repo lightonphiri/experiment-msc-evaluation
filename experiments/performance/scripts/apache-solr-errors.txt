@@ -1,0 +1,42 @@
+java -Dsolr.solr.home="./example-DIH/solr/" -jar -XX:+UseConcMarkSweepGC start.jar
+java -Dsolr.solr.home="./example-DIH/solr/" -jar -XX:-UseGCOverheadLimit start.jar
+
+
+
+
+
+
+SEVERE: Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:273)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:382)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:448)
+	at org.apache.solr.handler.dataimport.DataImporter$1.run(DataImporter.java:429)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:413)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:326)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:234)
+	... 3 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:542)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:411)
+	... 5 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2746)
+	at java.util.ArrayList.ensureCapacity(ArrayList.java:187)
+	at java.util.ArrayList.add(ArrayList.java:378)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.addDetails(FileListEntityProcessor.java:262)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.access$200(FileListEntityProcessor.java:56)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor$1.accept(FileListEntityProcessor.java:236)
+	at java.io.File.list(File.java:1027)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.getFolderFiles(FileListEntityProcessor.java:226)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.access$000(FileListEntityProcessor.java:56)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor$1.accept(FileListEntityProcessor.java:230)
+	at java.io.File.list(File.java:1027)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.getFolderFiles(FileListEntityProcessor.java:226)
+	at org.apache.solr.handler.dataimport.FileListEntityProcessor.nextRow(FileListEntityProcessor.java:216)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:243)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:472)
+	... 6 more
+
+	
+

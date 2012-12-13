@@ -1,0 +1,29 @@
+XML-File
+
+Step 1: Install mod_perl
+sudo apt-get install libapache2-mod-perl2
+
+Step 2: Put code below in
+
+    # enable mod_perl
+    <Files ~ "\.(pl|cgi)$">
+       SetHandler perl-script
+       PerlResponseHandler ModPerl::Registry
+       Options +ExecCGI
+       PerlSendHeader On
+    </Files>
+
+
+
+Step 3: Configure data provider
+
+
+ -> /var/www/OAI-XMLFile-2.21/XMLFile/w1/config.xml
+    archive specific configuration details
+    
+ -> /var/www/OAI-XMLFile-2.21/XMLFile/w1/oai.pl
+    my $OAI = new XMLFile::XMLFileDP ('/var/www/OAI-XMLFile-2.21/XMLFile/ndltd-simplyct/config.xml');
+    
+    
+
+
