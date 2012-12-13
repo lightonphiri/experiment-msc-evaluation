@@ -17,6 +17,13 @@ from xml.dom.minidom import parseString
 
 
 def amfumu():
+    """Entry point for module.
+    Spawns different workload models --wN.
+
+    keyword arguments:
+    none
+
+    """
     workloadstest = (('w1', 5), ('w2', 10), ('w3', 10), ('w4', 15), ('w5', 20), ('w6', 30), ('w7', 40), ('w8', 70), ('w9', 180), ('w10', 1440), ('w11', 1440), ('w12', 1800), ('w13', 3600), ('w14', 9000))
     for workload in workloadstest:
         workloadname = workload[0]
@@ -43,6 +50,14 @@ def amfumu():
 
 
 def spawnworkload(dataset, destination):
+    """Spawns and creates experiment workloads.
+    Creates directories comprising of desired load --number of files.
+
+    keyword arguments:
+    dataset --location of original dataset to spawn
+    destination --base location where workloads will be created
+
+    """
     workloads = (('w1', 100), ('w2', 200), ('w3', 400), ('w4', 800), ('w5', 1600), ('w6', 3200), ('w7', 6400), ('w8', 12800), ('w9', 25600), ('w10', 51200), ('w11', 102400), ('w12', 204800), ('w13', 409600), ('w14', 819200))
     for workload in workloads:
         workloadname = workload[0]
@@ -73,6 +88,13 @@ def spawnworkload(dataset, destination):
 
 
 def solrissuequery(coreurl, query):
+    """Sends Solr HTTP request to Solr server.
+
+    keyword arguments:
+    coreurl --Solr core base URL, e.g. http://host:port/core/
+    query --commit, delete or import
+
+    """
     headers = {"Content-type": "text/xml", "charset": "utf-8"}
     if query == 'import':
         querycontext = "dataimport?command=full-import"
@@ -99,9 +121,13 @@ def solrissuequery(coreurl, query):
     #solrconnection = urlopen(solrquery)
 
 
-# function to print out status messages
-#
 def solrstatusmesseges(coreurl):
+    """Prints out name value pairs of Solr import results.
+
+    keyword arguments:
+    coreurl --Solr core base URL, e.g. http://host:port/core/
+
+    """
     querycontext = "dataimport"
     solrquery = urlopen(urlparse.urljoin(coreurl, querycontext))
     solrresponse = solrquery.read()
@@ -114,9 +140,14 @@ def solrstatusmesseges(coreurl):
             print "\n"
 
 
-# function to check if import is busy or idle
-#
 def solrimportstatus(coreurl):
+    """Returns boolean indicating if import is complete.
+    Check if import status is busy or idle.
+
+    keyword arguments:
+    coreurl --Solr core base URL, e.g. http://host:port/core/
+
+    """
     querycontext = "dataimport"
     solrimportquery = urlopen(urlparse.urljoin(coreurl, querycontext))
     solrresponse = solrimportquery.read()
