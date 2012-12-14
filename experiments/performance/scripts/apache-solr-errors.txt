@@ -2,8 +2,8 @@ java -Dsolr.solr.home="./example-DIH/solr/" -jar -XX:+UseConcMarkSweepGC start.j
 java -Dsolr.solr.home="./example-DIH/solr/" -jar -XX:-UseGCOverheadLimit start.jar
 
 
-
-
+nohup java -Xmx2048m -XX:+UseConcMarkSweepGC -XX:-UseGCOverheadLimit -Dsolr.solr.home=./example-DIH/solr/ -jar start.jar&
+nohup python -c "import simplyctperformance; simplyctperformance.amfumu()"&
 
 
 SEVERE: Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.OutOfMemoryError: Java heap space
