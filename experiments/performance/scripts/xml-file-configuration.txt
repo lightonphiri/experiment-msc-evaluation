@@ -27,3 +27,33 @@ Step 3: Configure data provider
     
 
 
+Step 4: Populate other workloads
+
+  -> populate other workloads using template (w1)
+    -> for workload in `seq 2 15`; do sudo cp -rv w1 w$workload; done
+  -> delete template archive data
+    -> for workload in `seq 2 15`; do sudo rm -rf w$workload/data/*; done
+  -> populate workloads with actual datasets
+    -> nohup sh -c 'for workload in `seq 2 15`; do sudo cp -r /home/phiri/Projects/masters/workload/w$workload/chunked/* /var/www/OAI-XMLFile-2.21/XMLFile/w$workload/data/; done' &
+  -> 
+  
+
+Step 5: Use ApacheBench
+  -> ab -n 5 http://localhost/OAI-XMLFile-2.21/XMLFile/w1/oai.pl?verb=ListRecords\&metadataPrefix=oai_dc | grep "Time per request"
+  -> 
+  -> apr_poll: The timeout specified has expired (70007) [at workoad w12]
+  -> 
+  -> 
+  -> GetRecord: oai-union.ndltd.org-TW--090NCTU0423019.metadata
+    -> 
+  -> 
+
+
+
+Useful Computations
+  -> Count number of sets
+    -> for workload in `seq 1 13`; do find w$workload/data/* -maxdepth 1 -type d | wc -l; done
+  -> 
+  -> 
+
+
