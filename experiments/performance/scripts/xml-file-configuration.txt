@@ -35,6 +35,10 @@ Step 4: Populate other workloads
     -> for workload in `seq 2 15`; do sudo rm -rf w$workload/data/*; done
   -> populate workloads with actual datasets
     -> nohup sh -c 'for workload in `seq 2 15`; do sudo cp -r /home/phiri/Projects/masters/workload/w$workload/chunked/* /var/www/OAI-XMLFile-2.21/XMLFile/w$workload/data/; done' &
+      -> Errors 
+	-> cp: cannot create regular file; No space left on device [ran out of inodes ***]
+	-> 
+    -> 
   -> 
   
 
