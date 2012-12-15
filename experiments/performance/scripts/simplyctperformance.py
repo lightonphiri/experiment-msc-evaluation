@@ -12,8 +12,9 @@ import os
 import shutil
 import time
 import urllib2
+import xml
 from urllib2 import *
-from xml.dom.minidom import parseString
+from xml.dom.minidom import parse, parseString
 
 
 def amfumu():
@@ -85,6 +86,50 @@ def spawnworkload(dataset, destination):
                 break
         if workloadvalue > workloadlimit:
             continue
+
+
+def spawnstructworkload(dataset, destination):
+    """Spawns and creates experiment workloads.
+    Creates 3-level directory structure comprising of desired
+    load --number of files.
+
+    keyword arguments:
+    dataset --location of original dataset to spawn
+    destination --base location where workloads will be created
+
+    """
+    for root, dirs, files in os.walk(dataset):
+        for filename in files:
+            if filename.endswith('.metadata'):
+                directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
+                directory = directory[directory.index('/') + 1:]
+                workloadfile = os.path.abspath(os.path.join(root, filename))
+                simplyctdom = parse(workloadfile) # parse input file
+                for records in simplyctdom.getElementsByTagName('metadata'):
+                    try:
+                        # TODO: handle different date formats here (e.g.
+                        # YYYY-MM-DD; YYYY; YYYY-MM)
+                        # For now, cheap trick is to strip off first 4 digits
+                        dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
+                    # TODO: proper error handling here Phiri
+                    except Exception as details:
+                        dcdate = "unknown"
+                    try:
+                        #dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
+                        for creator in records.getElementsByTagName('dc:creator'):
+                            try:
+                                dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
+                                break
+                            except Exception as detail:
+                                continue
+                    # TODO: proper error handling here Phiri
+                    except Exception as details:
+                        dccreator = "unknown"
+                print os.path.join(dcdate, dccreator)
+                #
+                #workloadfile = os.path.abspath(os.path.join(root, filename))
+                workloadpath = os.path.join(directory, dcdate, dccreator)
+                print workloadpath
 
 
 def solrissuequery(coreurl, query):

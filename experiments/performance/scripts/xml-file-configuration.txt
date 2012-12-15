@@ -59,5 +59,9 @@ Useful Computations
     -> for workload in `seq 1 13`; do find w$workload/data/* -maxdepth 1 -type d | wc -l; done
   -> 
   -> 
+  -> Count tags
+    -> for workload in `ls -1 | grep w`; do i=0; for file in `find $workload/chunked/* -type f | grep metadata`; do let i=i+`cat $file | grep "<dc:creator>" | wc -l`; done; echo $i; done
+    -> for workload in `ls -1 | grep w`; do i=0; for file in `find $workload/chunked/* -type f | grep metadata`; do let i=i+`cat $file | grep -n "<dc:creator>" | head -n 1 | wc -l`; done; echo $workload":::"$i; done [DUPLICATES REMOVED]
+  -> 
 
 

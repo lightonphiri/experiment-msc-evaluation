@@ -1,0 +1,65 @@
+
+└── wx [workload]
+    └── 2012 [dc:creator]
+        └── p [dc:author]
+            └── filename.metadata
+
+
+for every top-level heirarchy file [workload/chunked/X/x.metadata]
+  if data tag exists
+    strip off first normalised data tag # [e.g. get 2012 from <dc:date>2012-11-14</dc:date>]
+    take note of result
+    level2 = result
+    if author tag exists
+      strip off first character of first author tag # [e.g. get p from <dc:creator>Phiri, Lighton</dc:creator>]
+      take note of result
+      level3 = result
+    else
+      level3 = unknown
+  else
+    level2 = unknown
+    
+    
+w1/TW/
+
+
+
+
+
+def spawnstructworkload(dataset, destination):
+    """Spawns and creates experiment workloads.
+    Creates 3-level directory structure comprising of desired
+    load --number of files.
+
+    keyword arguments:
+    dataset --location of original dataset to spawn
+    destination --base location where workloads will be created
+
+    """
+    for root, dirs, files in os.walk(dataset):
+        for filename in files:
+            if filename.endswith('.metadata'):
+                directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
+                #directory = directory[directory.index('/') + 1:]
+                workloadfile = os.path.abspath(os.path.join(root, filename))
+                simplyctdom = parse(workloadfile) # parse input file
+                for records in simplyctdom.getElementsByTagName('metadata'):
+                    try:
+                        # TODO: handle different date formats here (e.g.
+                        # YYYY-MM-DD; YYYY; YYYY-MM)
+                        # For now, cheap trick is to strip off first 4 digits
+                        dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
+                    # TODO: proper error handling here Phiri
+                    except Exception as details:
+                        dcdate = "unknown", details
+                    try:
+                        dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
+                    # TODO: proper error handling here Phiri
+                    except Exception as details:
+                        dccreator = "unknown", details
+                print os.path.join(dcdate, dccreator)
+                #
+                #workloadfile = os.path.abspath(os.path.join(root, filename))
+                workloadpath = os.path.join(directory, dcdate, dccreator)
+                print workloadpath
+
