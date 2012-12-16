@@ -151,6 +151,18 @@ def spawnstructworkload(dataset, destination, workloadname):
                     # TODO: proper error handling here Phiri
                     except Exception as details:
                         dccreator = "unknown"
+                # normalise element text
+                # check date and string formats
+                if ((len(dcdate) == 4) & (dcdate != "unknown")):
+                    # check if first four digits is number
+                    try:
+                        dcdate = str(int(dcdate))
+                    except Exception as details:
+                        dcdate = 'unknown'
+		elif (dcdate == ""): # if no node exists
+		    dcdate = "unknown"
+                if (not(dccreator.isalpha())):
+                    dccreator = 'unknown'
                 print os.path.join(dcdate, dccreator)
                 #
                 workloadfile = os.path.abspath(os.path.join(root, filename))

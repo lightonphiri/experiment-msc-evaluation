@@ -51,12 +51,14 @@ def spawnstructworkload(dataset, destination):
                         dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
                     # TODO: proper error handling here Phiri
                     except Exception as details:
+                        print details
                         dcdate = "unknown", details
                     try:
                         dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
                     # TODO: proper error handling here Phiri
                     except Exception as details:
-                        dccreator = "unknown", details
+                        print details
+                        dccreator = "unknown"
                 print os.path.join(dcdate, dccreator)
                 #
                 #workloadfile = os.path.abspath(os.path.join(root, filename))
