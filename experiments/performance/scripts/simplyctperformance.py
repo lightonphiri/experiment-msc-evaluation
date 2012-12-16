@@ -17,12 +17,14 @@ from urllib2 import *
 from xml.dom.minidom import parse, parseString
 
 
-def amfumu():
+def amfumuw1():
     """Entry point for module.
-    Spawns different workload models --wN.
+    Spawns different workload models --wN-- based on file limits.
 
     keyword arguments:
     none
+
+    Usage: python -c "import simplyctperformance; simplyctperformance.amfumuw1()"
 
     """
     workloadstest = (('w1', 5), ('w2', 10), ('w3', 10), ('w4', 15), ('w5', 20), ('w6', 30), ('w7', 40), ('w8', 70), ('w9', 180), ('w10', 1440), ('w11', 1440), ('w12', 1800), ('w13', 3600), ('w14', 9000))
@@ -69,16 +71,18 @@ def spawnworkload(dataset, destination):
                 if filename.endswith('.metadata'):
                     #directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, file)), dataset))
                     #directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
-                    directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
+                    directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename)), dataset))
                     #directory = directory[directory.index('/')+1:] # remove contextual directory
-                    directory = directory[directory.index('/') + 1:]
+                    #directory = directory[directory.index('/') + 1:]
                     #directory = os.path.join(destination, workloadname, directory)
                     directory = os.path.join(destination, workloadname, directory)
                     #workloadfile = os.path.relpath(os.path.abspath(os.path.join(root, file)), dataset)
                     workloadfile = os.path.abspath(os.path.join(root, filename))
+                    print workloadfile
+                    print directory
                     if not os.path.exists(directory):
                         os.makedirs(directory)
-                    shutil.copy2(workloadfile, destination)
+                    shutil.copy2(workloadfile, directory)
                     workloadvalue += 1
                     if workloadvalue > workloadlimit:
                         break
@@ -88,29 +92,50 @@ def spawnworkload(dataset, destination):
             continue
 
 
-def spawnstructworkload(dataset, destination):
+def spawnstructworkload(dataset, destination, workloadname):
     """Spawns and creates experiment workloads.
     Creates 3-level directory structure comprising of desired
     load --number of files.
 
     keyword arguments:
-    dataset --location of original dataset to spawn
+    dataset --location of original dataset (resulting from spawnworkload fxn) to spawn
     destination --base location where workloads will be created
+
+    Usage: python -c "import simplyctperformance; simplyctperformance.spawnstructworkload(d1,d2)"
 
     """
     for root, dirs, files in os.walk(dataset):
         for filename in files:
             if filename.endswith('.metadata'):
-                directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
-                directory = directory[directory.index('/') + 1:]
+                directory = os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename)), dataset))
+                print root
+                print os.path.join(root, filename)
+                print os.path.abspath(os.path.join(root, filename))
+                print os.path.relpath(os.path.abspath(os.path.join(root, filename)))
+                print os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename))))
+                print "DIR1: ", directory
+                #directory = directory[directory.index('/') + 1:] # TODO: investigate why this caused errors
+                print "DIR2: ", directory
+                directory = os.path.join(destination, workloadname, directory)
+                print "DIR3: ", directory
                 workloadfile = os.path.abspath(os.path.join(root, filename))
+                print "Parsing: ", filename
                 simplyctdom = parse(workloadfile) # parse input file
+                dccreator = ""
+                dcdate = ""
                 for records in simplyctdom.getElementsByTagName('metadata'):
                     try:
                         # TODO: handle different date formats here (e.g.
                         # YYYY-MM-DD; YYYY; YYYY-MM)
                         # For now, cheap trick is to strip off first 4 digits
-                        dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
+                        #dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
+                        for resourcedate in records.getElementsByTagName('dc:date'):
+                            try:
+                                dcdate = resourcedate.firstChild.data.strip()[:4]
+                                break
+                            except Exception as detail:
+                                dcdate = "unknown"
+                                continue
                     # TODO: proper error handling here Phiri
                     except Exception as details:
                         dcdate = "unknown"
@@ -118,18 +143,23 @@ def spawnstructworkload(dataset, destination):
                         #dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
                         for creator in records.getElementsByTagName('dc:creator'):
                             try:
-                                dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
+                                dccreator = str(creator.firstChild.data).strip()[:1].lower()
                                 break
                             except Exception as detail:
+                                dccreator = "unknown"
                                 continue
                     # TODO: proper error handling here Phiri
                     except Exception as details:
                         dccreator = "unknown"
                 print os.path.join(dcdate, dccreator)
                 #
-                #workloadfile = os.path.abspath(os.path.join(root, filename))
+                workloadfile = os.path.abspath(os.path.join(root, filename))
                 workloadpath = os.path.join(directory, dcdate, dccreator)
                 print workloadpath
+                print workloadfile
+                if not os.path.exists(workloadpath):
+                    os.makedirs(workloadpath)
+                shutil.copy2(workloadfile, workloadpath)
 
 
 def solrissuequery(coreurl, query):
