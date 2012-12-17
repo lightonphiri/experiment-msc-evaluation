@@ -159,8 +159,8 @@ def spawnstructworkload(dataset, destination, workloadname):
                         dcdate = str(int(dcdate))
                     except Exception as details:
                         dcdate = 'unknown'
-		elif (dcdate == ""): # if no node exists
-		    dcdate = "unknown"
+                elif (dcdate == ""): # if no node exists
+                    dcdate = "unknown"
                 if (not(dccreator.isalpha())):
                     dccreator = 'unknown'
                 print os.path.join(dcdate, dccreator)
