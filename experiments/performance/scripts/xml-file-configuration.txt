@@ -3,7 +3,7 @@ XML-File
 Step 1: Install mod_perl
 sudo apt-get install libapache2-mod-perl2
 
-Step 2: Put code below in
+Step 2: Put code below in /etc/apache2/sites-available/default
 
     # enable mod_perl
     <Files ~ "\.(pl|cgi)$">
@@ -64,4 +64,18 @@ Useful Computations
     -> for workload in `ls -1 | grep w`; do i=0; for file in `find $workload/chunked/* -type f | grep metadata`; do let i=i+`cat $file | grep -n "<dc:creator>" | head -n 1 | wc -l`; done; echo $workload":::"$i; done [DUPLICATES REMOVED]
   -> 
 
+  
+  
+  copenhagen suborbitals
 
+
+  
+  
+Benchmarking Process
+  -> Vanilla Workload
+    -> restart apache2& reboot machine
+    -> nohup ./oaipmh-benchmark.sh > ~/Projects/masters/results/oaipmh-workload-vanilla.txt&
+  
+  -> 
+  
+  
