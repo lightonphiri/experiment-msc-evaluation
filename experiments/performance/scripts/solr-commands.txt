@@ -65,6 +65,9 @@ curl http://localhost:8983/solr/w15/dataimport?command=full-import
 curl http://localhost:8983/solr/w15/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8'
 curl http://localhost:8983/solr/w15/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
 
+curl http://localhost:8983/solr/w15/dataimport?command=delta-import
+
+
 
 -> [1] Index (full-import)
   -> [2] Check Time

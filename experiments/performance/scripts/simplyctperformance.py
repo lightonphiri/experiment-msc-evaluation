@@ -207,6 +207,40 @@ def solrissuequery(coreurl, query):
     #print solrquery
     #solrconnection = urlopen(solrquery)
 
+def solritemquery(coreurl, query, itemid):
+    """Sends Solr HTTP item requests to Solr server.
+
+    keyword arguments:
+    coreurl --Solr core base URL, e.g. http://host:port/core/
+    query --commit, delete or import
+    itemid --unique document id... identifier in the case of ndltd
+
+    """
+    headers = {"Content-type": "text/xml", "charset": "utf-8"}
+    if query == 'import':
+        querycontext = "dataimport?command=full-import"
+        solrquery = urlparse.urljoin(coreurl, querycontext)
+        urlopen(solrquery)
+    elif query == 'delete':
+        querycontext = "update"
+        solrquery = urlparse.urljoin(coreurl, querycontext)
+        solrrequest = urllib2.Request(solrquery, '<delete><query>id:' + itemid + '</query></delete>', headers)
+        solrresponse = urllib2.urlopen(solrrequest)
+        #solrresult = solrresponse.read()
+        solrresponse.read()
+        #print solrresult
+    elif query == 'commit':
+        querycontext = "update"
+        solrquery = urlparse.urljoin(coreurl, querycontext)
+        solrrequest = urllib2.Request(solrquery, '<commit/>', headers)
+        solrresponse = urllib2.urlopen(solrrequest)
+        #solrresult = solrresponse.read()
+        solrresponse.read()
+        #print solrresult
+    #solrquery = urlparse.urljoin(coreurl, querycontext)
+    #print solrquery
+    #solrconnection = urlopen(solrquery)
+
 
 def solrstatusmesseges(coreurl):
     """Prints out name value pairs of Solr import results.
