@@ -74,9 +74,9 @@ Useful Computations
 Benchmarking Process
   -> Vanilla Workload
     -> restart apache2& reboot machine
-    -> nohup ./oaipmh-benchmark.sh > ~/Projects/masters/results/oaipmh-workload-vanilla.txt&
+    -> nohup ./oaipmh-benchmark.sh > ~/Projects/masters/results/oaipmh-workload-vanilla-20121219.txt&
   
-  -> 
+  -> cat oaipmh-workload-3-hierachy.txt | grep bytes | awk '{print $1","$2","$3":::"$4","$5":::"$6","$7","$8}' > oaipmh-workload-3-hierachy-results.csv
   
   
   
