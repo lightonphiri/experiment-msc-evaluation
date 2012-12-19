@@ -79,3 +79,28 @@ Benchmarking Process
   -> 
   
   
+  
+  
+  
+  
+  
+  
+Bank Name	First National Bank
+Branch Name	Corporate Account Services - Durban
+Account Name	Momentum Health Student Account
+Account Type	Current
+Account Number	62074402703
+Branch Code	223626
+Bank Code/Swift Code	FIRNZAJJ
+Reference Number	6802516
+Please ensure that your membership number is used as a reference number on the deposit slip
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

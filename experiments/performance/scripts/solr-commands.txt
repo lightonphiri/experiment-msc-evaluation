@@ -123,6 +123,58 @@ sed -i s/w1/w15/g w15/conf/solrconfig.xml
 sed -i s/w1/w15/g w15/conf/w15-data-config.xml
 
 
+####### Workload 2 ##############
+
+for x in `seq 1 1 15`; do echo "sed -i s/w$x/w2_$x/g w2_$x/config.xml"; echo "sed -i s/w$x/w2_$x/g w2_$x/oai.pl"; done
+
+sudo sed -i s/w1/w2_1/g w2_1/config.xml
+sudo sed -i s/w1/w2_1/g w2_1/oai.pl
+sudo sed -i s/w2/w2_2/g w2_2/config.xml
+sudo sed -i s/w2/w2_2/g w2_2/oai.pl
+sudo sed -i s/w3/w2_3/g w2_3/config.xml
+sudo sed -i s/w3/w2_3/g w2_3/oai.pl
+sudo sed -i s/w4/w2_4/g w2_4/config.xml
+sudo sed -i s/w4/w2_4/g w2_4/oai.pl
+sudo sed -i s/w5/w2_5/g w2_5/config.xml
+sudo sed -i s/w5/w2_5/g w2_5/oai.pl
+sudo sed -i s/w6/w2_6/g w2_6/config.xml
+sudo sed -i s/w6/w2_6/g w2_6/oai.pl
+sudo sed -i s/w7/w2_7/g w2_7/config.xml
+sudo sed -i s/w7/w2_7/g w2_7/oai.pl
+sudo sed -i s/w8/w2_8/g w2_8/config.xml
+sudo sed -i s/w8/w2_8/g w2_8/oai.pl
+sudo sed -i s/w9/w2_9/g w2_9/config.xml
+sudo sed -i s/w9/w2_9/g w2_9/oai.pl
+sudo sed -i s/w10/w2_10/g w2_10/config.xml
+sudo sed -i s/w10/w2_10/g w2_10/oai.pl
+sudo sed -i s/w11/w2_11/g w2_11/config.xml
+sudo sed -i s/w11/w2_11/g w2_11/oai.pl
+sudo sed -i s/w12/w2_12/g w2_12/config.xml
+sudo sed -i s/w12/w2_12/g w2_12/oai.pl
+sudo sed -i s/w13/w2_13/g w2_13/config.xml
+sudo sed -i s/w13/w2_13/g w2_13/oai.pl
+sudo sed -i s/w14/w2_14/g w2_14/config.xml
+sudo sed -i s/w14/w2_14/g w2_14/oai.pl
+sudo sed -i s/w15/w2_15/g w2_15/config.xml
+sudo sed -i s/w15/w2_15/g w2_15/oai.pl
+
+
+
+ -> Make data directories
+ for file in `seq 1 15`; do sudo mkdir /var/www/OAI-XMLFile-2.21/XMLFile/w2_$file/data; done
+ -> 
+ -> Move all data to data directory
+ 
+ 
+ -> 
+ for file in `seq 1 15`; do echo /home/phiri/Projects/masters/workload2/w$file /var/www/OAI-XMLFile-2.21/XMLFile/w2_$file/data; done
+ nohup sh -c  'for file in `seq 1 15`; do sudo rsync -Pvr /home/phiri/Projects/masters/workload2/w$file/* /var/www/OAI-XMLFile-2.21/XMLFile/w2_$file/data/; done' > workload2-oaipmh-output.txt&
+ 
+ -> 
+ -> 
+
+
+
 
 for x in `seq 5 1 15`; do `sed -i 's/w1/w'$x'/g w'$x'/conf/solrconfig.xml'`; `sed -i 's/w1/w'$x'/g w'$x'/conf/w'$x'-data-config.xml'`; done
 sed: couldn't open file 5/conf/solrconfig.xml: No such file or directory
