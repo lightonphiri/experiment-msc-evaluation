@@ -62,8 +62,8 @@ curl http://localhost:8983/solr/w5/update --data '<commit/>' -H 'Content-type:te
 
 
 curl http://localhost:8983/solr/w15/dataimport?command=full-import
-curl http://localhost:8983/solr/w15/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8'
-curl http://localhost:8983/solr/w15/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
+curl http://localhost:8983/solr/w5/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8'
+curl http://localhost:8983/solr/w5/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
 
 curl http://localhost:8983/solr/w15/dataimport?command=delta-import
 
@@ -71,6 +71,11 @@ curl http://localhost:8983/solr/w15/dataimport?command=delta-import
 UpdateRequestHandler
 
 curl "http://localhost:8983/solr/w5/update?commit=true\&tr=x.xsl" -H "Content-Type: text/xml; charset=utf-8" --data-binary @/home/phiri/Sandbox/masters/workload/w5/GEORGIA/oai-union.ndltd.org-GEORGIA--oai-digitalarchive.gsu.edu-chemistry_diss-1010.metadata
+
+
+curl "http://localhost:8983/solr/w5/update?commit=true&tr=x.xsl" -H "Content-Type: text/xml; charset=utf-8" --data-binary @filename.xml"
+
+
 
 
 

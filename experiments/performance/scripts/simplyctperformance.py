@@ -207,7 +207,7 @@ def solrissuequery(coreurl, query):
     #print solrquery
     #solrconnection = urlopen(solrquery)
 
-def solritemquery(coreurl, query, itemid):
+def solritemquery(coreurl, query, itemid, translator):
     """Sends Solr HTTP item requests to Solr server.
 
     keyword arguments:
@@ -217,8 +217,8 @@ def solritemquery(coreurl, query, itemid):
 
     """
     headers = {"Content-type": "text/xml", "charset": "utf-8"}
-    if query == 'import':
-        querycontext = "dataimport?command=full-import"
+    if query == 'add':
+        querycontext = "update?commit=true&tr=" + translator
         solrquery = urlparse.urljoin(coreurl, querycontext)
         urlopen(solrquery)
     elif query == 'delete':
