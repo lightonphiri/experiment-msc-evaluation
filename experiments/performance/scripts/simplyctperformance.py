@@ -9,6 +9,7 @@ __author__ = "Lighton Phiri"
 __email__ = "lighton.phiri@gmail.com"
 
 import os
+import requests
 import shutil
 import time
 import urllib2
@@ -207,28 +208,37 @@ def solrissuequery(coreurl, query):
     #print solrquery
     #solrconnection = urlopen(solrquery)
 
-def solritemquery(coreurl, query, itemid, translator):
+def solritemquery(coreurl, query, solrfile, translator='x.xsl'):
     """Sends Solr HTTP item requests to Solr server.
 
     keyword arguments:
     coreurl --Solr core base URL, e.g. http://host:port/core/
     query --commit, delete or import
-    itemid --unique document id... identifier in the case of ndltd
+    solrfile --Solr file to index
+    translator --optional xslt stylesheet; not required for delete et al.
 
     """
     headers = {"Content-type": "text/xml", "charset": "utf-8"}
     if query == 'add':
         querycontext = "update?commit=true&tr=" + translator
         solrquery = urlparse.urljoin(coreurl, querycontext)
-        urlopen(solrquery)
+        solrdata = open(solrfile, 'rb').read() # the payload
+        solrresponse = requests.post(solrquery, data=solrdata, headers=headers)
+        print "Indexing Response for: ", solrfile, " : ", solrresponse.status_code
+        #print parseString(solrresponse.text).toprettyxml()
+        solrresponsehead(solrresponse.text)
     elif query == 'delete':
         querycontext = "update"
         solrquery = urlparse.urljoin(coreurl, querycontext)
-        solrrequest = urllib2.Request(solrquery, '<delete><query>id:' + itemid + '</query></delete>', headers)
+        solrrequest = urllib2.Request(solrquery, '<delete><query>dc-identifier:' + ndltdidentifier(solrfile) + '</query></delete>', headers)
         solrresponse = urllib2.urlopen(solrrequest)
         #solrresult = solrresponse.read()
         solrresponse.read()
         #print solrresult
+        # commit the transaction
+        delrequest = urllib2.Request(solrquery, '<commit/>', headers)
+        delresponse = urllib2.urlopen(delrequest)
+        delresponse.read()
     elif query == 'commit':
         querycontext = "update"
         solrquery = urlparse.urljoin(coreurl, querycontext)
@@ -260,6 +270,30 @@ def solrstatusmesseges(coreurl):
                     print solrstatus.getAttributeNode('name').nodeValue, ":", solrstatus.firstChild.data, ",",
             print "\n"
 
+def solrresponsehead(solrresponse):
+    """Prints out proper format for response header.
+
+    keyword arguments:
+    result --Solr XML response formatted string text
+
+    """
+    solrxml = parseString(solrresponse)
+    for solrnode in solrxml.getElementsByTagName('int'):
+        if (solrnode.getAttribute('name') == 'status') | (solrnode.getAttribute('name') == 'QTime'):
+            print solrnode.getAttribute('name'), ":", solrnode.firstChild.data,",",
+            #print "\n"
+
+def ndltdidentifier(ndltdfile):
+    """Extracts identifier from record.
+
+    keywords arguments:
+    ndltdfile --XML encoded file containing records
+    """
+    ndltddom = parse(ndltdfile)
+    identifer = ""
+    for record in ndltddom.getElementsByTagName('header')[0].getElementsByTagName('identifier'):
+        identifier = str(record.firstChild.data)
+    return identifier
 
 def solrimportstatus(coreurl):
     """Returns boolean indicating if import is complete.
