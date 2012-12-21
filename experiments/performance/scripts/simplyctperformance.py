@@ -230,10 +230,10 @@ def solritemquery(coreurl, query, solrfile, translator='x.xsl'):
     elif query == 'delete':
         querycontext = "update"
         solrquery = urlparse.urljoin(coreurl, querycontext)
-        solrrequest = urllib2.Request(solrquery, '<delete><query>dc-identifier:' + ndltdidentifier(solrfile) + '</query></delete>', headers)
+        solrrequest = urllib2.Request(solrquery, '<delete><id>' + ndltdidentifier(solrfile) + '</id></delete>', headers)
         solrresponse = urllib2.urlopen(solrrequest)
         #solrresult = solrresponse.read()
-        solrresponse.read()
+        print solrresponse.read()
         #print solrresult
         # commit the transaction
         delrequest = urllib2.Request(solrquery, '<commit/>', headers)
