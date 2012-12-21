@@ -53,6 +53,40 @@ def amfumuw1():
         print "END: ", workloadname
 
 
+def solrupdatesbatchmain(batchpath):
+    #cores = ('w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9', 'w10', 'w11', 'w12', 'w13', 'w14', 'w15')
+    cores = ('w5',)
+    for core in cores:
+        coreurl = 'http://localhost:8983/solr/' + core + '/'
+        batchlocation = batchpath
+        for commits in ('true', 'false'):
+            print "START: ", core
+            solrupdatesbatch(coreurl, batchlocation, commits)
+            print "END: ", core
+
+
+def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
+    #workloads = (('b1', 'w1'), ('b2', 'w2'), ('b3', 'w3'), ('b4', 'w4'))
+    workloads = (('b1', 'w1'), ('b2', 'w2'), ('b3', 'w3'), ('b4', 'w4'))
+    for workload in workloads:
+        batchname = workload[0]
+        workloadname = workload[1]
+        # add batch to index
+        starttime = time.time()*1000
+        for root, dirs, files in os.walk(os.path.join(batcheslocation, workloadname)):
+            for filename in files:
+                if filename.endswith('.metadata'):
+                    # add file to index
+                    print "add", ",", batchname, ",", "commit : ", commit, ",", solritemquery(coreurl, 'add', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl')
+                    # delete file from index
+        print "add", ",", batchname, ",", "status : 0", ",", "Total : ", (time.time()*1000) - starttime
+        # now delete what was added to clear index for next batch
+        for root, dirs, files in os.walk(os.path.join(batcheslocation, workloadname)):
+            for filename in files:
+                if filename.endswith('.metadata'):
+                    print "delete", ",", batchname, ",", solritemquery(coreurl, 'delete', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl')
+
+
 def spawnworkload(dataset, destination):
     """Spawns and creates experiment workloads.
     Creates directories comprising of desired load --number of files.
@@ -208,7 +242,7 @@ def solrissuequery(coreurl, query):
     #print solrquery
     #solrconnection = urlopen(solrquery)
 
-def solritemquery(coreurl, query, solrfile, translator='x.xsl'):
+def solritemquery(coreurl, query, solrfile, commit='true', translator='x.xsl'):
     """Sends Solr HTTP item requests to Solr server.
 
     keyword arguments:
@@ -220,11 +254,12 @@ def solritemquery(coreurl, query, solrfile, translator='x.xsl'):
     """
     headers = {"Content-type": "text/xml", "charset": "utf-8"}
     if query == 'add':
-        querycontext = "update?commit=true&tr=" + translator
+        querycontext = "update?commit=" + commit + "&tr=" + translator
         solrquery = urlparse.urljoin(coreurl, querycontext)
         solrdata = open(solrfile, 'rb').read() # the payload
         solrresponse = requests.post(solrquery, data=solrdata, headers=headers)
-        print "Indexing Response for: ", solrfile, " : ", solrresponse.status_code
+        #print "Indexing Response for: ", solrfile, " : ", solrresponse.status_code
+        #print solrresponse.status_code
         #print parseString(solrresponse.text).toprettyxml()
         solrresponsehead(solrresponse.text)
     elif query == 'delete':
@@ -233,7 +268,8 @@ def solritemquery(coreurl, query, solrfile, translator='x.xsl'):
         solrrequest = urllib2.Request(solrquery, '<delete><id>' + ndltdidentifier(solrfile) + '</id></delete>', headers)
         solrresponse = urllib2.urlopen(solrrequest)
         #solrresult = solrresponse.read()
-        print solrresponse.read()
+        #print solrresponse.read()
+        solrresponsehead(solrresponse.read())
         #print solrresult
         # commit the transaction
         delrequest = urllib2.Request(solrquery, '<commit/>', headers)

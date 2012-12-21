@@ -40,6 +40,12 @@ Step 4: Populate other workloads
 	-> 
     -> 
   -> 
+
+
+export http_proxy="http://localhost:3128"
+export https_proxy="http://localhost:3128"
+export ftp_proxy="http://localhost:3128"
+
   
 
 Step 5: Use ApacheBench
