@@ -9,6 +9,7 @@ __author__ = "Lighton Phiri"
 __email__ = "lighton.phiri@gmail.com"
 
 import os
+import random
 import requests
 import shutil
 import time
@@ -67,7 +68,7 @@ def solrupdatesbatchmain(batchpath):
 
 def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
     #workloads = (('b1', 'w1'), ('b2', 'w2'), ('b3', 'w3'), ('b4', 'w4'))
-    workloads = (('b1', 'w1'), ('b2', 'w2'), ('b3', 'w3'), ('b4', 'w4'))
+    workloads = (('b1', 'w1'), ('b2', 'w2'))
     for workload in workloads:
         batchname = workload[0]
         workloadname = workload[1]
@@ -76,8 +77,10 @@ def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
         for root, dirs, files in os.walk(os.path.join(batcheslocation, workloadname)):
             for filename in files:
                 if filename.endswith('.metadata'):
+                    # start counting from the time file is picked up
+                    filestarttime = time.time()*1000
                     # add file to index
-                    print "add", ",", batchname, ",", "commit : ", commit, ",", solritemquery(coreurl, 'add', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl')
+                    print "add", ",", batchname, ",", "commit : ", commit, ",", solritemquery(coreurl, 'add', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl'), ",", "FileProcessing : ",(time.time()*1000)-filestarttime
                     # delete file from index
         print "add", ",", batchname, ",", "status : 0", ",", "Total : ", (time.time()*1000) - starttime
         # now delete what was added to clear index for next batch
@@ -85,6 +88,25 @@ def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
             for filename in files:
                 if filename.endswith('.metadata'):
                     print "delete", ",", batchname, ",", solritemquery(coreurl, 'delete', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl')
+
+
+def spawnrandomworkload(dataset, destination, bin):
+    """Spawns random sets of experiment workloads.
+
+    keyword arguments:
+    dataset --location of original dataset to spawn
+    destination --base location where workloads will be created
+
+    """
+    workloads = (('w1', 100), ('w2', 200), ('w3', 400), ('w4', 800), ('w5', 1600), ('w6', 3200), ('w7', 6400), ('w8', 12800), ('w9', 25600), ('w10', 51200), ('w11', 102400), ('w12', 204800), ('w13', 409600), ('w14', 819200))
+    swallowdataset = [str(os.path.abspath(os.path.join(root, filename))+":"+os.path.join(destination, bin, os.path.dirname(os.path.relpath(os.path.abspath(os.path.join(root, filename)), dataset)))).split(':',2) for root, dirs, files in os.walk(dataset) for filename in files if filename.endswith('.metadata')]
+    for workload in workloads:
+        if workload[0] == bin:
+            payload = random.sample(swallowdataset, workload[1])
+            for cargo in payload:
+                if not os.path.exists(cargo[1]):
+                    os.makedirs(cargo[1])
+                shutil.copy2(cargo[0], cargo[1])
 
 
 def spawnworkload(dataset, destination):

@@ -77,6 +77,12 @@ curl "http://localhost:8983/solr/w5/update?commit=true&tr=x.xsl" -H "Content-Typ
 
 
 
+####  copy UpdateRequestHandler configuration files
+for workload in `seq 1 15`; do rsync -rvP /home/phiri/Sandbox/Solr/apache-solr-4.0.0/example/example-DIH/solr/w5/conf/xslt blabusch.cs.uct.ac.za:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w$workload/conf/; done
+#### 
+
+
+simplyctperformance.spawnrandomworkload('/home/lphiri/datasets/ndltd/chunked', '/home/lphiri/datasets/ndltd/random/workload', 'w2')
 
 
 -> [1] Index (full-import)
