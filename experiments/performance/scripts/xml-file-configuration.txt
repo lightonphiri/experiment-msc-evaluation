@@ -64,12 +64,17 @@ Useful Computations
   -> Count number of sets
     -> for workload in `seq 1 13`; do find w$workload/data/* -maxdepth 1 -type d | wc -l; done
   -> 
+  -> for workload in `seq 1 15`; do cd /home/lphiri/datasets/ndltd/random/workload/w$workload; echo "###$workload###"; for file in `ls -1`; do echo $file":"`find $file -type f | wc -l`; done; done > random-analysis.txt
+  -> 
   -> 
   -> Count tags
     -> for workload in `ls -1 | grep w`; do i=0; for file in `find $workload/chunked/* -type f | grep metadata`; do let i=i+`cat $file | grep "<dc:creator>" | wc -l`; done; echo $i; done
     -> for workload in `ls -1 | grep w`; do i=0; for file in `find $workload/chunked/* -type f | grep metadata`; do let i=i+`cat $file | grep -n "<dc:creator>" | head -n 1 | wc -l`; done; echo $workload":::"$i; done [DUPLICATES REMOVED]
   -> 
 
+  
+  
+  /home/lphiri/datasets/ndltd/random/workload/w$workload
   
   
   copenhagen suborbitals
@@ -85,6 +90,11 @@ Benchmarking Process
   -> cat oaipmh-workload-3-hierachy.txt | grep bytes | awk '{print $1","$2","$3":::"$4","$5":::"$6","$7","$8}' > oaipmh-workload-3-hierachy-results.csv
   
   
+nohup ./oaipmh-benchmark-resumptionTokens.sh > ~/Projects/masters/results/oaipmh-resumptionToken-100-random.txt &
+  
+Spool
+  
+  cat oaipmh-resumptionToken-100-random.txt | grep "HTTP" | awk '{print $1","$2","$3":::"$4","$5":::"$6","$7","$8}' > oaipmh-resumptionToken-100-random.csv
   
   
   
