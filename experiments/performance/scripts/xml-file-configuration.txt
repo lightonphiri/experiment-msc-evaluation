@@ -98,6 +98,22 @@ Spool
   
   
   
+***** Results *********
+
+1. Covert to CSV
+cat oaipmh-resumptionToken-1000-random.txt | grep "HTTP" | awk '{print $1","$2","$3":::"$4","$5":::"$6","$7","$8}' > oaipmh-resumptionToken-1000-random.csv
+
+2. 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

@@ -1,0 +1,195 @@
+START:  w1
+http://localhost:8983/solr/w1/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:27:41 , Committed : 2012-12-24 22:27:42 , Total Documents Processed : 100 , Time taken : 0:0:1.305 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:27:46 , Committed : 2012-12-24 22:27:47 , Total Documents Processed : 100 , Time taken : 0:0:0.762 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:27:51 , Committed : 2012-12-24 22:27:52 , Total Documents Processed : 100 , Time taken : 0:0:0.726 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:27:57 , Committed : 2012-12-24 22:27:57 , Total Documents Processed : 100 , Time taken : 0:0:0.778 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:02 , Committed : 2012-12-24 22:28:02 , Total Documents Processed : 100 , Time taken : 0:0:0.670 , 
+
+END:  w1
+START:  w2
+http://localhost:8983/solr/w2/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:07 , Committed : 2012-12-24 22:28:08 , Total Documents Processed : 200 , Time taken : 0:0:0.937 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:17 , Committed : 2012-12-24 22:28:18 , Total Documents Processed : 200 , Time taken : 0:0:0.693 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:27 , Committed : 2012-12-24 22:28:28 , Total Documents Processed : 200 , Time taken : 0:0:0.685 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:37 , Committed : 2012-12-24 22:28:38 , Total Documents Processed : 200 , Time taken : 0:0:0.709 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:47 , Committed : 2012-12-24 22:28:48 , Total Documents Processed : 200 , Time taken : 0:0:0.692 , 
+
+END:  w2
+START:  w3
+http://localhost:8983/solr/w3/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:28:58 , Committed : 2012-12-24 22:28:59 , Total Documents Processed : 400 , Time taken : 0:0:1.1 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:29:08 , Committed : 2012-12-24 22:29:09 , Total Documents Processed : 400 , Time taken : 0:0:0.810 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:29:18 , Committed : 2012-12-24 22:29:19 , Total Documents Processed : 400 , Time taken : 0:0:0.795 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:29:28 , Committed : 2012-12-24 22:29:29 , Total Documents Processed : 400 , Time taken : 0:0:0.795 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:29:38 , Committed : 2012-12-24 22:29:39 , Total Documents Processed : 400 , Time taken : 0:0:0.825 , 
+
+END:  w3
+START:  w4
+http://localhost:8983/solr/w4/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:29:48 , Committed : 2012-12-24 22:29:50 , Total Documents Processed : 800 , Time taken : 0:0:1.525 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:30:03 , Committed : 2012-12-24 22:30:04 , Total Documents Processed : 800 , Time taken : 0:0:0.970 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:30:19 , Committed : 2012-12-24 22:30:20 , Total Documents Processed : 800 , Time taken : 0:0:0.993 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:30:34 , Committed : 2012-12-24 22:30:35 , Total Documents Processed : 800 , Time taken : 0:0:0.951 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:30:49 , Committed : 2012-12-24 22:30:50 , Total Documents Processed : 800 , Time taken : 0:0:0.981 , 
+
+END:  w4
+START:  w5
+http://localhost:8983/solr/w5/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:31:04 , Committed : 2012-12-24 22:31:06 , Total Documents Processed : 1600 , Time taken : 0:0:2.448 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:31:24 , Committed : 2012-12-24 22:31:26 , Total Documents Processed : 1600 , Time taken : 0:0:1.441 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:31:44 , Committed : 2012-12-24 22:31:46 , Total Documents Processed : 1600 , Time taken : 0:0:1.318 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:32:04 , Committed : 2012-12-24 22:32:06 , Total Documents Processed : 1600 , Time taken : 0:0:1.320 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:32:25 , Committed : 2012-12-24 22:32:26 , Total Documents Processed : 1600 , Time taken : 0:0:1.276 , 
+
+END:  w5
+START:  w6
+http://localhost:8983/solr/w6/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 6400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:32:45 , Committed : 2012-12-24 22:32:48 , Total Documents Processed : 3200 , Time taken : 0:0:3.622 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 6400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:33:15 , Committed : 2012-12-24 22:33:17 , Total Documents Processed : 3200 , Time taken : 0:0:1.922 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 6400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:33:45 , Committed : 2012-12-24 22:33:47 , Total Documents Processed : 3200 , Time taken : 0:0:1.932 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 6400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:34:15 , Committed : 2012-12-24 22:34:17 , Total Documents Processed : 3200 , Time taken : 0:0:1.843 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 6400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:34:45 , Committed : 2012-12-24 22:34:47 , Total Documents Processed : 3200 , Time taken : 0:0:1.912 , 
+
+END:  w6
+START:  w7
+http://localhost:8983/solr/w7/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 12800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:35:16 , Committed : 2012-12-24 22:35:25 , Total Documents Processed : 6400 , Time taken : 0:0:9.596 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 12800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:35:56 , Committed : 2012-12-24 22:35:59 , Total Documents Processed : 6400 , Time taken : 0:0:3.166 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 12800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:36:36 , Committed : 2012-12-24 22:36:39 , Total Documents Processed : 6400 , Time taken : 0:0:3.113 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 12800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:37:16 , Committed : 2012-12-24 22:37:19 , Total Documents Processed : 6400 , Time taken : 0:0:3.46 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 12800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:37:56 , Committed : 2012-12-24 22:37:59 , Total Documents Processed : 6400 , Time taken : 0:0:2.997 , 
+
+END:  w7
+START:  w8
+http://localhost:8983/solr/w8/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 25600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:38:36 , Committed : 2012-12-24 22:39:29 , Total Documents Processed : 12800 , Time taken : 0:0:52.298 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 25600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:39:47 , Committed : 2012-12-24 22:39:53 , Total Documents Processed : 12800 , Time taken : 0:0:6.31 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 25600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:40:57 , Committed : 2012-12-24 22:41:03 , Total Documents Processed : 12800 , Time taken : 0:0:6.14 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 25600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:42:07 , Committed : 2012-12-24 22:42:13 , Total Documents Processed : 12800 , Time taken : 0:0:5.864 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 25600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:43:17 , Committed : 2012-12-24 22:43:23 , Total Documents Processed : 12800 , Time taken : 0:0:5.843 , 
+
+END:  w8
+START:  w9
+http://localhost:8983/solr/w9/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 51200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:44:27 , Committed : 2012-12-24 22:46:25 , Total Documents Processed : 25600 , Time taken : 0:1:58.60 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 51200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:47:27 , Committed : 2012-12-24 22:47:38 , Total Documents Processed : 25600 , Time taken : 0:0:10.733 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 51200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:50:28 , Committed : 2012-12-24 22:50:38 , Total Documents Processed : 25600 , Time taken : 0:0:10.780 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 51200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:53:28 , Committed : 2012-12-24 22:53:39 , Total Documents Processed : 25600 , Time taken : 0:0:10.924 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 51200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:56:28 , Committed : 2012-12-24 22:56:39 , Total Documents Processed : 25600 , Time taken : 0:0:10.735 , 
+
+END:  w9
+START:  w10
+http://localhost:8983/solr/w10/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 102400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 22:59:28 , Committed : 2012-12-24 23:04:54 , Total Documents Processed : 51200 , Time taken : 0:5:25.405 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 102400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 23:23:28 , Committed : 2012-12-24 23:23:52 , Total Documents Processed : 51200 , Time taken : 0:0:23.489 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 102400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-24 23:47:29 , Committed : 2012-12-24 23:47:50 , Total Documents Processed : 51200 , Time taken : 0:0:20.814 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 102400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 00:11:29 , Committed : 2012-12-25 00:11:50 , Total Documents Processed : 51200 , Time taken : 0:0:20.839 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 102400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 00:35:29 , Committed : 2012-12-25 00:35:50 , Total Documents Processed : 51200 , Time taken : 0:0:21.173 , 
+
+END:  w10
+START:  w11
+http://localhost:8983/solr/w11/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 204800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 00:59:29 , Committed : 2012-12-25 01:11:39 , Total Documents Processed : 102400 , Time taken : 0:12:9.267 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 204800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 01:23:30 , Committed : 2012-12-25 01:24:41 , Total Documents Processed : 102400 , Time taken : 0:1:11.323 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 204800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 01:47:30 , Committed : 2012-12-25 01:48:10 , Total Documents Processed : 102400 , Time taken : 0:0:39.940 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 204800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 02:11:30 , Committed : 2012-12-25 02:12:10 , Total Documents Processed : 102400 , Time taken : 0:0:39.902 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 204800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 02:35:30 , Committed : 2012-12-25 02:36:10 , Total Documents Processed : 102400 , Time taken : 0:0:40.73 , 
+
+END:  w11
+START:  w12
+http://localhost:8983/solr/w12/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 409600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 02:59:30 , Committed : 2012-12-25 03:32:56 , Total Documents Processed : 204800 , Time taken : 0:33:25.727 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 409600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 03:33:11 , Committed : 2012-12-25 03:34:54 , Total Documents Processed : 204800 , Time taken : 0:1:42.400 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 409600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 04:03:12 , Committed : 2012-12-25 04:04:28 , Total Documents Processed : 204800 , Time taken : 0:1:16.257 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 409600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 04:33:12 , Committed : 2012-12-25 04:34:28 , Total Documents Processed : 204800 , Time taken : 0:1:16.281 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 409600 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 05:03:12 , Committed : 2012-12-25 05:04:28 , Total Documents Processed : 204800 , Time taken : 0:1:15.526 , 
+
+END:  w12
+START:  w13
+http://localhost:8983/solr/w13/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 819200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 05:33:12 , Committed : 2012-12-25 06:45:21 , Total Documents Processed : 409600 , Time taken : 1:12:8.477 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 819200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 06:45:34 , Committed : 2012-12-25 07:07:32 , Total Documents Processed : 409600 , Time taken : 0:21:58.726 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 819200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 07:45:34 , Committed : 2012-12-25 07:48:03 , Total Documents Processed : 409600 , Time taken : 0:2:28.845 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 819200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 08:45:34 , Committed : 2012-12-25 08:48:00 , Total Documents Processed : 409600 , Time taken : 0:2:25.739 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 819200 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 09:45:34 , Committed : 2012-12-25 09:47:52 , Total Documents Processed : 409600 , Time taken : 0:2:17.263 , 
+
+END:  w13
+START:  w14
+http://localhost:8983/solr/w14/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1638400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 10:45:35 , Committed : 2012-12-25 13:35:29 , Total Documents Processed : 819200 , Time taken : 2:49:54.284 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1638400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 13:35:40 , Committed : 2012-12-25 15:26:54 , Total Documents Processed : 819200 , Time taken : 1:51:14.126 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1638400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 16:05:41 , Committed : 2012-12-25 16:22:50 , Total Documents Processed : 819200 , Time taken : 0:17:9.295 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1638400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 18:35:41 , Committed : 2012-12-25 18:44:21 , Total Documents Processed : 819200 , Time taken : 0:8:40.252 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 1638400 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 21:05:41 , Committed : 2012-12-25 21:10:53 , Total Documents Processed : 819200 , Time taken : 0:5:11.463 , 
+
+END:  w14
+START:  w15
+http://localhost:8983/solr/w15/
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3276800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-25 23:35:42 , Committed : 2012-12-26 06:31:29 , Total Documents Processed : 1638400 , Time taken : 6:55:47.156 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3276800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-26 06:31:47 , Committed : 2012-12-26 10:59:23 , Total Documents Processed : 1638400 , Time taken : 4:27:35.526 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3276800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-26 11:31:48 , Committed : 2012-12-26 15:54:53 , Total Documents Processed : 1638400 , Time taken : 4:23:4.697 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3276800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-26 16:31:48 , Committed : 2012-12-26 20:54:37 , Total Documents Processed : 1638400 , Time taken : 4:22:48.733 , 
+
+Total Requests made to DataSource : 0 , Total Rows Fetched : 3276800 , Total Documents Skipped : 0 , Full Dump Started : 2012-12-26 21:31:49 , Committed : 2012-12-27 01:57:35 , Total Documents Processed : 1638400 , Time taken : 4:25:45.657 , 
+
+END:  w15
