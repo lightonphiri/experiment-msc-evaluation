@@ -815,3 +815,20 @@ http://localhost/OAI-XMLFile-2.21/XMLFile/w15/oai.pl?verb=ListRecords&resumption
 ** SIEGE 2.70
 ** Preparing 1 concurrent users for battle.
 The server is now under siege...
+[[1;33merror[0m] socket: read error Connection reset by peer sock.c:460: Connection reset by peer
+
+Lifting the server siege...-      done.
+Transactions:		           0 hits
+Availability:		        0.00 %
+Elapsed time:		      751.77 secs
+Data transferred:	        0.00 MB
+Response time:		        0.00 secs
+Transaction rate:	        0.00 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        0.00
+Successful transactions:           0
+Failed transactions:	           2
+Longest transaction:	        0.00
+Shortest transaction:	        0.00
+ 
+[[1;33merror[0m] unable to create log file: Permission denied

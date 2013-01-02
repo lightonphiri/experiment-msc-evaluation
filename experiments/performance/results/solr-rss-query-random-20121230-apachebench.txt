@@ -1,0 +1,540 @@
+ 
+***** START Workload: 1 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.20 secs:   12509 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12508 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12508 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   12508 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12508 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.01 secs:   14704 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   14704 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   14704 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   14704 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   14704 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   28917 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   28917 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   28917 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   28917 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   28917 bytes ==> /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 1 *****
+ 
+ 
+***** START Workload: 2 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.07 secs:    5706 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    5705 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    5705 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    5705 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    5705 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.00 secs:   14427 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   14427 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   14427 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   14427 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   14427 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.02 secs:   18403 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   18403 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   18403 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   18403 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   18403 bytes ==> /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 2 *****
+ 
+ 
+***** START Workload: 3 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.05 secs:   10859 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10858 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   10858 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10858 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10858 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.03 secs:   20265 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   20264 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   20264 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   20264 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   20264 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   37533 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   37533 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   37533 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   37533 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   37533 bytes ==> /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 3 *****
+ 
+ 
+***** START Workload: 4 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.05 secs:    5844 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    5843 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    5843 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    5843 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    5843 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.01 secs:   12469 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12469 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   12469 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12469 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12469 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   28215 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   28215 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   28215 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   28215 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   28215 bytes ==> /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 4 *****
+ 
+ 
+***** START Workload: 5 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.06 secs:   12297 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12296 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12296 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12296 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   12296 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.02 secs:   31181 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   31180 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   31180 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   31180 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   31180 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   51955 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   51955 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   51955 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   51955 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   51955 bytes ==> /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 5 *****
+ 
+ 
+***** START Workload: 6 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.06 secs:   13966 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   13965 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   13965 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   13965 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   13965 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.03 secs:   29063 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   29062 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   29062 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   29062 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   29062 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.42 secs:   45349 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   45347 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   45347 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   45347 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   45347 bytes ==> /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 6 *****
+ 
+ 
+***** START Workload: 7 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.12 secs:   11323 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   11321 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   11321 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   11321 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   11321 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.01 secs:   17541 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   17541 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   17541 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   17541 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   17541 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   40226 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   40226 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   40226 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   40226 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   40226 bytes ==> /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 7 *****
+ 
+ 
+***** START Workload: 8 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.11 secs:    9486 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9484 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9484 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    9484 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9484 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.03 secs:   13245 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   13244 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   13244 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   13244 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   13244 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.01 secs:   30682 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   30682 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   30682 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   30682 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   30682 bytes ==> /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 8 *****
+ 
+ 
+***** START Workload: 9 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.11 secs:    3984 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    3982 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    3982 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    3982 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    3982 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.06 secs:   15796 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   15795 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   15795 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   15795 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   15795 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.03 secs:   25184 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   25183 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   25183 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   25183 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   25183 bytes ==> /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 9 *****
+ 
+ 
+***** START Workload: 10 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.18 secs:    9729 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9727 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    9727 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9727 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9727 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.25 secs:   19573 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   19571 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   19571 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   19571 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   19571 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.06 secs:   29547 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   29546 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   29546 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   29546 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   29546 bytes ==> /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 10 *****
+ 
+ 
+***** START Workload: 11 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.30 secs:   12917 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   12915 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12915 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12915 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   12915 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.07 secs:   22283 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   22282 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   22282 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   22282 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   22282 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.08 secs:   41548 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   41547 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   41547 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   41547 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   41547 bytes ==> /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 11 *****
+ 
+ 
+***** START Workload: 12 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.24 secs:   10951 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   10949 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10949 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:   10949 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10949 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.06 secs:   26967 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   26966 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   26966 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   26966 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   26966 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.06 secs:   68908 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   68907 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   68907 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   68907 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   68907 bytes ==> /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 12 *****
+ 
+ 
+***** START Workload: 13 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.39 secs:    6723 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6721 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6721 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    6721 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6721 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.04 secs:   16572 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   16571 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   16571 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   16571 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   16571 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.70 secs:   64507 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   64505 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   64505 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   64505 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   64505 bytes ==> /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 13 *****
+ 
+ 
+***** START Workload: 14 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.50 secs:    2803 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    2801 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    2801 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    2801 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    2801 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.44 secs:    6945 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:    6943 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6943 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6943 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:    6943 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.10 secs:   31796 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   31795 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   31795 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   31795 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   31795 bytes ==> /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 14 *****
+ 
+ 
+***** START Workload: 15 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+[0;34mHTTP/1.1 200   0.41 secs:    9257 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    9255 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9255 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.01 secs:    9255 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+[0;34mHTTP/1.1 200   0.00 secs:    9255 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5[0m
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+[0;34mHTTP/1.1 200   0.01 secs:   10482 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10482 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.01 secs:   10482 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10482 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+[0;34mHTTP/1.1 200   0.00 secs:   10482 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10[0m
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+[0;34mHTTP/1.1 200   0.09 secs:   21979 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   21978 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   21978 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.00 secs:   21978 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+[0;34mHTTP/1.1 200   0.01 secs:   21978 bytes ==> /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20[0m
+ 
+***** END Items: 20
+ 
+***** END Workload 15 *****
+ 

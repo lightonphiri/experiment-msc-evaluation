@@ -1,0 +1,112 @@
+ 
+***** START Workload 5 *****
+ 
+***ListRecords : First Recordset***
+http://localhost/OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc
+** SIEGE 2.70
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+done.
+Transactions:		           5 hits
+Availability:		      100.00 %
+Elapsed time:		       42.81 secs
+Data transferred:	        0.89 MB
+Response time:		        5.76 secs
+Transaction rate:	        0.12 trans/sec
+Throughput:		        0.02 MB/sec
+Concurrency:		        0.67
+Successful transactions:           5
+Failed transactions:	           0
+Longest transaction:	        7.27
+Shortest transaction:	        5.20
+ 
+[0;34mHTTP/1.1 200   7.27 secs:  186752 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.20 secs:  186752 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.42 secs:  186752 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.42 secs:  186754 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.50 secs:  186754 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[[1;33merror[0m] unable to create log file: Permission denied
+***ListRecords : Last Recordset***
+http://localhost/OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000
+** SIEGE 2.70
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+done.
+Transactions:		           5 hits
+Availability:		      100.00 %
+Elapsed time:		       24.69 secs
+Data transferred:	        1.61 MB
+Response time:		        3.54 secs
+Transaction rate:	        0.20 trans/sec
+Throughput:		        0.07 MB/sec
+Concurrency:		        0.72
+Successful transactions:           5
+Failed transactions:	           0
+Longest transaction:	        3.98
+Shortest transaction:	        3.42
+ 
+[0;34mHTTP/1.1 200   3.98 secs:  338401 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000[0m
+[0;34mHTTP/1.1 200   3.42 secs:  338401 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000[0m
+[0;34mHTTP/1.1 200   3.43 secs:  338401 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000[0m
+[0;34mHTTP/1.1 200   3.43 secs:  338401 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000[0m
+[0;34mHTTP/1.1 200   3.43 secs:  338401 bytes ==> /OAI-XMLFile-2.21/XMLFile/w5/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!1000[0m
+[[1;33merror[0m] unable to create log file: Permission denied
+ 
+***** END Workload 5 *****
+ 
+ 
+***** START Workload 6 *****
+ 
+***ListRecords : First Recordset***
+http://localhost/OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc
+** SIEGE 2.70
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+done.
+Transactions:		           5 hits
+Availability:		      100.00 %
+Elapsed time:		       38.39 secs
+Data transferred:	        1.16 MB
+Response time:		        6.08 secs
+Transaction rate:	        0.13 trans/sec
+Throughput:		        0.03 MB/sec
+Concurrency:		        0.79
+Successful transactions:           5
+Failed transactions:	           0
+Longest transaction:	        6.50
+Shortest transaction:	        5.96
+ 
+[0;34mHTTP/1.1 200   6.50 secs:  242762 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.98 secs:  242762 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.98 secs:  242762 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.97 secs:  242762 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200   5.96 secs:  242762 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[[1;33merror[0m] unable to create log file: Permission denied
+***ListRecords : Last Recordset***
+http://localhost/OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000
+** SIEGE 2.70
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+done.
+Transactions:		           5 hits
+Availability:		      100.00 %
+Elapsed time:		       19.78 secs
+Data transferred:	        0.83 MB
+Response time:		        1.35 secs
+Transaction rate:	        0.25 trans/sec
+Throughput:		        0.04 MB/sec
+Concurrency:		        0.34
+Successful transactions:           5
+Failed transactions:	           0
+Longest transaction:	        1.40
+Shortest transaction:	        1.34
+ 
+[0;34mHTTP/1.1 200   1.40 secs:  173235 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000[0m
+[0;34mHTTP/1.1 200   1.34 secs:  173235 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000[0m
+[0;34mHTTP/1.1 200   1.34 secs:  173235 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000[0m
+[0;34mHTTP/1.1 200   1.35 secs:  173236 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000[0m
+[0;34mHTTP/1.1 200   1.34 secs:  173236 bytes ==> /OAI-XMLFile-2.21/XMLFile/w6/oai.pl?verb=ListRecords&resumptionToken=!!!oai_dc!3000[0m
+[[1;33merror[0m] unable to create log file: Permission denied
+ 
+***** END Workload 6 *****
+ 

@@ -1,0 +1,23 @@
+** SIEGE 2.70
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+
+Lifting the server siege...-      done.
+Transactions:		           4 hits
+Availability:		      100.00 %
+Elapsed time:		     7403.10 secs
+Data transferred:	        3.04 MB
+Response time:		     1724.72 secs
+Transaction rate:	        0.00 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        0.93
+Successful transactions:           4
+Failed transactions:	           0
+Longest transaction:	     2062.08
+Shortest transaction:	     1564.45
+ 
+[0;34mHTTP/1.1 200 2062.08 secs:  796885 bytes ==> /OAI-XMLFile-2.21/XMLFile/w15/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200 1564.45 secs:  796886 bytes ==> /OAI-XMLFile-2.21/XMLFile/w15/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200 1630.13 secs:  796884 bytes ==> /OAI-XMLFile-2.21/XMLFile/w15/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[0;34mHTTP/1.1 200 1642.22 secs:  796886 bytes ==> /OAI-XMLFile-2.21/XMLFile/w15/oai.pl?verb=ListRecords&metadataPrefix=oai_dc[0m
+[[1;33merror[0m] unable to create log file: Permission denied

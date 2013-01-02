@@ -1,0 +1,3768 @@
+ 
+***** START Workload: 1 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        12509 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.178 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      62866 bytes
+HTML transferred:       62541 bytes
+Requests per second:    28.13 [#/sec] (mean)
+Time per request:       35.546 [ms] (mean)
+Time per request:       35.546 [ms] (mean, across all concurrent requests)
+Transfer rate:          345.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   35  72.1      4     164
+Waiting:        2   35  72.0      4     164
+Total:          2   36  72.1      4     164
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="100" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/36781</str><arr name="dc-title"><str>Surficial Materials Mapping and Surface Lineaments Analysis in the Umiujalik Lake area, Nunavut, Using RADARSAT-2 Polarimetric SAR, LANDSAT-7, and DEM Images</str></arr><arr name="dc-description"><str>This thesis is focused on the utilization of RADARSAT-2 polarimetric SAR data for mapping two surficial aspects of the Umiujalik Lake area, Nunavut, Canada: i) materials, such as bedrock, boulders, organic material, sand and gravel, thick and thin till; and ii) lineaments. To achieve these tasks, RADARSAT-2 polarimetric SAR images with three west-looking, increasing incidence angles (FQ1, FQ12, and FQ20, respectively) were used alone and in combination with LANDSAT-7 ETM+ and Digital Elevation Model (DEM) image data.
+The surficial materials mapping study tested: i) the effects of incidence angles on mapping accuracy; and ii) non-polarimetric and polarimetric classifiers. For non-polarimetric analysis, a Maximum Likelihood Classification (MLC) algorithm was applied to different combinations of RADARSAT-2, LANDSAT-7 ETM+, and DEM images, achieving a maximum overall classification accuracy of 85%. Polarimetric analyses first included computation of polarimetric signatures to understand the scattering mechanisms of the considered surficial materials, i.e., surface, volume, and multiple scatterings. It also tested three polarimetric classifiers: supervised Wishart (overall accuracy of 48.7% from FQ12 image), and unsupervised Freeman-Wishart, and Wishart-H/ /A.
+Three 
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        14704 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.012 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      73845 bytes
+HTML transferred:       73520 bytes
+Requests per second:    404.14 [#/sec] (mean)
+Time per request:       2.474 [ms] (mean)
+Time per request:       2.474 [ms] (mean, across all concurrent requests)
+Transfer rate:          5828.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    2   0.5      2       3
+Waiting:        2    2   0.5      2       3
+Total:          2    2   0.5      2       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        28917 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.015 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      144910 bytes
+HTML transferred:       144585 bytes
+Requests per second:    325.86 [#/sec] (mean)
+Time per request:       3.069 [ms] (mean)
+Time per request:       3.069 [ms] (mean, across all concurrent requests)
+Transfer rate:          9222.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3    3   0.6      3       4
+Waiting:        2    3   0.6      3       4
+Total:          3    3   0.5      3       4
+ 
+***** END Items: 20
+ 
+***** END Workload 1 *****
+ 
+ 
+***** START Workload: 2 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">38</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose,
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose,
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        5706 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.060 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      28851 bytes
+HTML transferred:       28526 bytes
+Requests per second:    83.34 [#/sec] (mean)
+Time per request:       12.000 [ms] (mean)
+Time per request:       12.000 [ms] (mean, across all concurrent requests)
+Transfer rate:          469.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3   12  16.7      6      42
+Waiting:        3   12  16.8      6      42
+Total:          3   12  16.7      6      42
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        14427 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.021 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      72460 bytes
+HTML transferred:       72135 bytes
+Requests per second:    237.34 [#/sec] (mean)
+Time per request:       4.213 [ms] (mean)
+Time per request:       4.213 [ms] (mean, across all concurrent requests)
+Transfer rate:          3358.89 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3    4   1.2      4       6
+Waiting:        3    4   1.2      4       6
+Total:          3    4   1.2      4       6
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">23</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactos
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><arr name="dc-title"><str>Measurements of aircraft wake vortices in ground proximity within an atmospheric boundary layer wind tunnel</str></arr><arr name="dc-description"><str>The vortex wake characteristics of aircraft during landing and take-off are of interest in connection with both the safety of following aircraft penetrating the vortex and the dispersion of engine exhaust plumes. A series of measurements were carried out in an Atmospheric Boundary Layer Wind Tunnel (ABLWT) to identify and characterise both the mean and turbulent flow field of a pair of wake vortices in ground proximity. Cont/d.</str></arr><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><arr name="dc-title"><str>A molecular approach on sperm changes during epididymal maturation, ejaculation and in vitro capacitation of boar spermatozoa</str></arr><arr name="dc-description"><str>Mammalian spermatozoa acquire functionality during epididymal maturation and ability to penetrate and fertilize the oocyte during capacitation. Sperm quality results indicated that both epididymal maturation and ejaculation are key events for further capacitation, because only ejaculated spermatozoa are capable to undergo the set of changes leading to capacitation. Epididymal maturation is associated with a progressive loss of phosphotyrosine residues followed by a subtle increase after in vitro capacitation. Sperm glycocalix galactose
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        18404 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.044 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      92341 bytes
+HTML transferred:       92016 bytes
+Requests per second:    113.96 [#/sec] (mean)
+Time per request:       8.775 [ms] (mean)
+Time per request:       8.775 [ms] (mean, across all concurrent requests)
+Transfer rate:          2055.31 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3    9  12.0      4      30
+Waiting:        3    9  12.0      3      30
+Total:          3    9  11.9      4      30
+ 
+***** END Items: 20
+ 
+***** END Workload 2 *****
+ 
+ 
+***** START Workload: 3 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        10859 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.059 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      54616 bytes
+HTML transferred:       54291 bytes
+Requests per second:    85.27 [#/sec] (mean)
+Time per request:       11.727 [ms] (mean)
+Time per request:       11.727 [ms] (mean, across all concurrent requests)
+Transfer rate:          909.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3   11  19.2      3      46
+Waiting:        3   11  19.2      3      46
+Total:          3   12  19.2      3      46
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">12</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="400" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><arr name="dc-title"><str>Studies on the Daphniphyllum alkaloids : strategies towards the synthesis of daphnicyclidin alkaloids</str></arr><arr name="dc-description"><str>Herein describes our approaches to the Daphniphyllum alkaloids. Specifically targeted are the recently isolated daphnicyclidins. The first chapter describes the structural diversity and biological properties of this class of alkaloids. Chapter 2 discusses some exploratory chemistry towards the daphnicyclidin fused tricycle. Chapter 3 describes the use of cyclopropanes in synthesis and their use in our ring expansion strategy. Preliminary results on the key cyclopropane ring expansion and the stereoselective quaternary center formation are also discussed. The chemistry concerning the diasteroselective cyclopropanation of a key intermediate and further details concerning the cyclopropane ring expansion are delineated. Chapter 4 contains the experimental details and characterization data for all new reported compounds.</str></arr><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/8539</str><arr name="dc-title"><str>Rle diffrentiel des cellules pithliales intestinales et pulmonaires dans le recrutement des cellules Th17 vers les sites de rplication du virus de l'immunodficience humaine de type 1</str></arr><arr name="dc-description"><str>Linfection  VIH-1 est associe  une forte dpltion des lymphocytes T CD4+  polarisat
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        20265 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.023 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      101646 bytes
+HTML transferred:       101321 bytes
+Requests per second:    213.46 [#/sec] (mean)
+Time per request:       4.685 [ms] (mean)
+Time per request:       4.685 [ms] (mean, across all concurrent requests)
+Transfer rate:          4237.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    5   5.5      2      14
+Waiting:        2    4   5.5      2      14
+Total:          2    5   5.5      2      14
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        37533 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.016 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      187990 bytes
+HTML transferred:       187665 bytes
+Requests per second:    311.24 [#/sec] (mean)
+Time per request:       3.213 [ms] (mean)
+Time per request:       3.213 [ms] (mean, across all concurrent requests)
+Transfer rate:          11427.57 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   1.0      3       5
+Waiting:        2    3   1.0      3       5
+Total:          3    3   1.0      3       5
+ 
+***** END Items: 20
+ 
+***** END Workload 3 *****
+ 
+ 
+***** START Workload: 4 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">22</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        5844 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.031 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      29541 bytes
+HTML transferred:       29216 bytes
+Requests per second:    158.79 [#/sec] (mean)
+Time per request:       6.298 [ms] (mean)
+Time per request:       6.298 [ms] (mean, across all concurrent requests)
+Transfer rate:          916.15 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1    6  10.8      1      25
+Waiting:        1    6  10.8      1      25
+Total:          1    6  10.8      1      26
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        12469 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.018 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      62670 bytes
+HTML transferred:       62345 bytes
+Requests per second:    281.20 [#/sec] (mean)
+Time per request:       3.556 [ms] (mean)
+Time per request:       3.556 [ms] (mean, across all concurrent requests)
+Transfer rate:          3441.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2    3   2.8      3       8
+Waiting:        2    3   2.8      2       8
+Total:          2    3   2.8      3       8
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><arr name="dc-title"><str>Public Art - Purpose and Benefits:  Exploring Strategy in the New England City of Pittsfield, MA</str></arr><arr name="dc-description"><str>Researchers explore various aspects related to art and urban life using terms such as cultural economy, the 'creative class', cultural clustering; and there are many more. Public art is one strategy, employed for any number of broader agendas spanning from economic aims to community identity. This study examines public art at the intersection of cultural planning strategy and community participation. A midsize New England city Pittsfield, Massachusetts, with a significant industrial mill heritage, provides a location from which to study public art within a specific context over a period of time spanning from 1970 to the present. Qualitative methods such as interviews, document review and survey of specific public art initiatives, both temporary and permanent, will help to uncover motivations and expectations that drive the development of public art projects. More knowledge about these purposes can lead to informative lines of questioning that may help planners and designers better understand the best application of public art in the landscape within a given community</str></arr><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><arr name="dc-title"><str>Aplicaciones de data mining al estudio de la biodiversidad</str></arr>
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        28215 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.019 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      141400 bytes
+HTML transferred:       141075 bytes
+Requests per second:    263.16 [#/sec] (mean)
+Time per request:       3.800 [ms] (mean)
+Time per request:       3.800 [ms] (mean, across all concurrent requests)
+Transfer rate:          7267.68 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    3   1.3      4       5
+Waiting:        0    2   1.7      2       5
+Total:          3    4   1.3      4       5
+ 
+***** END Items: 20
+ 
+***** END Workload 4 *****
+ 
+ 
+***** START Workload: 5 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        12297 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.046 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      61806 bytes
+HTML transferred:       61481 bytes
+Requests per second:    108.21 [#/sec] (mean)
+Time per request:       9.241 [ms] (mean)
+Time per request:       9.241 [ms] (mean, across all concurrent requests)
+Transfer rate:          1306.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    9  16.7      2      39
+Waiting:        2    9  16.7      2      39
+Total:          2    9  16.8      2      39
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="1599" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21186</str><arr name="dc-title"><str>Modelos de datos espaciales</str></arr><arr name="dc-description"><str>En distintos campos de aplicacin se presenta la necesidad de manejar datos espaciales, esto es, datos vinculados a un espacio subyacente. Bajo estas circunstancias, generalmente tambin se requiere de capacidades para interactuar con grandes volmenes de informacin, que naturalmente tienen una representacin visual y relaciones espaciales particulares. En este sentido, la visualizacin de informacin espacial es una herramienta poderosa. Tanto los sistemas de Informacin Geogrfica, como los de Visualizacin han ido evolucionando en paralelo. Los esfuerzos en el desarrollo de estndares para los datos geoespaciales raramente incluan cmo visualizar los mismos. Las libreras y estndares de Computacin Grfica evolucionaron independientemente de los modelos de datos geoespaciales. Esto result en ineficiencias asociadas a la geovisualizacin. En este contexto vemos que es necesario integrar la informacin espacial en una visualizacin. Para esto, debemos tener en cuenta los distintos aspectos que abarcan la representacin de los datos espaciales y su integracin con los mtodos emergentes del campo de visualizacin lo que permitir el desarrollo de herramientas de visualizacin geoespaciales efectivas. Con este propsito, es necesario considerar la representacin adecuada de los datos espaciales y su integracin al modelo de visualizacin que desarrollamos.</str><str>Eje: Otros</str></arr><date name="dc-available">2012-09-21
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        31180 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.021 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      156225 bytes
+HTML transferred:       155900 bytes
+Requests per second:    232.63 [#/sec] (mean)
+Time per request:       4.299 [ms] (mean)
+Time per request:       4.299 [ms] (mean, across all concurrent requests)
+Transfer rate:          7098.29 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    4   2.7      4       8
+Waiting:        2    3   2.0      2       6
+Total:          2    4   2.7      4       8
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="1599" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21186</str><arr name="dc-title"><str>Modelos de datos espaciales</str></arr><arr name="dc-description"><str>En distintos campos de aplicacin se presenta la necesidad de manejar datos espaciales, esto es, datos vinculados a un espacio subyacente. Bajo estas circunstancias, generalmente tambin se requiere de capacidades para interactuar con grandes volmenes de informacin, que naturalmente tienen una representacin visual y relaciones espaciales particulares. En este sentido, la visualizacin de informacin espacial es una herramienta poderosa. Tanto los sistemas de Informacin Geogrfica, como los de Visualizacin han ido evolucionando en paralelo. Los esfuerzos en el desarrollo de estndares para los datos geoespaciales raramente incluan cmo visualizar los mismos. Las libreras y estndares de Computacin Grfica evolucionaron independientemente de los modelos de datos geoespaciales. Esto result en ineficiencias asociadas a la geovisualizacin. En este contexto vemos que es necesario integrar la informacin espacial en una visualizacin. Para esto, debemos tener en cuenta los distintos aspectos que abarcan la representacin de los datos espaciales y su integracin con los mtodos emergentes del campo de visualizacin lo que permitir el desarrollo de herramientas de visualizacin geoespaciales efectivas. Con este propsito, es necesario considerar la representacin adecuada de los datos espaciales y su integracin al modelo de visualizacin que desarrollamos.</str><str>Eje: Otros</str></arr><date name="dc-available">2012-09-21
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        51955 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.027 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      260100 bytes
+HTML transferred:       259775 bytes
+Requests per second:    185.47 [#/sec] (mean)
+Time per request:       5.392 [ms] (mean)
+Time per request:       5.392 [ms] (mean, across all concurrent requests)
+Transfer rate:          9422.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   3.6      0       8
+Processing:     3    4   1.1      3       6
+Waiting:        3    3   0.6      3       4
+Total:          3    5   4.7      3      14
+ 
+***** END Items: 20
+ 
+***** END Workload 5 *****
+ 
+ 
+***** START Workload: 6 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">51</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><arr name="dc-title"><str/><str>Synthesis and characterization of new polyimides containing bulky adamantyl elements</str></arr><arr name="dc-description"><str>
+</str><str>
+</str><str>
+</str></arr><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><arr name="dc-title"><str>Sistemas inteligentes aplicados a redes de datos</str></arr><arr name="dc-description"><str>El presente trabajo monogrfico tiene por objetivo presentar una visin general sobre el estado actual y la actividad cientfica relacionada con los sistemas inteligentes aplicados en reas inherentes a las redes de datos. He recopilado una vasta cantidad de publicaciones vinculadas con la temtica aqu pretendida. Sin embargo, la enumeracin detallada de stas resultara tediosa y de escasa utilidad. En su lugar he estructurado la presentacin del material agrupndolos en cinco tpicos generales con los que espero haber realizado una buena cobertura de los temas abordados. Pretendo no profundizar en detalles que oscurezcan la visin general que deseo brindar. Sin embargo, cada temtica estar acompaada de las referencias correspondientes para que el lector interesado pueda hallar fcilmente las fuentes originales y ampliar los conceptos de su inters.
+A medida que vaya avanzando en los temas propuestos, y conforme sea necesario, ir introduciendo de forma muy reducida los conceptos ms generales de las estrategias inteligentes utilizadas en cada caso.
+Este trabajo est or
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        13966 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.069 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      70151 bytes
+HTML transferred:       69826 bytes
+Requests per second:    72.30 [#/sec] (mean)
+Time per request:       13.831 [ms] (mean)
+Time per request:       13.831 [ms] (mean, across all concurrent requests)
+Transfer rate:          990.64 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   3.6      0       8
+Processing:     2   12  23.4      2      54
+Waiting:        2   11  22.1      2      51
+Total:          2   14  27.0      2      62
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">24</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><arr name="dc-title"><str/><str>Synthesis and characterization of new polyimides containing bulky adamantyl elements</str></arr><arr name="dc-description"><str>
+</str><str>
+</str><str>
+</str></arr><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><arr name="dc-title"><str>Sistemas inteligentes aplicados a redes de datos</str></arr><arr name="dc-description"><str>El presente trabajo monogrfico tiene por objetivo presentar una visin general sobre el estado actual y la actividad cientfica relacionada con los sistemas inteligentes aplicados en reas inherentes a las redes de datos. He recopilado una vasta cantidad de publicaciones vinculadas con la temtica aqu pretendida. Sin embargo, la enumeracin detallada de stas resultara tediosa y de escasa utilidad. En su lugar he estructurado la presentacin del material agrupndolos en cinco tpicos generales con los que espero haber realizado una buena cobertura de los temas abordados. Pretendo no profundizar en detalles que oscurezcan la visin general que deseo brindar. Sin embargo, cada temtica estar acompaada de las referencias correspondientes para que el lector interesado pueda hallar fcilmente las fuentes originales y ampliar los conceptos de su inters.
+A medida que vaya avanzando en los temas propuestos, y conforme sea necesario, ir introduciendo de forma muy reducida los conceptos ms generales de las estrategias inteligentes utilizadas en cada caso.
+Este trabajo est o
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><arr name="dc-title"><str/><str>Synthesis and characterization of new polyimides containing bulky adamantyl elements</str></arr><arr name="dc-description"><str>
+</str><str>
+</str><str>
+</str></arr><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><arr name="dc-title"><str>Sistemas inteligentes aplicados a redes de datos</str></arr><arr name="dc-description"><str>El presente trabajo monogrfico tiene por objetivo presentar una visin general sobre el estado actual y la actividad cientfica relacionada con los sistemas inteligentes aplicados en reas inherentes a las redes de datos. He recopilado una vasta cantidad de publicaciones vinculadas con la temtica aqu pretendida. Sin embargo, la enumeracin detallada de stas resultara tediosa y de escasa utilidad. En su lugar he estructurado la presentacin del material agrupndolos en cinco tpicos generales con los que espero haber realizado una buena cobertura de los temas abordados. Pretendo no profundizar en detalles que oscurezcan la visin general que deseo brindar. Sin embargo, cada temtica estar acompaada de las referencias correspondientes para que el lector interesado pueda hallar fcilmente las fuentes originales y ampliar los conceptos de su inters.
+A medida que vaya avanzando en los temas propuestos, y conforme sea necesario, ir introduciendo de forma muy reducida los conceptos ms generales de las estrategias inteligentes utilizadas en cada caso.
+Este trabajo est or
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        29063 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.034 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      145636 bytes
+HTML transferred:       145311 bytes
+Requests per second:    145.02 [#/sec] (mean)
+Time per request:       6.896 [ms] (mean)
+Time per request:       6.896 [ms] (mean, across all concurrent requests)
+Transfer rate:          4125.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    7  10.9      2      26
+Waiting:        1    6  10.5      2      25
+Total:          2    7  11.1      2      27
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><arr name="dc-title"><str/><str>Synthesis and characterization of new polyimides containing bulky adamantyl elements</str></arr><arr name="dc-description"><str>
+</str><str>
+</str><str>
+</str></arr><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><arr name="dc-title"><str>Sistemas inteligentes aplicados a redes de datos</str></arr><arr name="dc-description"><str>El presente trabajo monogrfico tiene por objetivo presentar una visin general sobre el estado actual y la actividad cientfica relacionada con los sistemas inteligentes aplicados en reas inherentes a las redes de datos. He recopilado una vasta cantidad de publicaciones vinculadas con la temtica aqu pretendida. Sin embargo, la enumeracin detallada de stas resultara tediosa y de escasa utilidad. En su lugar he estructurado la presentacin del material agrupndolos en cinco tpicos generales con los que espero haber realizado una buena cobertura de los temas abordados. Pretendo no profundizar en detalles que oscurezcan la visin general que deseo brindar. Sin embargo, cada temtica estar acompaada de las referencias correspondientes para que el lector interesado pueda hallar fcilmente las fuentes originales y ampliar los conceptos de su inters.
+A medida que vaya avanzando en los temas propuestos, y conforme sea necesario, ir introduciendo de forma muy reducida los conceptos ms generales de las estrategias inteligentes utilizadas en cada caso.
+Este trabajo est or
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><arr name="dc-title"><str/><str>Synthesis and characterization of new polyimides containing bulky adamantyl elements</str></arr><arr name="dc-description"><str>
+</str><str>
+</str><str>
+</str></arr><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><arr name="dc-title"><str>Sistemas inteligentes aplicados a redes de datos</str></arr><arr name="dc-description"><str>El presente trabajo monogrfico tiene por objetivo presentar una visin general sobre el estado actual y la actividad cientfica relacionada con los sistemas inteligentes aplicados en reas inherentes a las redes de datos. He recopilado una vasta cantidad de publicaciones vinculadas con la temtica aqu pretendida. Sin embargo, la enumeracin detallada de stas resultara tediosa y de escasa utilidad. En su lugar he estructurado la presentacin del material agrupndolos en cinco tpicos generales con los que espero haber realizado una buena cobertura de los temas abordados. Pretendo no profundizar en detalles que oscurezcan la visin general que deseo brindar. Sin embargo, cada temtica estar acompaada de las referencias correspondientes para que el lector interesado pueda hallar fcilmente las fuentes originales y ampliar los conceptos de su inters.
+A medida que vaya avanzando en los temas propuestos, y conforme sea necesario, ir introduciendo de forma muy reducida los conceptos ms generales de las estrategias inteligentes utilizadas en cada caso.
+Este trabajo est or
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        45347 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.024 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      227060 bytes
+HTML transferred:       226735 bytes
+Requests per second:    210.63 [#/sec] (mean)
+Time per request:       4.748 [ms] (mean)
+Time per request:       4.748 [ms] (mean, across all concurrent requests)
+Transfer rate:          9341.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    4   2.7      4       8
+Waiting:        0    3   3.1      4       8
+Total:          2    4   2.7      4       8
+ 
+***** END Items: 20
+ 
+***** END Workload 6 *****
+ 
+ 
+***** START Workload: 7 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><arr name="dc-title"><str>The architecture of a multimedia multiprocessor</str></arr><arr name="dc-description"><str>The multimedia capabilities of computers have recently become the focus of
+computer developers due to the increasing demand for advanced computer graphics and
+new media capabilities, such as video conferencing, 3-D visualization, and animation. To
+support these multimedia capabilities, specialized graphics hardware, such as MPEG
+encoding/decoding card, 3-D graphics card, video card, and sound card, are widely used
+today, but the price of a separate board is expensive. Therefore, the processor must be
+redesigned from the ground up to handle new media applications. Although these
+multimedia functions are typically consist of simple operations, their sheer volume of
+computation creates a flood of data. To support such large volumes of multimedia data
+computation, Sun Microsystems implemented a specialized instruction set, called VIS[Trademark]
+(Visual Instruction Set), which is Single Instruction Multiple Data (SIMD) style of
+instruction. The basic concept behind VIS is to break the pipeline of the Floating Point
+Unit (FPU) into two or four parallel pipelines to perform four or eight separate 16-bit or
+8-bit integer additions in one cycle, instead of one floating-point addition.
+The Electronics and Telecommunications Research Institute (ETRI) in South
+Korea has researched a 64-bit multimedia enhanced on-chip multiprocessor named
+Raptor, which has quad processors and shares a
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><arr name="dc-title"><str>The architecture of a multimedia multiprocessor</str></arr><arr name="dc-description"><str>The multimedia capabilities of computers have recently become the focus of
+computer developers due to the increasing demand for advanced computer graphics and
+new media capabilities, such as video conferencing, 3-D visualization, and animation. To
+support these multimedia capabilities, specialized graphics hardware, such as MPEG
+encoding/decoding card, 3-D graphics card, video card, and sound card, are widely used
+today, but the price of a separate board is expensive. Therefore, the processor must be
+redesigned from the ground up to handle new media applications. Although these
+multimedia functions are typically consist of simple operations, their sheer volume of
+computation creates a flood of data. To support such large volumes of multimedia data
+computation, Sun Microsystems implemented a specialized instruction set, called VIS[Trademark]
+(Visual Instruction Set), which is Single Instruction Multiple Data (SIMD) style of
+instruction. The basic concept behind VIS is to break the pipeline of the Floating Point
+Unit (FPU) into two or four parallel pipelines to perform four or eight separate 16-bit or
+8-bit integer additions in one cycle, instead of one floating-point addition.
+The Electronics and Telecommunications Research Institute (ETRI) in South
+Korea has researched a 64-bit multimedia enhanced on-chip multiprocessor named
+Raptor, which has quad processors and shares a
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        11323 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.129 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      56932 bytes
+HTML transferred:       56607 bytes
+Requests per second:    38.89 [#/sec] (mean)
+Time per request:       25.716 [ms] (mean)
+Time per request:       25.716 [ms] (mean, across all concurrent requests)
+Transfer rate:          432.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1   26  53.8      2     122
+Waiting:        1   26  53.7      2     122
+Total:          1   26  53.9      2     122
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><arr name="dc-title"><str>The architecture of a multimedia multiprocessor</str></arr><arr name="dc-description"><str>The multimedia capabilities of computers have recently become the focus of
+computer developers due to the increasing demand for advanced computer graphics and
+new media capabilities, such as video conferencing, 3-D visualization, and animation. To
+support these multimedia capabilities, specialized graphics hardware, such as MPEG
+encoding/decoding card, 3-D graphics card, video card, and sound card, are widely used
+today, but the price of a separate board is expensive. Therefore, the processor must be
+redesigned from the ground up to handle new media applications. Although these
+multimedia functions are typically consist of simple operations, their sheer volume of
+computation creates a flood of data. To support such large volumes of multimedia data
+computation, Sun Microsystems implemented a specialized instruction set, called VIS[Trademark]
+(Visual Instruction Set), which is Single Instruction Multiple Data (SIMD) style of
+instruction. The basic concept behind VIS is to break the pipeline of the Floating Point
+Unit (FPU) into two or four parallel pipelines to perform four or eight separate 16-bit or
+8-bit integer additions in one cycle, instead of one floating-point addition.
+The Electronics and Telecommunications Research Institute (ETRI) in South
+Korea has researched a 64-bit multimedia enhanced on-chip multiprocessor named
+Raptor, which has quad processors and shares 
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><arr name="dc-title"><str>The architecture of a multimedia multiprocessor</str></arr><arr name="dc-description"><str>The multimedia capabilities of computers have recently become the focus of
+computer developers due to the increasing demand for advanced computer graphics and
+new media capabilities, such as video conferencing, 3-D visualization, and animation. To
+support these multimedia capabilities, specialized graphics hardware, such as MPEG
+encoding/decoding card, 3-D graphics card, video card, and sound card, are widely used
+today, but the price of a separate board is expensive. Therefore, the processor must be
+redesigned from the ground up to handle new media applications. Although these
+multimedia functions are typically consist of simple operations, their sheer volume of
+computation creates a flood of data. To support such large volumes of multimedia data
+computation, Sun Microsystems implemented a specialized instruction set, called VIS[Trademark]
+(Visual Instruction Set), which is Single Instruction Multiple Data (SIMD) style of
+instruction. The basic concept behind VIS is to break the pipeline of the Floating Point
+Unit (FPU) into two or four parallel pipelines to perform four or eight separate 16-bit or
+8-bit integer additions in one cycle, instead of one floating-point addition.
+The Electronics and Telecommunications Research Institute (ETRI) in South
+Korea has researched a 64-bit multimedia enhanced on-chip multiprocessor named
+Raptor, which has quad processors and shares 
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        17541 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.017 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      88030 bytes
+HTML transferred:       87705 bytes
+Requests per second:    298.85 [#/sec] (mean)
+Time per request:       3.346 [ms] (mean)
+Time per request:       3.346 [ms] (mean, across all concurrent requests)
+Transfer rate:          5138.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2    3   3.6      2      10
+Waiting:        1    3   3.6      2      10
+Total:          2    3   3.6      2      10
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><arr name="dc-title"><str>The architecture of a multimedia multiprocessor</str></arr><arr name="dc-description"><str>The multimedia capabilities of computers have recently become the focus of
+computer developers due to the increasing demand for advanced computer graphics and
+new media capabilities, such as video conferencing, 3-D visualization, and animation. To
+support these multimedia capabilities, specialized graphics hardware, such as MPEG
+encoding/decoding card, 3-D graphics card, video card, and sound card, are widely used
+today, but the price of a separate board is expensive. Therefore, the processor must be
+redesigned from the ground up to handle new media applications. Although these
+multimedia functions are typically consist of simple operations, their sheer volume of
+computation creates a flood of data. To support such large volumes of multimedia data
+computation, Sun Microsystems implemented a specialized instruction set, called VIS[Trademark]
+(Visual Instruction Set), which is Single Instruction Multiple Data (SIMD) style of
+instruction. The basic concept behind VIS is to break the pipeline of the Floating Point
+Unit (FPU) into two or four parallel pipelines to perform four or eight separate 16-bit or
+8-bit integer additions in one cycle, instead of one floating-point addition.
+The Electronics and Telecommunications Research Institute (ETRI) in South
+Korea has researched a 64-bit multimedia enhanced on-chip multiprocessor named
+Raptor, which has quad processors and shares 
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        40227 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.022 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      201456 bytes
+HTML transferred:       201131 bytes
+Requests per second:    232.05 [#/sec] (mean)
+Time per request:       4.309 [ms] (mean)
+Time per request:       4.309 [ms] (mean, across all concurrent requests)
+Transfer rate:          9130.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    4   4.3      2      12
+Waiting:        2    2   0.7      2       4
+Total:          2    4   4.5      2      12
+ 
+***** END Items: 20
+ 
+***** END Workload 7 *****
+ 
+ 
+***** START Workload: 8 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        9485 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.097 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      47746 bytes
+HTML transferred:       47421 bytes
+Requests per second:    51.71 [#/sec] (mean)
+Time per request:       19.340 [ms] (mean)
+Time per request:       19.340 [ms] (mean, across all concurrent requests)
+Transfer rate:          482.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1   19  40.1      1      91
+Waiting:        1   19  40.1      1      91
+Total:          1   19  40.1      1      91
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        13245 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.033 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      66546 bytes
+HTML transferred:       66221 bytes
+Requests per second:    150.02 [#/sec] (mean)
+Time per request:       6.666 [ms] (mean)
+Time per request:       6.666 [ms] (mean, across all concurrent requests)
+Transfer rate:          1949.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    6   9.0      3      22
+Waiting:        0    5   9.6      2      22
+Total:          2    7   8.9      3      22
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><arr name="dc-title"><str> Structural and functional aspects of the multifaceted SlyD in Helicobacter pylori</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><arr name="dc-title"><str>NumTheoryPy library v.1: for cryptography education and software design</str></arr><arr name="dc-description"><str>This work develops an open source library in Python with applications in academic settings, for educational purposes. It can also be used for general software development. It allows users to implement Number Theory applications commonly employed in Cryptography and Information System Security. Improvements in teaching quality, user software readability, and time savings at the encoding stage could be expected.</str><str>IV Workshop Arquitectura, Redes y Sistemas Operativos (WARSO)</str></arr><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><arr name="dc-title"><str>Integrating federated information sources through the use of ontologies</str></arr><arr name="dc-description"><str>Ontologies serve as a mean to establish a conceptually concise basis for communicating knowledge for many purposes. Within the information integration area, ontologies are useful to solve heterogeneity problems. They provide a set of knowledge terms, including the vocabulary, the semantic interconnections and some simp
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        30682 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.019 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      153735 bytes
+HTML transferred:       153410 bytes
+Requests per second:    268.54 [#/sec] (mean)
+Time per request:       3.724 [ms] (mean)
+Time per request:       3.724 [ms] (mean, across all concurrent requests)
+Transfer rate:          8063.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    3   1.7      4       6
+Waiting:        0    2   2.4      2       6
+Total:          2    4   1.7      4       6
+ 
+***** END Items: 20
+ 
+***** END Workload 8 *****
+ 
+ 
+***** START Workload: 9 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">101</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><arr name="dc-title"><str>Una extensin de la programacin en lgica que incluye eventos y comunicacin</str></arr><arr name="dc-description"><str>Este trabajo presenta una l  nea de investigaci on para el desarrollo de Sistemas Multi-agente en un entorno distribuido. La investigaci on est a centrada en el estudio, dise~no e implementaci on de una extensi on de la programaci on en l ogica que incluye manejo de eventos y primitivas de comunicaci on entre procesos.
+El manejo de eventos es necesario para poder desarrollar agentes que reaccionen ante ciertos sucesos, producidos por cambios en su entorno o provocados por otros agentes. Por ejemplo, un agente robot que choca contra un obst aculo deber  a poder reaccionar directamente ante este evento y ejecutar alg un algoritmo de evasi on. Por otro lado, si varios agentes deben interactuar para resolver un problema, entonces el lenguaje debe proveer un mecanismo para la comunicaci  on y coordinaci on entre los agentes. Uniendo las facilidades de comunicaci on y el manejo de eventos, se permitir a programar la respuesta a eventos externos. Esto es, eventos que son despachados remotamente por otros agentes.</str><str>Eje: Inteligencia artificial distribuida, aspectos tericos de la inteligencia artificial y teo
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        3984 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.110 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      20237 bytes
+HTML transferred:       19912 bytes
+Requests per second:    45.64 [#/sec] (mean)
+Time per request:       21.909 [ms] (mean)
+Time per request:       21.909 [ms] (mean, across all concurrent requests)
+Transfer rate:          180.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1   22  46.1      1     104
+Waiting:        1   21  45.0      1     102
+Total:          1   22  46.2      1     105
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><arr name="dc-title"><str>Una extensin de la programacin en lgica que incluye eventos y comunicacin</str></arr><arr name="dc-description"><str>Este trabajo presenta una l  nea de investigaci on para el desarrollo de Sistemas Multi-agente en un entorno distribuido. La investigaci on est a centrada en el estudio, dise~no e implementaci on de una extensi on de la programaci on en l ogica que incluye manejo de eventos y primitivas de comunicaci on entre procesos.
+El manejo de eventos es necesario para poder desarrollar agentes que reaccionen ante ciertos sucesos, producidos por cambios en su entorno o provocados por otros agentes. Por ejemplo, un agente robot que choca contra un obst aculo deber  a poder reaccionar directamente ante este evento y ejecutar alg un algoritmo de evasi on. Por otro lado, si varios agentes deben interactuar para resolver un problema, entonces el lenguaje debe proveer un mecanismo para la comunicaci  on y coordinaci on entre los agentes. Uniendo las facilidades de comunicaci on y el manejo de eventos, se permitir a programar la respuesta a eventos externos. Esto es, eventos que son despachados remotamente por otros agentes.</str><str>Eje: Inteligencia artificial distribuida, aspectos tericos de la inteligencia artificial y teor
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        15796 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.052 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      79301 bytes
+HTML transferred:       78976 bytes
+Requests per second:    96.09 [#/sec] (mean)
+Time per request:       10.407 [ms] (mean)
+Time per request:       10.407 [ms] (mean, across all concurrent requests)
+Transfer rate:          1488.30 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2   10  17.5      2      41
+Waiting:        2   10  17.4      2      41
+Total:          3   10  17.4      3      41
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">17</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><arr name="dc-title"><str>Una extensin de la programacin en lgica que incluye eventos y comunicacin</str></arr><arr name="dc-description"><str>Este trabajo presenta una l  nea de investigaci on para el desarrollo de Sistemas Multi-agente en un entorno distribuido. La investigaci on est a centrada en el estudio, dise~no e implementaci on de una extensi on de la programaci on en l ogica que incluye manejo de eventos y primitivas de comunicaci on entre procesos.
+El manejo de eventos es necesario para poder desarrollar agentes que reaccionen ante ciertos sucesos, producidos por cambios en su entorno o provocados por otros agentes. Por ejemplo, un agente robot que choca contra un obst aculo deber  a poder reaccionar directamente ante este evento y ejecutar alg un algoritmo de evasi on. Por otro lado, si varios agentes deben interactuar para resolver un problema, entonces el lenguaje debe proveer un mecanismo para la comunicaci  on y coordinaci on entre los agentes. Uniendo las facilidades de comunicaci on y el manejo de eventos, se permitir a programar la respuesta a eventos externos. Esto es, eventos que son despachados remotamente por otros agentes.</str><str>Eje: Inteligencia artificial distribuida, aspectos tericos de la inteligencia artificial y teo
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><arr name="dc-title"><str>Una extensin de la programacin en lgica que incluye eventos y comunicacin</str></arr><arr name="dc-description"><str>Este trabajo presenta una l  nea de investigaci on para el desarrollo de Sistemas Multi-agente en un entorno distribuido. La investigaci on est a centrada en el estudio, dise~no e implementaci on de una extensi on de la programaci on en l ogica que incluye manejo de eventos y primitivas de comunicaci on entre procesos.
+El manejo de eventos es necesario para poder desarrollar agentes que reaccionen ante ciertos sucesos, producidos por cambios en su entorno o provocados por otros agentes. Por ejemplo, un agente robot que choca contra un obst aculo deber  a poder reaccionar directamente ante este evento y ejecutar alg un algoritmo de evasi on. Por otro lado, si varios agentes deben interactuar para resolver un problema, entonces el lenguaje debe proveer un mecanismo para la comunicaci  on y coordinaci on entre los agentes. Uniendo las facilidades de comunicaci on y el manejo de eventos, se permitir a programar la respuesta a eventos externos. Esto es, eventos que son despachados remotamente por otros agentes.</str><str>Eje: Inteligencia artificial distribuida, aspectos tericos de la inteligencia artificial y teor
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><arr name="dc-title"><str>Una extensin de la programacin en lgica que incluye eventos y comunicacin</str></arr><arr name="dc-description"><str>Este trabajo presenta una l  nea de investigaci on para el desarrollo de Sistemas Multi-agente en un entorno distribuido. La investigaci on est a centrada en el estudio, dise~no e implementaci on de una extensi on de la programaci on en l ogica que incluye manejo de eventos y primitivas de comunicaci on entre procesos.
+El manejo de eventos es necesario para poder desarrollar agentes que reaccionen ante ciertos sucesos, producidos por cambios en su entorno o provocados por otros agentes. Por ejemplo, un agente robot que choca contra un obst aculo deber  a poder reaccionar directamente ante este evento y ejecutar alg un algoritmo de evasi on. Por otro lado, si varios agentes deben interactuar para resolver un problema, entonces el lenguaje debe proveer un mecanismo para la comunicaci  on y coordinaci on entre los agentes. Uniendo las facilidades de comunicaci on y el manejo de eventos, se permitir a programar la respuesta a eventos externos. Esto es, eventos que son despachados remotamente por otros agentes.</str><str>Eje: Inteligencia artificial distribuida, aspectos tericos de la inteligencia artificial y teor
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        25184 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.027 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      126241 bytes
+HTML transferred:       125916 bytes
+Requests per second:    186.41 [#/sec] (mean)
+Time per request:       5.364 [ms] (mean)
+Time per request:       5.364 [ms] (mean, across all concurrent requests)
+Transfer rate:          4596.31 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1    5   7.7      2      19
+Waiting:        0    4   8.1      1      19
+Total:          2    5   7.8      2      19
+ 
+***** END Items: 20
+ 
+***** END Workload 9 *****
+ 
+ 
+***** START Workload: 10 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        9729 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.160 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      48962 bytes
+HTML transferred:       48637 bytes
+Requests per second:    31.32 [#/sec] (mean)
+Time per request:       31.932 [ms] (mean)
+Time per request:       31.932 [ms] (mean, across all concurrent requests)
+Transfer rate:          299.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1   32  66.9      2     151
+Waiting:        1   32  66.9      2     151
+Total:          1   32  66.9      2     152
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        19572 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.046 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      98181 bytes
+HTML transferred:       97856 bytes
+Requests per second:    109.52 [#/sec] (mean)
+Time per request:       9.130 [ms] (mean)
+Time per request:       9.130 [ms] (mean, across all concurrent requests)
+Transfer rate:          2100.23 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1    9  17.1      1      40
+Waiting:        1    9  17.1      1      40
+Total:          1    9  17.1      1      40
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="51060" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_URV/oai:www.tdx.cat:10803/77856</str><arr name="dc-title"><str>Jvenes y poder local en el "proceso de cambio" boliviano (2008-2010). Reflexiones sobre la agencia de jvenes participantes del taller de formacin poltica del proyecto de poder local en el alto, Bolivia</str></arr><arr name="dc-description"><str>El estudio tiene un fin prctico y aplicado: lograr tener elementos para la reflexin de las metodologas de trabajo y su pertinencia en relacin a los objetivos en las actividades de politizacin y empoderamiento del Programa de Desarrollo del Poder Local de UNITAS en El Alto, Bolivia. 
+
+Para ello, se pretende llegar a comprender las dinmicas de poder que, a niveles estructurales, simblicos y prcticos, priman en relacin a los participantes categorizados como jvenes del Taller de Formacin Poltica.
+
+La tesis, en su totalidad, se conforma como una revisin paradigmtica del debate de la Complejidad y un enfoque y propuesta metodolgica, siempre congruente y articulada con la asuncin de la investigadora como hbrida disciplinaria: antroploga y trabajadora social, aunque la tesis se enmarque dentro de la llamada antropologa poltica.
+
+El resultado es un trabajo heterodoxo, deconstructivo y propositivo (paradigmtica y metodolgicamente) sobre los anlisis del poder y las agencias.</str><str>The study has a practical and applied: get to have elements for reflections for the working methodologies and their importance and relevance to the objectives in the activities of politicization and empowerment of the Programa de Desarrollo del Poder Local (Pow
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        29547 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.042 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      148056 bytes
+HTML transferred:       147731 bytes
+Requests per second:    118.90 [#/sec] (mean)
+Time per request:       8.411 [ms] (mean)
+Time per request:       8.411 [ms] (mean, across all concurrent requests)
+Transfer rate:          3438.18 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2    8  14.8      2      35
+Waiting:        1    8  14.8      2      35
+Total:          2    8  14.8      2      35
+ 
+***** END Items: 20
+ 
+***** END Workload 10 *****
+ 
+ 
+***** START Workload: 11 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">215</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="102044" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><arr name="dc-title"><str>Academic Spanish during mathematics instruction : the case of novice bilingual teachers in elementary classrooms</str></arr><arr name="dc-description"><str>This dissertation focused on the study of the Spanish academic language proficiency of novice bilingual teachers during the act of teaching mathematics in elementary grades. Four first year teachers in a large urban school district in central Texas participated in the study. At the time of the study two participants were fully certified and had attended four-year teacher preparation programs. The additional participants had completed all certification requirements including content examinations and the Texas Oral Proficiency Test (TOPT); they were completing their certification requirements through alternative certification programs. The study sought to identify the moments in their teaching of mathematics in Spanish when their instruction broke down, i.e. when they appeared unable to communicate ideas to students, and the reasons for these breakdowns. Findings revealed that the teachers in the study demonstrated linguistic and/or pedagogical breakdowns and that certain factors influenced their knowledge and language competencies. Linguistic breakdowns were manifested when teachers switched to English, used repetitive language when teaching, or provided limited academic language. Pedagogical breakdowns were identified as a lack of: student talk or discussion, effective teacher questioning, or diverse p
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        12917 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.229 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      64902 bytes
+HTML transferred:       64577 bytes
+Requests per second:    21.85 [#/sec] (mean)
+Time per request:       45.771 [ms] (mean)
+Time per request:       45.771 [ms] (mean, across all concurrent requests)
+Transfer rate:          276.95 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   46  96.8      3     219
+Waiting:        2   46  96.8      2     219
+Total:          2   46  96.8      3     219
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        22283 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.081 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      111736 bytes
+HTML transferred:       111411 bytes
+Requests per second:    61.38 [#/sec] (mean)
+Time per request:       16.291 [ms] (mean)
+Time per request:       16.291 [ms] (mean, across all concurrent requests)
+Transfer rate:          1339.62 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1   16  31.6      2      73
+Waiting:        1   16  31.6      2      72
+Total:          1   16  31.5      3      73
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        41548 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.069 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      208061 bytes
+HTML transferred:       207736 bytes
+Requests per second:    72.74 [#/sec] (mean)
+Time per request:       13.748 [ms] (mean)
+Time per request:       13.748 [ms] (mean, across all concurrent requests)
+Transfer rate:          2955.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2   14  24.8      3      58
+Waiting:        2   13  24.8      3      58
+Total:          2   14  24.7      3      58
+ 
+***** END Items: 20
+ 
+***** END Workload 11 *****
+ 
+ 
+***** START Workload: 12 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        10951 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.235 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      55072 bytes
+HTML transferred:       54747 bytes
+Requests per second:    21.29 [#/sec] (mean)
+Time per request:       46.978 [ms] (mean)
+Time per request:       46.978 [ms] (mean, across all concurrent requests)
+Transfer rate:          228.96 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   47  99.8      2     225
+Waiting:        2   47  99.8      2     225
+Total:          2   47  99.8      2     225
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        26967 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.072 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      135156 bytes
+HTML transferred:       134831 bytes
+Requests per second:    69.32 [#/sec] (mean)
+Time per request:       14.426 [ms] (mean)
+Time per request:       14.426 [ms] (mean, across all concurrent requests)
+Transfer rate:          1829.82 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2   14  26.1      3      61
+Waiting:        2   14  26.1      2      61
+Total:          3   14  26.0      3      61
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        68908 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.060 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      344861 bytes
+HTML transferred:       344536 bytes
+Requests per second:    83.88 [#/sec] (mean)
+Time per request:       11.922 [ms] (mean)
+Time per request:       11.922 [ms] (mean, across all concurrent requests)
+Transfer rate:          5649.70 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2   12  19.2      4      46
+Waiting:        2   11  19.1      3      45
+Total:          2   12  19.1      4      46
+ 
+***** END Items: 20
+ 
+***** END Workload 12 *****
+ 
+ 
+***** START Workload: 13 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="407962" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><arr name="dc-title"><str> Development of aptamer-nanoparticle conjugates as a new approach to malaria diagnosis</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582630</str><arr name="dc-title"><str> Single particle analysis by time-resolved ICP-MS measurement</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7008</str><arr name="dc-title"><str>CoMP Aware Radio Resource Management in Integrated PON-OFDM Network</str></arr><arr name="dc-description"><str>Radio resource management (RRM) is an important component of a mobile wireless network that efficiently utilizes the limited radio resources such as spectrum, transmission power, and network infrastructure. Unfortunately, current RRM schemes do not support cooperative multiple point (CoMP), a promising technology that extends coverage, increases capacity, and improves the spectral efficiency of the next generation broadband network, i.e., 4G network. Specifically, to coordinate with CoMP, a RRM scheme should be aware of three main properties of CoMP - cooperative transmitting information, coordinated scheduling transmissi
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="407962" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><arr name="dc-title"><str> Identification of a binding target of triptolide and relatedstudies</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><arr name="dc-title"><str> Development of aptamer-nanoparticle conjugates as a new approach to malaria diagnosis</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582630</str><arr name="dc-title"><str> Single particle analysis by time-resolved ICP-MS measurement</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7008</str><arr name="dc-title"><str>CoMP Aware Radio Resource Management in Integrated PON-OFDM Network</str></arr><arr name="dc-description"><str>Radio resource management (RRM) is an important component of a mobile wireless network that efficiently utilizes the limited radio resources such as spectrum, transmission power, and network infrastructure. Unfortunately, current RRM schemes do not support cooperative multiple point (CoMP), a promising technology that extends coverage, increases capacity, and improves the spectral efficiency of the next generation broadband network, i.e., 4G network. Specifically, to coordinate with CoMP, a RRM scheme should be aware of three main properties of CoMP - cooperative transmitting information, coordinated scheduling transmissi
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        6723 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.385 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      33932 bytes
+HTML transferred:       33607 bytes
+Requests per second:    13.00 [#/sec] (mean)
+Time per request:       76.946 [ms] (mean)
+Time per request:       76.946 [ms] (mean, across all concurrent requests)
+Transfer rate:          86.13 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   77 166.1      3     374
+Waiting:        2   77 166.1      3     374
+Total:          2   77 166.2      3     374
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        16572 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.047 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      83181 bytes
+HTML transferred:       82856 bytes
+Requests per second:    106.70 [#/sec] (mean)
+Time per request:       9.372 [ms] (mean)
+Time per request:       9.372 [ms] (mean, across all concurrent requests)
+Transfer rate:          1733.53 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1    9  16.7      2      39
+Waiting:        1    9  16.7      2      39
+Total:          1    9  16.7      2      39
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        64506 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.078 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      322851 bytes
+HTML transferred:       322526 bytes
+Requests per second:    64.41 [#/sec] (mean)
+Time per request:       15.525 [ms] (mean)
+Time per request:       15.525 [ms] (mean, across all concurrent requests)
+Transfer rate:          4061.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3   15  26.0      4      62
+Waiting:        3   15  26.0      3      61
+Total:          4   15  26.0      4      62
+ 
+***** END Items: 20
+ 
+***** END Workload 13 *****
+ 
+ 
+***** START Workload: 14 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        2803 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.481 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      14332 bytes
+HTML transferred:       14007 bytes
+Requests per second:    10.39 [#/sec] (mean)
+Time per request:       96.244 [ms] (mean)
+Time per request:       96.244 [ms] (mean, across all concurrent requests)
+Transfer rate:          29.08 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   96 210.5      2     473
+Waiting:        2   96 210.5      2     473
+Total:          2   96 210.5      2     473
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><arr name="dc-title"><str>Un workflow que automatice los procesos de negocios del proceso unificado rational</str></arr><arr name="dc-description"><str>La automatizacin de actividades que se realizan en la industria es bsica para mejorar la produccin, la calidad y garantizar el correcto cumplimiento de las reglas de negocio. La industria del software no escapa a esta concepcin.
+Un motor workflow puede controlar la secuencia de las actividades de una produccin, definiendo en la lgica o reglas que deban cumplirse para el avance de las mismas.
+El RUP (Rational Unified Process) especifica un framework para el desarrollo de un proyecto, en particular un proyecto de desarrollo de software, definiendo: etapas, actividades a realizar por un equipo de desarrollo, secuencia y lgica necesaria para obtener el producto final.
+El objetivo de esta lnea de investigacin es automatizar la produccin del software siguiendo las reglas definidas en el RUP a travs de un workflow. Para especificar el RUP utilizaremos el metamodelo definido por la OMG para la descripcin de procesos de desarrollo denominado SPEM (Software Process Engineering Metamodel)</str><str>Eje: Ingeniera de Software</str></arr><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><arr name="dc-title"><str> Topics in optimal stopping with applications in mathematical finance</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><arr name="dc-title"><str>Un workflow que automatice los procesos de negocios del proceso unificado rational</str></arr><arr name="dc-description"><str>La automatizacin de actividades que se realizan en la industria es bsica para mejorar la produccin, la calidad y garantizar el correcto cumplimiento de las reglas de negocio. La industria del software no escapa a esta concepcin.
+Un motor workflow puede controlar la secuencia de las actividades de una produccin, definiendo en la lgica o reglas que deban cumplirse para el avance de las mismas.
+El RUP (Rational Unified Process) especifica un framework para el desarrollo de un proyecto, en particular un proyecto de desarrollo de software, definiendo: etapas, actividades a realizar por un equipo de desarrollo, secuencia y lgica necesaria para obtener el producto final.
+El objetivo de esta lnea de investigacin es automatizar la produccin del software siguiendo las reglas definidas en el RUP a travs de un workflow. Para especificar el RUP utilizaremos el metamodelo definido por la OMG para la descripcin de procesos de desarrollo denominado SPEM (Software Process Engineering Metamodel)</str><str>Eje: Ingeniera de Software</str></arr><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><arr name="dc-title"><str> Topics in optimal stopping with applications in mathematical finance</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        6944 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.028 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      35041 bytes
+HTML transferred:       34716 bytes
+Requests per second:    176.67 [#/sec] (mean)
+Time per request:       5.660 [ms] (mean)
+Time per request:       5.660 [ms] (mean, across all concurrent requests)
+Transfer rate:          1209.09 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     2    5   7.5      2      19
+Waiting:        0    5   7.7      2      19
+Total:          2    6   7.4      2      19
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><arr name="dc-title"><str>Un workflow que automatice los procesos de negocios del proceso unificado rational</str></arr><arr name="dc-description"><str>La automatizacin de actividades que se realizan en la industria es bsica para mejorar la produccin, la calidad y garantizar el correcto cumplimiento de las reglas de negocio. La industria del software no escapa a esta concepcin.
+Un motor workflow puede controlar la secuencia de las actividades de una produccin, definiendo en la lgica o reglas que deban cumplirse para el avance de las mismas.
+El RUP (Rational Unified Process) especifica un framework para el desarrollo de un proyecto, en particular un proyecto de desarrollo de software, definiendo: etapas, actividades a realizar por un equipo de desarrollo, secuencia y lgica necesaria para obtener el producto final.
+El objetivo de esta lnea de investigacin es automatizar la produccin del software siguiendo las reglas definidas en el RUP a travs de un workflow. Para especificar el RUP utilizaremos el metamodelo definido por la OMG para la descripcin de procesos de desarrollo denominado SPEM (Software Process Engineering Metamodel)</str><str>Eje: Ingeniera de Software</str></arr><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><arr name="dc-title"><str> Topics in optimal stopping with applications in mathematical finance</str></arr><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        31796 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.091 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      159301 bytes
+HTML transferred:       158976 bytes
+Requests per second:    54.91 [#/sec] (mean)
+Time per request:       18.212 [ms] (mean)
+Time per request:       18.212 [ms] (mean, across all concurrent requests)
+Transfer rate:          1708.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     3   18  34.0      3      79
+Waiting:        3   18  34.0      3      79
+Total:          3   18  33.9      3      79
+ 
+***** END Items: 20
+ 
+***** END Workload 14 *****
+ 
+ 
+***** START Workload: 15 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="1631509" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344</str><arr name="dc-title"><str>Clasificacin por resistencia de la madera aserrada como material estructural</str></arr><arr name="dc-description"><str>Esta tesis persigue dos objetivos principales: 1) disear un mtodo de clasificacin visual por resistencia para la madera aserrada de Eucalyptus grandis cultivado en Argentina, y proponer su insercin en el sistema internacional de clases resistentes establecido en las normas europeas, 2) desarrollar modelos para una clasificacin mecnica por resistencia de la madera considerada, en el marco del sistema internacional citado precedentemente. Para alcanzar estos objetivos, se dise una investigacin emprica sobre cuatro muestras de vigas y una de tablas sometidas a flexin, una muestra de tablas ensayada a traccin paralela a las fibras y una con cuerpos de prueba sometidos a compresin. Se investig la influencia de los parmetros visuales sobre las propiedades mecnicas, y se analizaron diferentes perfiles de resistencia, rigidez y densidad con los correspondientes lmites para los principales parmetros visuales, de acuerdo con el sistema internacional de clases resistentes establecido en la norma europea EN 338 (1996). Tambin se compararon las propiedades mecnicas en flexin con las correspondientes a traccin y compresin paralela a las fibras. Fue encontrada una relacin relativamente baja entre la nudosidad y la resistencia a flexin, en comparacin con valores publicados para otras especies. La presencia de mdula, frecuentemente asociada con otros defectos como
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-title,dc-description,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="1631509" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344</str><arr name="dc-title"><str>Clasificacin por resistencia de la madera aserrada como material estructural</str></arr><arr name="dc-description"><str>Esta tesis persigue dos objetivos principales: 1) disear un mtodo de clasificacin visual por resistencia para la madera aserrada de Eucalyptus grandis cultivado en Argentina, y proponer su insercin en el sistema internacional de clases resistentes establecido en las normas europeas, 2) desarrollar modelos para una clasificacin mecnica por resistencia de la madera considerada, en el marco del sistema internacional citado precedentemente. Para alcanzar estos objetivos, se dise una investigacin emprica sobre cuatro muestras de vigas y una de tablas sometidas a flexin, una muestra de tablas ensayada a traccin paralela a las fibras y una con cuerpos de prueba sometidos a compresin. Se investig la influencia de los parmetros visuales sobre las propiedades mecnicas, y se analizaron diferentes perfiles de resistencia, rigidez y densidad con los correspondientes lmites para los principales parmetros visuales, de acuerdo con el sistema internacional de clases resistentes establecido en la norma europea EN 338 (1996). Tambin se compararon las propiedades mecnicas en flexin con las correspondientes a traccin y compresin paralela a las fibras. Fue encontrada una relacin relativamente baja entre la nudosidad y la resistencia a flexin, en comparacin con valores publicados para otras especies. La presencia de mdula, frecuentemente asociada con otros defectos como
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=5
+Document Length:        9257 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.403 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      46602 bytes
+HTML transferred:       46277 bytes
+Requests per second:    12.39 [#/sec] (mean)
+Time per request:       80.688 [ms] (mean)
+Time per request:       80.688 [ms] (mean, across all concurrent requests)
+Transfer rate:          112.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1   81 175.8      2     395
+Waiting:        1   80 175.7      2     395
+Total:          1   81 175.8      3     395
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=10
+Document Length:        10482 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.008 seconds
+Complete requests:      5
+Failed requests:        0
+Write errors:           0
+Total transferred:      52735 bytes
+HTML transferred:       52410 bytes
+Requests per second:    601.11 [#/sec] (mean)
+Time per request:       1.664 [ms] (mean)
+Time per request:       1.664 [ms] (mean, across all concurrent requests)
+Transfer rate:          6191.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1    1   0.8      1       3
+Waiting:        1    1   0.8      1       3
+Total:          1    2   0.9      1       3
+WARNING: The median and mean for the total time are not within a normal deviation
+        These results are probably not that reliable.
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-title,dc-description,dc-available&sort=dc-available+desc&rows=20
+Document Length:        21979 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.074 seconds
+Complete requests:      5
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Write errors:           0
+Total transferred:      110216 bytes
+HTML transferred:       109891 bytes
+Requests per second:    67.50 [#/sec] (mean)
+Time per request:       14.815 [ms] (mean)
+Time per request:       14.815 [ms] (mean, across all concurrent requests)
+Transfer rate:          1453.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1   15  28.3      2      65
+Waiting:        1   14  28.3      2      65
+Total:          1   15  28.2      3      65
+ 
+***** END Items: 20
+ 
+***** END Workload 15 *****
+ 

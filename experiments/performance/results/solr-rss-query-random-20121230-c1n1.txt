@@ -1,0 +1,2546 @@
+ 
+***** START Workload: 1 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">37</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="100" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/36781</str><date name="dc-available">2012-09-08T03:09:16Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.69728</str><date name="dc-available">2012-07-03T12:57:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:SSU.etd-07192010-072619</str><date name="dc-available">2012-07-03T12:39:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OWTU.10012/6321</str><date name="dc-available">2012-07-03T12:32:32Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/3811</str><date name="dc-available">2012-07-03T04:46:41Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1194 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.098 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1259 bytes
+HTML transferred:       1194 bytes
+Requests per second:    10.24 [#/sec] (mean)
+Time per request:       97.632 [ms] (mean)
+Time per request:       97.632 [ms] (mean, across all concurrent requests)
+Transfer rate:          12.59 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    98   98   0.0     98      98
+Waiting:       97   97   0.0     97      97
+Total:         98   98   0.0     98      98
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="100" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/36781</str><date name="dc-available">2012-09-08T03:09:16Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.69728</str><date name="dc-available">2012-07-03T12:57:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:SSU.etd-07192010-072619</str><date name="dc-available">2012-07-03T12:39:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OWTU.10012/6321</str><date name="dc-available">2012-07-03T12:32:32Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/3811</str><date name="dc-available">2012-07-03T04:46:41Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/7346</str><date name="dc-available">2012-07-03T01:03:34Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:KSU/oai:pulsar.lib.ksu.edu:2097/13206</str><date name="dc-available">2012-03-21T10:50:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:AEU.10048/1269</str><date name="dc-available">2012-03-21T10:50:08Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:dissertations-2402</str><date name="dc-available">2012-03-09T04:10:24Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:OhioLink/oai:etd.ohiolink.edu:kent1208869783</str><date name="dc-available">2012-03-09T03:54:30Z</date></doc><
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        2003 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2068 bytes
+HTML transferred:       2003 bytes
+Requests per second:    264.76 [#/sec] (mean)
+Time per request:       3.777 [ms] (mean)
+Time per request:       3.777 [ms] (mean, across all concurrent requests)
+Transfer rate:          534.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="100" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/36781</str><date name="dc-available">2012-09-08T03:09:16Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.69728</str><date name="dc-available">2012-07-03T12:57:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:SSU.etd-07192010-072619</str><date name="dc-available">2012-07-03T12:39:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OWTU.10012/6321</str><date name="dc-available">2012-07-03T12:32:32Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/3811</str><date name="dc-available">2012-07-03T04:46:41Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/7346</str><date name="dc-available">2012-07-03T01:03:34Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:KSU/oai:pulsar.lib.ksu.edu:2097/13206</str><date name="dc-available">2012-03-21T10:50:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:AEU.10048/1269</str><date name="dc-available">2012-03-21T10:50:08Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:dissertations-2402</str><date name="dc-available">2012-03-09T04:10:24Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:OhioLink/oai:etd.ohiolink.edu:kent1208869783</str><date name="dc-available">2012-03-09T03:54:30Z</date></doc><
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w1/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3554 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3619 bytes
+HTML transferred:       3554 bytes
+Requests per second:    228.10 [#/sec] (mean)
+Time per request:       4.384 [ms] (mean)
+Time per request:       4.384 [ms] (mean, across all concurrent requests)
+Transfer rate:          806.15 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 20
+ 
+***** END Workload 1 *****
+ 
+ 
+***** START Workload: 2 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">14</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><date name="dc-available">2012-09-12T05:05:19Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:MUENCHEN/oai:edoc.ub.uni-muenchen.de:14676</str><date name="dc-available">2012-08-08T03:12:03Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:PUCP/oai:tesis.pucp.edu.pe:123456789/1459</str><date name="dc-available">2012-08-04T03:14:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.27326</str><date name="dc-available">2012-07-03T12:55:05Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1158 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.019 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1223 bytes
+HTML transferred:       1158 bytes
+Requests per second:    52.77 [#/sec] (mean)
+Time per request:       18.950 [ms] (mean)
+Time per request:       18.950 [ms] (mean, across all concurrent requests)
+Transfer rate:          63.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    19   19   0.0     19      19
+Waiting:       19   19   0.0     19      19
+Total:         19   19   0.0     19      19
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><date name="dc-available">2012-09-12T05:05:19Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:MUENCHEN/oai:edoc.ub.uni-muenchen.de:14676</str><date name="dc-available">2012-08-08T03:12:03Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:PUCP/oai:tesis.pucp.edu.pe:123456789/1459</str><date name="dc-available">2012-08-04T03:14:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.27326</str><date name="dc-available">2012-07-03T12:55:05Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.62370</str><date name="dc-available">2012-07-03T12:49:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/29632</str><date name="dc-available">2012-07-03T12:37:37Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/26515</str><date name="dc-available">2012-07-03T12:35:29Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OWTU.10012/5293</str><date name="dc-available">2012-07-03T12:31:36Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:BVAU./4125</str><date name="dc-available">2012-07-03T12:12:17Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1975 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2040 bytes
+HTML transferred:       1975 bytes
+Requests per second:    184.64 [#/sec] (mean)
+Time per request:       5.416 [ms] (mean)
+Time per request:       5.416 [ms] (mean, across all concurrent requests)
+Transfer rate:          367.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="200" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/5635</str><date name="dc-available">2012-09-17T03:04:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UDG/oai:www.tdx.cat:10803/84064</str><date name="dc-available">2012-09-12T05:05:19Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:MUENCHEN/oai:edoc.ub.uni-muenchen.de:14676</str><date name="dc-available">2012-08-08T03:12:03Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:PUCP/oai:tesis.pucp.edu.pe:123456789/1459</str><date name="dc-available">2012-08-04T03:14:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.27326</str><date name="dc-available">2012-07-03T12:55:05Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.62370</str><date name="dc-available">2012-07-03T12:49:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/29632</str><date name="dc-available">2012-07-03T12:37:37Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/26515</str><date name="dc-available">2012-07-03T12:35:29Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OWTU.10012/5293</str><date name="dc-available">2012-07-03T12:31:36Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:BVAU./4125</str><date name="dc-available">2012-07-03T12:12:17Z</date></doc><doc><str name="dc-identifier
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w2/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3574 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.007 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3639 bytes
+HTML transferred:       3574 bytes
+Requests per second:    147.38 [#/sec] (mean)
+Time per request:       6.785 [ms] (mean)
+Time per request:       6.785 [ms] (mean, across all concurrent requests)
+Transfer rate:          523.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     7    7   0.0      7       7
+Waiting:        7    7   0.0      7       7
+Total:          7    7   0.0      7       7
+ 
+***** END Items: 20
+ 
+***** END Workload 2 *****
+ 
+ 
+***** START Workload: 3 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="400" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/8539</str><date name="dc-available">2012-09-18T04:05:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/893</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/915</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/ETD-UT-2012-05-5388</str><date name="dc-available">2012-07-20T03:21:44Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1198 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.010 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1263 bytes
+HTML transferred:       1198 bytes
+Requests per second:    96.64 [#/sec] (mean)
+Time per request:       10.348 [ms] (mean)
+Time per request:       10.348 [ms] (mean, across all concurrent requests)
+Transfer rate:          119.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    10   10   0.0     10      10
+Waiting:       10   10   0.0     10      10
+Total:         10   10   0.0     10      10
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="400" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/8539</str><date name="dc-available">2012-09-18T04:05:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/893</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/915</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/ETD-UT-2012-05-5388</str><date name="dc-available">2012-07-20T03:21:44Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/3736</str><date name="dc-available">2012-07-13T04:34:42Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/282</str><date name="dc-available">2012-07-13T04:33:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/ETD-UT-2011-05-2936</str><date name="dc-available">2012-07-10T03:51:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/2349</str><date name="dc-available">2012-07-03T12:59:54Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.68673</str><date name
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        2053 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2118 bytes
+HTML transferred:       2053 bytes
+Requests per second:    218.48 [#/sec] (mean)
+Time per request:       4.577 [ms] (mean)
+Time per request:       4.577 [ms] (mean, across all concurrent requests)
+Transfer rate:          451.90 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="400" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/8539</str><date name="dc-available">2012-09-18T04:05:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/893</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/915</str><date name="dc-available">2012-08-15T03:08:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/ETD-UT-2012-05-5388</str><date name="dc-available">2012-07-20T03:21:44Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/3736</str><date name="dc-available">2012-07-13T04:34:42Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/282</str><date name="dc-available">2012-07-13T04:33:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/ETD-UT-2011-05-2936</str><date name="dc-available">2012-07-10T03:51:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMU.1866/2349</str><date name="dc-available">2012-07-03T12:59:54Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMM.68673</str><date name
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w3/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3673 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.006 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3738 bytes
+HTML transferred:       3673 bytes
+Requests per second:    157.21 [#/sec] (mean)
+Time per request:       6.361 [ms] (mean)
+Time per request:       6.361 [ms] (mean, across all concurrent requests)
+Transfer rate:          573.87 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     6    6   0.0      6       6
+Waiting:        6    6   0.0      6       6
+Total:          6    6   0.0      6       6
+ 
+***** END Items: 20
+ 
+***** END Workload 3 *****
+ 
+ 
+***** START Workload: 4 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><date name="dc-available">2012-08-23T03:22:18Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/19672</str><date name="dc-available">2012-08-16T03:21:27Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/582</str><date name="dc-available">2012-08-15T03:08:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/6832</str><date name="dc-available">2012-07-27T03:24:48Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1161 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.009 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1226 bytes
+HTML transferred:       1161 bytes
+Requests per second:    113.12 [#/sec] (mean)
+Time per request:       8.840 [ms] (mean)
+Time per request:       8.840 [ms] (mean, across all concurrent requests)
+Transfer rate:          135.44 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     9    9   0.0      9       9
+Waiting:        9    9   0.0      9       9
+Total:          9    9   0.0      9       9
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><date name="dc-available">2012-08-23T03:22:18Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/19672</str><date name="dc-available">2012-08-16T03:21:27Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/582</str><date name="dc-available">2012-08-15T03:08:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/6832</str><date name="dc-available">2012-07-27T03:24:48Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/9810</str><date name="dc-available">2012-07-18T03:14:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/3818</str><date name="dc-available">2012-07-13T04:34:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/595</str><date name="dc-available">2012-07-13T04:33:44Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/090NTNU0493001</str><date name="dc-available">2012-07-10T06:25:23Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LSU/oai:etd.lsu.edu:etd-06182012-232710</str><date name="dc-available">2012-07-10T03:09:58Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1959 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2024 bytes
+HTML transferred:       1959 bytes
+Requests per second:    213.49 [#/sec] (mean)
+Time per request:       4.684 [ms] (mean)
+Time per request:       4.684 [ms] (mean, across all concurrent requests)
+Transfer rate:          421.98 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        4    4   0.0      4       4
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="800" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UMASS/oai:scholarworks.umass.edu:theses-1952</str><date name="dc-available">2012-08-23T03:26:52Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20030</str><date name="dc-available">2012-08-23T03:22:18Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/19672</str><date name="dc-available">2012-08-16T03:21:27Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:UNB.1882/582</str><date name="dc-available">2012-08-15T03:08:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/6832</str><date name="dc-available">2012-07-27T03:24:48Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/9810</str><date name="dc-available">2012-07-18T03:14:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/3818</str><date name="dc-available">2012-07-13T04:34:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TULANE/oai:www.louisianadigitallibrary.org:p16313coll12/595</str><date name="dc-available">2012-07-13T04:33:44Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/090NTNU0493001</str><date name="dc-available">2012-07-10T06:25:23Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LSU/oai:etd.lsu.edu:etd-06182012-232710</str><date name="dc-available">2012-07-10T03:09:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndlt
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w4/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3551 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.007 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3616 bytes
+HTML transferred:       3551 bytes
+Requests per second:    143.91 [#/sec] (mean)
+Time per request:       6.949 [ms] (mean)
+Time per request:       6.949 [ms] (mean, across all concurrent requests)
+Transfer rate:          508.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     7    7   0.0      7       7
+Waiting:        7    7   0.0      7       7
+Total:          7    7   0.0      7       7
+ 
+***** END Items: 20
+ 
+***** END Workload 4 *****
+ 
+ 
+***** START Workload: 5 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1172 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.010 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1237 bytes
+HTML transferred:       1172 bytes
+Requests per second:    101.28 [#/sec] (mean)
+Time per request:       9.874 [ms] (mean)
+Time per request:       9.874 [ms] (mean, across all concurrent requests)
+Transfer rate:          122.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    10   10   0.0     10      10
+Waiting:       10   10   0.0     10      10
+Total:         10   10   0.0     10      10
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="1599" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21186</str><date name="dc-available">2012-09-21T03:15:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/16389</str><date name="dc-available">2012-09-21T03:15:42Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/4062010112781</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7352</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMUQET.1025</str><date name="dc-available">2012-09-11T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QQLA.2006/24075</str><date name="dc-available">2012-09-11T03:12:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20642</str><date name="dc-available">2012-09-09T03:24:03Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/099FJU01321021</str><date name="dc-available">2012-09-08T03:22:49Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/6936</str><date name="dc-available">2012-09-08T03:13:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33207</str><date name="dc-available">2012-09-06T03:13:43Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1950 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2015 bytes
+HTML transferred:       1950 bytes
+Requests per second:    344.47 [#/sec] (mean)
+Time per request:       2.903 [ms] (mean)
+Time per request:       2.903 [ms] (mean, across all concurrent requests)
+Transfer rate:          677.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="1599" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21186</str><date name="dc-available">2012-09-21T03:15:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/16389</str><date name="dc-available">2012-09-21T03:15:42Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/4062010112781</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7352</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QMUQET.1025</str><date name="dc-available">2012-09-11T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QQLA.2006/24075</str><date name="dc-available">2012-09-11T03:12:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/20642</str><date name="dc-available">2012-09-09T03:24:03Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/099FJU01321021</str><date name="dc-available">2012-09-08T03:22:49Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/6936</str><date name="dc-available">2012-09-08T03:13:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33207</str><date name="dc-available">2012-09-06T03:13:43Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:DUK
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w5/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3555 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3620 bytes
+HTML transferred:       3555 bytes
+Requests per second:    192.42 [#/sec] (mean)
+Time per request:       5.197 [ms] (mean)
+Time per request:       5.197 [ms] (mean, across all concurrent requests)
+Transfer rate:          680.23 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 20
+ 
+***** END Workload 5 *****
+ 
+ 
+***** START Workload: 6 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">16</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4422</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00733751</str><date name="dc-available">2012-09-20T03:07:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7366</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1131 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.020 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1196 bytes
+HTML transferred:       1131 bytes
+Requests per second:    49.11 [#/sec] (mean)
+Time per request:       20.362 [ms] (mean)
+Time per request:       20.362 [ms] (mean, across all concurrent requests)
+Transfer rate:          57.36 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    20   20   0.0     20      20
+Waiting:       20   20   0.0     20      20
+Total:         20   20   0.0     20      20
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4422</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00733751</str><date name="dc-available">2012-09-20T03:07:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7366</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/32920</str><date name="dc-available">2012-09-11T03:14:06Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OKQ.1974/7400</str><date name="dc-available">2012-09-11T03:13:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00728697</str><date name="dc-available">2012-09-07T03:03:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UHAWAII/oai:scholarspace.manoa.hawaii.edu:10125/3027</str><date name="dc-available">2012-09-05T03:18:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/11309</str><date name="dc-available">2012-08-31T03:31:20Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1947 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2012 bytes
+HTML transferred:       1947 bytes
+Requests per second:    207.86 [#/sec] (mean)
+Time per request:       4.811 [ms] (mean)
+Time per request:       4.811 [ms] (mean, across all concurrent requests)
+Transfer rate:          408.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="3198" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086NTUS0062001</str><date name="dc-available">2012-09-20T03:19:39Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4139</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/4422</str><date name="dc-available">2012-09-20T03:17:55Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00733751</str><date name="dc-available">2012-09-20T03:07:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7366</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OTU.1807/32920</str><date name="dc-available">2012-09-11T03:14:06Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:OKQ.1974/7400</str><date name="dc-available">2012-09-11T03:13:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00728697</str><date name="dc-available">2012-09-07T03:03:57Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UHAWAII/oai:scholarspace.manoa.hawaii.edu:10125/3027</str><date name="dc-available">2012-09-05T03:18:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/11309</str><date name="dc-available">2012-08-31T03:31:20Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w6/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3555 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.008 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3620 bytes
+HTML transferred:       3555 bytes
+Requests per second:    130.68 [#/sec] (mean)
+Time per request:       7.652 [ms] (mean)
+Time per request:       7.652 [ms] (mean, across all concurrent requests)
+Transfer rate:          461.99 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     8    8   0.0      8       8
+Waiting:        7    7   0.0      7       7
+Total:          8    8   0.0      8       8
+ 
+***** END Items: 20
+ 
+***** END Workload 6 *****
+ 
+ 
+***** START Workload: 7 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">17</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><date name="dc-available">2012-09-21T03:13:59Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/7583</str><date name="dc-available">2012-09-20T03:07:10Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UAB/oai:www.tdx.cat:10803/4276</str><date name="dc-available">2012-09-19T04:01:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0099921015</str><date name="dc-available">2012-09-18T03:04:07Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/16378</str><date name="dc-available">2012-09-12T05:02:41Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1141 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.022 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1206 bytes
+HTML transferred:       1141 bytes
+Requests per second:    46.26 [#/sec] (mean)
+Time per request:       21.616 [ms] (mean)
+Time per request:       21.616 [ms] (mean, across all concurrent requests)
+Transfer rate:          54.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    21   21   0.0     21      21
+Waiting:       21   21   0.0     21      21
+Total:         22   22   0.0     22      22
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><date name="dc-available">2012-09-21T03:13:59Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/7583</str><date name="dc-available">2012-09-20T03:07:10Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UAB/oai:www.tdx.cat:10803/4276</str><date name="dc-available">2012-09-19T04:01:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0099921015</str><date name="dc-available">2012-09-18T03:04:07Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/16378</str><date name="dc-available">2012-09-12T05:02:41Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3969</str><date name="dc-available">2012-09-11T03:21:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7361</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/8586</str><date name="dc-available">2012-09-11T03:20:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:BVAU./43001</str><date name="dc-available">2012-09-11T03:13:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QQLA.2010/27628</str><date name="dc-available">2012-09-11T03:12:13Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1941 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2006 bytes
+HTML transferred:       1941 bytes
+Requests per second:    213.31 [#/sec] (mean)
+Time per request:       4.688 [ms] (mean)
+Time per request:       4.688 [ms] (mean, across all concurrent requests)
+Transfer rate:          417.87 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="6385" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33719</str><date name="dc-available">2012-09-21T03:13:59Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CRANFIELD1/oai:dspace.lib.cranfield.ac.uk:1826/7583</str><date name="dc-available">2012-09-20T03:07:10Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UAB/oai:www.tdx.cat:10803/4276</str><date name="dc-available">2012-09-19T04:01:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0099921015</str><date name="dc-available">2012-09-18T03:04:07Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/16378</str><date name="dc-available">2012-09-12T05:02:41Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3969</str><date name="dc-available">2012-09-11T03:21:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NWUBOLOKA1/oai:dspace.nwu.ac.za:10394/7361</str><date name="dc-available">2012-09-11T03:20:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:NAGOYA/oai:ir.nul.nagoya-u.ac.jp:2237/8586</str><date name="dc-available">2012-09-11T03:20:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:BVAU./43001</str><date name="dc-available">2012-09-11T03:13:02Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:collectionscanada.gc.ca:QQLA.2010/27628</str><date name="dc-available">2012-09-11T03:12:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:LACETR/oai:c
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w7/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3537 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.007 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3602 bytes
+HTML transferred:       3537 bytes
+Requests per second:    144.59 [#/sec] (mean)
+Time per request:       6.916 [ms] (mean)
+Time per request:       6.916 [ms] (mean, across all concurrent requests)
+Transfer rate:          508.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     7    7   0.0      7       7
+Waiting:        7    7   0.0      7       7
+Total:          7    7   0.0      7       7
+ 
+***** END Items: 20
+ 
+***** END Workload 7 *****
+ 
+ 
+***** START Workload: 8 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1134 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.019 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1199 bytes
+HTML transferred:       1134 bytes
+Requests per second:    53.06 [#/sec] (mean)
+Time per request:       18.846 [ms] (mean)
+Time per request:       18.846 [ms] (mean, across all concurrent requests)
+Transfer rate:          62.13 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    19   19   0.0     19      19
+Waiting:       19   19   0.0     19      19
+Total:         19   19   0.0     19      19
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33787</str><date name="dc-available">2012-09-22T03:13:40Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:KSU/oai:krex.k-state.edu:2097/14745</str><date name="dc-available">2012-09-22T03:08:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0098941013</str><date name="dc-available">2012-09-22T03:04:01Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:MUENCHEN/oai:edoc.ub.uni-muenchen.de:14830</str><date name="dc-available">2012-09-21T03:13:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:DUQUESNE/oai:digital.library.duq.edu:spnews/238</str><date name="dc-available">2012-09-21T03:04:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/3031043016681</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/5011047258682</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1937 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2002 bytes
+HTML transferred:       1937 bytes
+Requests per second:    274.57 [#/sec] (mean)
+Time per request:       3.642 [ms] (mean)
+Time per request:       3.642 [ms] (mean, across all concurrent requests)
+Transfer rate:          536.81 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="12778" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21222</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21217</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33787</str><date name="dc-available">2012-09-22T03:13:40Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:KSU/oai:krex.k-state.edu:2097/14745</str><date name="dc-available">2012-09-22T03:08:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0098941013</str><date name="dc-available">2012-09-22T03:04:01Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:MUENCHEN/oai:edoc.ub.uni-muenchen.de:14830</str><date name="dc-available">2012-09-21T03:13:38Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:DUQUESNE/oai:digital.library.duq.edu:spnews/238</str><date name="dc-available">2012-09-21T03:04:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/3031043016681</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:ciria.udlap.mx:u-dl-a/tesis/5011047258682</str><date name="dc-available">2012-09-20T03:20:28Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UDLA-Thesis/oai:
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w8/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3563 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3628 bytes
+HTML transferred:       3563 bytes
+Requests per second:    222.32 [#/sec] (mean)
+Time per request:       4.498 [ms] (mean)
+Time per request:       4.498 [ms] (mean, across all concurrent requests)
+Transfer rate:          787.68 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 20
+ 
+***** END Workload 8 *****
+ 
+ 
+***** START Workload: 9 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1132 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.027 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1197 bytes
+HTML transferred:       1132 bytes
+Requests per second:    37.48 [#/sec] (mean)
+Time per request:       26.680 [ms] (mean)
+Time per request:       26.680 [ms] (mean, across all concurrent requests)
+Transfer rate:          43.81 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    27   27   0.0     27      27
+Waiting:       26   26   0.0     26      26
+Total:         27   27   0.0     27      27
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1940 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2005 bytes
+HTML transferred:       1940 bytes
+Requests per second:    204.00 [#/sec] (mean)
+Time per request:       4.902 [ms] (mean)
+Time per request:       4.902 [ms] (mean, across all concurrent requests)
+Transfer rate:          399.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="25539" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21231</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21272</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3931</str><date name="dc-available">2012-09-22T03:15:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3930</str><date name="dc-available">2012-09-22T03:15:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734108</str><date name="dc-available">2012-09-22T03:03:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734248</str><date name="dc-available">2012-09-22T03:03:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734378</str><date name="dc-available">2012-09-22T03:03:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17946</str><date name="dc-available">2012-09-21T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTAHS/oai:digitalcommons.usu.edu:etd-2340</str><date name="dc-available">2012-09-21T03:22:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:se
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w9/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3566 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3631 bytes
+HTML transferred:       3566 bytes
+Requests per second:    292.06 [#/sec] (mean)
+Time per request:       3.424 [ms] (mean)
+Time per request:       3.424 [ms] (mean, across all concurrent requests)
+Transfer rate:          1035.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 20
+ 
+***** END Workload 9 *****
+ 
+ 
+***** START Workload: 10 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1157 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.026 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1222 bytes
+HTML transferred:       1157 bytes
+Requests per second:    37.99 [#/sec] (mean)
+Time per request:       26.326 [ms] (mean)
+Time per request:       26.326 [ms] (mean, across all concurrent requests)
+Transfer rate:          45.33 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    26   26   0.0     26      26
+Waiting:       26   26   0.0     26      26
+Total:         26   26   0.0     26      26
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1956 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      2021 bytes
+HTML transferred:       1956 bytes
+Requests per second:    200.88 [#/sec] (mean)
+Time per request:       4.978 [ms] (mean)
+Time per request:       4.978 [ms] (mean, across all concurrent requests)
+Transfer rate:          396.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w10/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3485 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.006 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3550 bytes
+HTML transferred:       3485 bytes
+Requests per second:    166.67 [#/sec] (mean)
+Time per request:       6.000 [ms] (mean)
+Time per request:       6.000 [ms] (mean, across all concurrent requests)
+Transfer rate:          577.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     6    6   0.0      6       6
+Waiting:        6    6   0.0      6       6
+Total:          6    6   0.0      6       6
+ 
+***** END Items: 20
+ 
+***** END Workload 10 *****
+ 
+ 
+***** START Workload: 11 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1113 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.039 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1178 bytes
+HTML transferred:       1113 bytes
+Requests per second:    25.77 [#/sec] (mean)
+Time per request:       38.802 [ms] (mean)
+Time per request:       38.802 [ms] (mean, across all concurrent requests)
+Transfer rate:          29.65 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    39   39   0.0     39      39
+Waiting:       39   39   0.0     39      39
+Total:         39   39   0.0     39      39
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="102044" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/100HCU00321023</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/099OCIT5028001</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21257</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21250</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3938</str><date name="dc-available">2012-09-22T03:15:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33775</str><date name="dc-available">2012-09-22T03:13:40Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33771</str><date name="dc-available">2012-09-22T03:13:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0098941013</str><date name="dc-available">2012-09-22T03:04:01Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734192</str><date name="dc-available">2012-09-22T03:03:58Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1893 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1958 bytes
+HTML transferred:       1893 bytes
+Requests per second:    344.00 [#/sec] (mean)
+Time per request:       2.907 [ms] (mean)
+Time per request:       2.907 [ms] (mean, across all concurrent requests)
+Transfer rate:          657.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="102044" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/100HCU00321023</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/099OCIT5028001</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21257</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21250</str><date name="dc-available">2012-09-22T03:15:51Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/3938</str><date name="dc-available">2012-09-22T03:15:50Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33775</str><date name="dc-available">2012-09-22T03:13:40Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:ORGSU/oai:ir.library.oregonstate.edu:1957/33771</str><date name="dc-available">2012-09-22T03:13:33Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CHENGCHI/G0098941013</str><date name="dc-available">2012-09-22T03:04:01Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734192</str><date name="dc-available">2012-09-22T03:03:58Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:CCSD/oai:tel.archives-ouvertes.fr:tel-00734347</str><date na
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w11/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3480 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3545 bytes
+HTML transferred:       3480 bytes
+Requests per second:    239.64 [#/sec] (mean)
+Time per request:       4.173 [ms] (mean)
+Time per request:       4.173 [ms] (mean, across all concurrent requests)
+Transfer rate:          829.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 20
+ 
+***** END Workload 11 *****
+ 
+ 
+***** START Workload: 12 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">23</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="204080" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46956815</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7004</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17968</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17971</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1162 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.027 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1227 bytes
+HTML transferred:       1162 bytes
+Requests per second:    37.31 [#/sec] (mean)
+Time per request:       26.802 [ms] (mean)
+Time per request:       26.802 [ms] (mean, across all concurrent requests)
+Transfer rate:          44.71 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    27   27   0.0     27      27
+Waiting:       27   27   0.0     27      27
+Total:         27   27   0.0     27      27
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="204080" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46956815</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7004</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17968</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17971</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086CSMC3065001</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_URV/oai:www.tdx.cat:10803/34651</str><date name="dc-available">2012-09-22T03:17:20Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UPF/oai:www.tdx.cat:10803/83640</str><date name="dc-available">2012-09-22T03:17:05Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UIB/oai:www.tdx.cat:10803/84120</str><date name="dc-available">2012-09-22T03:17:00Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UB/oai:www.tdx.cat:10803/83366</str><date name="dc-available">2012-09-22T03:16:30Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1898 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1963 bytes
+HTML transferred:       1898 bytes
+Requests per second:    331.67 [#/sec] (mean)
+Time per request:       3.015 [ms] (mean)
+Time per request:       3.015 [ms] (mean, across all concurrent requests)
+Transfer rate:          635.82 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="204080" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46956815</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7004</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17958</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17968</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17971</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/086CSMC3065001</str><date name="dc-available">2012-09-22T03:18:13Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_URV/oai:www.tdx.cat:10803/34651</str><date name="dc-available">2012-09-22T03:17:20Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UPF/oai:www.tdx.cat:10803/83640</str><date name="dc-available">2012-09-22T03:17:05Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UIB/oai:www.tdx.cat:10803/84120</str><date name="dc-available">2012-09-22T03:17:00Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UB/oai:www.tdx.cat:10803/83366</str><date name="dc-available">2012-09-22T03:16:30Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TDX_UAB/oai:www.tdx.cat:10803/32076</str><date name="dc
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w12/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3454 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3519 bytes
+HTML transferred:       3454 bytes
+Requests per second:    218.87 [#/sec] (mean)
+Time per request:       4.569 [ms] (mean)
+Time per request:       4.569 [ms] (mean, across all concurrent requests)
+Transfer rate:          752.14 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 20
+ 
+***** END Workload 12 *****
+ 
+ 
+***** START Workload: 13 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">33</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="407962" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582630</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7008</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17967</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1110 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.038 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1175 bytes
+HTML transferred:       1110 bytes
+Requests per second:    26.65 [#/sec] (mean)
+Time per request:       37.529 [ms] (mean)
+Time per request:       37.529 [ms] (mean, across all concurrent requests)
+Transfer rate:          30.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    37   37   0.0     37      37
+Waiting:       37   37   0.0     37      37
+Total:         38   38   0.0     38      38
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="407962" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582630</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7008</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17967</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17957</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17971</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17966</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:USASK/oai:usask.ca:etd-09212012-090410</str><date name="dc-available">2012-09-22T03:22:06Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1924 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1989 bytes
+HTML transferred:       1924 bytes
+Requests per second:    351.12 [#/sec] (mean)
+Time per request:       2.848 [ms] (mean)
+Time per request:       2.848 [ms] (mean, across all concurrent requests)
+Transfer rate:          682.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="407962" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582630</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7008</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17967</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17960</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17957</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17971</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:UTEXAS/oai:repositories.lib.utexas.edu:2152/17966</str><date name="dc-available">2012-09-22T03:22:31Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:USASK/oai:usask.ca:etd-09212012-090410</str><date name="dc-available">2012-09-22T03:22:06Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:TW/099OCIT5028001</str><date 
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w13/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3412 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3477 bytes
+HTML transferred:       3412 bytes
+Requests per second:    190.84 [#/sec] (mean)
+Time per request:       5.240 [ms] (mean)
+Time per request:       5.240 [ms] (mean, across all concurrent requests)
+Transfer rate:          648.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     5    5   0.0      5       5
+Waiting:        5    5   0.0      5       5
+Total:          5    5   0.0      5       5
+ 
+***** END Items: 20
+ 
+***** END Workload 13 *****
+ 
+ 
+***** START Workload: 14 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">64</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4804202X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46541214</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1081 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.070 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1146 bytes
+HTML transferred:       1081 bytes
+Requests per second:    14.35 [#/sec] (mean)
+Time per request:       69.666 [ms] (mean)
+Time per request:       69.666 [ms] (mean, across all concurrent requests)
+Transfer rate:          16.06 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    70   70   0.0     70      70
+Waiting:       69   69   0.0     69      69
+Total:         70   70   0.0     70      70
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4804202X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46541214</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4818214X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128909</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B47228684</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7010</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1797 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1862 bytes
+HTML transferred:       1797 bytes
+Requests per second:    281.61 [#/sec] (mean)
+Time per request:       3.551 [ms] (mean)
+Time per request:       3.551 [ms] (mean, across all concurrent requests)
+Transfer rate:          512.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="815826" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/21292</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4804202X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46541214</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4818214X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128922</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128909</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B47228684</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7010</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:WATERLOO/oai:uwspace.uwaterloo.ca:10012/7006</str><date name="dc-available">2012-09-22T03:29:17Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w14/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3362 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.006 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3427 bytes
+HTML transferred:       3362 bytes
+Requests per second:    167.50 [#/sec] (mean)
+Time per request:       5.970 [ms] (mean)
+Time per request:       5.970 [ms] (mean, across all concurrent requests)
+Transfer rate:          560.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     6    6   0.0      6       6
+Waiting:        6    6   0.0      6       6
+Total:          6    6   0.0      6       6
+ 
+***** END Items: 20
+ 
+***** END Workload 14 *****
+ 
+ 
+***** START Workload: 15 *****
+ 
+ 
+***** START Items: 5 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">95</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">5</str></lst></lst><result name="response" numFound="1631509" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128971</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46591102</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=5
+Document Length:        1081 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.100 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1146 bytes
+HTML transferred:       1081 bytes
+Requests per second:    10.03 [#/sec] (mean)
+Time per request:       99.653 [ms] (mean)
+Time per request:       99.653 [ms] (mean, across all concurrent requests)
+Transfer rate:          11.23 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   100  100   0.0    100     100
+Waiting:       99   99   0.0     99      99
+Total:        100  100   0.0    100     100
+ 
+***** END Items: 5
+ 
+***** START Items: 10 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">10</str></lst></lst><result name="response" numFound="1631509" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128971</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46591102</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46583105</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48174130</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46968398</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4804202X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48181638</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc></result>
+</response>
+
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=10
+Document Length:        1776 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.003 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      1841 bytes
+HTML transferred:       1776 bytes
+Requests per second:    371.75 [#/sec] (mean)
+Time per request:       2.690 [ms] (mean)
+Time per request:       2.690 [ms] (mean, across all concurrent requests)
+Transfer rate:          668.35 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     3    3   0.0      3       3
+Waiting:        3    3   0.0      3       3
+Total:          3    3   0.0      3       3
+ 
+***** END Items: 10
+ 
+***** START Items: 20 *****
+http://localhost:8983/solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)...INFO: POST header == 
+---
+GET /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20 HTTP/1.0
+Host: localhost:8983
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Content-Type: application/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int><lst name="params"><str name="fl">dc-identifier,dc-available</str><str name="sort">dc-available desc</str><str name="q">*:*</str><str name="rows">20</str></lst></lst><result name="response" numFound="1631509" start="0"><doc><str name="dc-identifier">oai:union.ndltd.org:SEDICI/oai:sedici.unlp.edu.ar:10915/1344</str><date name="dc-available">2012-09-23T03:22:14Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46582046</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48041907</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128971</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46591102</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46583105</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48174130</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46968398</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B4804202X</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48181638</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B46541214</str><date name="dc-available">2012-09-23T03:14:22Z</date></doc><doc><str name="dc-identifier">oai:union.ndltd.org:HKU/oai:hkuto:B48128958</str><date nam
+LOG: Response code = 200
+..done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8983
+
+Document Path:          /solr/w15/select?q=*:*&fl=dc-identifier,dc-available&sort=dc-available+desc&rows=20
+Document Length:        3229 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      3294 bytes
+HTML transferred:       3229 bytes
+Requests per second:    234.25 [#/sec] (mean)
+Time per request:       4.269 [ms] (mean)
+Time per request:       4.269 [ms] (mean, across all concurrent requests)
+Transfer rate:          753.52 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
+ 
+***** END Items: 20
+ 
+***** END Workload 15 *****
+ 

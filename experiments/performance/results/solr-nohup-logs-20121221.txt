@@ -1,0 +1,1956 @@
+2012-12-21 14:04:01.614:INFO:oejs.Server:jetty-8.1.2.v20120308
+2012-12-21 14:04:01.640:INFO:oejdp.ScanningAppProvider:Deployment monitor /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/contexts at interval 0
+2012-12-21 14:04:01.666:INFO:oejd.DeploymentManager:Deployable added: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/contexts/solr.xml
+2012-12-21 14:04:02.783:INFO:oejw.StandardDescriptorProcessor:NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2012-12-21 14:04:02.837:INFO:oejsh.ContextHandler:started o.e.j.w.WebAppContext{/solr,file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/solr-webapp/webapp/},/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/webapps/solr.war
+2012-12-21 14:04:02.837:INFO:oejsh.ContextHandler:started o.e.j.w.WebAppContext{/solr,file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/solr-webapp/webapp/},/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/webapps/solr.war
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: JNDI not configured for solr (NoInitialContextEx)
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: using system property solr.solr.home: example-DIH/solr
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for deduced Solr Home: 'example-DIH/solr/'
+21 Dec 2012 2:04:03 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init()
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: JNDI not configured for solr (NoInitialContextEx)
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: using system property solr.solr.home: example-DIH/solr
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer$Initializer initialize
+INFO: looking for solr.xml: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/solr.xml
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer <init>
+INFO: New CoreContainer 13011608
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer load
+INFO: Loading CoreContainer using Solr Home: 'example-DIH/solr/'
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/'
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer load
+INFO: Registering Log Listener
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer load
+INFO: loading shared library: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/lib
+21 Dec 2012 2:04:03 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'db' using instanceDir: example-DIH/solr/db
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/db/'
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/db/lib/hsqldb-1.8.0.10.jar' to classloader
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:03 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:03 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:03 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=db
+21 Dec 2012 2:04:04 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+21 Dec 2012 2:04:04 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:04 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+21 Dec 2012 2:04:04 PM org.apache.solr.core.SolrCore <init>
+INFO: [db] Opening new SolrCore at example-DIH/solr/db/, dataDir=example-DIH/solr/db/data/
+21 Dec 2012 2:04:04 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:04 PM org.apache.solr.core.SolrCore initListeners
+INFO: [db] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:04 PM org.apache.solr.core.SolrCore initListeners
+INFO: [db] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:04 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/db/data/index/
+21 Dec 2012 2:04:04 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/db/data/index forceNew:false
+21 Dec 2012 2:04:04 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:04 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:04 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1d7fc31 main
+21 Dec 2012 2:04:04 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:04 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/db/conf/elevate.xml
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting socketTimeout to: 0
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting urlScheme to: http://
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting connTimeout to: 0
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maxConnectionsPerHost to: 20
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting corePoolSize to: 0
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maximumPoolSize to: 2147483647
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maxThreadIdleTime to: 5
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting sizeOfQueue to: -1
+21 Dec 2012 2:04:04 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting fairnessPolicy to: false
+21 Dec 2012 2:04:04 PM org.apache.solr.client.solrj.impl.HttpClientUtil createClient
+INFO: Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+21 Dec 2012 2:04:05 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1d7fc31 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [db] Registered new searcher Searcher@1d7fc31 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: db
+21 Dec 2012 2:04:05 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'rss' using instanceDir: example-DIH/solr/rss
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/rss/'
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:05 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:05 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=rss
+21 Dec 2012 2:04:05 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:05 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:05 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: link
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore <init>
+INFO: [rss] Opening new SolrCore at example-DIH/solr/rss/, dataDir=example-DIH/solr/rss/data/
+21 Dec 2012 2:04:05 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore initListeners
+INFO: [rss] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore initListeners
+INFO: [rss] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/rss/data/index/
+21 Dec 2012 2:04:05 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/rss/data/index forceNew:false
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:05 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:05 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:05 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1970ae0 main
+21 Dec 2012 2:04:05 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:05 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:05 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/rss/conf/elevate.xml
+21 Dec 2012 2:04:05 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1970ae0 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [rss] Registered new searcher Searcher@1970ae0 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:05 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: rss
+21 Dec 2012 2:04:05 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'mail' using instanceDir: example-DIH/solr/mail
+21 Dec 2012 2:04:05 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/mail/'
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/fontbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tika-core-1.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/metadata-extractor-2.4.0-beta-1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tika-parsers-1.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/pdfbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/jempbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/dataimporthandler/lib/mail-1.4.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/dataimporthandler/lib/activation-1.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=example
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is catchAllField
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: messageId
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore <init>
+INFO: [mail] Opening new SolrCore at example-DIH/solr/mail/, dataDir=example-DIH/solr/mail/data/
+21 Dec 2012 2:04:06 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore initListeners
+INFO: [mail] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore initListeners
+INFO: [mail] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=fast_warm,start=0,rows=10}, {q=static firstSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/mail/data/index/
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/mail/data/index forceNew:false
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:06 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created dismax: solr.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created partitioned: solr.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /spellCheckCompRH: solr.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created tvrh: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /autoSuggest: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:06 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@2f4813 main
+21 Dec 2012 2:04:06 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:06 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Initializing spell checkers
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: No queryConverter defined, using default converter
+21 Dec 2012 2:04:06 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@2f4813 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: mail
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'tika' using instanceDir: example-DIH/solr/tika
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/tika/'
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore execute
+INFO: [mail] webapp=null path=null params={start=0&event=firstSearcher&q=fast_warm&distrib=false&rows=10} hits=0 status=0 QTime=68 
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/fontbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tika-core-1.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore execute
+INFO: [mail] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml&distrib=false} hits=0 status=0 QTime=3 
+21 Dec 2012 2:04:06 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+INFO: Loading spell index for spellchecker: default
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/metadata-extractor-2.4.0-beta-1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+INFO: Loading spell index for spellchecker: jarowinkler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/tika-parsers-1.2.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/pdfbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/jempbox-1.7.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/dataimporthandler/lib/mail-1.4.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/contrib/dataimporthandler/lib/activation-1.1.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+INFO: Loading spell index for spellchecker: file
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [mail] Registered new searcher Searcher@2f4813 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=test
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:06 PM org.apache.solr.schema.IndexSchema readSchema
+WARNING: no uniqueKey specified in schema.
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore <init>
+INFO: [tika] Opening new SolrCore at example-DIH/solr/tika/, dataDir=example-DIH/solr/tika/data/
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: tika
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore initListeners
+INFO: [tika] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore initListeners
+INFO: [tika] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/tika/data/index/
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/tika/data/index forceNew:false
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:06 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:06 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:06 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1bef5e8 main
+21 Dec 2012 2:04:06 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:06 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:06 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1bef5e8 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [tika] Registered new searcher Searcher@1bef5e8 main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: tika
+21 Dec 2012 2:04:06 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'ndltd' using instanceDir: example-DIH/solr/ndltd
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/ndltd/'
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:06 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=ndltd
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore <init>
+INFO: [ndltd] Opening new SolrCore at example-DIH/solr/ndltd/, dataDir=example-DIH/solr/ndltd/data/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [ndltd] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [ndltd] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/ndltd/data/index/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/ndltd/data/index forceNew:false
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:07 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:07 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@d99277 main
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/ndltd/conf/elevate.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@d99277 main{StandardDirectoryReader(segments_7:18)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [ndltd] Registered new searcher Searcher@d99277 main{StandardDirectoryReader(segments_7:18)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: ndltd
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w1' using instanceDir: example-DIH/solr/w1
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w1/'
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore <init>
+INFO: [w1] Opening new SolrCore at example-DIH/solr/w1/, dataDir=example-DIH/solr/w1/data/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w1/data/index/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w1/data/index forceNew:false
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:07 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:07 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1412b61 main
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w1/conf/elevate.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1412b61 main{StandardDirectoryReader(segments_2c:169 _15(4.0.0.2):C100)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w1] Registered new searcher Searcher@1412b61 main{StandardDirectoryReader(segments_2c:169 _15(4.0.0.2):C100)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w1
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w2' using instanceDir: example-DIH/solr/w2
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w2/'
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore <init>
+INFO: [w2] Opening new SolrCore at example-DIH/solr/w2/, dataDir=example-DIH/solr/w2/data/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w2] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w2] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w2/data/index/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w2/data/index forceNew:false
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:07 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:07 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@16f8834 main
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w2/conf/elevate.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@16f8834 main{StandardDirectoryReader(segments_1x:136 _x(4.0.0.2):C200)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w2] Registered new searcher Searcher@16f8834 main{StandardDirectoryReader(segments_1x:136 _x(4.0.0.2):C200)}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w2
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w3' using instanceDir: example-DIH/solr/w3
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w3/'
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:07 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore <init>
+INFO: [w3] Opening new SolrCore at example-DIH/solr/w3/, dataDir=example-DIH/solr/w3/data/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w3] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w3] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w3/data/index/
+21 Dec 2012 2:04:07 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w3/data/index forceNew:false
+21 Dec 2012 2:04:07 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:07 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:07 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@2942da main
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:07 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w3/conf/elevate.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@2942da main{StandardDirectoryReader(segments_c:23 _5(4.0.0.2):C400)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w3] Registered new searcher Searcher@2942da main{StandardDirectoryReader(segments_c:23 _5(4.0.0.2):C400)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w3
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w4' using instanceDir: example-DIH/solr/w4
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w4/'
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore <init>
+INFO: [w4] Opening new SolrCore at example-DIH/solr/w4/, dataDir=example-DIH/solr/w4/data/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w4] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w4] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w4/data/index/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w4/data/index forceNew:false
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:08 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:08 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@18f729c main
+21 Dec 2012 2:04:08 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:08 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:08 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w4/conf/elevate.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@18f729c main{StandardDirectoryReader(segments_c:23 _5(4.0.0.2):C800)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w4] Registered new searcher Searcher@18f729c main{StandardDirectoryReader(segments_c:23 _5(4.0.0.2):C800)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w4
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w5' using instanceDir: example-DIH/solr/w5
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w5/'
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore <init>
+INFO: [w5] Opening new SolrCore at example-DIH/solr/w5/, dataDir=example-DIH/solr/w5/data/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w5] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w5] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w5/data/index/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w5/data/index forceNew:false
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:08 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:08 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@7b7b11 main
+21 Dec 2012 2:04:08 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:08 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:08 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w5/conf/elevate.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@7b7b11 main{StandardDirectoryReader(segments_e:26 _6(4.0.0.2):C1600)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w5] Registered new searcher Searcher@7b7b11 main{StandardDirectoryReader(segments_e:26 _6(4.0.0.2):C1600)}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w5
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w6' using instanceDir: example-DIH/solr/w6
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w6/'
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:08 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore <init>
+INFO: [w6] Opening new SolrCore at example-DIH/solr/w6/, dataDir=example-DIH/solr/w6/data/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w6] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w6] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w6/data/index/
+21 Dec 2012 2:04:08 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w6/data/index forceNew:false
+21 Dec 2012 2:04:08 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:08 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:08 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:09 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@42f64e main
+21 Dec 2012 2:04:09 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:09 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:09 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w6/conf/elevate.xml
+21 Dec 2012 2:04:09 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@42f64e main{StandardDirectoryReader(segments_1c:136 _16(4.0.0.2):C1802 _17(4.0.0.2):C1398)}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w6] Registered new searcher Searcher@42f64e main{StandardDirectoryReader(segments_1c:136 _16(4.0.0.2):C1802 _17(4.0.0.2):C1398)}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w6
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w7' using instanceDir: example-DIH/solr/w7
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w7/'
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore <init>
+INFO: [w7] Opening new SolrCore at example-DIH/solr/w7/, dataDir=example-DIH/solr/w7/data/
+21 Dec 2012 2:04:09 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w7] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w7] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w7/data/index/
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w7/data/index forceNew:false
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:09 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:09 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@10e8647 main
+21 Dec 2012 2:04:09 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:09 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:09 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w7/conf/elevate.xml
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w7
+21 Dec 2012 2:04:09 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@10e8647 main{StandardDirectoryReader(segments_c:35 _a(4.0.0.2):C4650 _b(4.0.0.2):C1750)}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w7] Registered new searcher Searcher@10e8647 main{StandardDirectoryReader(segments_c:35 _a(4.0.0.2):C4650 _b(4.0.0.2):C1750)}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w8' using instanceDir: example-DIH/solr/w8
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w8/'
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore <init>
+INFO: [w8] Opening new SolrCore at example-DIH/solr/w8/, dataDir=example-DIH/solr/w8/data/
+21 Dec 2012 2:04:09 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w8] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w8] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w8/data/index/
+21 Dec 2012 2:04:09 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w8/data/index forceNew:false
+21 Dec 2012 2:04:09 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:09 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:09 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:10 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@b6f7f5 main
+21 Dec 2012 2:04:10 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:10 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:10 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w8/conf/elevate.xml
+21 Dec 2012 2:04:10 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@b6f7f5 main{StandardDirectoryReader(segments_c:48 _f(4.0.0.2):C10177 _g(4.0.0.2):C1789 _h(4.0.0.2):C834)}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w8] Registered new searcher Searcher@b6f7f5 main{StandardDirectoryReader(segments_c:48 _f(4.0.0.2):C10177 _g(4.0.0.2):C1789 _h(4.0.0.2):C834)}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w8
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w9' using instanceDir: example-DIH/solr/w9
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w9/'
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore <init>
+INFO: [w9] Opening new SolrCore at example-DIH/solr/w9/, dataDir=example-DIH/solr/w9/data/
+21 Dec 2012 2:04:10 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w9] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w9] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w9/data/index/
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w9/data/index forceNew:false
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:10 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:10 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@16bb7d9 main
+21 Dec 2012 2:04:10 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:10 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:10 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w9/conf/elevate.xml
+21 Dec 2012 2:04:10 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@16bb7d9 main{StandardDirectoryReader(segments_c:59 _k(4.0.0.2):C13209 _l(4.0.0.2):C9118 _m(4.0.0.2):C1783 _n(4.0.0.2):C1490)}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w9] Registered new searcher Searcher@16bb7d9 main{StandardDirectoryReader(segments_c:59 _k(4.0.0.2):C13209 _l(4.0.0.2):C9118 _m(4.0.0.2):C1783 _n(4.0.0.2):C1490)}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w9
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w10' using instanceDir: example-DIH/solr/w10
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w10/'
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:10 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore <init>
+INFO: [w10] Opening new SolrCore at example-DIH/solr/w10/, dataDir=example-DIH/solr/w10/data/
+21 Dec 2012 2:04:10 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w10] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w10] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w10/data/index/
+21 Dec 2012 2:04:10 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w10/data/index forceNew:false
+21 Dec 2012 2:04:10 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:10 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:10 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:11 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@4dd014 main
+21 Dec 2012 2:04:11 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:11 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:11 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w10/conf/elevate.xml
+21 Dec 2012 2:04:11 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@4dd014 main{StandardDirectoryReader(segments_f:128 _1e(4.0.0.2):C13230 _1f(4.0.0.2):C5118 _1g(4.0.0.2):C14397 _1h(4.0.0.2):C9480 _1i(4.0.0.2):C2154 _1j(4.0.0.2):C2063 _1k(4.0.0.2):C4758)}
+21 Dec 2012 2:04:11 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w10] Registered new searcher Searcher@4dd014 main{StandardDirectoryReader(segments_f:128 _1e(4.0.0.2):C13230 _1f(4.0.0.2):C5118 _1g(4.0.0.2):C14397 _1h(4.0.0.2):C9480 _1i(4.0.0.2):C2154 _1j(4.0.0.2):C2063 _1k(4.0.0.2):C4758)}
+21 Dec 2012 2:04:11 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w10
+21 Dec 2012 2:04:11 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w11' using instanceDir: example-DIH/solr/w11
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w11/'
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:11 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:11 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:11 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:11 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:11 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore <init>
+INFO: [w11] Opening new SolrCore at example-DIH/solr/w11/, dataDir=example-DIH/solr/w11/data/
+21 Dec 2012 2:04:11 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w11] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w11] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w11/data/index/
+21 Dec 2012 2:04:11 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w11/data/index forceNew:false
+21 Dec 2012 2:04:11 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:11 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:11 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:12 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@cee41f main
+21 Dec 2012 2:04:12 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:12 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:12 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w11/conf/elevate.xml
+21 Dec 2012 2:04:12 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w11
+21 Dec 2012 2:04:12 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w12' using instanceDir: example-DIH/solr/w12
+21 Dec 2012 2:04:12 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@cee41f main{StandardDirectoryReader(segments_c:149 _1j(4.0.0.2):C13934/1 _1k(4.0.0.2):C15265 _1l(4.0.0.2):C13625 _1m(4.0.0.2):C6662/1064 _1n(4.0.0.2):C13067/779 _1o(4.0.0.2):C12626 _1p(4.0.0.2):C10041 _1q(4.0.0.2):C4764 _1r(4.0.0.2):C1790 _1s(4.0.0.2):C6638/605 _1t(4.0.0.2):C3988)}
+21 Dec 2012 2:04:12 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w11] Registered new searcher Searcher@cee41f main{StandardDirectoryReader(segments_c:149 _1j(4.0.0.2):C13934/1 _1k(4.0.0.2):C15265 _1l(4.0.0.2):C13625 _1m(4.0.0.2):C6662/1064 _1n(4.0.0.2):C13067/779 _1o(4.0.0.2):C12626 _1p(4.0.0.2):C10041 _1q(4.0.0.2):C4764 _1r(4.0.0.2):C1790 _1s(4.0.0.2):C6638/605 _1t(4.0.0.2):C3988)}
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w12/'
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore <init>
+INFO: [w12] Opening new SolrCore at example-DIH/solr/w12/, dataDir=example-DIH/solr/w12/data/
+21 Dec 2012 2:04:12 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w12] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w12] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w12/data/index/
+21 Dec 2012 2:04:12 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w12/data/index forceNew:false
+21 Dec 2012 2:04:12 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:12 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:12 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:13 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@d83365 main
+21 Dec 2012 2:04:13 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:13 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:13 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w12/conf/elevate.xml
+21 Dec 2012 2:04:13 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@d83365 main{StandardDirectoryReader(segments_c:365 _47(4.0.0.2):C129548/10 _4i(4.0.0.2):C45514/15 _48(4.0.0.2):C6850/47 _4j(4.0.0.2):C3874/57 _4k(4.0.0.2):C1778 _4l(4.0.0.2):C4614 _4m(4.0.0.2):C8570/605 _4n(4.0.0.2):C881)}
+21 Dec 2012 2:04:13 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w12] Registered new searcher Searcher@d83365 main{StandardDirectoryReader(segments_c:365 _47(4.0.0.2):C129548/10 _4i(4.0.0.2):C45514/15 _48(4.0.0.2):C6850/47 _4j(4.0.0.2):C3874/57 _4k(4.0.0.2):C1778 _4l(4.0.0.2):C4614 _4m(4.0.0.2):C8570/605 _4n(4.0.0.2):C881)}
+21 Dec 2012 2:04:13 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w12
+21 Dec 2012 2:04:13 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w13' using instanceDir: example-DIH/solr/w13
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w13/'
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:13 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:13 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:13 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:13 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:13 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore <init>
+INFO: [w13] Opening new SolrCore at example-DIH/solr/w13/, dataDir=example-DIH/solr/w13/data/
+21 Dec 2012 2:04:13 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w13] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w13] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w13/data/index/
+21 Dec 2012 2:04:13 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w13/data/index forceNew:false
+21 Dec 2012 2:04:13 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:13 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:13 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:15 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@94b318 main
+21 Dec 2012 2:04:15 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:15 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:15 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w13/conf/elevate.xml
+21 Dec 2012 2:04:15 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@94b318 main{StandardDirectoryReader(segments_c:677 _7o(4.0.0.2):C96229/48 _7g(4.0.0.2):C31065/1 _80(4.0.0.2):C103800/23 _8c(4.0.0.2):C56493/17 _82(4.0.0.2):C14355 _84(4.0.0.2):C9318 _8o(4.0.0.2):C49138/2 _8n(4.0.0.2):C1708 _8p(4.0.0.2):C2735 _8q(4.0.0.2):C13655 _8r(4.0.0.2):C12460 _8s(4.0.0.2):C8713/605 _8t(4.0.0.2):C2592)}
+21 Dec 2012 2:04:15 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w13] Registered new searcher Searcher@94b318 main{StandardDirectoryReader(segments_c:677 _7o(4.0.0.2):C96229/48 _7g(4.0.0.2):C31065/1 _80(4.0.0.2):C103800/23 _8c(4.0.0.2):C56493/17 _82(4.0.0.2):C14355 _84(4.0.0.2):C9318 _8o(4.0.0.2):C49138/2 _8n(4.0.0.2):C1708 _8p(4.0.0.2):C2735 _8q(4.0.0.2):C13655 _8r(4.0.0.2):C12460 _8s(4.0.0.2):C8713/605 _8t(4.0.0.2):C2592)}
+21 Dec 2012 2:04:15 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w13
+21 Dec 2012 2:04:15 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w14' using instanceDir: example-DIH/solr/w14
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w14/'
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:15 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:15 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:15 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:15 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:15 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore <init>
+INFO: [w14] Opening new SolrCore at example-DIH/solr/w14/, dataDir=example-DIH/solr/w14/data/
+21 Dec 2012 2:04:15 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w14] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w14] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w14/data/index/
+21 Dec 2012 2:04:15 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w14/data/index forceNew:false
+21 Dec 2012 2:04:15 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:15 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:15 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:16 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1b9da92 main
+21 Dec 2012 2:04:16 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:16 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:16 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w14/conf/elevate.xml
+21 Dec 2012 2:04:16 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1b9da92 main{StandardDirectoryReader(segments_d:1164 _da(4.0.0.2):C103725/34 _d7(4.0.0.2):C36157/1 _dl(4.0.0.2):C192000/37 _dy(4.0.0.2):C95226/24 _dm(4.0.0.2):C4692/1 _dn(4.0.0.2):C4691 _do(4.0.0.2):C4695 _fg(4.0.0.2):C66853/3 _ea(4.0.0.2):C83353 _ew(4.0.0.2):C57840/17 _em(4.0.0.2):C110260/1 _f6(4.0.0.2):C46094/17 _fh(4.0.0.2):C6145/440)}
+21 Dec 2012 2:04:16 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w14] Registered new searcher Searcher@1b9da92 main{StandardDirectoryReader(segments_d:1164 _da(4.0.0.2):C103725/34 _d7(4.0.0.2):C36157/1 _dl(4.0.0.2):C192000/37 _dy(4.0.0.2):C95226/24 _dm(4.0.0.2):C4692/1 _dn(4.0.0.2):C4691 _do(4.0.0.2):C4695 _fg(4.0.0.2):C66853/3 _ea(4.0.0.2):C83353 _ew(4.0.0.2):C57840/17 _em(4.0.0.2):C110260/1 _f6(4.0.0.2):C46094/17 _fh(4.0.0.2):C6145/440)}
+21 Dec 2012 2:04:16 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w14
+21 Dec 2012 2:04:16 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'w15' using instanceDir: example-DIH/solr/w15
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/w15/'
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:16 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:16 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=w1
+21 Dec 2012 2:04:16 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is all_text
+21 Dec 2012 2:04:16 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:16 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: dc-identifier
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore <init>
+INFO: [w15] Opening new SolrCore at example-DIH/solr/w15/, dataDir=example-DIH/solr/w15/data/
+21 Dec 2012 2:04:16 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w15] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore initListeners
+INFO: [w15] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/w15/data/index/
+21 Dec 2012 2:04:16 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w15/data/index forceNew:false
+21 Dec 2012 2:04:16 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:16 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:16 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:18 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1b9e7fc main
+21 Dec 2012 2:04:18 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:18 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:18 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/w15/conf/elevate.xml
+21 Dec 2012 2:04:18 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1b9e7fc main{StandardDirectoryReader(segments_m:1628 _ht(4.0.0.2):C103725/34 _l5(4.0.0.2):C1348333/46 _jl(4.0.0.2):C78978/23 _ln(4.0.0.2):C34751 _l8(4.0.0.2):C3444/97 _le(4.0.0.2):C3396/121 _lg(4.0.0.2):C3367/100 _lh(4.0.0.2):C3344/94 _li(4.0.0.2):C3987/75 _lj(4.0.0.2):C5224 _lk(4.0.0.2):C1326 _lm(4.0.0.2):C10216 _lo(4.0.0.2):C10235 _lp(4.0.0.2):C7478/1 _lq(4.0.0.2):C7493/129 _lr(4.0.0.2):C5510/475 _ls(4.0.0.2):C744)}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [w15] Registered new searcher Searcher@1b9e7fc main{StandardDirectoryReader(segments_m:1628 _ht(4.0.0.2):C103725/34 _l5(4.0.0.2):C1348333/46 _jl(4.0.0.2):C78978/23 _ln(4.0.0.2):C34751 _l8(4.0.0.2):C3444/97 _le(4.0.0.2):C3396/121 _lg(4.0.0.2):C3367/100 _lh(4.0.0.2):C3344/94 _li(4.0.0.2):C3987/75 _lj(4.0.0.2):C5224 _lk(4.0.0.2):C1326 _lm(4.0.0.2):C10216 _lo(4.0.0.2):C10235 _lp(4.0.0.2):C7478/1 _lq(4.0.0.2):C7493/129 _lr(4.0.0.2):C5510/475 _ls(4.0.0.2):C744)}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: w15
+21 Dec 2012 2:04:18 PM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'solr' using instanceDir: example-DIH/solr/solr
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: 'example-DIH/solr/solr/'
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrConfig initLibs
+INFO: Adding specified lib dirs to ClassLoader
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-extras-4.0.0.jar' to classloader
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrResourceLoader replaceClassLoader
+INFO: Adding 'file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/dist/apache-solr-dataimporthandler-4.0.0.jar' to classloader
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_40
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+21 Dec 2012 2:04:18 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+21 Dec 2012 2:04:18 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=solr
+21 Dec 2012 2:04:18 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+21 Dec 2012 2:04:18 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is OR
+21 Dec 2012 2:04:18 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore <init>
+INFO: [solr] Opening new SolrCore at example-DIH/solr/solr/, dataDir=example-DIH/solr/solr/data/
+21 Dec 2012 2:04:18 PM org.apache.solr.core.JmxMonitoredMap <init>
+INFO: JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@5d855f
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore initListeners
+INFO: [solr] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=solr,start=0,rows=10}, {q=rocks,start=0,rows=10}, {q=static newSearcher warming query from solrconfig.xml}]}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore initListeners
+INFO: [solr] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore getNewIndexDir
+WARNING: New index directory detected: old=null new=example-DIH/solr/solr/data/index/
+21 Dec 2012 2:04:18 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/solr/data/index forceNew:false
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore initWriters
+INFO: created xslt: solr.XSLTResponseWriter
+21 Dec 2012 2:04:18 PM org.apache.solr.response.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=5
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created standard: solr.StandardRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created spellchecker: solr.SpellCheckerRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /search: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /elevate: org.apache.solr.handler.component.SearchHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: org.apache.solr.handler.admin.AdminHandlers
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+21 Dec 2012 2:04:18 PM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+21 Dec 2012 2:04:18 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1a3551c main
+21 Dec 2012 2:04:18 PM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: disabled
+21 Dec 2012 2:04:18 PM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: disabled
+21 Dec 2012 2:04:18 PM org.apache.solr.handler.component.QueryElevationComponent inform
+INFO: Loading QueryElevation from: /home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/example-DIH/solr/solr/conf/elevate.xml
+21 Dec 2012 2:04:18 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener sending requests to Searcher@1a3551c main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.QuerySenderListener newSearcher
+INFO: QuerySenderListener done.
+21 Dec 2012 2:04:18 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [solr] Registered new searcher Searcher@1a3551c main{StandardDirectoryReader(segments_1:1)}
+21 Dec 2012 2:04:18 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: solr
+21 Dec 2012 2:04:18 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: user.dir=/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example
+21 Dec 2012 2:04:18 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init() done
+2012-12-21 14:04:18.476:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:8983
+21 Dec 2012 2:10:25 PM org.apache.solr.core.SolrCore execute
+INFO: [db] webapp=/solr path=/admin/system params={wt=json} status=0 QTime=70 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=0 QTime=0 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=0 QTime=1 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=0 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=2 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/dataimport params={command=details&wt=json} status=0 QTime=5 
+21 Dec 2012 2:10:26 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/luke params={numTerms=0&wt=json&show=index} status=0 QTime=10 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [db] webapp=/solr path=/admin/system params={wt=json} status=0 QTime=35 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=0 QTime=0 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=0 QTime=0 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/luke params={numTerms=0&wt=json&show=index} status=0 QTime=1 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/dataimport params={command=details&wt=json} status=0 QTime=0 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=0 
+21 Dec 2012 2:10:29 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=0 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [db] webapp=/solr path=/admin/system params={wt=json} status=0 QTime=40 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=0 QTime=0 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=0 QTime=0 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/luke params={numTerms=0&wt=json&show=index} status=0 QTime=1 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/dataimport params={command=details&wt=json} status=0 QTime=1 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=0 
+21 Dec 2012 2:18:42 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=0 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [db] webapp=/solr path=/admin/system params={wt=json} status=0 QTime=34 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=0 QTime=0 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=0 QTime=0 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/luke params={numTerms=0&wt=json&show=index} status=0 QTime=1 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/dataimport params={command=details&wt=json} status=0 QTime=0 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=1 
+21 Dec 2012 2:25:54 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=0 
+21 Dec 2012 2:42:37 PM org.apache.solr.core.SolrCore execute
+INFO: [w1] webapp=/solr path=/select params={q=*:*} hits=100 status=0 QTime=4 
+2012-12-21 14:59:05.558:INFO:oejs.Server:Graceful shutdown SocketConnector@0.0.0.0:8983
+2012-12-21 14:59:05.573:INFO:oejs.Server:Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/solr-webapp/webapp/},/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/webapps/solr.war
+2012-12-21 14:59:06.754:INFO:oejsh.ContextHandler:stopped o.e.j.w.WebAppContext{/solr,file:/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/solr-webapp/webapp/},/home/phiri/Projects/masters/ndltd-solr/apache-solr-4.0.0/example/webapps/solr.war
