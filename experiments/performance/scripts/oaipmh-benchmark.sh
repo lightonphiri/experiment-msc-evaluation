@@ -18,7 +18,7 @@ ListRecords="oai.pl?verb=ListRecords&metadataPrefix=oai_dc"
 ListIdentifiers="oai.pl?verb=ListIdentifiers&metadataPrefix=oai_dc"
 ListSets="oai.pl?verb=ListSets"
 GetRecordFirst="oai.pl?verb=GetRecord&metadataPrefix=oai_dc&identifier="
-GetRecordLast="oai.pl?verb=ListRecords&metadataPrefix=oai_dc&identifier="
+GetRecordLast="oai.pl?verb=GetRecord&metadataPrefix=oai_dc&identifier="
 
 # define arrays to hold first record and last record
 # for each of the 15 workloads
@@ -75,6 +75,7 @@ for workload in `seq 1 15`
 do
 
 # dynamically generate archive workload
+#archiveworkload="w2_"$workload
 archiveworkload="w"$workload
 baseURL=$appURL$archiveworkload"/"
 

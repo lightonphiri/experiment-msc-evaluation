@@ -1,15 +1,65 @@
 
 solrcore = http://localhost:8983/solr/w5/select?q=*:*\&rows=5
 
+coreurl = 'http://localhost:8983/solr/w5/'
+headers = {"Content-type": "text/xml", "charset": "utf-8"}
+querycontext = 'select?q=*:*&rows=5'
+solrquery = urlparse.urljoin(coreurl,querycontext)
+solrresponse = requests.post(solrquery,headers=headers)
+solrresponsehead(solrresponse.text)
+
 for of the 15 cores
    for each item in 5 10 20
       loop 5 times
+	 cd /home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example # for some reason, this is necessary
+	 start servlet engine ### java -Dsolr.solr.home=/home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example/example-DIH/solr -jar /home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example/start.jar
+	 sleep 20 seconds
          curl corlcore
          get solr response header
-         restart servlet engine
-         
-	 
-	 
+         stop servlet engine [use bash ***] ### kill `ps -ef | grep Dsolr | awk '{if (NR==1) print $2}'`
+
+
+
+# handle potentially malformed xml content
+xmldata = xmldata.encode('ascii', 'replace')
+
+coreurl = 'http://localhost:8983/solr/w11/'
+selectquery = '*:*&rows=5'
+import simplyctperformance
+simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery(coreurl, selectquery))
+
+simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery(coreurl, selectquery))
+
+python -c "import simplyctperformance; simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery(coreurl, selectquery))";
+
+
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=3128): Max retries exceeded with url: /solr/w5/select?q=*:*&rows=5 (Caused by <class 'httplib.BadStatusLine'>: '')
+
+
+
+
+318 def solrselectquery(coreurl, selectquery):
+319     """Sends Solr HTTP select request to Solr server.
+320 
+321     keyword arguments:
+322     coreurl --Solr core base URL, e.g. http://host:port/core/
+323     selectquery --select query details; including URL parameters
+324 
+325     """
+
+
+
+2013-01-04 12:17:09.122:INFO:oejs.Server:jetty-8.1.2.v20120308
+2013-01-04 12:17:24.239:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:8983
+
+
+2013-01-04 12:18:55.951:INFO:oejs.Server:jetty-8.1.2.v20120308
+2013-01-04 12:19:02.494:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:8983
+
+
+2013-01-04 12:20:32.596:INFO:oejs.Server:jetty-8.1.2.v20120308
+2013-01-04 12:20:39.168:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:8983
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,3 +80,15 @@ for of the 15 cores
         <str/>
       </arr>
       <arr name="dc-subject">
+
+
+
+
+
+
+
+******* Getting Results ***********
+
+cat RSS-randomsolr-benchmark.txt | grep -vE "INFO|WARNING|04 Jan"
+
+cat RSS-randomsolr-benchmark.txt | grep -vE "INFO|WARN|04 Jan|jetty|Null|java"

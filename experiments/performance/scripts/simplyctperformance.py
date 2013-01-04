@@ -315,6 +315,23 @@ def spawnstructworkload(dataset, destination, workloadname):
                 shutil.copy2(workloadfile, workloadpath)
 
 
+def solrselectquery(coreurl, selectquery):
+    """Sends Solr HTTP select request to Solr server.
+
+    keyword arguments:
+    coreurl --Solr core base URL, e.g. http://host:port/core/
+    selectquery --select query details; including URL parameters
+
+    """
+    headers = {"Content-type": "text/xml", "charset": "utf-8"}
+    querycontext = "select?q="
+    # combine querycontext and selectquery
+    solrquery = urlparse.urljoin(coreurl, (querycontext + selectquery))
+    solrresponse = requests.post(solrquery,headers=headers)
+    # handle potentially malformed xml content
+    return (solrresponse.text).encode('ascii', 'replace')
+
+
 def solrissuequery(coreurl, query):
     """Sends Solr HTTP request to Solr server.
 
