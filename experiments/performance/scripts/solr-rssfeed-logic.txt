@@ -1,0 +1,32 @@
+
+solrcore = http://localhost:8983/solr/w5/select?q=*:*\&rows=5
+
+for of the 15 cores
+   for each item in 5 10 20
+      loop 5 times
+         curl corlcore
+         get solr response header
+         restart servlet engine
+         
+	 
+	 
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <lst name="responseHeader">
+    <int name="status">0</int>
+    <int name="QTime">1</int>
+    <lst name="params">
+      <str name="q">*:*</str>
+      <str name="rows">5</str>
+    </lst>
+  </lst>
+  <result name="response" numFound="1599" start="0">
+    <doc>
+      <str name="dc-identifier">oai:union.ndltd.org:TW/090NCTU0423003</str>
+      <str name="dc-publisher"/>
+      <arr name="dc-type">
+        <str/>
+      </arr>
+      <arr name="dc-subject">
