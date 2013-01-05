@@ -1,0 +1,38 @@
+solrcore = http://localhost:8983/solr/w5/select?q=*:*\&rows=5
+
+coreurl = 'http://localhost:8983/solr/w5/'
+headers = {"Content-type": "text/xml", "charset": "utf-8"}
+querycontext = 'select?q=*:*&rows=5'
+solrquery = urlparse.urljoin(coreurl,querycontext)
+solrresponse = requests.post(solrquery,headers=headers)
+solrresponsehead(solrresponse.text)
+
+for of the 15 cores
+   for each item in 5 10 20
+      loop 5 times
+	 cd /home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example # for some reason, this is necessary
+	 start servlet engine ### java -Dsolr.solr.home=/home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example/example-DIH/solr -jar /home/phiri/Projects/masters/ndltd-solr/apache-solr-random/example/start.jar
+	 sleep 20 seconds
+         curl corlcore
+         get solr response header
+         stop servlet engine [use bash ***] ### kill `ps -ef | grep Dsolr | awk '{if (NR==1) print $2}'`
+
+
+
+def ingestitem(recordpath, container):
+   
+
+simplyctwriter(xmldata, directory, filename)
+
+
+for each of the 15 workloads
+   loop 5 times
+      write a single item to disk
+      delete it from disk
+      
+      
+      
+**** Pre-create containers ****
+workload3/w12/GEORGIA/2007/b
+workload2/w12/GEORGIA/2007
+workload1/w12/GEORGIA

@@ -8,6 +8,7 @@ __version__ = "1.0.0"
 __author__ = "Lighton Phiri"
 __email__ = "lighton.phiri@gmail.com"
 
+import oaipmh2simplyct
 import os
 import random
 import requests
@@ -15,6 +16,7 @@ import shutil
 import time
 import urllib2
 import xml
+from oaipmh2simplyct import *
 from urllib2 import *
 from xml.dom.minidom import parse, parseString
 
@@ -88,6 +90,76 @@ def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
             for filename in files:
                 if filename.endswith('.metadata'):
                     print "delete", ",", batchname, ",", solritemquery(coreurl, 'delete', os.path.abspath(os.path.join(root, filename)), commit, translator='x.xsl')
+
+
+def ingestitem(inputfile, archive, level):
+    """Ingests new record into archive.
+
+    keyword arguments:
+    inputfile --location of record to ingest
+    archive --archive location
+    level --hierarchical level structure
+
+    """
+
+    # parse XML record
+    ndltddom = parse(inputfile)
+    dccreator = ""
+    dcdate = ""
+    for records in ndltddom.getElementsByTagName('record'):
+        # SetSpec for base container name
+        container = records.getElementsByTagName('setSpec')[0].firstChild.data
+        try:
+            # TODO: handle different date formats here (e.g.
+            # YYYY-MM-DD; YYYY; YYYY-MM)
+            # For now, cheap trick is to strip off first 4 digits
+            #dcdate = str(records.getElementsByTagName('dc:date')[0].firstChild.data).strip()[:4]
+            for resourcedate in records.getElementsByTagName('dc:date'):
+                try:
+                    dcdate = resourcedate.firstChild.data.strip()[:4]
+                    break
+                except Exception as detail:
+                    dcdate = "unknown"
+                    continue
+        # TODO: proper error handling here Phiri
+        except Exception as details:
+            dcdate = "unknown"
+        try:
+            #dccreator = str(records.getElementsByTagName('dc:creator')[0].firstChild.data).strip()[:1].lower()
+            for creator in records.getElementsByTagName('dc:creator'):
+                try:
+                    dccreator = str(creator.firstChild.data).strip()[:1].lower()
+                    break
+                except Exception as detail:
+                    dccreator = "unknown"
+                    continue
+        # TODO: proper error handling here Phiri
+        except Exception as details:
+            dccreator = "unknown"
+    # normalise element text
+    # check date and string formats
+    if ((len(dcdate) == 4) & (dcdate != "unknown")):
+        # check if first four digits is number
+        try:
+            dcdate = str(int(dcdate))
+        except Exception as details:
+            dcdate = 'unknown'
+    elif (dcdate == ""): # if no node exists
+        dcdate = "unknown"
+    if (not(dccreator.isalpha())):
+        dccreator = 'unknown'
+    if (level == 1):
+        workloadpath = os.path.join(archive, container)
+    elif (level == 2):
+        workloadpath = os.path.join(archive, container, dcdate)
+    elif (level == 3):
+        workloadpath = os.path.join(archive, container, dcdate, dccreator)
+    print workloadpath
+    # write record to appropriate location
+    starttime = time.time()*1000
+    simplyctwriter(str(ndltddom),workloadpath,os.path.basename(inputfile))
+    print "workload:",archive,", level:",level,",time:",(time.time()*1000) - starttime
+    os.remove(os.path.join(workloadpath, os.path.basename(inputfile)))
 
 
 def spawnrandomworkload(dataset, destination, bin):
