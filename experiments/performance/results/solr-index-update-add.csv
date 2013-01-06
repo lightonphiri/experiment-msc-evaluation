@@ -1,0 +1,150 @@
+1 , w1 , add , http://localhost:8983/solr/w1/ , b1 , commit :  true , status : 0 , QTime : 1173 , None , FileProcessing :  1390.22900391
+None
+2 , w1 , add , http://localhost:8983/solr/w1/ , b1 , commit :  true , status : 0 , QTime : 618 , None , FileProcessing :  622.087890625
+None
+3 , w1 , add , http://localhost:8983/solr/w1/ , b1 , commit :  true , status : 0 , QTime : 634 , None , FileProcessing :  637.879882812
+None
+4 , w1 , add , http://localhost:8983/solr/w1/ , b1 , commit :  true , status : 0 , QTime : 590 , None , FileProcessing :  593.881103516
+None
+5 , w1 , add , http://localhost:8983/solr/w1/ , b1 , commit :  true , status : 0 , QTime : 559 , None , FileProcessing :  564.187988281
+None
+1 , w2 , add , http://localhost:8983/solr/w2/ , b1 , commit :  true , status : 0 , QTime : 656 , None , FileProcessing :  667.884033203
+None
+2 , w2 , add , http://localhost:8983/solr/w2/ , b1 , commit :  true , status : 0 , QTime : 673 , None , FileProcessing :  676.9609375
+None
+3 , w2 , add , http://localhost:8983/solr/w2/ , b1 , commit :  true , status : 0 , QTime : 584 , None , FileProcessing :  588.41015625
+None
+4 , w2 , add , http://localhost:8983/solr/w2/ , b1 , commit :  true , status : 0 , QTime : 710 , None , FileProcessing :  714.110107422
+None
+5 , w2 , add , http://localhost:8983/solr/w2/ , b1 , commit :  true , status : 0 , QTime : 609 , None , FileProcessing :  612.764892578
+None
+1 , w3 , add , http://localhost:8983/solr/w3/ , b1 , commit :  true , status : 0 , QTime : 752 , None , FileProcessing :  762.212158203
+None
+2 , w3 , add , http://localhost:8983/solr/w3/ , b1 , commit :  true , status : 0 , QTime : 639 , None , FileProcessing :  643.344970703
+None
+3 , w3 , add , http://localhost:8983/solr/w3/ , b1 , commit :  true , status : 0 , QTime : 680 , None , FileProcessing :  684.976074219
+None
+4 , w3 , add , http://localhost:8983/solr/w3/ , b1 , commit :  true , status : 0 , QTime : 603 , None , FileProcessing :  607.260742188
+None
+5 , w3 , add , http://localhost:8983/solr/w3/ , b1 , commit :  true , status : 0 , QTime : 612 , None , FileProcessing :  617.934814453
+None
+1 , w4 , add , http://localhost:8983/solr/w4/ , b1 , commit :  true , status : 0 , QTime : 657 , None , FileProcessing :  668.509033203
+None
+2 , w4 , add , http://localhost:8983/solr/w4/ , b1 , commit :  true , status : 0 , QTime : 581 , None , FileProcessing :  585.00390625
+None
+3 , w4 , add , http://localhost:8983/solr/w4/ , b1 , commit :  true , status : 0 , QTime : 612 , None , FileProcessing :  616.242919922
+None
+4 , w4 , add , http://localhost:8983/solr/w4/ , b1 , commit :  true , status : 0 , QTime : 606 , None , FileProcessing :  609.372070312
+None
+5 , w4 , add , http://localhost:8983/solr/w4/ , b1 , commit :  true , status : 0 , QTime : 611 , None , FileProcessing :  615.729003906
+None
+1 , w5 , add , http://localhost:8983/solr/w5/ , b1 , commit :  true , status : 0 , QTime : 686 , None , FileProcessing :  698.434082031
+None
+2 , w5 , add , http://localhost:8983/solr/w5/ , b1 , commit :  true , status : 0 , QTime : 637 , None , FileProcessing :  641.070068359
+None
+3 , w5 , add , http://localhost:8983/solr/w5/ , b1 , commit :  true , status : 0 , QTime : 603 , None , FileProcessing :  606.895019531
+None
+4 , w5 , add , http://localhost:8983/solr/w5/ , b1 , commit :  true , status : 0 , QTime : 626 , None , FileProcessing :  629.782226562
+None
+5 , w5 , add , http://localhost:8983/solr/w5/ , b1 , commit :  true , status : 0 , QTime : 666 , None , FileProcessing :  669.909179688
+None
+1 , w6 , add , http://localhost:8983/solr/w6/ , b1 , commit :  true , status : 0 , QTime : 737 , None , FileProcessing :  747.136962891
+None
+2 , w6 , add , http://localhost:8983/solr/w6/ , b1 , commit :  true , status : 0 , QTime : 608 , None , FileProcessing :  612.089111328
+None
+3 , w6 , add , http://localhost:8983/solr/w6/ , b1 , commit :  true , status : 0 , QTime : 593 , None , FileProcessing :  596.886230469
+None
+4 , w6 , add , http://localhost:8983/solr/w6/ , b1 , commit :  true , status : 0 , QTime : 576 , None , FileProcessing :  580.596923828
+None
+5 , w6 , add , http://localhost:8983/solr/w6/ , b1 , commit :  true , status : 0 , QTime : 574 , None , FileProcessing :  579.068847656
+None
+1 , w7 , add , http://localhost:8983/solr/w7/ , b1 , commit :  true , status : 0 , QTime : 705 , None , FileProcessing :  717.282958984
+None
+2 , w7 , add , http://localhost:8983/solr/w7/ , b1 , commit :  true , status : 0 , QTime : 566 , None , FileProcessing :  570.890136719
+None
+3 , w7 , add , http://localhost:8983/solr/w7/ , b1 , commit :  true , status : 0 , QTime : 642 , None , FileProcessing :  646.413085938
+None
+4 , w7 , add , http://localhost:8983/solr/w7/ , b1 , commit :  true , status : 0 , QTime : 547 , None , FileProcessing :  550.922119141
+None
+5 , w7 , add , http://localhost:8983/solr/w7/ , b1 , commit :  true , status : 0 , QTime : 618 , None , FileProcessing :  622.700927734
+None
+1 , w8 , add , http://localhost:8983/solr/w8/ , b1 , commit :  true , status : 0 , QTime : 926 , None , FileProcessing :  935.194091797
+None
+2 , w8 , add , http://localhost:8983/solr/w8/ , b1 , commit :  true , status : 0 , QTime : 692 , None , FileProcessing :  696.481933594
+None
+3 , w8 , add , http://localhost:8983/solr/w8/ , b1 , commit :  true , status : 0 , QTime : 602 , None , FileProcessing :  606.697265625
+None
+4 , w8 , add , http://localhost:8983/solr/w8/ , b1 , commit :  true , status : 0 , QTime : 595 , None , FileProcessing :  599.166992188
+None
+5 , w8 , add , http://localhost:8983/solr/w8/ , b1 , commit :  true , status : 0 , QTime : 606 , None , FileProcessing :  611.045898438
+None
+1 , w9 , add , http://localhost:8983/solr/w9/ , b1 , commit :  true , status : 0 , QTime : 887 , None , FileProcessing :  895.673828125
+None
+2 , w9 , add , http://localhost:8983/solr/w9/ , b1 , commit :  true , status : 0 , QTime : 614 , None , FileProcessing :  619.521972656
+None
+3 , w9 , add , http://localhost:8983/solr/w9/ , b1 , commit :  true , status : 0 , QTime : 653 , None , FileProcessing :  657.638183594
+None
+4 , w9 , add , http://localhost:8983/solr/w9/ , b1 , commit :  true , status : 0 , QTime : 609 , None , FileProcessing :  612.442138672
+None
+5 , w9 , add , http://localhost:8983/solr/w9/ , b1 , commit :  true , status : 0 , QTime : 574 , None , FileProcessing :  577.647949219
+None
+1 , w10 , add , http://localhost:8983/solr/w10/ , b1 , commit :  true , status : 0 , QTime : 1250 , None , FileProcessing :  1259.05615234
+None
+2 , w10 , add , http://localhost:8983/solr/w10/ , b1 , commit :  true , status : 0 , QTime : 573 , None , FileProcessing :  576.806152344
+None
+3 , w10 , add , http://localhost:8983/solr/w10/ , b1 , commit :  true , status : 0 , QTime : 649 , None , FileProcessing :  653.110107422
+None
+4 , w10 , add , http://localhost:8983/solr/w10/ , b1 , commit :  true , status : 0 , QTime : 680 , None , FileProcessing :  683.638916016
+None
+5 , w10 , add , http://localhost:8983/solr/w10/ , b1 , commit :  true , status : 0 , QTime : 647 , None , FileProcessing :  650.3359375
+None
+1 , w11 , add , http://localhost:8983/solr/w11/ , b1 , commit :  true , status : 0 , QTime : 1675 , None , FileProcessing :  1683.36181641
+None
+2 , w11 , add , http://localhost:8983/solr/w11/ , b1 , commit :  true , status : 0 , QTime : 623 , None , FileProcessing :  627.864013672
+None
+3 , w11 , add , http://localhost:8983/solr/w11/ , b1 , commit :  true , status : 0 , QTime : 606 , None , FileProcessing :  609.898925781
+None
+4 , w11 , add , http://localhost:8983/solr/w11/ , b1 , commit :  true , status : 0 , QTime : 602 , None , FileProcessing :  605.388916016
+None
+5 , w11 , add , http://localhost:8983/solr/w11/ , b1 , commit :  true , status : 0 , QTime : 689 , None , FileProcessing :  692.919921875
+None
+1 , w12 , add , http://localhost:8983/solr/w12/ , b1 , commit :  true , status : 0 , QTime : 1657 , None , FileProcessing :  1664.87304688
+None
+2 , w12 , add , http://localhost:8983/solr/w12/ , b1 , commit :  true , status : 0 , QTime : 580 , None , FileProcessing :  584.012207031
+None
+3 , w12 , add , http://localhost:8983/solr/w12/ , b1 , commit :  true , status : 0 , QTime : 573 , None , FileProcessing :  577.169921875
+None
+4 , w12 , add , http://localhost:8983/solr/w12/ , b1 , commit :  true , status : 0 , QTime : 578 , None , FileProcessing :  581.869140625
+None
+5 , w12 , add , http://localhost:8983/solr/w12/ , b1 , commit :  true , status : 0 , QTime : 589 , None , FileProcessing :  593.533935547
+None
+1 , w13 , add , http://localhost:8983/solr/w13/ , b1 , commit :  true , status : 0 , QTime : 1351 , None , FileProcessing :  1359.5690918
+None
+2 , w13 , add , http://localhost:8983/solr/w13/ , b1 , commit :  true , status : 0 , QTime : 575 , None , FileProcessing :  580.465087891
+None
+3 , w13 , add , http://localhost:8983/solr/w13/ , b1 , commit :  true , status : 0 , QTime : 640 , None , FileProcessing :  643.750244141
+None
+4 , w13 , add , http://localhost:8983/solr/w13/ , b1 , commit :  true , status : 0 , QTime : 594 , None , FileProcessing :  598.576904297
+None
+5 , w13 , add , http://localhost:8983/solr/w13/ , b1 , commit :  true , status : 0 , QTime : 485 , None , FileProcessing :  488.681152344
+None
+1 , w14 , add , http://localhost:8983/solr/w14/ , b1 , commit :  true , status : 0 , QTime : 1885 , None , FileProcessing :  1893.52807617
+None
+2 , w14 , add , http://localhost:8983/solr/w14/ , b1 , commit :  true , status : 0 , QTime : 547 , None , FileProcessing :  551.307861328
+None
+3 , w14 , add , http://localhost:8983/solr/w14/ , b1 , commit :  true , status : 0 , QTime : 608 , None , FileProcessing :  612.031982422
+None
+4 , w14 , add , http://localhost:8983/solr/w14/ , b1 , commit :  true , status : 0 , QTime : 531 , None , FileProcessing :  535.511962891
+None
+5 , w14 , add , http://localhost:8983/solr/w14/ , b1 , commit :  true , status : 0 , QTime : 530 , None , FileProcessing :  533.656982422
+None
+1 , w15 , add , http://localhost:8983/solr/w15/ , b1 , commit :  true , status : 0 , QTime : 2480 , None , FileProcessing :  2488.88305664
+None
+2 , w15 , add , http://localhost:8983/solr/w15/ , b1 , commit :  true , status : 0 , QTime : 568 , None , FileProcessing :  571.390869141
+None
+3 , w15 , add , http://localhost:8983/solr/w15/ , b1 , commit :  true , status : 0 , QTime : 619 , None , FileProcessing :  623.2890625
+None
+4 , w15 , add , http://localhost:8983/solr/w15/ , b1 , commit :  true , status : 0 , QTime : 529 , None , FileProcessing :  533.381835938
+None
+5 , w15 , add , http://localhost:8983/solr/w15/ , b1 , commit :  true , status : 0 , QTime : 576 , None , FileProcessing :  580.498046875
+None
