@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<link type="text/css" rel="StyleSheet" href="http://banzai.cs.uct.ac.za/survey/scripts/slider/swing.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-blue.css" title="win2k-cold-1" /><script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/range.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/timer.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/slider.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/lang/calendar-en.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-setup.js"></script>
+<title>Data Driven Web-based Services</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />   
+        <meta name="generator" content="Dev-PHP 3.00" />
+<style type='text/css'>
+a:link, a:visited
+    {
+    color: #819d26;
+    text-decoration: none;
+    }
+body.default
+    {
+    background-color: #FFFFFF;
+    font-size: 11px;
+    line-height: 150%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #1d2d45;
+    }
+.question
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.questionhelp
+    {
+    font-size: 10px;
+    }        
+.clearall
+    {
+    font-size: 11px;
+    }
+.answertext
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.answertextright
+    {
+	text-align:left;
+    }
+.array1
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #ffffff;
+    }
+.array2
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #eeeeee;
+    }
+.arraycaptionleft
+    {
+    text-align:right;
+    }
+.errormandatory 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.warningjs 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.saveall
+    {
+    font-weight:normal;
+    color:black;
+    }
+.asterisk
+    {
+    color: #FF0000;
+    font-size: 9pt;
+    font-family: verdana;
+    }
+.innergraph img
+{
+  height:12px;
+  vertical-align:top;
+}
+.innergraph table
+{
+  height:12px;
+  border:1px solid #000;
+  table-layout:fixed !important;
+}
+.innergraph td
+{
+  height:12px;
+}
+.printouttable
+{
+  width:100%;
+}
+.printouttable td
+{
+border-style:solid;
+border-color:#ffffff ;
+border-bottom-color:#ddddff ;
+border-width:1px;
+}
+.printouttable td:first-child
+{
+  background-color:#ddddff;
+  font-weight:bold;
+  text-align:right;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.printouttitle
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.surveytitle
+{
+  font-size:1.2em;
+  height:1.5em;
+  }
+.surveytitle:hover
+{
+  text-decoration: underline;
+  color: #819d26;
+}
+.languagechanger
+{
+ font-size:1em;
+}
+table.question tr.array1:hover 
+{
+  background-color: #A7A9D1; 
+}
+table.question tr.array2:hover 
+{
+  background-color: #A7A9D1; 
+}
+
+</style>
+<script type="text/javascript" src="scripts/surveyRuntime.js">
+</script>
+</head>
+<body class='default'>
+<table width='75%' align='center' style='border-collapse: collapse; border-color:#bbc6cc;' border='1' cellspacing='0'>
+    <tr>
+        <td>
+<form method='post' action='/survey/index.php' id='limesurvey' name='limesurvey'>
+
+<!-- INPUT NAMES -->
+<input type='hidden' name='fieldnames' value='58556X130X510' id='fieldnames' />	<input type='hidden' name='modfields' value='' id='modfields' />
+
+
+
+<!-- JAVASCRIPT FOR MODIFIED QUESTIONS -->
+ <script type='text/javascript'>
+ <!--
+    function ValidDate(oObject)
+    {// Regular expression used to check if date is in correct format
+     var str_regexp = /[1-9][0-9]{3}-(0[1-9]|1[0-2])-([0-2][0-9]|3[0-1])/;
+     var pattern = new RegExp(str_regexp);
+     if ( oObject.value=='')
+     { return true;
+     }
+     if ((oObject.value.match(pattern)!=null))
+     {var date_array = oObject.value.split('-');
+      var day = date_array[2];
+      var month = date_array[1];
+      var year = date_array[0];
+      str_regexp = /1|3|5|7|8|10|12/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 31 && (month.match(pattern)!=null))
+      { return true;
+      }
+      str_regexp = /4|6|9|11/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 30 && (month.match(pattern)!=null))
+      { return true;
+      }
+      if (day == 29 && month == 2 && (year % 4 == 0))
+      { return true;
+      }
+      if (day <= 28 && month == 2)
+      { return true;
+      }        
+     }
+     window.alert('Date is not valid!');
+     oObject.focus();
+     oObject.select();
+     return false;
+    }
+ //-->
+ </script>
+
+<table width='100%' align='center' cellspacing='0'>
+	<tr>
+		<td align='center' bgcolor='#EEF6FF'>
+			<font color='#328639'><strong>Data Driven Web-based Services</strong></font><br />
+			<font size='1' ><br /></font>
+		</td>
+	</tr>
+	<tr>
+		<td align='center' bgcolor='#d2e0f2'>
+			<table class='graph' width='100' align='center' cellpadding='2'><tr><td>
+<table width='180' align='center' cellpadding='0' cellspacing='0' border='0' class='innergraph'>
+<tr><td align='right' width='40'>0%&nbsp;</td>
+<td width='100' align='left'>
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr><td>
+<img src='http://banzai.cs.uct.ac.za/survey/templates/default/chart.jpg' width='0' align='left' alt='0% complete' />
+</td></tr>
+</table>
+</td>
+<td align='left' width='40'>&nbsp;100%</td></tr>
+</table>
+</td></tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+    <td  align="center">
+      
+    </td>
+  </tr>
+</table>
+
+<!-- JAVASCRIPT FOR CONDITIONAL QUESTIONS -->
+<script type='text/javascript'>
+<!--
+
+    function radio_unselect(radioObj)
+  	{   
+  		var radioLength = radioObj.length;
+  		for(var i = 0; i < radioLength; i++)
+  		{
+  			radioObj[i].checked = false;
+  		}
+  	}
+	function checkconditions(value, name, type)
+	{
+            if (type == 'radio' || type == 'select-one')
+        {
+            var hiddenformname='java'+name;
+            document.getElementById(hiddenformname).value=value;
+        }
+
+        if (type == 'checkbox')
+        {
+            var hiddenformname='java'+name;
+            var chkname='answer'+name;
+            if (document.getElementById(chkname).checked)
+            {
+                document.getElementById(hiddenformname).value='Y';
+            } else
+            {
+		        document.getElementById(hiddenformname).value='';
+            }
+        }
+	if (navigator.userAgent.indexOf('Safari')>-1 && name !== undefined )
+		{ // Safari eats the onchange so run modfield manually, except when called at onload time
+			//alert('For Safari (Useragent: '+navigator.userAgent+' calling modfield for ' + name);
+			modfield(name);
+		}
+	}
+	//-->
+	</script>
+
+
+
+<!-- START THE GROUP -->
+<table><tr><td height='2'></td></tr></table>
+<table width='100%' align='center' bgcolor='#d2e0f2' border='0' style='border-collapse:collapse; border-color:#111111;'>
+	<tr>
+		<td align='center'>
+			<font face='verdana' size='2'><strong>Participant Consent</strong></font>
+
+			<br /><font face='verdana' size='2'><p style="text-align:center;"><span style="font-family:Tahoma;">This study has received approval from the Ethics in Research Committee of the Science Faculty at the University of Cape Town, and the survey will take approximately 15 minutes to complete. <br />
+If you do wish to participate in this survey, please be advised that it will be anonymous and confidential.&nbsp;</span></p></font><br /><br />
+
+
+
+<!-- PRESENT THE QUESTIONS -->
+
+	<!-- NEW QUESTION -->
+				<div id='question510'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X130X510'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">I agree with the terms and hereby consent to participate in the study.</span></div></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td align='left'>
+						<input class='radio' type='radio' name='58556X130X510' id='answer58556X130X510Y' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)'/><label for='answer58556X130X510Y' class='answertext'>Yes</label><br />
+						<input class='radio' type='radio' name='58556X130X510' id='answer58556X130X510N' value='N' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)'/><label for='answer58556X130X510N' class='answertext'>No</label><br />
+				<input type='hidden' name='java58556X130X510' id='java58556X130X510' value='' />
+					</td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X130X510' id='display510' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+
+<!-- END THE GROUP -->
+		</td>
+	</tr>
+</table>
+<table><tr><td height='2'></td></tr></table>
+
+
+<!-- PRESENT THE NAVIGATOR -->
+<table width='100%' align='center' bgcolor='#EEF6FF'>
+	<tr>
+		<td align='left' >
+			<input type='submit' name='saveall' value='Resume Later' class='saveall' onclick="javascript:document.limesurvey.move.value = this.value;" disabled='disabled'/>
+		</td>
+		<td align='center'>
+			<input type="hidden" name="move" value="movenext" id="movenext" /><input class='submit' accesskey='p' type='button' onclick="javascript:document.limesurvey.move.value = 'moveprev'; document.limesurvey.submit();" value=' << prev ' name='move2' />
+					<input class='submit' type='submit' accesskey='n' onclick="javascript:document.limesurvey.move.value = 'movenext';" value=' next >> ' name='move2' />
+
+		</td>
+		<td align='right'>
+								<div class='clearall'><a href='/survey/index.php?sid=58556&amp;move=clearall&amp;lang=en' onclick='return confirm("Are you sure you want to clear all your responses?")'>[Exit and Clear Survey]</a></div>
+
+		</td>
+	</tr>
+</table>
+		<center><font color='red' size='2'>This survey is not currently active. You will not be able to save your responses.</font></center>
+<!-- group2.php -->
+<input type='hidden' name='mandatory' value='58556X130X510' id='mandatory' />
+<input type='hidden' name='mandatoryfn' value='58556X130X510' id='mandatoryfn' />
+<input type='hidden' name='thisstep' value='1' id='thisstep' />
+<input type='hidden' name='sid' value='58556' id='sid' />
+<input type='hidden' name='token' value='' id='token' />
+</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

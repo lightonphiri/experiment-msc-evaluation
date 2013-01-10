@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<link type="text/css" rel="StyleSheet" href="http://banzai.cs.uct.ac.za/survey/scripts/slider/swing.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-blue.css" title="win2k-cold-1" /><script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/range.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/timer.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/slider.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/lang/calendar-en.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-setup.js"></script>
+<title>Data Driven Web-based Services</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />   
+        <meta name="generator" content="Dev-PHP 3.00" />
+<style type='text/css'>
+a:link, a:visited
+    {
+    color: #819d26;
+    text-decoration: none;
+    }
+body.default
+    {
+    background-color: #FFFFFF;
+    font-size: 11px;
+    line-height: 150%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #1d2d45;
+    }
+.question
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.questionhelp
+    {
+    font-size: 10px;
+    }        
+.clearall
+    {
+    font-size: 11px;
+    }
+.answertext
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.answertextright
+    {
+	text-align:left;
+    }
+.array1
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #ffffff;
+    }
+.array2
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #eeeeee;
+    }
+.arraycaptionleft
+    {
+    text-align:right;
+    }
+.errormandatory 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.warningjs 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.saveall
+    {
+    font-weight:normal;
+    color:black;
+    }
+.asterisk
+    {
+    color: #FF0000;
+    font-size: 9pt;
+    font-family: verdana;
+    }
+.innergraph img
+{
+  height:12px;
+  vertical-align:top;
+}
+.innergraph table
+{
+  height:12px;
+  border:1px solid #000;
+  table-layout:fixed !important;
+}
+.innergraph td
+{
+  height:12px;
+}
+.printouttable
+{
+  width:100%;
+}
+.printouttable td
+{
+border-style:solid;
+border-color:#ffffff ;
+border-bottom-color:#ddddff ;
+border-width:1px;
+}
+.printouttable td:first-child
+{
+  background-color:#ddddff;
+  font-weight:bold;
+  text-align:right;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.printouttitle
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.surveytitle
+{
+  font-size:1.2em;
+  height:1.5em;
+  }
+.surveytitle:hover
+{
+  text-decoration: underline;
+  color: #819d26;
+}
+.languagechanger
+{
+ font-size:1em;
+}
+table.question tr.array1:hover 
+{
+  background-color: #A7A9D1; 
+}
+table.question tr.array2:hover 
+{
+  background-color: #A7A9D1; 
+}
+
+</style>
+<script type="text/javascript" src="scripts/surveyRuntime.js">
+</script>
+</head>
+<body class='default'>
+<table width='75%' align='center' style='border-collapse: collapse; border-color:#bbc6cc;' border='1' cellspacing='0'>
+    <tr>
+        <td>
+<form method='post' action='/survey/index.php' id='limesurvey' name='limesurvey'>
+
+<!-- INPUT NAMES -->
+<input type='hidden' name='fieldnames' value='58556X127X501|58556X127X5001|58556X127X5002|58556X127X5003|58556X127X5004|58556X127X5031|58556X127X5032|58556X127X5033|58556X127X5051|58556X127X5052|58556X127X5053|58556X127X504|58556X127X5021|58556X127X5022|58556X127X5023' id='fieldnames' />	<input type='hidden' name='modfields' value='' id='modfields' />
+
+
+
+<!-- JAVASCRIPT FOR MODIFIED QUESTIONS -->
+ <script type='text/javascript'>
+ <!--
+    function ValidDate(oObject)
+    {// Regular expression used to check if date is in correct format
+     var str_regexp = /[1-9][0-9]{3}-(0[1-9]|1[0-2])-([0-2][0-9]|3[0-1])/;
+     var pattern = new RegExp(str_regexp);
+     if ( oObject.value=='')
+     { return true;
+     }
+     if ((oObject.value.match(pattern)!=null))
+     {var date_array = oObject.value.split('-');
+      var day = date_array[2];
+      var month = date_array[1];
+      var year = date_array[0];
+      str_regexp = /1|3|5|7|8|10|12/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 31 && (month.match(pattern)!=null))
+      { return true;
+      }
+      str_regexp = /4|6|9|11/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 30 && (month.match(pattern)!=null))
+      { return true;
+      }
+      if (day == 29 && month == 2 && (year % 4 == 0))
+      { return true;
+      }
+      if (day <= 28 && month == 2)
+      { return true;
+      }        
+     }
+     window.alert('Date is not valid!');
+     oObject.focus();
+     oObject.select();
+     return false;
+    }
+ //-->
+ </script>
+
+<table width='100%' align='center' cellspacing='0'>
+	<tr>
+		<td align='center' bgcolor='#EEF6FF'>
+			<font color='#328639'><strong>Data Driven Web-based Services</strong></font><br />
+			<font size='1' ><br /></font>
+		</td>
+	</tr>
+	<tr>
+		<td align='center' bgcolor='#d2e0f2'>
+			<table class='graph' width='100' align='center' cellpadding='2'><tr><td>
+<table width='180' align='center' cellpadding='0' cellspacing='0' border='0' class='innergraph'>
+<tr><td align='right' width='40'>0%&nbsp;</td>
+<td width='100' align='left'>
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr><td>
+<img src='http://banzai.cs.uct.ac.za/survey/templates/default/chart.jpg' width='16' align='left' alt='16% complete' />
+</td></tr>
+</table>
+</td>
+<td align='left' width='40'>&nbsp;100%</td></tr>
+</table>
+</td></tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+    <td  align="center">
+      
+    </td>
+  </tr>
+</table>
+
+<!-- JAVASCRIPT FOR CONDITIONAL QUESTIONS -->
+<script type='text/javascript'>
+<!--
+
+    function radio_unselect(radioObj)
+  	{   
+  		var radioLength = radioObj.length;
+  		for(var i = 0; i < radioLength; i++)
+  		{
+  			radioObj[i].checked = false;
+  		}
+  	}
+	function checkconditions(value, name, type)
+	{
+            if (type == 'radio' || type == 'select-one')
+        {
+            var hiddenformname='java'+name;
+            document.getElementById(hiddenformname).value=value;
+        }
+
+        if (type == 'checkbox')
+        {
+            var hiddenformname='java'+name;
+            var chkname='answer'+name;
+            if (document.getElementById(chkname).checked)
+            {
+                document.getElementById(hiddenformname).value='Y';
+            } else
+            {
+		        document.getElementById(hiddenformname).value='';
+            }
+        }
+	if (navigator.userAgent.indexOf('Safari')>-1 && name !== undefined )
+		{ // Safari eats the onchange so run modfield manually, except when called at onload time
+			//alert('For Safari (Useragent: '+navigator.userAgent+' calling modfield for ' + name);
+			modfield(name);
+		}
+	}
+	//-->
+	</script>
+
+
+
+<!-- START THE GROUP -->
+<table><tr><td height='2'></td></tr></table>
+<table width='100%' align='center' bgcolor='#d2e0f2' border='0' style='border-collapse:collapse; border-color:#111111;'>
+	<tr>
+		<td align='center'>
+			<font face='verdana' size='2'><strong>Section 1 - Background Information</strong></font>
+
+			<br /><font face='verdana' size='2'>&nbsp;</font><br /><br />
+
+
+
+<!-- PRESENT THE QUESTIONS -->
+
+	<!-- NEW QUESTION -->
+				<div id='question501'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X501'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">Which programming assignment group were you a member of?</span></div><br />
+<font class = "questionhelp">Choose one of the following answers</font></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+						
+					<select name='58556X127X501' id='answer58556X127X501' onchange='checkconditions(this.value, this.name, this.type);modfield(this.name);'>
+						<option value='' selected='selected'>Please choose..</option>
+						<option value='1'>Group 1</option>
+						<option value='2'>Group 2</option>
+						<option value='3'>Group 3</option>
+						<option value='4'>Group 4</option>
+						<option value='5'>Group 5</option>
+						<option value='6'>Group 6</option>
+						<option value='7'>Group 7</option>
+						<option value='8'>Group 8</option>
+						<option value='9'>Group 9</option>
+						<option value='10'>Group 10</option>
+						<option value='11'>Group 11</option>
+						<option value='12'>Group 12</option>
+					</select>
+						<script type='text/javascript'>
+						<!--
+							modfield("58556X127X501");
+						//-->
+						</script>
+					<input type='hidden' name='java58556X127X501' id='java58556X127X501' value='' />
+
+			<input type='hidden' name='display58556X127X501' id='display501' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question500'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X500'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">What is your experience working with the following tools and techniques?</span></div></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td width='20%'></td>
+					<th class='array1' width='15%'><font size='1'>Less than 1 year</font></th>
+					<th class='array1' width='15%'><font size='1'>1-3 years</font></th>
+					<th class='array1' width='15%'><font size='1'>3-6 years</font></th>
+					<th class='array1' width='15%'><font size='1'>More than 6 years</font></th>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Web-based Application Development
+				<input type='hidden' name='java58556X127X5001' id='java58556X127X5001' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X127X5001-1'><input class='radio' type='radio' name='58556X127X5001' value='1' id='answer58556X127X5001-1' title='Less than 1 year' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5001-2'><input class='radio' type='radio' name='58556X127X5001' value='2' id='answer58556X127X5001-2' title='1-3 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5001-3'><input class='radio' type='radio' name='58556X127X5001' value='3' id='answer58556X127X5001-3' title='3-6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5001-4'><input class='radio' type='radio' name='58556X127X5001' value='4' id='answer58556X127X5001-4' title='More than 6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Database-driven Applications
+				<input type='hidden' name='java58556X127X5002' id='java58556X127X5002' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X127X5002-1'><input class='radio' type='radio' name='58556X127X5002' value='1' id='answer58556X127X5002-1' title='Less than 1 year' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5002-2'><input class='radio' type='radio' name='58556X127X5002' value='2' id='answer58556X127X5002-2' title='1-3 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5002-3'><input class='radio' type='radio' name='58556X127X5002' value='3' id='answer58556X127X5002-3' title='3-6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5002-4'><input class='radio' type='radio' name='58556X127X5002' value='4' id='answer58556X127X5002-4' title='More than 6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Database Management Systems (e.g. MySQL, MS Access, Oracle)
+				<input type='hidden' name='java58556X127X5003' id='java58556X127X5003' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X127X5003-1'><input class='radio' type='radio' name='58556X127X5003' value='1' id='answer58556X127X5003-1' title='Less than 1 year' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5003-2'><input class='radio' type='radio' name='58556X127X5003' value='2' id='answer58556X127X5003-2' title='1-3 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5003-3'><input class='radio' type='radio' name='58556X127X5003' value='3' id='answer58556X127X5003-3' title='3-6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5003-4'><input class='radio' type='radio' name='58556X127X5003' value='4' id='answer58556X127X5003-4' title='More than 6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Extensible Markup Language (XML)
+				<input type='hidden' name='java58556X127X5004' id='java58556X127X5004' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X127X5004-1'><input class='radio' type='radio' name='58556X127X5004' value='1' id='answer58556X127X5004-1' title='Less than 1 year' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5004-2'><input class='radio' type='radio' name='58556X127X5004' value='2' id='answer58556X127X5004-2' title='1-3 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5004-3'><input class='radio' type='radio' name='58556X127X5004' value='3' id='answer58556X127X5004-3' title='3-6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X127X5004-4'><input class='radio' type='radio' name='58556X127X5004' value='4' id='answer58556X127X5004-4' title='More than 6 years' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X127X500' id='display500' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question503'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X503'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">How often do you use the following storage solutions when building data-centric applications?</span></div></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td width='20%'></td>
+					<th class='array1' width='12%'><font size='1'>All the time</font></th>
+					<th class='array1' width='12%'><font size='1'>Most of the time</font></th>
+					<th class='array1' width='12%'><font size='1'>Some of the time</font></th>
+					<th class='array1' width='12%'><font size='1'>Rarely</font></th>
+					<th class='array1' width='12%'><font size='1'>Not at all</font></th>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Cloud-based
+				<input type='hidden' name='java58556X127X5031' id='java58556X127X5031' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5031-1'><input class='radio' type='radio' name='58556X127X5031' value='1' id='answer58556X127X5031-1' title='All the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5031-2'><input class='radio' type='radio' name='58556X127X5031' value='2' id='answer58556X127X5031-2' title='Most of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5031-3'><input class='radio' type='radio' name='58556X127X5031' value='3' id='answer58556X127X5031-3' title='Some of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5031-4'><input class='radio' type='radio' name='58556X127X5031' value='4' id='answer58556X127X5031-4' title='Rarely' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5031-5'><input class='radio' type='radio' name='58556X127X5031' value='5' id='answer58556X127X5031-5' title='Not at all' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Database-based
+				<input type='hidden' name='java58556X127X5032' id='java58556X127X5032' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5032-1'><input class='radio' type='radio' name='58556X127X5032' value='1' id='answer58556X127X5032-1' title='All the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5032-2'><input class='radio' type='radio' name='58556X127X5032' value='2' id='answer58556X127X5032-2' title='Most of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5032-3'><input class='radio' type='radio' name='58556X127X5032' value='3' id='answer58556X127X5032-3' title='Some of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5032-4'><input class='radio' type='radio' name='58556X127X5032' value='4' id='answer58556X127X5032-4' title='Rarely' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5032-5'><input class='radio' type='radio' name='58556X127X5032' value='5' id='answer58556X127X5032-5' title='Not at all' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>File-based
+				<input type='hidden' name='java58556X127X5033' id='java58556X127X5033' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5033-1'><input class='radio' type='radio' name='58556X127X5033' value='1' id='answer58556X127X5033-1' title='All the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5033-2'><input class='radio' type='radio' name='58556X127X5033' value='2' id='answer58556X127X5033-2' title='Most of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5033-3'><input class='radio' type='radio' name='58556X127X5033' value='3' id='answer58556X127X5033-3' title='Some of the time' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5033-4'><input class='radio' type='radio' name='58556X127X5033' value='4' id='answer58556X127X5033-4' title='Rarely' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5033-5'><input class='radio' type='radio' name='58556X127X5033' value='5' id='answer58556X127X5033-5' title='Not at all' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X127X503' id='display503' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question505'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X505'><span class='asterisk'>*</span><p style="text-align:center;"><span style="font-family:Tahoma;">Please order the following storage solutions by preference, starting with the most prefered</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<script type='text/javascript'>
+			<!--
+				function rankthis_505($code, $value)
+					{
+					$index=document.limesurvey.CHOICES_505.selectedIndex;
+					document.limesurvey.CHOICES_505.selectedIndex=-1;
+					for (i=1; i<=3; i++)
+						{
+						$b=i;
+						$b += '';
+						$inputname="RANK_505"+$b;
+						$hiddenname="fvalue_505"+$b;
+						$cutname="cut_505"+i;
+						document.getElementById($cutname).style.display='none';
+						if (!document.getElementById($inputname).value)
+							{
+							document.getElementById($inputname).value=$value;
+							document.getElementById($hiddenname).value=$code;
+							document.getElementById($cutname).style.display='';
+							for (var b=document.getElementById('CHOICES_505').options.length-1; b>=0; b--)
+								{
+								if (document.getElementById('CHOICES_505').options[b].value == $code)
+									{
+									document.getElementById('CHOICES_505').options[b] = null;
+									}
+								}
+							i=3;
+							}
+						}
+					if (document.getElementById('CHOICES_505').options.length == 0)
+						{
+						document.getElementById('CHOICES_505').disabled=true;
+						}
+					checkconditions($code);
+					modfield(document.getElementById($hiddenname).name);
+					}
+				function deletethis_505($text, $value, $name, $thisname)
+					{
+					var qid='505';
+					var lngth=qid.length+4;
+					var cutindex=$thisname.substring(lngth, $thisname.length);
+					cutindex=parseFloat(cutindex);
+					document.getElementById($name).value='';
+					document.getElementById($thisname).style.display='none';
+					if (cutindex > 1)
+						{
+						$cut1name="cut_505"+(cutindex-1);
+						$cut2name="fvalue_505"+(cutindex);
+						document.getElementById($cut1name).style.display='';
+						document.getElementById($cut2name).value='';
+						}
+					else
+						{
+						$cut2name="fvalue_505"+(cutindex);
+						document.getElementById($cut2name).value='';
+						}
+					var i=document.getElementById('CHOICES_505').options.length;
+					document.getElementById('CHOICES_505').options[i] = new Option($text, $value);
+					if (document.getElementById('CHOICES_505').options.length > 0)
+						{
+						document.getElementById('CHOICES_505').disabled=false;
+						}
+					checkconditions('');
+					modfield(document.getElementById($hiddenname).name);
+					}
+			//-->
+			</script>
+			<table border='0' cellspacing='5' width='500' class='rank'>
+				<tr>
+					<td colspan='2' class='rank'><font size='1'>
+						Click on an item in the list on the left, starting with your						highest ranking item, moving through to your lowest ranking item.					</font></td>
+				</tr>
+				<tr>
+					<td align='left' valign='top' class='rank'>
+						<strong>&nbsp;&nbsp;<label for='CHOICES_505'>Your Choices:</label></strong><br />
+&nbsp;						<select size='3' name='CHOICES_505'  id='CHOICES_505' onclick="if (this.options.length>0 && this.selectedIndex<0) {this.options[this.options.length-1].selected=true;}; rankthis_505(this.options[this.selectedIndex].value, this.options[this.selectedIndex].text)" class='select'>
+							<option value='1'>Cloud-based</option>
+							<option value='2'>Database-based</option>
+							<option value='3'>File-based</option>
+						</select>
+					&nbsp;</td>
+					<td align='left' width='250' class='rank' nowrap>
+							<table border='0' cellspacing='1' cellpadding='0'>
+							<tr><td></td><td><strong>Your Ranking:</strong></td></tr>
+							<tr><td align=right>&nbsp;<label for='RANK_5051'>1:&nbsp;</label></td><td><input class='text' type='text' name='RANK_5051' id='RANK_5051' onFocus="this.blur()" />
+						<input type='hidden' name='58556X127X5051' id='fvalue_5051' value='' />
+						<img src='http://banzai.cs.uct.ac.za/survey/images/cut.gif' alt='Remove this item' title='Remove this item' style='display:none' id='cut_5051' onclick="deletethis_505(document.limesurvey.RANK_5051.value, document.limesurvey.fvalue_5051.value, document.limesurvey.RANK_5051.name, this.id)" /><br />
+</td></tr>
+							<tr><td align=right>&nbsp;<label for='RANK_5052'>2:&nbsp;</label></td><td><input class='text' type='text' name='RANK_5052' id='RANK_5052' onFocus="this.blur()" />
+						<input type='hidden' name='58556X127X5052' id='fvalue_5052' value='' />
+						<img src='http://banzai.cs.uct.ac.za/survey/images/cut.gif' alt='Remove this item' title='Remove this item' style='display:none' id='cut_5052' onclick="deletethis_505(document.limesurvey.RANK_5052.value, document.limesurvey.fvalue_5052.value, document.limesurvey.RANK_5052.name, this.id)" /><br />
+</td></tr>
+							<tr><td align=right>&nbsp;<label for='RANK_5053'>3:&nbsp;</label></td><td><input class='text' type='text' name='RANK_5053' id='RANK_5053' onFocus="this.blur()" />
+						<input type='hidden' name='58556X127X5053' id='fvalue_5053' value='' />
+						<img src='http://banzai.cs.uct.ac.za/survey/images/cut.gif' alt='Remove this item' title='Remove this item' style='display:none' id='cut_5053' onclick="deletethis_505(document.limesurvey.RANK_5053.value, document.limesurvey.fvalue_5053.value, document.limesurvey.RANK_5053.name, this.id)" /><br />
+</td></tr>
+							</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan='2' class='rank'><font size='1'>
+						Click on the scissors next to each item on the right						to remove the last entry in your ranked list					</font></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X127X505' id='display505' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question504'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X504'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">What aspects of your most prefered solution above do you find particularly valuable?</span></div></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<script type='text/javascript'>
+               <!--
+               function textLimit(field, maxlen) {
+                if (document.getElementById(field).value.length > maxlen)
+                document.getElementById(field).value = document.getElementById(field).value.substring(0, maxlen);
+                }
+               //-->
+               </script>
+<textarea class='textarea' name='58556X127X504' id='answer58556X127X504' rows='5' cols='40' onkeyup="textLimit('answer58556X127X504', 65525);modfield(this.name);checkconditions(this.value, this.name, this.type)"></textarea>
+
+			<input type='hidden' name='display58556X127X504' id='display504' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question502'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X127X502'><span class='asterisk'>*</span><div style="text-align:center;"><font face="Tahoma">How would you rate your knowledge of the following&nbsp;concepts?</font></div></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td width='20%'></td>
+					<th class='array1' width='12%'><font size='1'>Novice</font></th>
+					<th class='array1' width='12%'><font size='1'></font></th>
+					<th class='array1' width='12%'><font size='1'></font></th>
+					<th class='array1' width='12%'><font size='1'></font></th>
+					<th class='array1' width='12%'><font size='1'>Expert</font></th>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Metadata Standards (e.g. Dublin Core, METS)
+				<input type='hidden' name='java58556X127X5021' id='java58556X127X5021' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5021-1'><input class='radio' type='radio' name='58556X127X5021' value='1' id='answer58556X127X5021-1' title='Novice' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5021-2'><input class='radio' type='radio' name='58556X127X5021' value='2' id='answer58556X127X5021-2' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5021-3'><input class='radio' type='radio' name='58556X127X5021' value='3' id='answer58556X127X5021-3' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5021-4'><input class='radio' type='radio' name='58556X127X5021' value='4' id='answer58556X127X5021-4' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5021-5'><input class='radio' type='radio' name='58556X127X5021' value='5' id='answer58556X127X5021-5' title='Expert' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Digital Libraries
+				<input type='hidden' name='java58556X127X5022' id='java58556X127X5022' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5022-1'><input class='radio' type='radio' name='58556X127X5022' value='1' id='answer58556X127X5022-1' title='Novice' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5022-2'><input class='radio' type='radio' name='58556X127X5022' value='2' id='answer58556X127X5022-2' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5022-3'><input class='radio' type='radio' name='58556X127X5022' value='3' id='answer58556X127X5022-3' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5022-4'><input class='radio' type='radio' name='58556X127X5022' value='4' id='answer58556X127X5022-4' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5022-5'><input class='radio' type='radio' name='58556X127X5022' value='5' id='answer58556X127X5022-5' title='Expert' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Digital Preservation
+				<input type='hidden' name='java58556X127X5023' id='java58556X127X5023' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X127X5023-1'><input class='radio' type='radio' name='58556X127X5023' value='1' id='answer58556X127X5023-1' title='Novice' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5023-2'><input class='radio' type='radio' name='58556X127X5023' value='2' id='answer58556X127X5023-2' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5023-3'><input class='radio' type='radio' name='58556X127X5023' value='3' id='answer58556X127X5023-3' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5023-4'><input class='radio' type='radio' name='58556X127X5023' value='4' id='answer58556X127X5023-4' title='' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X127X5023-5'><input class='radio' type='radio' name='58556X127X5023' value='5' id='answer58556X127X5023-5' title='Expert' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X127X502' id='display502' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+
+<!-- END THE GROUP -->
+		</td>
+	</tr>
+</table>
+<table><tr><td height='2'></td></tr></table>
+
+
+<!-- PRESENT THE NAVIGATOR -->
+<table width='100%' align='center' bgcolor='#EEF6FF'>
+	<tr>
+		<td align='left' >
+			<input type='submit' name='saveall' value='Resume Later' class='saveall' onclick="javascript:document.limesurvey.move.value = this.value;" disabled='disabled'/>
+		</td>
+		<td align='center'>
+			<input type="hidden" name="move" value="movenext" id="movenext" /><input class='submit' accesskey='p' type='button' onclick="javascript:document.limesurvey.move.value = 'moveprev'; document.limesurvey.submit();" value=' << prev ' name='move2' />
+					<input class='submit' type='submit' accesskey='n' onclick="javascript:document.limesurvey.move.value = 'movenext';" value=' next >> ' name='move2' />
+
+		</td>
+		<td align='right'>
+								<div class='clearall'><a href='/survey/index.php?sid=58556&amp;move=clearall&amp;lang=en' onclick='return confirm("Are you sure you want to clear all your responses?")'>[Exit and Clear Survey]</a></div>
+
+		</td>
+	</tr>
+</table>
+		<center><font color='red' size='2'>This survey is not currently active. You will not be able to save your responses.</font></center>
+<!-- group2.php -->
+<input type='hidden' name='mandatory' value='58556X127X501|58556X127X5001|58556X127X5002|58556X127X5003|58556X127X5004|58556X127X5031|58556X127X5032|58556X127X5033|58556X127X5051|58556X127X5052|58556X127X5053|58556X127X504|58556X127X5021|58556X127X5022|58556X127X5023' id='mandatory' />
+<input type='hidden' name='mandatoryfn' value='58556X127X501|58556X127X500|58556X127X500|58556X127X500|58556X127X500|58556X127X503|58556X127X503|58556X127X503|58556X127X505|58556X127X505|58556X127X505|58556X127X504|58556X127X502|58556X127X502|58556X127X502' id='mandatoryfn' />
+<input type='hidden' name='thisstep' value='2' id='thisstep' />
+<input type='hidden' name='sid' value='58556' id='sid' />
+<input type='hidden' name='token' value='' id='token' />
+</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

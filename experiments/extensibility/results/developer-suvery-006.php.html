@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<link type="text/css" rel="StyleSheet" href="http://banzai.cs.uct.ac.za/survey/scripts/slider/swing.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-blue.css" title="win2k-cold-1" /><script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/range.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/timer.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/slider/slider.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/lang/calendar-en.js"></script>
+<script type="text/javascript" src="http://banzai.cs.uct.ac.za/survey/scripts/calendar/calendar-setup.js"></script>
+<title>Data Driven Web-based Services</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />   
+        <meta name="generator" content="Dev-PHP 3.00" />
+<style type='text/css'>
+a:link, a:visited
+    {
+    color: #819d26;
+    text-decoration: none;
+    }
+body.default
+    {
+    background-color: #FFFFFF;
+    font-size: 11px;
+    line-height: 150%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #1d2d45;
+    }
+.question
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.questionhelp
+    {
+    font-size: 10px;
+    }        
+.clearall
+    {
+    font-size: 11px;
+    }
+.answertext
+    {
+    font-family: verdana;
+    font-size: 11px;
+    }
+.answertextright
+    {
+	text-align:left;
+    }
+.array1
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #ffffff;
+    }
+.array2
+    {
+    font-family: verdana;
+    font-size: 11px;
+    text-align:center;
+    background-color: #eeeeee;
+    }
+.arraycaptionleft
+    {
+    text-align:right;
+    }
+.errormandatory 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.warningjs 
+    {
+    font-size:12px;
+    font-weight:bold;
+    color:RED;
+    }
+.saveall
+    {
+    font-weight:normal;
+    color:black;
+    }
+.asterisk
+    {
+    color: #FF0000;
+    font-size: 9pt;
+    font-family: verdana;
+    }
+.innergraph img
+{
+  height:12px;
+  vertical-align:top;
+}
+.innergraph table
+{
+  height:12px;
+  border:1px solid #000;
+  table-layout:fixed !important;
+}
+.innergraph td
+{
+  height:12px;
+}
+.printouttable
+{
+  width:100%;
+}
+.printouttable td
+{
+border-style:solid;
+border-color:#ffffff ;
+border-bottom-color:#ddddff ;
+border-width:1px;
+}
+.printouttable td:first-child
+{
+  background-color:#ddddff;
+  font-weight:bold;
+  text-align:right;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.printouttitle
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.surveytitle
+{
+  font-size:1.2em;
+  height:1.5em;
+  }
+.surveytitle:hover
+{
+  text-decoration: underline;
+  color: #819d26;
+}
+.languagechanger
+{
+ font-size:1em;
+}
+table.question tr.array1:hover 
+{
+  background-color: #A7A9D1; 
+}
+table.question tr.array2:hover 
+{
+  background-color: #A7A9D1; 
+}
+
+</style>
+<script type="text/javascript" src="scripts/surveyRuntime.js">
+</script>
+</head>
+<body class='default'>
+<table width='75%' align='center' style='border-collapse: collapse; border-color:#bbc6cc;' border='1' cellspacing='0'>
+    <tr>
+        <td>
+<form method='post' action='/survey/index.php' id='limesurvey' name='limesurvey'>
+
+<!-- INPUT NAMES -->
+<input type='hidden' name='fieldnames' value='58556X131X513|58556X131X5111|58556X131X5112|58556X131X5113|58556X131X5114|58556X131X5115|58556X131X5116|58556X131X5117|58556X131X5118|58556X131X511other|58556X131X515|58556X131X516|58556X131X5121|58556X131X5122|58556X131X5123|58556X131X5141|58556X131X5142|58556X131X5143|58556X131X5144|58556X131X517' id='fieldnames' />	<input type='hidden' name='modfields' value='' id='modfields' />
+
+
+
+<!-- JAVASCRIPT FOR MODIFIED QUESTIONS -->
+ <script type='text/javascript'>
+ <!--
+    function ValidDate(oObject)
+    {// Regular expression used to check if date is in correct format
+     var str_regexp = /[1-9][0-9]{3}-(0[1-9]|1[0-2])-([0-2][0-9]|3[0-1])/;
+     var pattern = new RegExp(str_regexp);
+     if ( oObject.value=='')
+     { return true;
+     }
+     if ((oObject.value.match(pattern)!=null))
+     {var date_array = oObject.value.split('-');
+      var day = date_array[2];
+      var month = date_array[1];
+      var year = date_array[0];
+      str_regexp = /1|3|5|7|8|10|12/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 31 && (month.match(pattern)!=null))
+      { return true;
+      }
+      str_regexp = /4|6|9|11/;
+      pattern = new RegExp(str_regexp);
+      if ( day <= 30 && (month.match(pattern)!=null))
+      { return true;
+      }
+      if (day == 29 && month == 2 && (year % 4 == 0))
+      { return true;
+      }
+      if (day <= 28 && month == 2)
+      { return true;
+      }        
+     }
+     window.alert('Date is not valid!');
+     oObject.focus();
+     oObject.select();
+     return false;
+    }
+ //-->
+ </script>
+
+<table width='100%' align='center' cellspacing='0'>
+	<tr>
+		<td align='center' bgcolor='#EEF6FF'>
+			<font color='#328639'><strong>Data Driven Web-based Services</strong></font><br />
+			<font size='1' ><br /></font>
+		</td>
+	</tr>
+	<tr>
+		<td align='center' bgcolor='#d2e0f2'>
+			<table class='graph' width='100' align='center' cellpadding='2'><tr><td>
+<table width='180' align='center' cellpadding='0' cellspacing='0' border='0' class='innergraph'>
+<tr><td align='right' width='40'>0%&nbsp;</td>
+<td width='100' align='left'>
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr><td>
+<img src='http://banzai.cs.uct.ac.za/survey/templates/default/chart.jpg' width='66' align='left' alt='66% complete' />
+</td></tr>
+</table>
+</td>
+<td align='left' width='40'>&nbsp;100%</td></tr>
+</table>
+</td></tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+    <td  align="center">
+      
+    </td>
+  </tr>
+</table>
+
+<!-- JAVASCRIPT FOR CONDITIONAL QUESTIONS -->
+<script type='text/javascript'>
+<!--
+
+    function radio_unselect(radioObj)
+  	{   
+  		var radioLength = radioObj.length;
+  		for(var i = 0; i < radioLength; i++)
+  		{
+  			radioObj[i].checked = false;
+  		}
+  	}
+	function checkconditions(value, name, type)
+	{
+            if (type == 'radio' || type == 'select-one')
+        {
+            var hiddenformname='java'+name;
+            document.getElementById(hiddenformname).value=value;
+        }
+
+        if (type == 'checkbox')
+        {
+            var hiddenformname='java'+name;
+            var chkname='answer'+name;
+            if (document.getElementById(chkname).checked)
+            {
+                document.getElementById(hiddenformname).value='Y';
+            } else
+            {
+		        document.getElementById(hiddenformname).value='';
+            }
+        }
+	if ((document.getElementById('java58556X131X515').value != '' && document.getElementById('java58556X131X515').value == 'Y'))
+	{
+		document.getElementById('question516').style.display='';
+		document.getElementById('display516').value='on';
+	}
+	else
+	{
+		document.getElementById('question516').style.display='none';
+		document.getElementById('display516').value='';
+	}
+
+	if (navigator.userAgent.indexOf('Safari')>-1 && name !== undefined )
+		{ // Safari eats the onchange so run modfield manually, except when called at onload time
+			//alert('For Safari (Useragent: '+navigator.userAgent+' calling modfield for ' + name);
+			modfield(name);
+		}
+	}
+	//-->
+	</script>
+
+
+
+<!-- START THE GROUP -->
+<table><tr><td height='2'></td></tr></table>
+<table width='100%' align='center' bgcolor='#d2e0f2' border='0' style='border-collapse:collapse; border-color:#111111;'>
+	<tr>
+		<td align='center'>
+			<font face='verdana' size='2'><strong>Section 4 - Web Service Implementation</strong></font>
+
+			<br /><font face='verdana' size='2'>&nbsp;</font><br /><br />
+
+
+
+<!-- PRESENT THE QUESTIONS -->
+
+	<!-- NEW QUESTION -->
+				<div id='question513'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X513'><span class='asterisk'>*</span><p style="text-align:center;"><span style="font-family:Tahoma;">Briefly describe the type of Web service that your group implemented</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<script type='text/javascript'>
+               <!--
+               function textLimit(field, maxlen) {
+                if (document.getElementById(field).value.length > maxlen)
+                document.getElementById(field).value = document.getElementById(field).value.substring(0, maxlen);
+                }
+               //-->
+               </script>
+<textarea class='textarea' name='58556X131X513' id='answer58556X131X513' rows='5' cols='40' onkeyup="textLimit('answer58556X131X513', 65525);modfield(this.name);checkconditions(this.value, this.name, this.type)"></textarea>
+
+			<input type='hidden' name='display58556X131X513' id='display513' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question511'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X511'><span class='asterisk'>*</span><div style="text-align:center;"><span style="font-family:Tahoma;">Which programming languages did you use to implement your service?</span></div><br />
+<font class = "questionhelp">Check any that apply</font></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td>&nbsp;</td>
+					<td align='left' class='answertext'>
+					<input type='hidden' name='MULTI58556X131X511' value='9' />
+						<input class='checkbox' type='checkbox' name='58556X131X5111' id='answer58556X131X5111' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5111' class='answertext'>.NET (C#, VB.NET, J#)</label><br />
+				<input type='hidden' name='java58556X131X5111' id='java58556X131X5111' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5112' id='answer58556X131X5112' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5112' class='answertext'>HTML 5</label><br />
+				<input type='hidden' name='java58556X131X5112' id='java58556X131X5112' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5113' id='answer58556X131X5113' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5113' class='answertext'>Java</label><br />
+				<input type='hidden' name='java58556X131X5113' id='java58556X131X5113' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5114' id='answer58556X131X5114' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5114' class='answertext'>JavaScript</label><br />
+				<input type='hidden' name='java58556X131X5114' id='java58556X131X5114' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5115' id='answer58556X131X5115' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5115' class='answertext'>PHP</label><br />
+				<input type='hidden' name='java58556X131X5115' id='java58556X131X5115' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5116' id='answer58556X131X5116' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5116' class='answertext'>Python</label><br />
+				<input type='hidden' name='java58556X131X5116' id='java58556X131X5116' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5117' id='answer58556X131X5117' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5117' class='answertext'>Ruby</label><br />
+				<input type='hidden' name='java58556X131X5117' id='java58556X131X5117' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X5118' id='answer58556X131X5118' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /><label for='answer58556X131X5118' class='answertext'>XSLT</label><br />
+				<input type='hidden' name='java58556X131X5118' id='java58556X131X5118' value='' />
+						<input class='checkbox' type='checkbox' name='58556X131X511othercbox' id='58556X131X511othercbox' onchange='document.getElementById("answer58556X131X511other").value=""'  />						<label for='answer58556X131X511other' class='answertext'>Other:</label> <input class='text' type='text' name='58556X131X511other' id='answer58556X131X511other' onchange='modfield(this.name);' onkeypress='document.getElementById("58556X131X511othercbox").checked=true;' />
+				<input type='hidden' name='java58556X131X511other' id='java58556X131X511other' value='' />
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X131X511' id='display511' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question515'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X515'><span class='asterisk'>*</span><p style="text-align:center;"><span style="font-family:Tahoma;">Does the Web service you implemented make use of an additional backend tools (i.e. database)?</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td align='left'>
+						<input class='radio' type='radio' name='58556X131X515' id='answer58556X131X515Y' value='Y' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)'/><label for='answer58556X131X515Y' class='answertext'>Yes</label><br />
+						<input class='radio' type='radio' name='58556X131X515' id='answer58556X131X515N' value='N' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)'/><label for='answer58556X131X515N' class='answertext'>No</label><br />
+				<input type='hidden' name='java58556X131X515' id='java58556X131X515' value='' />
+					</td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X131X515' id='display515' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question516' style='display: none'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X516'><p style="text-align:center;"><span style="font-family:Tahoma;">What role does the database play in your Web service?</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<script type='text/javascript'>
+               <!--
+               function textLimit(field, maxlen) {
+                if (document.getElementById(field).value.length > maxlen)
+                document.getElementById(field).value = document.getElementById(field).value.substring(0, maxlen);
+                }
+               //-->
+               </script>
+<textarea class='textarea' name='58556X131X516' id='answer58556X131X516' rows='5' cols='40' onkeyup="textLimit('answer58556X131X516', 65525);modfield(this.name);checkconditions(this.value, this.name, this.type)"></textarea>
+
+			<input type='hidden' name='display58556X131X516' id='display516' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question512'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X512'><span class='asterisk'>*</span><p style="text-align:center;"><span style="font-family:Tahoma;">In relation to the programming languages used, to what degree do you agree with the following?</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td width='20%'></td>
+					<th class='array1' width='12%'><font size='1'>Strongly Agree</font></th>
+					<th class='array1' width='12%'><font size='1'>Agree</font></th>
+					<th class='array1' width='12%'><font size='1'>Neutral</font></th>
+					<th class='array1' width='12%'><font size='1'>Disagree</font></th>
+					<th class='array1' width='12%'><font size='1'>Strongly Disagree</font></th>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>The metadata format influenced the choice of the programming language
+				<input type='hidden' name='java58556X131X5121' id='java58556X131X5121' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X131X5121-1'><input class='radio' type='radio' name='58556X131X5121' value='1' id='answer58556X131X5121-1' title='Strongly Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5121-2'><input class='radio' type='radio' name='58556X131X5121' value='2' id='answer58556X131X5121-2' title='Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5121-3'><input class='radio' type='radio' name='58556X131X5121' value='3' id='answer58556X131X5121-3' title='Neutral' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5121-4'><input class='radio' type='radio' name='58556X131X5121' value='4' id='answer58556X131X5121-4' title='Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5121-5'><input class='radio' type='radio' name='58556X131X5121' value='5' id='answer58556X131X5121-5' title='Strongly Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>The metadata file format was easy to parse
+				<input type='hidden' name='java58556X131X5122' id='java58556X131X5122' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X131X5122-1'><input class='radio' type='radio' name='58556X131X5122' value='1' id='answer58556X131X5122-1' title='Strongly Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5122-2'><input class='radio' type='radio' name='58556X131X5122' value='2' id='answer58556X131X5122-2' title='Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5122-3'><input class='radio' type='radio' name='58556X131X5122' value='3' id='answer58556X131X5122-3' title='Neutral' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5122-4'><input class='radio' type='radio' name='58556X131X5122' value='4' id='answer58556X131X5122-4' title='Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5122-5'><input class='radio' type='radio' name='58556X131X5122' value='5' id='answer58556X131X5122-5' title='Strongly Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>The directory hierarchical structure was easy to process
+				<input type='hidden' name='java58556X131X5123' id='java58556X131X5123' value='' /></td>
+					<td align='center' width='12%'><label for='answer58556X131X5123-1'><input class='radio' type='radio' name='58556X131X5123' value='1' id='answer58556X131X5123-1' title='Strongly Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5123-2'><input class='radio' type='radio' name='58556X131X5123' value='2' id='answer58556X131X5123-2' title='Agree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5123-3'><input class='radio' type='radio' name='58556X131X5123' value='3' id='answer58556X131X5123-3' title='Neutral' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5123-4'><input class='radio' type='radio' name='58556X131X5123' value='4' id='answer58556X131X5123-4' title='Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='12%'><label for='answer58556X131X5123-5'><input class='radio' type='radio' name='58556X131X5123' value='5' id='answer58556X131X5123-5' title='Strongly Disagree' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X131X512' id='display512' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question514'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X514'><span class='asterisk'>*</span><p style="text-align:center;"><span style="font-family:Tahoma;">In your opinion, between file-based and database-centric solutions, which would be best suited for the following tasks?</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+									<table class='question'>
+				<tr>
+					<td width='20%'></td>
+					<th class='array1' width='15%'><font size='1'>Both</font></th>
+					<th class='array1' width='15%'><font size='1'>File-base Store</font></th>
+					<th class='array1' width='15%'><font size='1'>Database-centric Store</font></th>
+					<th class='array1' width='15%'><font size='1'>Neither</font></th>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Reading metadata records
+				<input type='hidden' name='java58556X131X5141' id='java58556X131X5141' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X131X5141-3'><input class='radio' type='radio' name='58556X131X5141' value='3' id='answer58556X131X5141-3' title='Both' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5141-1'><input class='radio' type='radio' name='58556X131X5141' value='1' id='answer58556X131X5141-1' title='File-base Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5141-2'><input class='radio' type='radio' name='58556X131X5141' value='2' id='answer58556X131X5141-2' title='Database-centric Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5141-4'><input class='radio' type='radio' name='58556X131X5141' value='4' id='answer58556X131X5141-4' title='Neither' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Editing metadata records
+				<input type='hidden' name='java58556X131X5142' id='java58556X131X5142' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X131X5142-3'><input class='radio' type='radio' name='58556X131X5142' value='3' id='answer58556X131X5142-3' title='Both' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5142-1'><input class='radio' type='radio' name='58556X131X5142' value='1' id='answer58556X131X5142-1' title='File-base Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5142-2'><input class='radio' type='radio' name='58556X131X5142' value='2' id='answer58556X131X5142-2' title='Database-centric Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5142-4'><input class='radio' type='radio' name='58556X131X5142' value='4' id='answer58556X131X5142-4' title='Neither' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array2'>
+					<td align='right' class='answertext' width='20%'>Deleting metadata records
+				<input type='hidden' name='java58556X131X5143' id='java58556X131X5143' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X131X5143-3'><input class='radio' type='radio' name='58556X131X5143' value='3' id='answer58556X131X5143-3' title='Both' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5143-1'><input class='radio' type='radio' name='58556X131X5143' value='1' id='answer58556X131X5143-1' title='File-base Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5143-2'><input class='radio' type='radio' name='58556X131X5143' value='2' id='answer58556X131X5143-2' title='Database-centric Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5143-4'><input class='radio' type='radio' name='58556X131X5143' value='4' id='answer58556X131X5143-4' title='Neither' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+				<tr class='array1'>
+					<td align='right' class='answertext' width='20%'>Copying files to and from different platforms
+				<input type='hidden' name='java58556X131X5144' id='java58556X131X5144' value='' /></td>
+					<td align='center' width='15%'><label for='answer58556X131X5144-3'><input class='radio' type='radio' name='58556X131X5144' value='3' id='answer58556X131X5144-3' title='Both' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5144-1'><input class='radio' type='radio' name='58556X131X5144' value='1' id='answer58556X131X5144-1' title='File-base Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5144-2'><input class='radio' type='radio' name='58556X131X5144' value='2' id='answer58556X131X5144-2' title='Database-centric Store' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+					<td align='center' width='15%'><label for='answer58556X131X5144-4'><input class='radio' type='radio' name='58556X131X5144' value='4' id='answer58556X131X5144-4' title='Neither' onclick='checkconditions(this.value, this.name, this.type)' onchange='modfield(this.name)' /></label></td>
+				</tr>
+			</table>
+
+			<input type='hidden' name='display58556X131X514' id='display514' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+	<!-- NEW QUESTION -->
+				<div id='question517'>
+<table width='75%' align='center' border='0' style='border-collapse: collapse; border-color: #111111' bgcolor='white'>
+	<tr>
+		<td align='center'>
+			<table width='100%' cellspacing='0'>
+				<tr>
+					<td align='center' bgcolor='#eef6ff'>
+						<font size='2'><strong><label for='answer58556X131X517'><p style="text-align:center;"><span style="font-family:Tahoma;">Do you have any further general comments or concerns?</span></p></label></strong>
+					</font></td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<script type='text/javascript'>
+               <!--
+               function textLimit(field, maxlen) {
+                if (document.getElementById(field).value.length > maxlen)
+                document.getElementById(field).value = document.getElementById(field).value.substring(0, maxlen);
+                }
+               //-->
+               </script>
+<textarea class='textarea' name='58556X131X517' id='answer58556X131X517' rows='5' cols='40' onkeyup="textLimit('answer58556X131X517', 65525);modfield(this.name);checkconditions(this.value, this.name, this.type)"></textarea>
+
+			<input type='hidden' name='display58556X131X517' id='display517' value='' />
+
+					</td>
+				</tr>
+				<tr>
+					<td class='questionhelp' align='center' bgcolor='#eef6ff'>
+						<img src='http://banzai.cs.uct.ac.za/survey/images/help.gif' alt='Help' align='left' />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td height='10'></td>
+	</tr>
+</table>				</div>
+
+
+<!-- END THE GROUP -->
+		</td>
+	</tr>
+</table>
+<table><tr><td height='2'></td></tr></table>
+
+
+<!-- PRESENT THE NAVIGATOR -->
+<table width='100%' align='center' bgcolor='#EEF6FF'>
+	<tr>
+		<td align='left' >
+			<input type='submit' name='saveall' value='Resume Later' class='saveall' onclick="javascript:document.limesurvey.move.value = this.value;" disabled='disabled'/>
+		</td>
+		<td align='center'>
+			<input type="hidden" name="move" value="movenext" id="movenext" /><input class='submit' accesskey='p' type='button' onclick="javascript:document.limesurvey.move.value = 'moveprev'; document.limesurvey.submit();" value=' << prev ' name='move2' />
+					<input class='submit' type='submit' accesskey='n' onclick="javascript:document.limesurvey.move.value = 'movenext';" value=' next >> ' name='move2' />
+
+		</td>
+		<td align='right'>
+								<div class='clearall'><a href='/survey/index.php?sid=58556&amp;move=clearall&amp;lang=en' onclick='return confirm("Are you sure you want to clear all your responses?")'>[Exit and Clear Survey]</a></div>
+
+		</td>
+	</tr>
+</table>
+		<center><font color='red' size='2'>This survey is not currently active. You will not be able to save your responses.</font></center>
+<!-- group2.php -->
+<input type='hidden' name='java58556X130X510' id='java58556X130X510' value='Y' />
+<input type='hidden' name='java58556X127X501' id='java58556X127X501' value='2' />
+<input type='hidden' name='java58556X127X504' id='java58556X127X504' value='dsgdfg' />
+<input type='hidden' name='java58556X127X5001' id='java58556X127X5001' value='2' />
+<input type='hidden' name='java58556X127X5002' id='java58556X127X5002' value='1' />
+<input type='hidden' name='java58556X127X5003' id='java58556X127X5003' value='2' />
+<input type='hidden' name='java58556X127X5004' id='java58556X127X5004' value='1' />
+<input type='hidden' name='java58556X127X5031' id='java58556X127X5031' value='3' />
+<input type='hidden' name='java58556X127X5032' id='java58556X127X5032' value='2' />
+<input type='hidden' name='java58556X127X5033' id='java58556X127X5033' value='2' />
+<input type='hidden' name='java58556X127X5051' id='java58556X127X5051' value='2' />
+<input type='hidden' name='java58556X127X5052' id='java58556X127X5052' value='3' />
+<input type='hidden' name='java58556X127X5053' id='java58556X127X5053' value='1' />
+<input type='hidden' name='java58556X127X5021' id='java58556X127X5021' value='2' />
+<input type='hidden' name='java58556X127X5022' id='java58556X127X5022' value='1' />
+<input type='hidden' name='java58556X127X5023' id='java58556X127X5023' value='1' />
+<input type='hidden' name='java58556X129X508' id='java58556X129X508' value='safdfsd' />
+<input type='hidden' name='java58556X129X5061' id='java58556X129X5061' value='3' />
+<input type='hidden' name='java58556X129X5062' id='java58556X129X5062' value='2' />
+<input type='hidden' name='java58556X129X5091' id='java58556X129X5091' value='2' />
+<input type='hidden' name='java58556X129X5092' id='java58556X129X5092' value='1' />
+<input type='hidden' name='java58556X129X5071' id='java58556X129X5071' value='5' />
+<input type='hidden' name='java58556X129X5072' id='java58556X129X5072' value='3' />
+<input type='hidden' name='mandatory' value='58556X131X513|58556X131X5111|58556X131X5112|58556X131X5113|58556X131X5114|58556X131X5115|58556X131X5116|58556X131X5117|58556X131X5118|58556X131X511other|58556X131X515|58556X131X5121|58556X131X5122|58556X131X5123|58556X131X5141|58556X131X5142|58556X131X5143|58556X131X5144' id='mandatory' />
+<input type='hidden' name='mandatoryfn' value='58556X131X513|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X511|58556X131X515|58556X131X512|58556X131X512|58556X131X512|58556X131X514|58556X131X514|58556X131X514|58556X131X514' id='mandatoryfn' />
+<input type='hidden' name='thisstep' value='5' id='thisstep' />
+<input type='hidden' name='sid' value='58556' id='sid' />
+<input type='hidden' name='token' value='' id='token' />
+</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
