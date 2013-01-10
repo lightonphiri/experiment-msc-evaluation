@@ -8,6 +8,8 @@ __version__ = "1.0.0"
 __author__ = "Lighton Phiri"
 __email__ = "lighton.phiri@gmail.com"
 
+import fnmatch
+import lxml
 import oaipmh2simplyct
 import os
 import random
@@ -16,6 +18,7 @@ import shutil
 import time
 import urllib2
 import xml
+from lxml import etree
 from oaipmh2simplyct import *
 from urllib2 import *
 from xml.dom.minidom import parse, parseString
@@ -66,6 +69,39 @@ def solrupdatesbatchmain(batchpath):
             print "START: ", core
             solrupdatesbatch(coreurl, batchlocation, commits)
             print "END: ", core
+
+
+def searchbasic(searchfile, searchphrase):
+    """Recursively searches an archive
+
+    keyword arguments:
+    dataset --location of dataset to search
+    phrase --search phrase
+
+    """
+    # define namespaces
+    ns = {'dc':'http://purl.org/dc/elements/1.1/', 'oai_dc':'http://www.openarchives.org/OAI/2.0/oai_dc/'}
+    # parse the file
+    searchtree = etree.parse(searchfile)
+    # necessary to make use of variables
+    # http://lxml.de/1.3/xpathxslt.html
+    xpathexpression = "boolean(//*[contains(.,$phrase)])"
+    return searchtree.xpath(xpathexpression, phrase=searchphrase, namespaces=ns)
+
+
+def searchbasicbarrow(dataset, searchphrase):
+    """Recursively return generators in an archive
+
+    keyword arguments:
+    dataset --location of dataset to search
+
+    """
+    for root, dirs, files in os.walk(dataset):
+        for basename in files:
+            # pick file only if it has searchphrase
+            if (fnmatch.fnmatch(basename, '*.metadata')) & searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase):
+                filename = os.path.join(root, basename)
+                yield filename
 
 
 def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
@@ -525,6 +561,7 @@ def ndltdidentifier(ndltdfile):
     for record in ndltddom.getElementsByTagName('header')[0].getElementsByTagName('identifier'):
         identifier = str(record.firstChild.data)
     return identifier
+
 
 def solrimportstatus(coreurl):
     """Returns boolean indicating if import is complete.
