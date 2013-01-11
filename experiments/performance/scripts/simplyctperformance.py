@@ -82,11 +82,19 @@ def searchbasic(searchfile, searchphrase):
     # define namespaces
     ns = {'dc':'http://purl.org/dc/elements/1.1/', 'oai_dc':'http://www.openarchives.org/OAI/2.0/oai_dc/'}
     # parse the file
+    parsestart = time.time()*1000
     searchtree = etree.parse(searchfile)
-    # necessary to make use of variables
+    parseend = time.time()*1000
+    parsetime = parseend - parsestart
+    # necessary to make use of variables --see URL below
     # http://lxml.de/1.3/xpathxslt.html
+    xpathstart = time.time()*1000
     xpathexpression = "boolean(//*[contains(.,$phrase)])"
-    return searchtree.xpath(xpathexpression, phrase=searchphrase, namespaces=ns)
+    xpathend = time.time()*1000
+    xpathtime = xpathend - xpathstart
+    # return tuple of parsetime, xpathtime& boolean indicating whether or not
+    # phrase exists
+    return (parsetime, xpathtime, searchtree.xpath(xpathexpression, phrase=searchphrase, namespaces=ns))
 
 
 def searchbasicbarrow(dataset, searchphrase):
@@ -96,11 +104,17 @@ def searchbasicbarrow(dataset, searchphrase):
     dataset --location of dataset to search
 
     """
+    parsetime = 0
+    xpathtime = 0
     for root, dirs, files in os.walk(dataset):
         for basename in files:
             # pick file only if it has searchphrase
-            if (fnmatch.fnmatch(basename, '*.metadata')) & searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase):
+            if (fnmatch.fnmatch(basename, '*.metadata')) & searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[2]:
+                parsetime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[0]
+                xpathtime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[1]
                 filename = os.path.join(root, basename)
+                print "parsetime: ", parsetime
+                print "xpathtime: ", xpathtime
                 yield filename
 
 
