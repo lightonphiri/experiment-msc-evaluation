@@ -106,6 +106,8 @@ def searchbasicbarrow(dataset, searchphrase):
     """
     parsetime = 0
     xpathtime = 0
+    searchresults = []
+    barrowtimestart = time.time()*1000
     for root, dirs, files in os.walk(dataset):
         for basename in files:
             # pick file only if it has searchphrase
@@ -113,9 +115,13 @@ def searchbasicbarrow(dataset, searchphrase):
                 parsetime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[0]
                 xpathtime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[1]
                 filename = os.path.join(root, basename)
-                print "parsetime: ", parsetime
-                print "xpathtime: ", xpathtime
-                yield filename
+                #print "parsetime: ", parsetime
+                #print "xpathtime: ", xpathtime
+                ##yield filename,time.time()*1000-barrowtimestart,parsetime,xpathtime
+                searchresults.append(basename)
+    barrowtimeend = time.time()*1000
+    barrowtime = barrowtimeend - barrowtimestart
+    return (barrowtime, parsetime, xpathtime, searchresults)
 
 
 def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
