@@ -71,6 +71,15 @@ def solrupdatesbatchmain(batchpath):
             print "END: ", core
 
 
+def searchresult(searchresult):
+    """Print out search result benchmarks
+
+    keyword arguments:
+    searchresult --tuple containing result from searchbasicbarrow function
+    """
+    print searchresult[0],",",searchresult[1],",",searchresult[2],",",len(searchresult[3])
+
+
 def searchbasic(searchfile, searchphrase):
     """Recursively searches an archive
 
