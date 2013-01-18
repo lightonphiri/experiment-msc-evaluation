@@ -77,7 +77,7 @@ def searchresult(searchresult):
     keyword arguments:
     searchresult --tuple containing result from searchbasicbarrow function
     """
-    print searchresult[0],",",searchresult[1],",",searchresult[2],",",len(searchresult[3])
+    print searchresult[0],",",searchresult[1],",",searchresult[2],",",searchresult[3],",",len(searchresult[4])
 
 
 def searchbasic(searchfile, searchphrase):
@@ -99,11 +99,12 @@ def searchbasic(searchfile, searchphrase):
     # http://lxml.de/1.3/xpathxslt.html
     xpathstart = time.time()*1000
     xpathexpression = "boolean(//*[contains(.,$phrase)])"
+    searchtreeresult = searchtree.xpath(xpathexpression, phrase=searchphrase, namespaces=ns)
     xpathend = time.time()*1000
     xpathtime = xpathend - xpathstart
     # return tuple of parsetime, xpathtime& boolean indicating whether or not
     # phrase exists
-    return (parsetime, xpathtime, searchtree.xpath(xpathexpression, phrase=searchphrase, namespaces=ns))
+    return (parsetime, xpathtime, searchtreeresult)
 
 
 def searchbasicbarrow(dataset, searchphrase):
@@ -115,22 +116,31 @@ def searchbasicbarrow(dataset, searchphrase):
     """
     parsetime = 0
     xpathtime = 0
+    searchchecktotal = 0
     searchresults = []
     barrowtimestart = time.time()*1000
     for root, dirs, files in os.walk(dataset):
         for basename in files:
             # pick file only if it has searchphrase
-            if (fnmatch.fnmatch(basename, '*.metadata')) & searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[2]:
-                parsetime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[0]
-                xpathtime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[1]
-                filename = os.path.join(root, basename)
-                #print "parsetime: ", parsetime
-                #print "xpathtime: ", xpathtime
-                ##yield filename,time.time()*1000-barrowtimestart,parsetime,xpathtime
-                searchresults.append(basename)
+            ##if (fnmatch.fnmatch(basename, '*.metadata')) & searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[2]:
+            if (basename.endswith('metadata')):
+                searchcheckstart = time.time()*1000
+                searchcheck = searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)
+                searchcheckend = time.time()*1000
+                searchchecktotal = searchchecktotal + (searchcheckend - searchcheckstart)
+                #parsetime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[0]
+                parsetime += searchcheck[0]
+                #xpathtime += searchbasic(os.path.abspath(os.path.join(root, basename)),searchphrase)[1]
+                xpathtime += searchcheck[1]
+                if searchcheck[2]:
+                    hitfilename = os.path.join(root, basename)
+                    #print "parsetime: ", parsetime
+                    #print "xpathtime: ", xpathtime
+                    ##yield filename,time.time()*1000-barrowtimestart,parsetime,xpathtime
+                    searchresults.append(hitfilename)
     barrowtimeend = time.time()*1000
     barrowtime = barrowtimeend - barrowtimestart
-    return (barrowtime, parsetime, xpathtime, searchresults)
+    return (barrowtime, searchchecktotal, parsetime, xpathtime, searchresults)
 
 
 def solrupdatesbatch(coreurl, batcheslocation, commit='true'):
