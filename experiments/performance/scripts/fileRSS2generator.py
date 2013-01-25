@@ -24,20 +24,28 @@ def molecollector(archive):
     archive --the absolute root directory path for the archive
 
     """
+    totaltimeosstat = 0
     for root, dirs, files in os.walk(archive):
         for filename in files:
             if filename.endswith('.metadata'):
                 pathname = os.path.abspath(os.path.join(root, filename))
                 # strip off actual datestamps NOT OS ctimes --ctimes messed up
                 # in *nix
-                pubdate = oaipmhstripper(pathname, 'datestamp')
+                starttimeosstat = time.time()*1000
+                totaltimeosstat = endtimeosstat - starttimeosstat
+                endtimeosstat = time.time()*1000
+                totaltimeosstat += totaltimeosstat
+                # return multiple values
+                yield (os.stat(pathname).st_ctime, (pathname,totaltimeosstat))
+                ## January 25, 2013 --parsing too expensive
+                """pubdate = oaipmhstripper(pathname, 'datestamp')
                 # normalise date to appropriate format
                 pubdate = datetime.strptime(pubdate.replace("T", " ").replace("Z", ""), '%Y-%m-%d %H:%M:%S')
                 try:
                     #yield os.stat(pathname).st_ctime, pathname
                     yield pathname, pubdate
                 except os.error as details:
-                    print "Handling error: ", details
+                    print "Handling error: ", details"""
 
 def oaipmhstripper(xmlfile, dcelement):
     """Extracts specified dublin core element value.
