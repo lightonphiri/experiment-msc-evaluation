@@ -1,0 +1,330 @@
+
+Pre-requisite software
+
+1. Oracle Java JDK 6 or 7 (standard SDK is fine, you don't need J2EE) or OpenJDK 6 or 7
+
+phiri@phiri-performance:~$ java -version
+java version "1.6.0_24"
+OpenJDK Runtime Environment (IcedTea6 1.11.5) (6b24-1.11.5-0ubuntu1~12.04.1)
+OpenJDK Server VM (build 20.0-b12, mixed mode)
+
+
+2. Apache Maven 2.2.x or higher (Java build tool)
+
+Apache Maven 2.2.1 (rdebian-8)
+Java version: 1.6.0_24
+Java home: /usr/lib/jvm/java-6-openjdk-i386/jre
+Default locale: en_ZA, platform encoding: UTF-8
+OS name: "linux" version: "3.2.0-29-generic-pae" arch: "i386" Family: "unix"
+
+
+3. Apache Ant
+
+phiri@phiri-performance:~$ ant -version
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+
+
+4. 
+
+
+
+
+
+
+
+## Database
+
+createdb -U dspace -E UNICODE dspace
+createdb: could not connect to database postgres: FATAL:  Peer authentication failed for user "dspace"
+
+
+
+createdb -U dspace -E UNICODE dspace -h localhost
+
+
+
+
+for workload in `seq 1 15`; do createdb -U dspace -E UNICODE w$workload -h localhost; done
+
+
+for workload in `seq 1 15`; do dropdb w$workload; done
+
+
+
+
+
+
+
+*********** I rolled the dice --I paid the price
+
+
+
+
+
+
+ -> Create databases
+    -> 
+ -> 
+ -> Installation directories
+  -> 15 workloads
+    -> create workload directories
+    -> change permissions
+    -> replicate configuration files
+  -> 
+ -> Workload context paths
+    -> 
+ -> 
+ -> 
+ -> 
+ -> 
+ -> GeoLite database file
+ -> 
+
+
+
+*** https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
+
+ant clean
+ant -Dconfig=/<yourinstalldir>/config/dspace2.cfg fresh_install
+
+
+cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/w14-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/dspace.cfg
+
+
+
+
+
+cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/w$workload-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/dspace.cfg
+
+
+
+
+
+22K downloaded  (maven-repository-builder-1.0-alpha-2.jar)
+[INFO] [assembly:single {execution: default}]
+[INFO] Reading assembly descriptor: src/main/assembly/assembly.xml
+[WARNING] Cannot include project artifact: org.dspace:dspace:pom:3.0; it doesn't have an associated file or directory.
+[WARNING] NOTE: Currently, inclusion of module dependencies may produce unpredictable results if a version conflict occurs.
+[WARNING] NOTE: Currently, inclusion of module dependencies may produce unpredictable results if a version conflict occurs.
+[INFO] lib/dspace-oai-3.0-classes.jar already added, skipping
+[INFO] lib/xoai-2.2.9.jar already added, skipping
+[INFO] lib/log4j-1.2.14.jar already added, skipping
+[INFO] lib/commons-codec-1.3.jar already added, skipping
+[INFO] lib/xalan-2.7.0.jar already added, skipping
+[INFO] lib/xml-apis-1.3.02.jar already added, skipping
+[INFO] lib/jaxb-impl-2.2.5.jar already added, skipping
+[INFO] lib/httpclient-4.2.1.jar already added, skipping
+[INFO] lib/httpcore-4.2.1.jar already added, skipping
+[INFO] lib/commons-logging-1.1.1.jar already added, skipping
+[INFO] lib/commons-lang3-3.1.jar already added, skipping
+[INFO] lib/dspace-api-3.0.jar already added, skipping
+[INFO] lib/handle-6.2.jar already added, skipping
+[INFO] lib/jargon-1.4.25.jar already added, skipping
+[INFO] lib/mets-1.5.2.jar already added, skipping
+[INFO] lib/dspace-tm-extractors-1.0.1.jar already added, skipping
+[INFO] lib/poi-3.6.jar already added, skipping
+[INFO] lib/xmlunit-1.1.jar already added, skipping
+[INFO] lib/lucene-core-3.5.0.jar already added, skipping
+[INFO] lib/lucene-analyzers-3.5.0.jar already added, skipping
+[INFO] lib/commons-cli-1.0.jar already added, skipping
+[INFO] lib/commons-lang-2.6.jar already added, skipping
+[INFO] lib/commons-collections-3.2.jar already added, skipping
+[INFO] lib/commons-dbcp-1.4.jar already added, skipping
+[INFO] lib/commons-pool-1.4.jar already added, skipping
+[INFO] lib/commons-fileupload-1.2.1.jar already added, skipping
+[INFO] lib/commons-httpclient-3.1.jar already added, skipping
+[INFO] lib/commons-io-2.3.jar already added, skipping
+[INFO] lib/mail-1.4.jar already added, skipping
+[INFO] lib/activation-1.1.jar already added, skipping
+[INFO] lib/jaxen-1.1.jar already added, skipping
+[INFO] lib/dom4j-1.6.1.jar already added, skipping
+[INFO] lib/jdom-1.0.jar already added, skipping
+[INFO] lib/xercesImpl-2.8.1.jar already added, skipping
+[INFO] lib/oro-2.0.8.jar already added, skipping
+[INFO] lib/pdfbox-1.6.0.jar already added, skipping
+[INFO] lib/fontbox-1.6.0.jar already added, skipping
+[INFO] lib/jempbox-1.6.0.jar already added, skipping
+[INFO] lib/bcprov-jdk15-1.44.jar already added, skipping
+[INFO] lib/bcmail-jdk15-1.44.jar already added, skipping
+[INFO] lib/poi-scratchpad-3.6.jar already added, skipping
+[INFO] lib/poi-ooxml-3.6.jar already added, skipping
+[INFO] lib/poi-ooxml-schemas-3.6.jar already added, skipping
+[INFO] lib/xmlbeans-2.3.0.jar already added, skipping
+[INFO] lib/stax-api-1.0.1.jar already added, skipping
+[INFO] lib/geronimo-stax-api_1.0_spec-1.0.1.jar already added, skipping
+[INFO] lib/rome-1.0.0.jar already added, skipping
+[INFO] lib/opensearch-0.1.jar already added, skipping
+[INFO] lib/xmlParserAPIs-2.0.2.jar already added, skipping
+[INFO] lib/icu4j-3.8.jar already added, skipping
+[INFO] lib/oclc-harvester2-0.1.12.jar already added, skipping
+[INFO] lib/dspace-services-3.0.jar already added, skipping
+[INFO] lib/slf4j-api-1.5.6.jar already added, skipping
+[INFO] lib/spring-context-support-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-beans-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-core-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-asm-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-context-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-aop-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/aopalliance-1.0.jar already added, skipping
+[INFO] lib/spring-expression-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/ehcache-core-1.7.2.jar already added, skipping
+[INFO] lib/slf4j-log4j12-1.5.6.jar already added, skipping
+[INFO] lib/rome-modules-1.0.jar already added, skipping
+[INFO] lib/rome-1.0.jar already added, skipping
+[INFO] lib/biblio-transformation-engine-0.82.jar already added, skipping
+[INFO] lib/dom4j-1.7-20060614.jar already added, skipping
+[INFO] lib/jaxme-api-0.3.jar already added, skipping
+[INFO] lib/xsdlib-20030807.jar already added, skipping
+[INFO] lib/relaxngDatatype-20030807.jar already added, skipping
+[INFO] lib/pull-parser-2.1.10.jar already added, skipping
+[INFO] lib/xpp3-1.1.3.3.jar already added, skipping
+[INFO] lib/junitperf-1.8.jar already added, skipping
+[INFO] lib/opencsv-2.3.jar already added, skipping
+[INFO] lib/jena-2.6.4.jar already added, skipping
+[INFO] lib/iri-0.8.jar already added, skipping
+[INFO] lib/jxl-2.6.jar already added, skipping
+[INFO] lib/jbibtex-1.0.0.jar already added, skipping
+[INFO] lib/solr-solrj-3.3.0.jar already added, skipping
+[INFO] lib/wstx-asl-3.2.7.jar already added, skipping
+[INFO] lib/commons-configuration-1.8.jar already added, skipping
+[INFO] lib/dspace-geoip-1.2.3.jar already added, skipping
+[INFO] lib/ant-1.7.0.jar already added, skipping
+[INFO] lib/ant-launcher-1.7.0.jar already added, skipping
+[INFO] lib/dnsjava-2.0.6.jar already added, skipping
+[INFO] lib/utils-1.07.00.jar already added, skipping
+[INFO] lib/elasticsearch-0.18.6.jar already added, skipping
+[INFO] lib/lucene-highlighter-3.5.0.jar already added, skipping
+[INFO] lib/lucene-memory-3.5.0.jar already added, skipping
+[INFO] lib/lucene-queries-3.5.0.jar already added, skipping
+[INFO] lib/jakarta-regexp-1.4.jar already added, skipping
+[INFO] lib/gson-2.2.1.jar already added, skipping
+[INFO] lib/postgresql-9.1-901-1.jdbc4.jar already added, skipping
+[INFO] lib/zookeeper-3.3.1.jar already added, skipping
+[INFO] lib/jline-0.9.94.jar already added, skipping
+[INFO] lib/guava-13.0.jar already added, skipping
+[INFO] lib/servlet-api-2.4.jar already added, skipping
+[INFO] lib/dspace-api-lang-3.0.1.jar already added, skipping
+[INFO] lib/ant-contrib-1.0b3.jar already added, skipping
+[INFO] Copying files to /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build
+[INFO] lib/dspace-oai-3.0-classes.jar already added, skipping
+[INFO] lib/xoai-2.2.9.jar already added, skipping
+[INFO] lib/log4j-1.2.14.jar already added, skipping
+[INFO] lib/commons-codec-1.3.jar already added, skipping
+[INFO] lib/xalan-2.7.0.jar already added, skipping
+[INFO] lib/xml-apis-1.3.02.jar already added, skipping
+[INFO] lib/jaxb-impl-2.2.5.jar already added, skipping
+[INFO] lib/httpclient-4.2.1.jar already added, skipping
+[INFO] lib/httpcore-4.2.1.jar already added, skipping
+[INFO] lib/commons-logging-1.1.1.jar already added, skipping
+[INFO] lib/commons-lang3-3.1.jar already added, skipping
+[INFO] lib/dspace-api-3.0.jar already added, skipping
+[INFO] lib/handle-6.2.jar already added, skipping
+[INFO] lib/jargon-1.4.25.jar already added, skipping
+[INFO] lib/mets-1.5.2.jar already added, skipping
+[INFO] lib/dspace-tm-extractors-1.0.1.jar already added, skipping
+[INFO] lib/poi-3.6.jar already added, skipping
+[INFO] lib/xmlunit-1.1.jar already added, skipping
+[INFO] lib/lucene-core-3.5.0.jar already added, skipping
+[INFO] lib/lucene-analyzers-3.5.0.jar already added, skipping
+[INFO] lib/commons-cli-1.0.jar already added, skipping
+[INFO] lib/commons-lang-2.6.jar already added, skipping
+[INFO] lib/commons-collections-3.2.jar already added, skipping
+[INFO] lib/commons-dbcp-1.4.jar already added, skipping
+[INFO] lib/commons-pool-1.4.jar already added, skipping
+[INFO] lib/commons-fileupload-1.2.1.jar already added, skipping
+[INFO] lib/commons-httpclient-3.1.jar already added, skipping
+[INFO] lib/commons-io-2.3.jar already added, skipping
+[INFO] lib/mail-1.4.jar already added, skipping
+[INFO] lib/activation-1.1.jar already added, skipping
+[INFO] lib/jaxen-1.1.jar already added, skipping
+[INFO] lib/dom4j-1.6.1.jar already added, skipping
+[INFO] lib/jdom-1.0.jar already added, skipping
+[INFO] lib/xercesImpl-2.8.1.jar already added, skipping
+[INFO] lib/oro-2.0.8.jar already added, skipping
+[INFO] lib/pdfbox-1.6.0.jar already added, skipping
+[INFO] lib/fontbox-1.6.0.jar already added, skipping
+[INFO] lib/jempbox-1.6.0.jar already added, skipping
+[INFO] lib/bcprov-jdk15-1.44.jar already added, skipping
+[INFO] lib/bcmail-jdk15-1.44.jar already added, skipping
+[INFO] lib/poi-scratchpad-3.6.jar already added, skipping
+[INFO] lib/poi-ooxml-3.6.jar already added, skipping
+[INFO] lib/poi-ooxml-schemas-3.6.jar already added, skipping
+[INFO] lib/xmlbeans-2.3.0.jar already added, skipping
+[INFO] lib/stax-api-1.0.1.jar already added, skipping
+[INFO] lib/geronimo-stax-api_1.0_spec-1.0.1.jar already added, skipping
+[INFO] lib/rome-1.0.0.jar already added, skipping
+[INFO] lib/opensearch-0.1.jar already added, skipping
+[INFO] lib/xmlParserAPIs-2.0.2.jar already added, skipping
+[INFO] lib/icu4j-3.8.jar already added, skipping
+[INFO] lib/oclc-harvester2-0.1.12.jar already added, skipping
+[INFO] lib/dspace-services-3.0.jar already added, skipping
+[INFO] lib/slf4j-api-1.5.6.jar already added, skipping
+[INFO] lib/spring-context-support-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-beans-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-core-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-asm-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-context-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/spring-aop-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/aopalliance-1.0.jar already added, skipping
+[INFO] lib/spring-expression-3.1.1.RELEASE.jar already added, skipping
+[INFO] lib/ehcache-core-1.7.2.jar already added, skipping
+[INFO] lib/slf4j-log4j12-1.5.6.jar already added, skipping
+[INFO] lib/rome-modules-1.0.jar already added, skipping
+[INFO] lib/rome-1.0.jar already added, skipping
+[INFO] lib/biblio-transformation-engine-0.82.jar already added, skipping
+[INFO] lib/dom4j-1.7-20060614.jar already added, skipping
+[INFO] lib/jaxme-api-0.3.jar already added, skipping
+[INFO] lib/xsdlib-20030807.jar already added, skipping
+[INFO] lib/relaxngDatatype-20030807.jar already added, skipping
+[INFO] lib/pull-parser-2.1.10.jar already added, skipping
+[INFO] lib/xpp3-1.1.3.3.jar already added, skipping
+[INFO] lib/junitperf-1.8.jar already added, skipping
+[INFO] lib/opencsv-2.3.jar already added, skipping
+[INFO] lib/jena-2.6.4.jar already added, skipping
+[INFO] lib/iri-0.8.jar already added, skipping
+[INFO] lib/jxl-2.6.jar already added, skipping
+[INFO] lib/jbibtex-1.0.0.jar already added, skipping
+[INFO] lib/solr-solrj-3.3.0.jar already added, skipping
+[INFO] lib/wstx-asl-3.2.7.jar already added, skipping
+[INFO] lib/commons-configuration-1.8.jar already added, skipping
+[INFO] lib/dspace-geoip-1.2.3.jar already added, skipping
+[INFO] lib/ant-1.7.0.jar already added, skipping
+[INFO] lib/ant-launcher-1.7.0.jar already added, skipping
+[INFO] lib/dnsjava-2.0.6.jar already added, skipping
+[INFO] lib/utils-1.07.00.jar already added, skipping
+[INFO] lib/elasticsearch-0.18.6.jar already added, skipping
+[INFO] lib/lucene-highlighter-3.5.0.jar already added, skipping
+[INFO] lib/lucene-memory-3.5.0.jar already added, skipping
+[INFO] lib/lucene-queries-3.5.0.jar already added, skipping
+[INFO] lib/jakarta-regexp-1.4.jar already added, skipping
+[INFO] lib/gson-2.2.1.jar already added, skipping
+[INFO] lib/postgresql-9.1-901-1.jdbc4.jar already added, skipping
+[INFO] lib/zookeeper-3.3.1.jar already added, skipping
+[INFO] lib/jline-0.9.94.jar already added, skipping
+[INFO] lib/guava-13.0.jar already added, skipping
+[INFO] lib/servlet-api-2.4.jar already added, skipping
+[INFO] lib/dspace-api-lang-3.0.1.jar already added, skipping
+[INFO] lib/ant-contrib-1.0b3.jar already added, skipping
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] DSpace Addon Modules .................................. SUCCESS [2:32.373s]
+[INFO] DSpace Kernel :: Additions and Local Customizations ... SUCCESS [3:45.111s]
+[INFO] DSpace XML-UI (Manakin) :: Local Customizations ....... SUCCESS [2:11.817s]
+[INFO] DSpace LNI :: Local Customizations .................... SUCCESS [20.975s]
+[INFO] DSpace JSP-UI :: Local Customizations ................. SUCCESS [21.790s]
+[INFO] DSpace SWORD :: Local Customizations .................. SUCCESS [13.816s]
+[INFO] DSpace SWORD v2 :: Local Customizations ............... SUCCESS [1:03.541s]
+[INFO] DSpace SOLR :: Local Customizations ................... SUCCESS [32.030s]
+[INFO] DSpace OAI 2.0 :: Local Customizations ................ SUCCESS [1:14.160s]
+[INFO] DSpace Assembly and Configuration ..................... SUCCESS [2:53.182s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15 minutes 10 seconds
+[INFO] Finished at: Tue Jan 29 01:40:49 SAST 2013
+[INFO] Final Memory: 66M/112M
+[INFO] ------------------------------------------------------------------------
