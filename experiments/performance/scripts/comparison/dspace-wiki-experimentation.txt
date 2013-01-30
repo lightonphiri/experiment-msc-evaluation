@@ -1,0 +1,13 @@
+Instance set up
+  -> A total of 15 seperate DSpace instances [1] were set up.
+
+
+Collection Hierarchy
+  -> 
+  -> ./dspace structure-builder -f /home/phiri/Projects/masters/scripts/w1-structure.xml -o ../upload/w1-structure-out.xml -e lphiri@cs.uct.ac.za
+  -> for workload in `seq 2 15`; do /usr/local/workloads/w$workload/bin/dspace structure-builder -f /home/phiri/Projects/masters/scripts/w$workload-structure.xml -o ../upload/w$workload-structure-out.xml -e lphiri@cs.uct.ac.za; done
+
+
+
+[1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
+

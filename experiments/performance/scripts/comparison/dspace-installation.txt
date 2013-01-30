@@ -92,12 +92,13 @@ cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3
 
 
 
-
-
 cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/w$workload-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/dspace.cfg
 
 
-
+ -> create blueprint for DSpace configuration file
+ for workload in `seq 1 14`; do cp w15-dspace.cfg w$workload-dspace.cfg; done
+ 
+ -> 
 
 
 
@@ -185,6 +186,17 @@ def dspace_structure(dataset, workload):
 
 
 
+/home/lphiri/datasets/ndltd/random/workload/w1
+union-ndltd-org-ListSets.xml
+
+
+import dspacebenchmarks
+dspacebenchmarks.dspace_structure('/home/lphiri/datasets/ndltd/random/workload/w1', 'w1', 'union-ndltd-org-ListSets.xml')
+
+for workload in range(1,16):
+      dspacebenchmarks.dspace_structure('/home/lphiri/datasets/ndltd/random/workload/w'+str(workload), 'w'+str(workload), 'union-ndltd-org-ListSets.xml')
+
+
 for set in w:
     for l in setspecs.findall(".//set"):
             if (str(l.find('setSpec').text).encode('ascii', 'ignore') == set):
@@ -195,4 +207,10 @@ for set in w:
 
 
 xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"
+
+
+
+
+
+
 
