@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<record>
+  <header>
+    <identifier>oai:union.ndltd.org:ADTP/274210</identifier>
+    <datestamp>2011-09-07T02:15:34Z</datestamp>
+    <setSpec>ADTP</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Turnover Trust and Safety in Teams in High Risk Industries</dc:title>
+      <dc:creator>Hislop, Hannah Naomi</dc:creator>
+      <dc:subject>turnover</dc:subject>
+      <dc:subject>trust</dc:subject>
+      <dc:subject>safety</dc:subject>
+      <dc:subject>teams</dc:subject>
+      <dc:subject>high risk industries</dc:subject>
+      <dc:description>The overall aim of the present study was to contribute to the argument put forward by Burt, Chmiel and Hayes (2009) that trust in the context of employee selection and training can be negative for safety. The present study builds on these authors argument that new employees pose a safety risk and any effort to build trust in the safety behaviours of new team members and/or to reduce perceptions of the safety risk of new employees (e.g. through selection and training) could likely have negative consequences. The research was conducted in eight organisations from the manufacturing, construction, engineering and rail industries which are characterised by high accident rates (Statistics New Zealand, 2008). There were 118 participants which completed an anonymous occupational safety questionnaire. The participants were employees who worked in teams in high risk industries characterised by a history of turnover. The results supported past findings in that trust in selection and training was positively correlated with immediate trust in new team members. There were mixed results regarding the hypothesis that trust in selection and training is negatively correlated with perceived risk from new team members. In particular there was some support for this hypothesis at the highest job risk level. The results supported the hypothesis that there is a positive correlation between the number of selection and training processes used by organisations and immediate trust in new team members. The results also indicated that the previous safety outcomes of new team members acts as a mediator between trust in selection and training, and immediate trust in new team members. Results are discussed in terms of the concerns and implications for organisations aiming to reduce accident rates.</dc:description>
+      <dc:publisher>University of Canterbury. Psychology</dc:publisher>
+      <dc:date>2009</dc:date>
+      <dc:identifier>http://hdl.handle.net/10092/3648</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights>Copyright Hannah Naomi Hislop</dc:rights>
+      <dc:rights>http://library.canterbury.ac.nz/thesis/etheses_copyright.shtml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+  <about>
+    <provenance xmlns="http://www.openarchives.org/OAI/2.0/provenance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance http://www.openarchives.org/OAI/2.0/provenance.xsd">
+      <originDescription altered="false" harvestDate="2011-08-11T03:47:51Z">
+        <baseURL>http://alcme.oclc.org/ndltd/servlet/OAIHandler</baseURL>
+        <identifier>274210</identifier>
+        <datestamp>2010-10-12</datestamp>
+        <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+        <originDescription altered="false" harvestDate="2010-10-10T06:15:53Z">
+          <baseURL>http://metasuite.nun.unsw.edu.au:9004/CMD/OAI</baseURL>
+          <identifier>274210</identifier>
+          <datestamp>2010-04-27T01:10:31Z</datestamp>
+          <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+        </originDescription>
+      </originDescription>
+    </provenance>
+  </about>
+</record>
