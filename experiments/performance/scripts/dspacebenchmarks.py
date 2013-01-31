@@ -52,7 +52,7 @@ def dspacestructure(dataset, workload, listsetxml):
                 collection_name.text = set.find("setSpec").text
                 collection.append(collection_name)
                 collection_description = etree.Element("description")
-                collection_description.txt = set.find("setName").text
+                collection_description.text = set.find("setName").text
                 collection.append(collection_description)
                 community.append(collection)
                 handlecounter += 1
@@ -116,7 +116,7 @@ def dspaceBMEformat(xmlfile):
     try:
         descriptions = dspacedcelementcsv(dspacedcelementlist(xmlfileobject.xpath("//*[local-name() = 'description']")), dcelementdelimiter)
     except Exception as detail:
-        description = ""
+        descriptions = ""
     csvpayload.append(descriptions)
     # dc.contributor
     try:
@@ -179,7 +179,7 @@ def dspacedcelementlist(dcelementslist):
     refinedlist = []
     for element in dcelementslist:
         # append element values to resultset
-        refinedlist.append(element.text.replace("\n", ""))
+        refinedlist.append(element.text.replace('\n', '').replace('"',''))
     return refinedlist
 
 
@@ -214,9 +214,13 @@ def dspacedbcollectionhandle(collectionname, host='blabusch.cs.uct.ac.za', port=
         con = psycopg2.connect(host=host, port=port, database=database, user=user, password=password)
         cur = con.cursor()
         selectquery = "SELECT h.handle FROM ((SELECT resource_id, handle FROM handle WHERE resource_type_id = 3) as h JOIN (SELECT collection_id, name FROM collection) as c ON h.resource_id = c.collection_id) WHERE name ='" + collectionname + "';"
+        selectquery2 = "SELECT h.handle FROM ((SELECT resource_id, handle FROM handle WHERE resource_type_id = 3) as h JOIN (SELECT collection_id, name FROM collection) as c ON h.resource_id = c.collection_id) LIMIT 1;"
         cur.execute(selectquery)
         rows = cur.fetchall()
         print collectionname,":::",rows
+        if (len(rows) == 0):
+            cur.execute(selectquery2)
+            rows = cur.fetchall()
         collectionid = rows[0][0]
         #for row in rows:
         #    print row
@@ -232,7 +236,7 @@ def dspacedbcollectionhandle(collectionname, host='blabusch.cs.uct.ac.za', port=
 def dspacecsvfile(dataset, workload, recordsize):
     """Function to write chunks of files for ingestion into DSpace.
     """
-    header = "id$$$collection$$$dc.identifier$$$dc.title$$$dc.publisher$$$dc.creator$$$dc.subject$$$dc.description$$$dc.contributor$$$dc.date$$$dc    .type$$$dc.format$$$dc.language$$$dc.relation$$$dc.coverage.temporal$$$dc.rights" + "\n"
+    header = "id$$$collection$$$dc.identifier$$$dc.title$$$dc.publisher$$$dc.creator$$$dc.subject$$$dc.description$$$dc.contributor$$$dc.date$$$dc.type$$$dc.format$$$dc.language$$$dc.relation$$$dc.coverage.temporal$$$dc.rights" + "\n"
     recordcounter = 1
     filecounter = 1
     dspaceingestfile = workload + "-" + str(recordsize) + "-" + str(filecounter) + ".csv"

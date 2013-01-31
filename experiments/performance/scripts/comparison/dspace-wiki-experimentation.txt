@@ -8,26 +8,59 @@ Collection Hierarchy
   -> for workload in `seq 2 15`; do /usr/local/workloads/w$workload/bin/dspace structure-builder -f /home/phiri/Projects/masters/scripts/w$workload-structure.xml -o ../upload/w$workload-structure-out.xml -e lphiri@cs.uct.ac.za; done
 
 
+  SELECT h.handle, c.name 
+FROM ((SELECT resource_id, handle FROM handle) as h JOIN 
+(SELECT collection_id, name FROM collection) as c ON 
+h.resource_id = c.collection_id);
 
 
 
 1. create database
 createdb -U dspace -E UNICODE dspace -h localhost
 
+ant fresh_install
+
 2. create administrator
 ./dspace create-administrator
 
 3. create structure
-./dspace structure-builder -f /home/phiri/Projects/masters/scripts/w5-structure.xml -o ../upload/dspace-structure-out.xml -e lphiri@cs.uct.ac.za
+sh /usr/local/dspace/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/dspace-structure.xml -o /usr/local/dspace/upload/dspace-structure.xml.out -e lphiri@cs.uct.ac.za
 
 4. generate csv files using Python script
 
 import dspacebenchmarks
 dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 10)
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 100)
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 1000)
 
-5. metadata-import utility
+
+5. change configurations for bulk import
+./config/modules/bulkedit.cfg
+
+6. metadata-import utility
 
 sh ../bin/dspace metadata-import -f dspace-bme-CHENGCHI.csv -e lphiri@cs.uct.ac.za -s
+
+
+metadata-import -f $file -e lphiri@cs.uct.ac.za -s
+
+for file in `ls /home/phiri/Projects/masters/dspace/ingestion/10/dspace-10* | grep dspace-10`; do sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; done
+
+
+nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/10/dspace-10* | grep dspace-10`; do sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; done' &
+
+nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/100/dspace-100* | grep dspace-100`; do sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; done' &
+
+
+ #### Profiling #### 
+nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/1000/dspace-1000-* | grep dspace-1000-`; do echo "START: "$file; sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; echo "END: "$file; done' &
+
+
+
+Log Analysis
+
+
+cat dspace.log.2013-01-31 | grep item | awk '{sub(/,item_id/,"item_id"); print}' | awk '{sub(/,/,":"); print}' | awk '{print $1","$2","$3","$4","$5","$6}' > dspace-ingestion-log.csv
 
 
 
