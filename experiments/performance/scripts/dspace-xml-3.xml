@@ -1,0 +1,12 @@
+<?xml version="1.0" ?><record>
+<header>
+<identifier>oai:union.ndltd.org:CHENGCHI/A2002000026</identifier>
+<datestamp>2011-09-07T02:15:34Z</datestamp>
+<setSpec>CHENGCHI</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"><dc:title>左傳中巫術之研究</dc:title><dc:creator>陳熾彬</dc:creator><dc:publisher>國立政治大學</dc:publisher><dc:identifier>http://thesis.lib.nccu.edu.tw/cgi-bin/cdrfb3/gsweb.cgi?o=dstdcdr&amp;i=sid=%22A2002000026%22.</dc:identifier><dc:type>text</dc:type><dc:language>中文</dc:language><dc:rights>Copyright &amp;copy; nccu library on behalf of the copyright holders</dc:rights></oai_dc:dc>
+</metadata>
+<about>
+<provenance xmlns="http://www.openarchives.org/OAI/2.0/provenance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance http://www.openarchives.org/OAI/2.0/provenance.xsd"><originDescription altered="false" harvestDate="2011-08-11T03:06:46Z"><baseURL>http://alcme.oclc.org/ndltd/servlet/OAIHandler</baseURL><identifier>A2002000026</identifier><datestamp>2010-10-12</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace><originDescription altered="false" harvestDate="2010-10-10T19:37:18Z"><baseURL>http://thesis.lib.nccu.edu.tw/cgi-bin/cdrfb3/oai.cgi</baseURL><identifier>A2002000026</identifier><datestamp>2000-01-01</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace></originDescription></originDescription></provenance>
+</about></record>

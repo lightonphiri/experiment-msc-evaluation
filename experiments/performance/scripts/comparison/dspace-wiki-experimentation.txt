@@ -9,5 +9,28 @@ Collection Hierarchy
 
 
 
+
+
+1. create database
+createdb -U dspace -E UNICODE dspace -h localhost
+
+2. create administrator
+./dspace create-administrator
+
+3. create structure
+./dspace structure-builder -f /home/phiri/Projects/masters/scripts/w5-structure.xml -o ../upload/dspace-structure-out.xml -e lphiri@cs.uct.ac.za
+
+4. generate csv files using Python script
+
+import dspacebenchmarks
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 10)
+
+5. metadata-import utility
+
+sh ../bin/dspace metadata-import -f dspace-bme-CHENGCHI.csv -e lphiri@cs.uct.ac.za -s
+
+
+
+
 [1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
 

@@ -101,6 +101,8 @@ cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3
  -> 
 
 
+./dspace structure-builder -f /home/phiri/Projects/masters/scripts/w1-structure.xml -o ../upload/w1-structure-out.xml -e lphiri@cs.uct.ac.za
+
 
 *** populate DSpace instances
 
