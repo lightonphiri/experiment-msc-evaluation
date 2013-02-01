@@ -8,8 +8,8 @@ Collection Hierarchy
   -> for workload in `seq 2 15`; do /usr/local/workloads/w$workload/bin/dspace structure-builder -f /home/phiri/Projects/masters/scripts/w$workload-structure.xml -o ../upload/w$workload-structure-out.xml -e lphiri@cs.uct.ac.za; done
 
 
-  SELECT h.handle, c.name 
-FROM ((SELECT resource_id, handle FROM handle) as h JOIN 
+SELECT h.handle, c.name 
+FROM ((SELECT resource_id, handle FROM handle WHERE resource_type_id=3) as h JOIN 
 (SELECT collection_id, name FROM collection) as c ON 
 h.resource_id = c.collection_id);
 
@@ -25,12 +25,16 @@ for workload in range(1,16):
 1. create database
 createdb -U dspace -E UNICODE dspace -h localhost
 
+for workload in `seq 1 15`; do createdb -U dspace -E UNICODE w$workload -h localhost; done
+
+for workload in `seq 1 15`; do dropdb w$workload; done
+
+
 for workload in `seq 1 15`
 do
-cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/w$workload-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/dspace.cfg
-cd /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build
+cp /home/phiri/Projects/masters/dspace/configs/w$workload-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.1-release/dspace/target/dspace-3.1-build/config/dspace.cfg
+cd /home/phiri/Projects/masters/dspace/dspace-3.1-release/dspace/target/dspace-3.1-build
 ant fresh_install
-sleep 120
 done
 
 
@@ -41,7 +45,7 @@ done
 /usr/local/workloads/w1/bin/dspace create-administrator
 
 3. create structure
-sh /usr/local/dspace/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/dspace-structure-w8.xml -o /usr/local/dspace/upload/dspace-structure-w8.xml.out -e lphiri@cs.uct.ac.za
+sh /usr/local/dspace/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/dspace-structure-w3.xml -o /usr/local/dspace/upload/dspace-structure-w3.xml.out -e lphiri@cs.uct.ac.za
 
 
 for workload in `seq 1 15`
@@ -50,19 +54,20 @@ sh /usr/local/workloads/w$workload/bin/dspace structure-builder -f /home/phiri/P
 done
 
 
+/usr/local/workloads/w11/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/w11-structure.xml -o /usr/local/workloads/w11/upload/w11-structure.xml.out -e lphiri@cs.uct.ac.za
 
 
 4. generate csv files using Python script
 
 import dspacebenchmarks
-dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 10)
-dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 100)
-dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 1000)
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 10, 'w5')
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 100, 'w5')
+dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 1000, 'w5')
 
 
 import dspacebenchmarks
 for workload in range(1,16):
-   dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w'+str(workload), 'w'+str(workload), 1000)
+   dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w'+str(workload), 'w'+str(workload), 1000, 'w'+str(workload))
 
 
 5. change configurations for bulk import
@@ -71,7 +76,7 @@ for workload in range(1,16):
 
 for workload in `seq 1 15`
 do 
-cp /usr/local/dspace/config/modules/bulkedit.cfg /usr/local/workloads/w$workload/config/modules/bulkedit.cfg
+cp /home/phiri/Projects/masters/dspace/configs/bulkedit.cfg /usr/local/workloads/w$workload/config/modules/bulkedit.cfg
 done
 
 
@@ -92,6 +97,28 @@ nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/100/d
 
  #### Profiling #### 
 nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/1000/dspace-1000-* | grep dspace-1000-`; do echo "START: "$file; sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; echo "END: "$file; done' &
+
+
+
+for workload in `seq 1 2`
+do
+echo "START: "$workload
+for file in /home/phiri/Projects/masters/dspace/ingestion/workloads/w$workload/*-1000-*.csv 
+do 
+echo "START: "$file
+#sh /usr/local/workloads/w$workload/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s
+echo /usr/local/workloads/w$workload/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s
+echo "END: "$file;
+done
+echo "END: "$workload
+sleep 5
+done
+
+
+
+/usr/local/dspace/bin/dspace metadata-import -f /home/phiri/Projects/masters/dspace/dspace-1000-1.csv -e lphiri@cs.uct.ac.za -s
+
+
 
 
 python -c "import dspacebenchmarks; dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w8', 'w8', 10000)";

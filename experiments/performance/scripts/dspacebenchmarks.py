@@ -60,7 +60,7 @@ def dspacestructure(dataset, workload, listsetxml):
     workloadstructurefile = workload + "-structure.xml"
     elementtree.write(workloadstructurefile)
 
-def dspaceBMEformat(xmlfile):
+def dspaceBMEformat(xmlfile, database):
     """Function for converting input XML to dspace BME format.
     Parses input XML file and output equivalent DSpace Batch Metadata Editing format.
 
@@ -80,7 +80,7 @@ def dspaceBMEformat(xmlfile):
     csvpayload.append(id)
     # retriev collection id from XML input file
     collectionname = dspacedcelementlist(xmlfileobject.xpath("//*[local-name() = 'setSpec']"))[0]
-    collectionid = dspacedbcollectionhandle(collectionname)
+    collectionid = dspacedbcollectionhandle(collectionname,database=database)
     csvpayload.append(collectionid)
     # dc.identifier
     try:
@@ -233,7 +233,7 @@ def dspacedbcollectionhandle(collectionname, host='blabusch.cs.uct.ac.za', port=
     return collectionid
 
 
-def dspacecsvfile(dataset, workload, recordsize):
+def dspacecsvfile(dataset, workload, recordsize, database):
     """Function to write chunks of files for ingestion into DSpace.
     """
     header = "id$$$collection$$$dc.identifier$$$dc.title$$$dc.publisher$$$dc.creator$$$dc.subject$$$dc.description$$$dc.contributor$$$dc.date$$$dc.type$$$dc.format$$$dc.language$$$dc.relation$$$dc.coverage.temporal$$$dc.rights" + "\n"
@@ -257,5 +257,5 @@ def dspacecsvfile(dataset, workload, recordsize):
                         outputfileheader.write(header)
                 print "Processing: ",os.path.abspath(os.path.join(root, filename))
                 with open(dspaceingestfile, 'a') as outputfile:
-                    outputfile.write(dspaceBMEformat(os.path.abspath(os.path.join(root, filename))).encode('ascii', 'ignore'))
+                    outputfile.write(dspaceBMEformat(os.path.abspath(os.path.join(root, filename)), database).encode('ascii', 'ignore'))
                 recordcounter += 1
