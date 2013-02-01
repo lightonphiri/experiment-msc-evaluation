@@ -15,16 +15,42 @@ h.resource_id = c.collection_id);
 
 
 
+
+
+for workload in range(1,16):
+   dspacebenchmarks.dspacestructure('/home/phiri/Projects/masters/random/workload1/w'+str(workload), 'w'+str(workload), 'union-ndltd-org-ListSets.xml')
+
+
+
 1. create database
 createdb -U dspace -E UNICODE dspace -h localhost
 
+for workload in `seq 1 15`
+do
+cp /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/w$workload-dspace.cfg /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build/config/dspace.cfg
+cd /home/phiri/Projects/masters/dspace/dspace-3.0-release/dspace/target/dspace-3.0-build
 ant fresh_install
+sleep 120
+done
+
+
 
 2. create administrator
 ./dspace create-administrator
 
+/usr/local/workloads/w1/bin/dspace create-administrator
+
 3. create structure
-sh /usr/local/dspace/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/dspace-structure.xml -o /usr/local/dspace/upload/dspace-structure.xml.out -e lphiri@cs.uct.ac.za
+sh /usr/local/dspace/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/dspace-structure-w8.xml -o /usr/local/dspace/upload/dspace-structure-w8.xml.out -e lphiri@cs.uct.ac.za
+
+
+for workload in `seq 1 15`
+do 
+sh /usr/local/workloads/w$workload/bin/dspace structure-builder -f /home/phiri/Projects/masters/dspace/"w"$workload-structure.xml -o /usr/local/workloads/w$workload/upload/"w"$workload-structure.xml.out -e lphiri@cs.uct.ac.za;
+done
+
+
+
 
 4. generate csv files using Python script
 
@@ -34,8 +60,20 @@ dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5
 dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w5', 'dspace', 1000)
 
 
+import dspacebenchmarks
+for workload in range(1,16):
+   dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w'+str(workload), 'w'+str(workload), 1000)
+
+
 5. change configurations for bulk import
 ./config/modules/bulkedit.cfg
+
+
+for workload in `seq 1 15`
+do 
+cp /usr/local/dspace/config/modules/bulkedit.cfg /usr/local/workloads/w$workload/config/modules/bulkedit.cfg
+done
+
 
 6. metadata-import utility
 
@@ -55,6 +93,8 @@ nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/100/d
  #### Profiling #### 
 nohup sh -c 'for file in `ls /home/phiri/Projects/masters/dspace/ingestion/1000/dspace-1000-* | grep dspace-1000-`; do echo "START: "$file; sh /usr/local/dspace/bin/dspace metadata-import -f $file -e lphiri@cs.uct.ac.za -s; echo "END: "$file; done' &
 
+
+python -c "import dspacebenchmarks; dspacebenchmarks.dspacecsvfile('/home/phiri/Projects/masters/random/workload1/w8', 'w8', 10000)";
 
 
 Log Analysis
