@@ -131,6 +131,14 @@ cat dspace.log.2013-01-31 | grep item | awk '{sub(/,item_id/,"item_id"); print}'
 
 
 
+for workload in `seq 1 10`
+do
+echo "w$workload|"`cat /usr/local/workloads/w$workload/log/dspace.log.2013-02-02 | grep "Wrote Item" | head -n 1 | awk '{sub(/,/,"."); print}' | awk '{print $1"|"$2"|"$3""$4""$5""$6""$7""$8""$9""$10""$11}'`
+echo "w$workload|"`cat /usr/local/workloads/w$workload/log/dspace.log.2013-02-02 | grep "Wrote Item" | tail -1 | awk '{sub(/,/,"."); print}' | awk '{print $1"|"$2"|"$3""$4""$5""$6""$7""$8""$9""$10""$11}'`
+done
+
+
+
 
 [1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
 
