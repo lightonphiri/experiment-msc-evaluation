@@ -13,6 +13,7 @@ import psycopg2
 import os
 import sys
 
+from datetime import datetime
 from lxml import etree
 
 def dspacestructure(dataset, workload, listsetxml):
@@ -259,3 +260,53 @@ def dspacecsvfile(dataset, workload, recordsize, database):
                 with open(dspaceingestfile, 'a') as outputfile:
                     outputfile.write(dspaceBMEformat(os.path.abspath(os.path.join(root, filename)), database).encode('ascii', 'ignore'))
                 recordcounter += 1
+
+
+def dspaceingestlogoutput(logfile):
+    """Function to strip out information from DSpace log file.
+    Reads a DSpace log file and ouput list with item ingestion times
+    Ingest time = Wrote Item timestamp - first instance of update_item
+    Index time = Wrote Item timestamp = Writing Item timestamp
+
+    keyword arguments:
+    logfile --DSpace log file
+    """
+    logfileobject = open(logfile)
+    found = False
+    foundwrote = False
+    froundwriting = False
+    starttime = ''
+    writing = ''
+    wrote = ''
+    for logline in logfileobject.readlines():
+        if not found:
+            try:
+                tstartitem, tstartid = logline.split('item_id=')
+                starttime = logline.split('INFO')[0].replace(',', '.')
+                starttime = datetime.strptime(starttime, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                found = True
+                continue
+            except:
+                continue
+        if found:
+            try:
+                if logline.index('Writing Item') > 0:
+                    writing = logline.split('INFO')[0].replace(',','.')
+                    writing = datetime.strptime(writing, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                    continue
+            except:
+                pass
+            try:
+                if logline.index('Wrote Item') > 0:
+                    wrote = logline.split('INFO')[0].replace(',','.')
+                    wrote = datetime.strptime(wrote, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                    #print 'starttime:', starttime, 'writing:', writing, 'wrote:', wrote
+                    total = (wrote - starttime).total_seconds()
+                    ingest = ((wrote - starttime) - (wrote - writing)).total_seconds()
+                    index = (wrote - writing).total_seconds()
+                    print 'total:', total, 'ingest:', ingest, 'index:', index
+                    found = False
+            except:
+                continue
+        else:
+            continue
