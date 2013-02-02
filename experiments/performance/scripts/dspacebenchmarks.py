@@ -278,12 +278,17 @@ def dspaceingestlogoutput(logfile):
     starttime = ''
     writing = ''
     wrote = ''
+    itemcount = 0
+    totalcumulative = 0
+    totalingest = 0
+    totalindex = 0
+    ingesttimes = []
     for logline in logfileobject.readlines():
         if not found:
             try:
                 tstartitem, tstartid = logline.split('item_id=')
                 starttime = logline.split('INFO')[0].replace(',', '.')
-                starttime = datetime.strptime(starttime, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                #starttime = datetime.strptime(starttime, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
                 found = True
                 continue
             except:
@@ -292,21 +297,37 @@ def dspaceingestlogoutput(logfile):
             try:
                 if logline.index('Writing Item') > 0:
                     writing = logline.split('INFO')[0].replace(',','.')
-                    writing = datetime.strptime(writing, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                    #writing = datetime.strptime(writing, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
                     continue
             except:
                 pass
             try:
                 if logline.index('Wrote Item') > 0:
                     wrote = logline.split('INFO')[0].replace(',','.')
-                    wrote = datetime.strptime(wrote, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
-                    #print 'starttime:', starttime, 'writing:', writing, 'wrote:', wrote
-                    total = (wrote - starttime).total_seconds()
-                    ingest = ((wrote - starttime) - (wrote - writing)).total_seconds()
-                    index = (wrote - writing).total_seconds()
-                    print 'total:', total, 'ingest:', ingest, 'index:', index
+                    #wrote = datetime.strptime(wrote, '%Y-%m-%d %H:%M:%S.%f')#datetime.strptime(logline.split('INFO')[0].replace(',', '.').trim(), '%Y-%m-%d %H:%M:%S.%f')
+                    ##print 'starttime:', starttime, 'writing:', writing, 'wrote:', wrote
+                    t1 = datetime.strptime(starttime.strip(), '%Y-%m-%d %H:%M:%S.%f')
+                    t2 = datetime.strptime(writing.strip(), '%Y-%m-%d %H:%M:%S.%f')
+                    t3 = datetime.strptime(wrote.strip(), '%Y-%m-%d %H:%M:%S.%f')
+                    ##print "T1:", t1
+                    ##print "T2:", t2
+                    ##print "T3:", t3
+                    total = (t3 - t1).total_seconds()*1000
+                    ingest = ((t3 - t1) - (t3 - t2)).total_seconds()*1000
+                    index = (t3 - t2).total_seconds()*1000
+                    ##print 'total:', total, 'ingest:', ingest, 'index:', index
+                    itemcount += 1
+                    totalcumulative += total
+                    totalingest += ingest
+                    totalindex += index
                     found = False
             except:
                 continue
         else:
             continue
+    ingesttimes.append(itemcount)
+    ingesttimes.append(totalcumulative)
+    ingesttimes.append(totalingest)
+    ingesttimes.append(totalindex)
+    # return (items, total time, ingest time, index time)
+    return ingesttimes

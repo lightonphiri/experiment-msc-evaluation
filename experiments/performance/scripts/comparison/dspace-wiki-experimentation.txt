@@ -138,6 +138,13 @@ echo "w$workload|"`cat /usr/local/workloads/w$workload/log/dspace.log.2013-02-02
 done
 
 
+###### 
+
+
+for workload in range(1, 11):
+   dspacebenchmarks.dspaceingestlogoutput('/home/phiri/Sandbox/masters/dspace/' + 'w'+str(workload) + '-dspace.log.2013-02-02')
+
+
 
 
 [1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
