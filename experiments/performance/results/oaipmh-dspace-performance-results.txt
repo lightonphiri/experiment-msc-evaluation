@@ -1,0 +1,120 @@
+START WORKLOAD|w1|Mon Feb  4 03:47:19 SAST 2013
+***** START Workload  *****
+Document Path:          /w1/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       126.519 [ms] (mean)
+Document Path:          /w1/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       2.298 [ms] (mean)
+Document Path:          /w1/oai/request?verb=ListSets
+Time per request:       1.173 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w1|Mon Feb  4 03:47:45 SAST 2013
+START WORKLOAD|w2|Mon Feb  4 03:47:45 SAST 2013
+***** START Workload  *****
+Document Path:          /w2/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       789.162 [ms] (mean)
+Document Path:          /w2/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       23.143 [ms] (mean)
+Document Path:          /w2/oai/request?verb=ListSets
+Time per request:       10.655 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w2|Mon Feb  4 03:48:20 SAST 2013
+START WORKLOAD|w3|Mon Feb  4 03:48:20 SAST 2013
+***** START Workload  *****
+Document Path:          /w3/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       915.399 [ms] (mean)
+Document Path:          /w3/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       21.281 [ms] (mean)
+Document Path:          /w3/oai/request?verb=ListSets
+Time per request:       14.083 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w3|Mon Feb  4 03:48:59 SAST 2013
+START WORKLOAD|w4|Mon Feb  4 03:48:59 SAST 2013
+***** START Workload  *****
+Document Path:          /w4/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1034.241 [ms] (mean)
+Document Path:          /w4/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       18.790 [ms] (mean)
+Document Path:          /w4/oai/request?verb=ListSets
+Time per request:       10.465 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w4|Mon Feb  4 03:49:48 SAST 2013
+START WORKLOAD|w5|Mon Feb  4 03:49:48 SAST 2013
+***** START Workload  *****
+Document Path:          /w5/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1127.011 [ms] (mean)
+Document Path:          /w5/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       18.197 [ms] (mean)
+Document Path:          /w5/oai/request?verb=ListSets
+Time per request:       11.632 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w5|Mon Feb  4 03:50:44 SAST 2013
+START WORKLOAD|w6|Mon Feb  4 03:50:44 SAST 2013
+***** START Workload  *****
+Document Path:          /w6/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1172.476 [ms] (mean)
+Document Path:          /w6/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       24.864 [ms] (mean)
+Document Path:          /w6/oai/request?verb=ListSets
+Time per request:       15.539 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w6|Mon Feb  4 03:51:59 SAST 2013
+START WORKLOAD|w7|Mon Feb  4 03:51:59 SAST 2013
+***** START Workload  *****
+Document Path:          /w7/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1072.393 [ms] (mean)
+Document Path:          /w7/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       18.934 [ms] (mean)
+Document Path:          /w7/oai/request?verb=ListSets
+Time per request:       19.377 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w7|Mon Feb  4 03:53:52 SAST 2013
+START WORKLOAD|w8|Mon Feb  4 03:53:52 SAST 2013
+***** START Workload  *****
+Document Path:          /w8/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       871.685 [ms] (mean)
+Document Path:          /w8/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       16.139 [ms] (mean)
+Document Path:          /w8/oai/request?verb=ListSets
+Time per request:       29.945 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w8|Mon Feb  4 03:56:52 SAST 2013
+START WORKLOAD|w9|Mon Feb  4 03:56:52 SAST 2013
+***** START Workload  *****
+Document Path:          /w9/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       914.228 [ms] (mean)
+Document Path:          /w9/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       22.855 [ms] (mean)
+Document Path:          /w9/oai/request?verb=ListSets
+Time per request:       31.055 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w9|Mon Feb  4 04:02:16 SAST 2013
+START WORKLOAD|w10|Mon Feb  4 04:02:16 SAST 2013
+***** START Workload  *****
+Document Path:          /w10/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       993.831 [ms] (mean)
+Document Path:          /w10/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       19.492 [ms] (mean)
+Document Path:          /w10/oai/request?verb=ListSets
+Time per request:       29.117 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w10|Mon Feb  4 04:12:09 SAST 2013
+START WORKLOAD|w11|Mon Feb  4 04:12:09 SAST 2013
+***** START Workload  *****
+Document Path:          /w11/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1388.024 [ms] (mean)
+Document Path:          /w11/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       23.750 [ms] (mean)
+Document Path:          /w11/oai/request?verb=ListSets
+Time per request:       21.934 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w11|Mon Feb  4 04:31:05 SAST 2013
+START WORKLOAD|w12|Mon Feb  4 04:31:05 SAST 2013
+***** START Workload  *****
+Document Path:          /w12/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+Time per request:       1222.289 [ms] (mean)
+Document Path:          /w12/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+Time per request:       19.840 [ms] (mean)
+Document Path:          /w12/oai/request?verb=ListSets
+Time per request:       40.815 [ms] (mean)
+***** END Workload  *****
+END WORKLOAD|w12|Mon Feb  4 05:08:16 SAST 2013

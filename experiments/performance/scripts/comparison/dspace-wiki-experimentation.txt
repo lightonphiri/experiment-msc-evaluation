@@ -238,7 +238,8 @@ echo "END WORKLOAD|w$workload|`date`"
 done
 
 
-
+*** get results ***
+cat nohup.out | grep -E "Document Path|(mean)|START|END" | grep -vE "Requests per second:|across all concurrent|median"
 
 
 
