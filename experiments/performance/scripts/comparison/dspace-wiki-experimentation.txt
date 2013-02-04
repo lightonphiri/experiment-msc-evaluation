@@ -146,6 +146,119 @@ for workload in range(1, 11):
 
 
 
+#### DSPACE PACKAGER  #####
+
+create
+
+su dspace
+cd ~/benchmarks
+
+for workload in `seq 1 12`
+do
+echo /usr/local/workloads/w$workload/bin/dspace packager -d -a -t AIP -e lphiri@cs.uct.ac.za -i 123456789/0 /home/dspace/benchmarks/aip/ingest/w1/w$workload/w$workload-aip.zip -u
+done
+
+
+restore
+nohup sh /usr/local/workloads/w1b/bin/dspace packager -r -a -f -t AIP -e lphiri@cs.uct.ac.za -i 123456789/0 dspace/exports/w1/w1-aip.zip -u &
+   
+   
+####### BACKUP
+
+
+for workload in `seq 1 15`; do pg_dump w$workload | gzip > w$workload-db ; done
+   
+
+
+
+######## SINGLE ITEM INGEST
+
+take note of item identifier in XML file
+ingest item into DSpace
+query postgresql (SELECT item_id FROM metadatavalue WHERE text_value LIKE '%oai:union.ndltd.org:MIT/oai:dspace.mit.edu:1721.1/15378%';) to get handle
+
+
+SELECT DISTINCT h.handle, m.item_id 
+FROM ((SELECT resource_id, handle FROM handle WHERE resource_type_id=2) as h JOIN 
+(SELECT item_id FROM metadatavalue WHERE text_value LIKE '%oai:union.ndltd.org:MIT/oai:dspace.mit.edu:1721.1/15378%') as m ON 
+h.resource_id = m.item_id);
+
+
+Bash variable for handle id
+item_id=$(psql w1 -t -c "SELECT DISTINCT m.item_id  FROM ((SELECT resource_id, handle FROM handle WHERE resource_type_id=2) as h JOIN  (SELECT item_id FROM metadatavalue WHERE text_value LIKE '%oai:union.ndltd.org:MIT/oai:dspace.mit.edu:1721.1/15378%') as m ON h.resource_id = m.item_id)")
+
+
+
+####### DELETE ITEM 
+
+*** ingest
+/usr/local/dspace/bin/dspace metadata-import -f /home/phiri/Projects/masters/dspace/single-w3-1000-1.csv -e lphiri@cs.uct.ac.za -s
+
+*** delete
+  -> create map file (./ingest-single-item.sh dspace oai:union.ndltd.org:GEORGIA/oai:digitalarchive.gsu.edu:chemistry_diss-1010 > dspace-item-delete-mapfile.txt)
+  -> run import utility command using mapfile
+./ingest-single-item.sh dspace oai:union.ndltd.org:GEORGIA/oai:digitalarchive.gsu.edu:chemistry_diss-1010 > dspace-item-delete-mapfile.txt
+./dspace import --delete --mapfile /home/phiri/Projects/masters/dspace/dspace-item-delete-mapfile.txt
+
+
+*** get single ingest logs
+for workload in `seq 1 12`; do cp /usr/local/workloads/w$workload/log/dspace.log.2013-02-04 w$workload-ingest-single-dspace.log.2013-02-04; done
+
+
+
+###### OAI-PMH Configuration
+
+ -> OAI manager to import items into OAI index
+./dspace oai import
+
+
+
+
+http://blabusch.cs.uct.ac.za:8080/w1/oai/request?verb=ListSets
+http://blabusch.cs.uct.ac.za:8080/w1/oai/request?verb=ListRecords&metadataPrefix=oai_dc
+http://blabusch.cs.uct.ac.za:8080/w1/oai/request?verb=ListIdentifiers&metadataPrefix=oai_dc
+http://blabusch.cs.uct.ac.za:8080/w1/oai/request?verb=ListMetadataFormats
+
+
+for workload in `seq 1 12`
+do
+echo "START WORKLOAD|w$workload|`date`"
+# copy server.xml file
+sudo cp /etc/tomcat6/w$workload-server.xml /etc/tomcat6/server.xml
+###sudo cp /etc/tomcat6/xserver.xml /etc/tomcat6/server.xml
+# restart tomcat
+sudo invoke-rc.d tomcat6 restart
+sleep 10
+# import indicies
+sh /usr/local/workloads/w$workload/bin/dspace oai import
+##sh /usr/local/dspace/bin/dspace oai import
+# script
+sh /home/phiri/Projects/masters/scripts/oaipmh-dspace.sh w$workload
+echo "END WORKLOAD|w$workload|`date`"
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
 
