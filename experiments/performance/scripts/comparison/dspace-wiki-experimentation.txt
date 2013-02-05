@@ -294,6 +294,11 @@ done
 cat workloads-oai-performance-nohup.out | grep -E "Document Path|(mean)|START|END" | grep -vE "Requests per second:|across all concurrent|median"
 >>>>>>> 7dc43f052b8bb3d6fe43a635fb9b52945d4a0821
 
+
+
+  # Get Solr search results
+  
+  cat workloads-dspace-solr-search-query-nohup.out | grep ,
   
   
 
