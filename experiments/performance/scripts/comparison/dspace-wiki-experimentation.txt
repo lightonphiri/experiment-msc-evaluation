@@ -238,7 +238,10 @@ echo "END WORKLOAD|w$workload|`date`"
 done
 
 
+*** get results ***
+cat nohup.out | grep -E "Document Path|(mean)|START|END" | grep -vE "Requests per second:|across all concurrent|median"
 
+<<<<<<< HEAD
 
 ######## DISCOVERY MODULE CONFIGURATION
 
@@ -287,6 +290,9 @@ do
 echo w$workload,`python -c "import simplyctperformance; simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery('http://localhost:8080/w$workload/solr/search/', 'drugs'))";`
 done
 
+=======
+cat workloads-oai-performance-nohup.out | grep -E "Document Path|(mean)|START|END" | grep -vE "Requests per second:|across all concurrent|median"
+>>>>>>> 7dc43f052b8bb3d6fe43a635fb9b52945d4a0821
 
   
   
