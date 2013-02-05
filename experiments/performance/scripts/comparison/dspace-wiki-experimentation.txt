@@ -240,24 +240,56 @@ done
 
 
 
+######## DISCOVERY MODULE CONFIGURATION
+
+copy xmlui.xcof with approapriate settings
+for workload in `seq 1 15`; do cp /usr/local/dspace/config/xmlui.xconf /usr/local/workloads/w$workload/config/xmlui.xconf; done
+
+make changes to first workload and propagate changes to other workloads by copying configurations across (dspace.cfg& discovery.cfg)
+  -> then loop through workloads and replace workload number using sed
+  
+  
+  for workload in `seq 2 15`; do cp /usr/local/workloads/w1/config/modules/discovery.cfg /usr/local/workloads/w$workload/config/modules/discovery.cfg; done
+  
+  for workload in `seq 2 15`; do cp /usr/local/workloads/w1/config/dspace.cfg /usr/local/workloads/w$workload/config/dspace.cfg; done
+  
+  
+  /usr/local/workloads/w$workload/config/modules/discovery.cfg
+  /usr/local/workloads/w$workload/config/dspace.cfg
+  
+  
+  generate string commands to run
+  
+  for workload in `seq 1 15`
+  do 
+  sed -i 's/w1/w$workload/' /usr/local/workloads/w$workload/config/modules/discovery.cfg
+  sed -i 's/w1/w$workload/' /usr/local/workloads/w$workload/config/dspace.cfg
+  done
+  
+
+  # Index discovery
+  
+  for workload in `seq 1 15`
+  do
+  sudo cp /etc/tomcat6/w$workload-server.xml /etc/tomcat6/server.xml
+  sudo invoke-rc.d tomcat6 restart
+  sh /usr/local/workloads/w$workload/bin/dspace update-discovery-index
+  done
 
 
+  # Search
+  
+import simplyctperformance
+simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery("http://localhost:8080/repo/solr/search/", "thesis"))
+
+for workload in repo
+do
+echo w$workload,`python -c "import simplyctperformance; simplyctperformance.solrresponsehead(simplyctperformance.solrselectquery('http://localhost:8080/w$workload/solr/search/', 'drugs'))";`
+done
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
 
 
 [1] https://wiki.duraspace.org/display/DSPACE/MultipleDspaceOneServer
