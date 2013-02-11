@@ -1,0 +1,106 @@
+
+
+used to go days with the clothes
+
+
+cracked head smoking on the same
+
+i remember nights, them december nights
+
+
+=CONCATENATE("{",B2,"} & ","{\tablenum[table-format=4.2]{",ROUND(D2,2),"}} & ","{\SI{",ROUND(G2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(J2*100,2),"}{\percent}} & ","{\tablenum[table-format=4.2]{",ROUND(E2,2),"}} & ","{\SI{",ROUND(H2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(K2*100,2),"}{\percent}} & ","{\tablenum[table-format=4.2]{",ROUND(F2,2),"}} & ","{\SI{",ROUND(I2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(L2*100,2),"}{\percent}} \\ ")
+
+
+level #1
+,"{\SI{",ROUND(G2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(J2*100,2),"}{\percent}} & "
+
+
+level #2
+,"{\SI{",ROUND(H2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(K2*100,2),"}{\percent}} & "
+
+level #3
+,"{\SI{",ROUND(I2*100,2),"}{\percent}} & " ,"{\SI{",ROUND(L2*100,2),"}{\percent}} & "
+
+
+
+{\begin{sideways}\textbf{QTime}\end{sideways}}&
+
+
+>{\centering\arraybackslash}m{0.15\linewidth}
+>{\centering\arraybackslash}m{0.15\linewidth}
+>{\centering\arraybackslash}m{0.15\linewidth}
+>{\centering\arraybackslash}m{0.15\linewidth}
+>{\centering\arraybackslash}m{0.15\linewidth}}
+
+
+
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.08\linewidth}
+>{\centering\arraybackslash}m{0.08\linewidth} 
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.08\linewidth} 
+>{\centering\arraybackslash}m{0.08\linewidth}
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.08\linewidth} 
+>{\centering\arraybackslash}m{0.08\linewidth}}
+
+
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.05\linewidth} 
+>{\centering\arraybackslash}m{0.07\linewidth}
+>{\centering\arraybackslash}m{0.07\linewidth}}
+
+
+
+{w1} & {\tablenum[table-format=4.2]{4.79}} & {\SI{63.14}{\percent}} & {\SI{36.86}{\percent}} & {\tablenum[table-format=4.2]{4.15}} & {\SI{96.4}{\percent}} & {\SI{3.6}{\percent}} & {\tablenum[table-format=4.2]{4.12}} & {\SI{96.67}{\percent}} & {\SI{3.33}{\percent}} \\ 
+
+
+distribution
+=CONCATENATE("{",A2,"} & ","{\SI{",ROUND((G2/f2)*100,2),"}{\percent}} & ","{\SI{",ROUND((H2/f2)*100,2),"}{\percent}} & ","{\SI{",ROUND((G3/f3)*100,2),"}{\percent}} & ","{\SI{",ROUND((H3/f3)*100,2),"}{\percent}} & ","{\SI{",ROUND((G4/f4)*100,2),"}{\percent}} & ","{\SI{",ROUND((H4/f4)*100,2),"}{\percent}} & ","{\SI{",ROUND((G5/f5)*100,2),"}{\percent}} & ","{\SI{",ROUND((H5/f5)*100,2),"}{\percent}} \\ ")
+
+
+values
+=CONCATENATE("{",A2,"} & ","{\tablenum[table-format=4.2]{",ROUND(F2,2),"}} & ","{\tablenum[table-format=4.2]{",ROUND(F3,2),"}} & ","{\tablenum[table-format=4.2]{",ROUND(F4,2),"}} & ","{\tablenum[table-format=4.2]{",ROUND(F5,2),"}} \\ ")
+
+
+
+
+import os
+import time
+
+def oswalkchecker(dataset):
+   filecount = 0
+   for root, dirs, files in os.walk(dataset):
+      for filename in files:
+         if filename.endswith('.metadata'):
+            filecount += 1
+   return filecount
+
+
+
+###for workload in range(1, 16):
+
+for workload in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15):
+   for loopy in (1, 2, 3, 4, 5):   
+      w1t1 = time.time()*1000
+      w1result =  oswalkchecker('/home/lphiri/datasets/ndltd/random/workload/w'+str(workload))
+      w1t2 = time.time()*1000
+      print "Loop"+str(loopy), "w"+str(workload), ",Level1:", (w1t2 - w1t1), ",Record Count:", w1result
+      w2t1 = time.time()*1000
+      w2result =  oswalkchecker('/home/lphiri/datasets/ndltd/random/workload2/w'+str(workload))
+      w2t2 = time.time()*1000
+      print "Loop"+str(loopy), "w"+str(workload), ",Level2:", (w2t2 - w2t1), ",Record Count:", w2result
+      w3t1 = time.time()*1000
+      w3result =  oswalkchecker('/home/lphiri/datasets/ndltd/random/workload3/w'+str(workload))
+      w3t2 = time.time()*1000
+      print "Loop"+str(loopy), "w"+str(workload), ",Level3:", (w3t2 - w3t1), ",Record Count:", w3result
